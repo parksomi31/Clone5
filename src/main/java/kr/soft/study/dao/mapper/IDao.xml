@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.soft.study.dao.IDao"> <!-- 인터페이스와 연결 -->
+
+	<insert id="noticeWrite">
+		INSERT INTO notice (title, content) values (#{param1}, #{param2})
+	</insert>
+
+	<select id="noticeView" resultType="kr.soft.study.dto.BDto">
+		SELECT notice_index, title, content, input_time FROM notice ORDER BY notice_index DESC
+	</select>
+
+</mapper>
