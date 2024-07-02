@@ -1,4 +1,4 @@
-package kr.soft.study.admincommand;
+package kr.soft.study.adminCommand;
 
 import org.springframework.ui.Model;
 

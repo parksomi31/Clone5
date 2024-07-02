@@ -10,4 +10,7 @@ public interface PDao {
 
 	void upLike(final String title);
 
+	public void addProduct(String title, String description, String price, String like, String review, String image, String second_type_id);
+	
+	public void deleteProduct(String title);
 }
