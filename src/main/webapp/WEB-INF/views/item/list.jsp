@@ -2864,10 +2864,10 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 													</a>
 												</span></td>
 
-												<td><span class="s f1"> <a
-														href="./review?title=${dto.title}"> <i
+												<td><span class="s f1">   <a href="./review?product_num=${dto.product_num}"> <i
 															class="fas fa-comment"></i> ${dto.review} </span> <input
-													type="hidden" id="title" value="${dto.title}"></td>
+													type="hidden" id="title" value="${dto.title}"> <input
+													type="hidden" id="product_num" value="${dto.product_num}"></td>
 											</tr>
 										</c:forEach>
 									</tbody>
@@ -3369,9 +3369,9 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 								390-87-01499 <a class="info"
 									href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
 									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 &gt;</a> <br>통신판매업신고번호:2019-서울용산-1173호
-								호스팅제공자: ㈜오설록 <br>
-								<br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의
-								당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+								호스팅제공자: ㈜오설록 <br> <br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에
+								대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및
+								거래에 대해 책임을 지지 않습니다.
 							</div>
 							<!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
 						</div>

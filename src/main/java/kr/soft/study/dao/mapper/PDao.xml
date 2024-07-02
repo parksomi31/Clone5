@@ -19,5 +19,13 @@
         SET `like` = `like` + 1
         WHERE title = #{param1}
     </update>
+    
+    
+     <update id="upReview">
+        UPDATE product
+        SET `review` = `review` + 1
+        WHERE product_num = #{param1}
+    </update>
+
 
 </mapper>

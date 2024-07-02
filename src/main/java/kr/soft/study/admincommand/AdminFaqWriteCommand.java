@@ -24,7 +24,7 @@ public class AdminFaqWriteCommand implements AdminCommand {
 		
 		SqlSession sqlSession = Constant.sqlSession;
 		IDao dao = sqlSession.getMapper(IDao.class);
-		dao.faqWrite(title,content);
+		/* dao.faqWrite(title,content); */
 
 	}
 
