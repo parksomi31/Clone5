@@ -20,6 +20,15 @@
         WHERE title = #{param1}
     </update>
     
+
+    	<insert id="addProduct">
+		INSERT INTO product (title, description, price, `like`, review, image, second_type_id) values (#{param1}, #{param2},#{param3},#{param4},#{param5},#{param6},#{param7})
+	</insert>
+	
+		<delete id="deleteProduct">
+		DELETE FROM product WHERE title = #{param1}
+	</delete>
+
     
      <update id="upReview">
         UPDATE product

@@ -2047,19 +2047,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div class="inner_box">
 							<ul class="faq_list">
 								
-									
+									<c:forEach items="${faqlist}" var="dto">
 										<li class="item">
 											<div class="faq_q">
 												<div class="cate pcBlock">주문/결제</div>
 												<div class="faq_q_text">
-													<p class="text">30만원 이상 결제 시 공인인증서 인증은 필수인가요?</p>
+													<p class="text">${dto.faq_title}</p>
 												</div>
 											</div>
 											<div class="faq_a">
 												<div>
 													<p class="text">
 										
-								                    	<p>2005년 11월 1일부터 금감원의 전자상거래 안정성 강화 정책에 따라 30만원 이상의 모든 신용카드 결제에 공인인증 사용이 의무화 되었습니다. (단, 30만원 이하 결제는 공인인증서 없이 결제 가능)  따라서 30만원 이상 결제 시에는 반드시 공인인증서가 있어야 가능합니다.</p>
+								                    	<p>${dto.faq_content}</p>
 													</p>
 												</div>
 												<p class="more">
@@ -2068,7 +2068,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												</p>
 											</div>
 										</li>
-									
+									</c:forEach>
 										<li class="item">
 											<div class="faq_q">
 												<div class="cate pcBlock">주문/결제</div>
@@ -2092,209 +2092,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											</div>
 										</li>
 									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">대량 구매 관련 문의를 하고 싶습니다.</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>보다 자세한 답변을 위해 물량, 배송처, 배송 기간 등의 확인이 필요하오니 메일(help@osulloc.com)이나 카카오톡(osullocmall)로 문의해주시면 감사하겠습니다.</p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">무통장 입금을 하려고 하는데 없는 계좌라고 나옵니다. </p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	<p>쇼핑몰 결제 수단으로는 신용카드, 무통장입금, 실시간 계좌이체, 휴대폰 결제, 뷰티포인트 결제가 있습니다.</p>
-<p>단, 가상계좌의 경우에는 인터넷 뱅킹 또는 은행창구에서 직접 이체 시에만 가능하며 CD기 서비스는 아직 지원 되지 않습니다. 번거로우시겠지만, 인터넷 뱅킹 또는 은행 창구를 이용해 주시면 감사하겠습니다.</p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">사용 가능한 결제 수단에는 어떤 것들이 있나요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>오설록 몰에서는 신용카드, 실시간계좌이체, 무통장입금(가상계좌), 휴대폰결제, 뷰티포인트(현금합산), L.POINT(현금합산)로 결제하실 수 있습니다.</p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">실시간 계좌이체란 무엇인가요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>실시간 계좌이체란, 이체하고자 하는 개인계좌에서 주문 금액을 바로 이체하고 결제하는 간편한 현금결제방식입니다.</p>
-<ul>
- <li>※ 실시간 계좌이체는 공인인증서가 설치 되어있거나 회원님의 통장잔액이 물품대금보다 커야지만 결제가 가능합니다. </li>
-</ul>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">안심클릭이란 무엇인가요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>인터넷 쇼핑 시 고객님께서 소유하신 카드에 미리 설정해 둔 전자상거래용 비밀번호를 입력하여 본인확인을 하는 것으로 온라인 상에서의 카드 무단도용을 방지해주는 서비스입니다.  </p>
-<ul class="dash-list">
-<li>시행 일시: 2004년 4월 1일부터 정부 시책에 따라 의무 시행</li>
- <li>대상 카드: LG/삼성/외환/신한/현대(다이너스)/롯데(아멕스)/하나/한미/수협카드 등</li>
- <li>
-  인증 방식: 카드사가 제공하는 팝업창에서 선택 가능
-  <ul class="dot-list">
-   <li>30만원 미만: 안심클릭 또는 공인인증</li>
-   <li>30만원 이상: 공인인증</li>
-  </ul>
- </li>
- <li>안심클릭 등록방법: 소유하신 신용카드의 홈페이지 통해 등록 가능 </li>
-</ul>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">에스크로 결제란 무엇인가요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>10만원이상 주문결제 시 제3자에게 결제금액을 위탁시켰다가 고객님의 수취확인 이후에 판매자에게 결제 받을 수 있는 제도로 결제사고를 예방하는 방법 중 하나입니다. 오설록 온라인 쇼핑몰에서는 현재 10만원이상 현금 결제하시는 분에게 에스크로로 결제됩니다.</p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">이미 결제완료 된 건의 결제 수단 변경은 어떻게 하면 되나요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>결제 수단의 변경은 어렵습니다. <br>결제 수단을 변경하고자 하실 경우, <a href="https://www.osulloc.com/kr/ko/mypage/order/normal"  class="link">마이페이지>주문배송조회</a>에서 주문취소 하신 후 다시 결제 해주시기 바랍니다.</p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">인터넷 안전결제(ISP)란 무엇인가요?</p>
-												</div>
-											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>인터넷안전결제(ISP)는 BC/국민/우리/신한(조흥)카드사에서 의무적으로 시행하는 것으로, BC/국민/우리/신한(조흥)카드로 결제할 때 카드번호를 직접 입력하지 않고 카드사에서 발급하는 가상의 인터넷안전결제(ISP) 비밀번호만으로 안전한 전자상거래를 할 수 있는 서비스입니다.</p>
-<ul class="dot-list">
- <li>거래금액 30만원 이상 시, 공인인증과정 필수</li>
-</ul>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
-												</p>
-											</div>
-										</li>
-									
-								
+							
 							</ul>
 						</div>
 					</div>

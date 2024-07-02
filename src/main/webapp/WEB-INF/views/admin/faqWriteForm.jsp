@@ -10,14 +10,14 @@
 공지사항 작성화면<br />
 
 <table width="500" cellpadding="0" cellspacing="0" border="1">
-		<form action="noticeWrite" method="post">
+		<form action="faqWrite" method="post">
 			<tr>
 				<td > 제목 </td>
-				<td> <input type="text" name="title" size = "50"> </td>
+				<td> <input type="text" name="faq_title" size = "50"> </td>
 			</tr>
 			<tr>
 				<td> 내용 </td>
-				<td> <input type="text" name="content" size = "150" > </td>
+				<td> <input type="text" name="faq_content" size = "150" > </td>
 			</tr>
 			<tr >
 				<td colspan="2"> <input type="submit" value="입력"> &nbsp;&nbsp; <a href="list">목록보기</a></td>

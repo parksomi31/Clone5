@@ -9,9 +9,10 @@ import kr.soft.study.dto.BDto;
 import kr.soft.study.util.Constant;
 
 public interface IDao {
-	public void noticeWrite(String title, String content);
+	public void noticeWrite(String notice_title, String notice_content);
 	public ArrayList<BDto> noticeView();
-
 	
+	public void faqWrite(String faq_title, String faq_content);
+	public ArrayList<BDto> faqView();
 
 }

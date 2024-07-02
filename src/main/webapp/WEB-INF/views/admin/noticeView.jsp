@@ -2031,7 +2031,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<p class="num pcBlock">${dto.notice_index}</p>
 											<p class="subject">
 												<a class="link_text" href="/kr/ko/cs/notice/news/6319?">
-													<span class="new">NEW</span>${dto.title}
+													<span class="new">NEW</span>${dto.notice_title}
 												</a>
 											</p>
 											<p class="date">${dto.input_time}</p>

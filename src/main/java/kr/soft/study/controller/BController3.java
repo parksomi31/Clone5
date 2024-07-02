@@ -53,7 +53,6 @@ public class BController3 {
 	@RequestMapping("/login")
 	public String login_view(Model model) {
 		System.out.println("login()");
-
 		return "/login/login";
 	}
 	// HttpSession 클래스 주입.
@@ -76,7 +75,6 @@ public class BController3 {
 		session.setAttribute("kakaoE", userInfo.getK_email());
 		// 위 2개의 코드는 닉네임과 이메일을 session객체에 담는 코드
 		// jsp에서 ${sessionScope.kakaoN} 이런 형식으로 사용할 수 있다.
-
 		return "/login/basketView";
 
 	}
