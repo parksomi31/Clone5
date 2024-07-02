@@ -9,5 +9,7 @@ public interface PDao {
 	public ArrayList<PDto> list();
 
 	void upLike(final String title);
+	
+	void upReview(int num);
 
 }

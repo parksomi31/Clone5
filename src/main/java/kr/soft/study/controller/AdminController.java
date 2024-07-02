@@ -8,10 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import kr.soft.study.command.AdminCommand;
-import kr.soft.study.command.AdminFaqWriteCommand;
-import kr.soft.study.command.AdminNoticeCommand;
-import kr.soft.study.command.AdminNoticeWriteCommand;
+import kr.soft.study.admincommand.AdminCommand;
+import kr.soft.study.admincommand.AdminFaqWriteCommand;
+import kr.soft.study.admincommand.AdminNoticeCommand;
+import kr.soft.study.admincommand.AdminNoticeWriteCommand;
 import kr.soft.study.util.Constant;
 
 /**
@@ -35,13 +35,13 @@ public class AdminController {
 		System.out.println("noticeView()");
 		command = new AdminNoticeCommand();
 		command.execute(model);		
-		return "/noticeView";
+		return "/admin/noticeView";
 	}
 	
 	@RequestMapping("/noticeWriteForm") //공지사항 작성 폼
 	public String noticeWriteForm() {
 		
-		return "/noticeWriteForm";
+		return "/admin/noticeWriteForm";
 	}
 	
 	@RequestMapping("/noticeWrite") //공지사항 등록 액션
@@ -50,19 +50,19 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminNoticeWriteCommand();
 		command.execute(model);
-		return "redirect:noticeView";
+		return "redirect:/admin/noticeView";
 	}
 	
 	@RequestMapping("/faqView") //faq 목록
 	public String faqView() {
 		System.out.println("faqView()");		
-		return "/faqView";
+		return "/admin/faqView";
 	}
 	
 	@RequestMapping("/faqWriteForm") //공지사항 작성 폼
 	public String faqWriteForm() {
 		System.out.println("faqWriteForm()");	
-		return "/faqWriteForm";
+		return "/admin/faqWriteForm";
 	}
 	
 	@RequestMapping("/faqWrite") //공지사항 등록 액션
@@ -71,6 +71,6 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminFaqWriteCommand();
 		command.execute(model);
-		return "redirect:faqView";
+		return "redirect:/admin/faqView";
 	}
 }
