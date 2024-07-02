@@ -34,20 +34,20 @@ public class BController3 {
 	public String testView(Model model) {
 		System.out.println("test()");
 
-		return "test";
+		return "/login/test";
 	}
 	@RequestMapping("/test2")
 	public String test2View(Model model) {
 		System.out.println("test2()");
 
-		return "test2";
+		return "/login/test2";
 	}
 
 	@RequestMapping("/basketView")
 	public String basketView(Model model) {
 		System.out.println("basketView()");
 
-		return "basketView";
+		return "/login/basketView";
 	}
 
 	@RequestMapping("/login")

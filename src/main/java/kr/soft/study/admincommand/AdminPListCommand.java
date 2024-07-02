@@ -1,11 +1,10 @@
-package kr.soft.study.adminCommand;
+package kr.soft.study.admincommand;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.ui.Model;
 
 import kr.soft.study.dao.PDao;
 import kr.soft.study.dto.PDto;
-import kr.soft.study.product.ProductCommand;
 import kr.soft.study.util.Constant;
 
 public class AdminPListCommand implements AdminCommand {

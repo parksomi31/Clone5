@@ -5,11 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>리뷰쓰기</title>
-<script language="javascript">
-	function addreview() {
-		reviewform.submit();
-	}
-</script>
+
 <style>
 body {
 	font-family: Arial, sans-serif;
@@ -133,8 +129,10 @@ a:hover {
 </style>
 </head>
 <body>
-	<form class="review-form" action="./reviewwite" method="post"
-		enctype="multipart/form-data" name="reviewform">
+	<form action="./reviewwite" class="review-form"
+		method="post">
+
+		<p>Product Number: ${product_num}</p>
 		<table cellpadding="0" cellspacing="0">
 			<tr align="center" valign="middle">
 				<td colspan="2" style="font-size: 24px; font-weight: bold;">리뷰작성</td>
@@ -142,17 +140,19 @@ a:hover {
 			<tr>
 				<td colspan="2">
 					<fieldset>
-						별점을 선택해주세요
-							<input type="radio" name="star" value="5" id="rate5"><label for="rate5">★</label> 
-							<input type="radio" name="star" value="4" id="rate4"><label for="rate4">★</label> 
-							<input type="radio" name="star" value="3" id="rate3"><label for="rate3">★</label> 
-							<input type="radio" name="star" value="2" id="rate2"><label for="rate2">★</label> 
-							<input type="radio" name="star" value="1" id="rate1"><label for="rate1">★</label>
+						별점을 선택해주세요 <input type="radio" name="star" value="5" id="rate5"><label
+							for="rate5">★</label> <input type="radio" name="star" value="4"
+							id="rate4"><label for="rate4">★</label> <input
+							type="radio" name="star" value="3" id="rate3"><label
+							for="rate3">★</label> <input type="radio" name="star" value="2"
+							id="rate2"><label for="rate2">★</label> <input
+							type="radio" name="star" value="1" id="rate1"><label
+							for="rate1">★</label>
 					</fieldset>
 				</td>
 			</tr>
 			<tr>
-				<td>이름</td>
+				<td>작성자</td>
 				<td><input name="name" type="text" size="10" maxlength="10"
 					value=""></td>
 			</tr>
@@ -163,8 +163,8 @@ a:hover {
 			</tr>
 			<tr>
 				<td>제 목</td>
-				<td><input name="title" type="text" size="50"
-					maxlength="100" value=""></td>
+				<td><input name="title" type="text" size="50" maxlength="100"
+					value=""></td>
 			</tr>
 			<tr>
 				<td>내 용</td>
@@ -178,12 +178,13 @@ a:hover {
 				<td colspan="2">&nbsp;</td>
 			</tr>
 			<tr align="center" valign="middle">
-				<td colspan="2">
-					<button type="submit" class="submit-btn">[등록]</button> <a
-					href="javascript:history.go(-1)">[뒤로]</a>
-				</td>
+				<td colspan="2"><input type="submit" class="submit-btn"
+					value="등록"> <a href="javascript:history.go(-1)">[뒤로]</a></td>
 			</tr>
+
 		</table>
+		<input type="hidden" id="product_num" name="product_num"
+			value="${product_num}" />
 	</form>
 </body>
 </html>

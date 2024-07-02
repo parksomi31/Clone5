@@ -9,14 +9,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.soft.study.ProductCommand.PListCommand;
-import kr.soft.study.adminCommand.AdminAddProductCommand;
-import kr.soft.study.adminCommand.AdminCommand;
-import kr.soft.study.adminCommand.AdminDeleteProductCommand;
-import kr.soft.study.adminCommand.AdminFaqCommand;
-import kr.soft.study.adminCommand.AdminFaqWriteCommand;
-import kr.soft.study.adminCommand.AdminNoticeCommand;
-import kr.soft.study.adminCommand.AdminNoticeWriteCommand;
-import kr.soft.study.adminCommand.AdminPListCommand;
+import kr.soft.study.admincommand.AdminAddProductCommand;
+import kr.soft.study.admincommand.AdminCommand;
+import kr.soft.study.admincommand.AdminDeleteProductCommand;
+import kr.soft.study.admincommand.AdminFaqCommand;
+import kr.soft.study.admincommand.AdminFaqWriteCommand;
+import kr.soft.study.admincommand.AdminNoticeCommand;
+import kr.soft.study.admincommand.AdminNoticeWriteCommand;
+import kr.soft.study.admincommand.AdminPListCommand;
 import kr.soft.study.util.Constant;
 
 /**
@@ -55,14 +55,14 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminNoticeWriteCommand();
 		command.execute(model);
-		return "redirect:noticeView";
+		return "redirect:/admin/noticeView";
 	}
 	
 	@RequestMapping("/faqView") //faq 格废
 	public String faqView(Model model) {
 		System.out.println("faqView()");
 		command = new AdminFaqCommand();
-		command.execute(model);	
+		command.execute(model);	 
 		return "/admin/faqView";
 	}
 	
@@ -78,7 +78,7 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminFaqWriteCommand();
 		command.execute(model);
-		return "redirect:faqView";
+		return "redirect:/admin/faqView";
 	}
 	
 	@RequestMapping("/productView") //力前 包府 格废

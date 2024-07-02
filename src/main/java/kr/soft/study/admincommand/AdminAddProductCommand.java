@@ -1,4 +1,4 @@
-package kr.soft.study.adminCommand;
+package kr.soft.study.admincommand;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.ui.Model;
 
-import kr.soft.study.adminCommand.AdminCommand;
+import kr.soft.study.admincommand.AdminCommand;
 import kr.soft.study.dao.IDao;
 import kr.soft.study.dao.PDao;
 import kr.soft.study.util.Constant;
