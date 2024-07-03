@@ -8,10 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import kr.soft.study.command.AdminCommand;
-import kr.soft.study.command.AdminFaqWriteCommand;
-import kr.soft.study.command.AdminNoticeCommand;
-import kr.soft.study.command.AdminNoticeWriteCommand;
+import kr.soft.study.admincommand.AdminCommand;
+import kr.soft.study.admincommand.AdminFaqWriteCommand;
+import kr.soft.study.admincommand.AdminNoticeCommand;
+import kr.soft.study.admincommand.AdminNoticeWriteCommand;
 import kr.soft.study.util.Constant;
 
 /**

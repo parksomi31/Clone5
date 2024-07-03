@@ -2,13 +2,13 @@ package kr.soft.study.dto;
 
 public class KakaoDTO {
 
-	private long k_number;
+	private int k_number;
 	private String k_name;
 	private String k_email;
-	public long getK_number() {
+	public int getK_number() {
 		return k_number;
 	}
-	public void setK_number(long k_number) {
+	public void setK_number(int k_number) {
 		this.k_number = k_number;
 	}
 	public String getK_name() {
@@ -23,5 +23,6 @@ public class KakaoDTO {
 	public void setK_email(String k_email) {
 		this.k_email = k_email;
 	}
+	
 	
 }
