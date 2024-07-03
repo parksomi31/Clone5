@@ -157,7 +157,6 @@ td {
 			</c:forEach>
 		</table>
 		</form>
-		<input type="button" value="결제하기">
 	</div>
 </body>
 </html>

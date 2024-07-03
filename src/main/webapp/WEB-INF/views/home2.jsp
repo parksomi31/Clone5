@@ -439,6 +439,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1719559383539&amp;cv=11&amp;fst=1719559383539&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be46q0v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fshop%2Fitem%2Flist%3Fcategory%3Dteashop%26line%3D198&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EC%98%A4%EC%84%A4%EB%A1%9D%2C%20%EC%B0%A8%EC%99%80%20%EC%A0%9C%EC%A3%BC%EA%B0%80%20%EC%84%A0%EC%82%AC%ED%95%98%EB%8A%94%20%EA%B0%80%EC%B9%98%20%EC%9E%88%EB%8A%94%20%EC%89%BC%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1024826354.1719211052&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
 <script type="text/javascript" charset="UTF-8" defer=""
 	src="https://kn.acrosspf.com/adn_check_1.0.2.ad?rb_adn_uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186"></script>
+
+<style>
+.ban_title {
+	font-size: 27px;
+	font-weight: 500;
+	line-height: 1.29;
+	background-color: transparent;
+}
+
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
+}
+</style>
+
+
 </head>
 <body class="is_pc is_hover">
 	<span itemscope="" itemtype="http://schema.org/Organization">
@@ -834,19 +851,19 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 				<div class="inner_box">
 					<div class="left_box">
 						<h1 class="logo">
-							<a href="/kr/ko" class="logo_white"><img
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-								alt="오설록 로고" style="user-select: none;"></a> <a href="/kr/ko"
-								class="logo_black"><img
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
-								alt="오설록 로고" style="user-select: none;"></a>
+							<a href="${pageContext.request.contextPath}/home"
+								class="logo_white"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a> <a href="${pageContext.request.contextPath}/home"
+								class="logo_black"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a>
 						</h1>
 						<nav class="nav">
 							<ul class="nav_list_dep1">
-								<li class="item_dep1"><a
-									href="/study/list"
+								<li class="item_dep1"><a href="/study/list"
 									class="link_text">제품</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
@@ -2922,7 +2939,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 				<div class="w1200">
 					<div class="tit_box">
 						<div class="sec_tit">
-							<h3 class="text01">오늘은 어떤 차를 마셔볼까요?</h3>
+							<h3 class="text01"  style="background-color: transparent; color: #000000;">오늘은 어떤 차를 마셔볼까요?</h3>
 						</div>
 						<ul class="prd_tab">
 							<li class="tab_item">베스트</li>
@@ -3991,7 +4008,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 					ap-click-data="[단독 구성] 골든픽 해차 세작 에디션 세트">
 					<div class="todayTxt">
 						<div class="todayTit">
-							<h3>오늘만 이 가격</h3>
+						<h3 style="background-color: transparent; color: #000000;">오늘만 이 가격</h3>
 
 							<p class="right" id="todayOnlyArea">
 								07<span>:</span>33<span>:</span>46
@@ -4071,7 +4088,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 			<div class="main_store_banner">
 				<div class="w1200">
 					<div class="sec_tit">
-						<h3 class="text01">매장소개</h3>
+						<h3 class="text01" style="background-color: transparent;" >매장소개</h3>
 						<p class="text02">오프라인 매장에서 다채로운 오설록을 경험하세요.</p>
 					</div>
 				</div>
@@ -4404,7 +4421,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 			<div class="main_store_banner main_b2b_banner">
 				<div class="w1200 titlebox">
 					<div class="sec_tit">
-						<h3 class="text01">단체 및 기업 구매</h3>
+						<h3 class="text01"  style="background-color: transparent; color: #000000;">단체 및 기업 구매</h3>
 						<p class="text02">대량구매 전용 서비스와 프로모션을 만나보세요.</p>
 					</div>
 				</div>
