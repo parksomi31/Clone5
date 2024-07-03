@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.soft.study.dao.CartDAO">
+	<insert id="addCartItem"
+		parameterType="kr.soft.study.dto.CartDTO">
+		INSERT INTO cart_item (k_number, product_num, title,
+		price, image, quantity)
+		VALUES (#{kNumber}, #{productNum}, #{title},
+		#{price}, #{image},
+		#{quantity})
+	</insert>
+	<select id="getCartItemsByUser" parameterType="int"
+		resultType="kr.soft.study.dto.CartDTO">
+		SELECT * FROM cart_item WHERE k_number = #{kNumber}
+	</select>
+	<delete id="deleteCartItem" parameterType="int">
+		DELETE FROM cart_item WHERE cart_item_id = #{cartItemId}
+	</delete>
+</mapper>
