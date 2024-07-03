@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------------------------*/
+/* Webfont setting
+/* fonts.css
+/* ---------------------------------------------------------------------------*/
+
+/* Noto Sans KR (sans-serif) */
+@font-face { 
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.eot);
+    src: local("Noto Sans Korean"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff2) format("woff2"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff) format("woff"); 
+}
+@font-face { 
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Light.subset.eot);
+    src: local("Noto Sans Korean"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Light.subset.woff2) format("woff2"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Light.subset.woff) format("woff"); 
+}
+@font-face { 
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Medium.subset.eot);
+    src: local("Noto Sans Korean"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Medium.subset.woff2) format("woff2"), 
+        url(https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Medium.subset.woff) format("woff"); 
+}
+
+/* Arita Buri (serif) */
+@font-face { 
+    font-family: "Buri";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/Arita-buri-Medium.eot);
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/Arita-buri-Medium.eot?iefix) format("embedded-opentype"), url(https://image.osulloc.com/kr/ko/static/fonts/Arita-buriM-subset.woff) format("woff"); 
+}
+@font-face { 
+    font-family: "Buri";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://image.osulloc.com/kr/ko/static_renew/fonts/Arita-buriSB-subset.woff) format("woff"); 
+}
+
+/* Arita Dotum (serif) */
+@font-face {
+    font-family: "ad";
+    font-style: normal;
+    font-weight: 200;
+    src:url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "ad";
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "ad";
+    font-style: normal;
+    font-weight: 400;
+    src:url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "ad";
+    font-style: normal;
+    font-weight: 500;
+    src:url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "ad";
+    font-style: normal;
+    font-weight: 600;
+    src:url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.otf) format('otf')
+}
+
+/* 고운바탕 */
+@font-face {
+    font-family: "Gowun Batang";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff) format('woff');
+}
+
+/* 고운돋움 */
+@font-face {
+    font-family: "Gowun Dodum";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.otf) format('otf')
+}
+
+/* BrownLatin */
+@font-face {
+    font-family: "BrownLatin";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/others/font/BrownLatin/BrownLLWeb-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: "BrownLatin";
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/others/font/BrownLatin/BrownLLWeb-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "BrownLatin";
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/others/font/BrownLatin/BrownLLWeb-Light.woff) format("woff");
+}
+
+/* BrownStd Regular */
+@font-face {
+    font-family: "BrownStd Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/BrownStd-Light-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/BrownStd-Light-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/BrownStd-Light-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "BrownStd Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/others/font/Brown/BrownStd-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: "BrownStd Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/others/font/Brown/BrownStd-Bold.otf) format('opentype');
+}
+
+/* ---------------------------------------------------------------------------*/
+/* ckeditor_fonts
+/* ---------------------------------------------------------------------------*/
+
+/* ck editor fonts - 아리따 돋움 */
+@font-face {
+    font-family: "아리따-돋움 가늘게";
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumT-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "아리따-돋움 약간 가늘게";
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "아리따-돋움 중간";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "아리따-돋움 약간 굵게";
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.otf) format('otf')
+}
+@font-face {
+    font-family: "아리따-돋움 굵게";
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2) format('woff2'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff) format('woff'),
+        url(https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.otf) format('otf')
+}
+
+/* ---------------------------------------------------------------------------*/
+/* fontello(icon)
+/* ---------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "fontello";
+    src: url(https://image.osulloc.com/kr/ko/static/fonts/fontello.eot?15639320);
+    src: url(https://image.osulloc.com/kr/ko/static/fonts/fontello.eot?15639320#iefix) format("embedded-opentype"), 
+        url(https://image.osulloc.com/kr/ko/static/fonts/fontello.woff?15639320) format("woff"), 
+        url(https://image.osulloc.com/kr/ko/static/fonts/fontello.ttf?15639320) format("truetype"), 
+        url(https://image.osulloc.com/kr/ko/static/fonts/fontello.svg?15639320#fontello) format("svg");
+    font-weight: normal;
+    font-style: normal; }
+[class^="icon-"] { display: inline-block; visibility: hidden; }
+.fontello-loaded [class^="icon-"], .no-js [class^="icon-"] { visibility: visible; }
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; width: 1em; color: inherit; font-size: 1em; text-align: center; text-indent: 0; text-decoration: inherit; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon-instagram:before { content: "\e800"; }
+.icon-facebook:before { content: "\e801"; }
+.icon-kakao:before { content: "\e84f"; }
+.icon-url:before { content: "\e84e"; }
+.icon-people:before { content: "\e802"; }
+.icon-rainy:before { content: "\e803"; }
+.icon-sun:before { content: "\e804"; }
+.icon-teabag:before { content: "\e805"; }
+.icon-tealeaf:before { content: "\e806"; }
+.icon-wind:before { content: "\e807"; }
+.icon-abacus:before { content: "\e808"; }
+.icon-fog:before { content: "\e809"; }
+.icon-hourglass:before { content: "\e80a"; }
+.icon-box:before { content: "\e84d"; }
+.icon-farm:before { content: "\e84b"; }
+.icon-mountain:before { content: "\e84c"; }
+.icon-arr-up:before { content: "\e80b"; }
+.icon-arr-down:before { content: "\e80c"; }
+.icon-arr-left:before { content: "\e80d"; }
+.icon-arr-right:before { content: "\e80e"; }
+.icon-image:before { content: "\e80f"; }
+.icon-beverage:before { content: "\e810"; }
+.icon-calendar:before { content: "\e811"; }
+.icon-next:before { content: "\e812"; }
+.icon-menu:before { content: "\e813"; }
+.icon-notify:before { content: "\e814"; }
+.icon-location2:before { content: "\e815"; }
+.icon-location1:before { content: "\e816"; }
+.icon-location3:before { content: "\e817"; }
+.icon-help:before { content: "\e818"; }
+.icon-heart:before { content: "\e819"; }
+.icon-gift:before { content: "\e81a"; }
+.icon-faq:before { content: "\e81b"; }
+.icon-facebook-circle:before { content: "\e81c"; }
+.icon-check-circle:before { content: "\e81d"; }
+.icon-checkbox:before { content: "\e81e"; }
+.icon-checkbox-empty:before { content: "\e81f"; }
+.icon-check:before { content: "\e820"; }
+.icon-cart:before { content: "\e821"; }
+.icon-prev:before { content: "\e822"; }
+.icon-next2:before { content: "\e823"; }
+.icon-prev2:before { content: "\e824"; }
+.icon-zoom-out:before { content: "\e825"; }
+.icon-play:before { content: "\e826"; }
+.icon-qna:before { content: "\e827"; }
+.icon-radio:before { content: "\e828"; }
+.icon-radio-empty:before { content: "\e829"; }
+.icon-reply:before { content: "\e82a"; }
+.icon-search:before { content: "\e82b"; }
+.icon-star:before { content: "\e82c"; }
+.icon-user:before { content: "\e82d"; }
+.icon-x:before { content: "\e82e"; }
+.icon-zoom-in:before { content: "\e82f"; }
+.icon-heart-1:before { content: "\e830"; }
+.icon-comment:before { content: "\e831"; }
+.icon-order-cancel:before { content: "\e832"; }
+.icon-ongoing:before { content: "\e833"; }
+.icon-home:before { content: "\e834"; }
+.icon-exchange:before { content: "\e835"; }
+.icon-delivery-wait:before { content: "\e836"; }
+.icon-delivery-done:before { content: "\e837"; }
+.icon-delivery:before { content: "\e838"; }
+.icon-creditcard:before { content: "\e839"; }
+.icon-coupon:before { content: "\e83a"; }
+.icon-call:before { content: "\e83b"; }
+.icon-bus:before { content: "\e83c"; }
+.icon-leaflet:before { content: "\e83d"; }
+.icon-info:before { content: "\e83e"; }
+.icon-compass:before { content: "\e83f"; }
+.icon-clock:before { content: "\e840"; }
+.icon-car:before { content: "\e841"; }
+.icon-order-receive:before { content: "\e842"; }
+.icon-point:before { content: "\e843"; }
+.icon-refund-ing:before { content: "\e844"; }
+.icon-return-application:before { content: "\e845"; }
+.icon-user-circle:before { content: "\e846"; }
+.icon-cancel-done:before { content: "\e847"; }
+.icon-check-done:before { content: "\e848"; }
+.icon-comments:before { content: "\e849"; }
+.icon-go-top:before { content: "\e84a"; }
+
+/* 20240118-2 */

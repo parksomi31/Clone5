@@ -1076,10 +1076,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="inner_box">
 					<div class="left_box">
 						<h1 class="logo">
-							<a href="/kr/ko" class="logo_white"><img
+							<a href="${pageContext.request.contextPath}/home" class="logo_white"><img
 								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
 								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-								alt="오설록 로고"></a> <a href="/kr/ko" class="logo_black"><img
+								alt="오설록 로고"></a> <a
+								href="${pageContext.request.contextPath}/home" class="logo_black"><img
 								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
 								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
 								alt="오설록 로고"></a>
@@ -2839,6 +2840,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 						</div>
 
 
+
 	<div class="goods-list">
     <div class="list-wrappdbtper clearfix">
         <table>
@@ -2877,6 +2879,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
         <div style="text-align: right; margin-top: 20px;">
             <a href="${pageContext.request.contextPath}/cart" class="btn">장바구니로 이동</a>
         </div>
+
 
 
 								<div id="pagination" class="newPagination for-mobile ">

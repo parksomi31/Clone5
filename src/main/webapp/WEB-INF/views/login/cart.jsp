@@ -57,6 +57,7 @@ body {
 	display: inline-block;
 }
 
+
 .btn:hover {
 	background-color: #45a049;
 }
@@ -67,6 +68,7 @@ body {
     }
     
 </style>
+
 </head>
 <body>
 	<div class="header">
@@ -91,14 +93,17 @@ body {
 					<td>${item.total}</td>
 					<td>
 						<form action="removeCart" method="post">
+
 							<input type="hidden" name="cartItemId"
 								value="${item.cart_item_id}" /> <input type="submit" value="삭제"
 								class="btn" />
+
 						</form>
 					</td>
 				</tr>
 			</c:forEach>
 		</table>
+
 
 		<div class="cart-total">
 			<strong>총 합계: <c:set var="totalSum" value="0" /> <c:forEach
