@@ -1,7 +1,7 @@
 package kr.soft.study.dto;
 
 public class CartDTO {
-    private int cartItemId;
+    private int cart_item_id;
     private long kNumber;
     private int productNum;
     private String title;
@@ -11,12 +11,12 @@ public class CartDTO {
     private int total;
 
     // Getters and Setters
-    public int getCartItemId() {
-        return cartItemId;
+    public int getCart_item_id() {
+        return cart_item_id;
     }
 
-    public void setCartItemId(int cartItemId) {
-        this.cartItemId = cartItemId;
+    public void setCart_item_id(int cart_item_id) {
+        this.cart_item_id = cart_item_id;
     }
 
     public long getKNumber() {

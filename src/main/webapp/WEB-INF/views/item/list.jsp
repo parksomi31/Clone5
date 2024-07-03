@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -2838,40 +2839,44 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 						</div>
 
 
-						<div class="goods-list">
-							<div class="list-wrappdbtper clearfix">
-
-								<table>
-									<thead>
-										<tr>
-											<th>상품이미지</th>
-											<th>상품명</th>
-											<th>가격</th>
-											<th>좋아요</th>
-											<th>리뷰</th>
-										</tr>
-									</thead>
-									<tbody>
-										<c:forEach items="${products}" var="dto" varStatus="loop">
-											<tr>
-												<td class="image-cell"><img src="${dto.image}"
-													alt="${dto.title}"></td>
-												<td>${dto.title}</td>
-												<td>${dto.price}</td>
-												<td><span class="s f1"> <a
-														href="./newlist?title=${dto.title}"> <i
-															class="fas fa-heart"></i> ${dto.like}
-													</a>
-												</span></td>
-
-												<td><span class="s f1">   <a href="./review?product_num=${dto.product_num}"> <i
-															class="fas fa-comment"></i> ${dto.review} </span> <input
-													type="hidden" id="title" value="${dto.title}"> <input
-													type="hidden" id="product_num" value="${dto.product_num}"></td>
-											</tr>
-										</c:forEach>
-									</tbody>
-								</table>
+	<div class="goods-list">
+    <div class="list-wrappdbtper clearfix">
+        <table>
+            <thead>
+                <tr>
+                    <th>상품이미지</th>
+                    <th>상품명</th>
+                    <th>가격</th>
+                    <th>좋아요</th>
+                    <th>리뷰</th>
+                    <th>장바구니 추가</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach items="${products}" var="dto" varStatus="loop">
+                    <tr>
+                        <td class="image-cell"><img src="${dto.image}" alt="${dto.title}"></td>
+                        <td>${dto.title}</td>
+                        <td>${dto.price}</td>
+                        <td><span class="s f1"><a href="./newlist?title=${dto.title}"><i class="fas fa-heart"></i>${dto.like}</a></span></td>
+                        <td><span class="s f1"><a href="./review?product_num=${dto.product_num}"><i class="fas fa-comment"></i>${dto.review}</a></span></td>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/addCart" method="post">
+                                <input type="hidden" name="productNum" value="${dto.product_num}" />
+                                <input type="hidden" name="title" value="${dto.title}" />
+                                <input type="hidden" name="price" value="${dto.price}" />
+                                <input type="hidden" name="image" value="${dto.image}" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <input type="submit" value="장바구니 추가" class="btn" />
+                            </form>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+        <div style="text-align: right; margin-top: 20px;">
+            <a href="${pageContext.request.contextPath}/cart" class="btn">장바구니로 이동</a>
+        </div>
 
 
 								<div id="pagination" class="newPagination for-mobile ">
@@ -3297,37 +3302,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							</p>
 						</div>
 					</div>
-					<div class="right">
-						<a href="https://www.osulloc.com/kr/ko/store-introduction"
-							data-track-name="Footer 매장안내"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png"
-							alt="매장안내"> <span>매장안내</span>
-						</a> <a href="https://www.osulloc.com/kr/ko/cs/member/benefit"
-							data-track-name="Footer 멤버십혜택"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png"
-							alt="멤버십혜택"> <span>멤버십혜택</span>
-						</a> <a href="https://www.osulloc.com/kr/ko/cs/faq"
-							data-track-name="Footer FAQ" class="footerFAQ"
-							style="display: none;"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png"
-							alt="FAQ"> <span>FAQ</span>
-						</a> <a href="https://osulloc.biz/"
-							data-track-name="Footer 단체 및 기업 구매" class="footerBulk"
-							target="_blank"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png"
-							alt="단체 및 기업 구매"> <span>단체 및 <br>기업 구매
-						</span>
-						</a> <a href="https://www.osulloc.com/kr/ko/mypage/qna"
-							data-track-name="Footer 1:1문의"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png"
-							alt="1:1문의"> <span>1:1문의</span>
-						</a> <a href="https://www.osulloc.com/kr/ko/beautypoint/list"
-							data-track-name="Footer 뷰티포인트"> <img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png"
-							alt="뷰티포인트"> <span>뷰티포인트<br>추후적립
-						</span>
-						</a>
-					</div>
+					
 				</div>
 			</div>
 			<div class="wrap3 hide_tablet hide_mobile">

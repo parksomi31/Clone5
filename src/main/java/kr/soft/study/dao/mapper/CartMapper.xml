@@ -14,6 +14,6 @@
 		SELECT * FROM cart_item WHERE k_number = #{kNumber}
 	</select>
 	<delete id="deleteCartItem" parameterType="int">
-		DELETE FROM cart_item WHERE cart_item_id = #{cartItemId}
+		DELETE FROM cart_item WHERE cart_item_id = #{cart_item_id}
 	</delete>
 </mapper>
