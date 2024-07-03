@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.soft.study.dao.MDao"> <!-- 인터페이스와 연결 -->
+
+
+
+	<select id="memberView" resultType="kr.soft.study.dto.KakaoDTO">
+		SELECT k_number, k_name,
+		k_email FROM kakao_table
+	</select>
+
+	<delete id="deleteMember">
+		DELETE FROM kakao_table WHERE k_number = #{param1}
+	</delete>
+
+</mapper>

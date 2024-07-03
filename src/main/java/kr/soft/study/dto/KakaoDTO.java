@@ -5,6 +5,7 @@ public class KakaoDTO {
 	private int k_number;
 	private String k_name;
 	private String k_email;
+
 	public int getK_number() {
 		return k_number;
 	}
