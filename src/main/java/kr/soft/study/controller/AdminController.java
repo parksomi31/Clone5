@@ -8,25 +8,25 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
-import kr.soft.study.ProductCommand.PListCommand;
 import kr.soft.study.admincommand.AdminAddProductCommand;
 import kr.soft.study.admincommand.AdminCommand;
+import kr.soft.study.admincommand.AdminDeleteMemberCommand;
 import kr.soft.study.admincommand.AdminDeleteProductCommand;
+import kr.soft.study.admincommand.AdminDeleteProgramCommand;
 import kr.soft.study.admincommand.AdminFaqCommand;
 import kr.soft.study.admincommand.AdminFaqWriteCommand;
 import kr.soft.study.admincommand.AdminMListCommand;
 import kr.soft.study.admincommand.AdminNoticeCommand;
 import kr.soft.study.admincommand.AdminNoticeWriteCommand;
 import kr.soft.study.admincommand.AdminPListCommand;
-
+import kr.soft.study.admincommand.AdminProListCommand;
 import kr.soft.study.util.Constant;
 
 /**
  * Handles requests for the application home page.
  */
 
-@Controller // �씠 �겢�옒�뒪媛� Spring MVC�쓽 而⑦듃濡ㅻ윭 �뿭�븷
+@Controller 
 public class AdminController {
 
 	AdminCommand command = null;
@@ -60,7 +60,7 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminNoticeWriteCommand();
 		command.execute(model);
-		return "redirect:/admin/noticeView";
+		return "redirect:noticeView";
 	}
 
 
@@ -86,7 +86,7 @@ public class AdminController {
 		model.addAttribute("request", request);
 		command = new AdminFaqWriteCommand();
 		command.execute(model);
-		return "redirect:/admin/faqView";
+		return "redirect:faqView";
 	}
 
 
@@ -127,16 +127,43 @@ public class AdminController {
 
 
 	@RequestMapping("/memberView") // 회원 관리 목록
-	public String memberView() {
+	public String memberView(Model model) {
 		System.out.println("memberView()");
-		//command = new AdminMListCommand();
-		//command.execute(model);
+		command = new AdminMListCommand();
+		command.execute(model);
 		return "/admin/memberView";
+	}
+	
+	@RequestMapping("/deleteMember") // 회원 삭제
+	public String deleteMember(HttpServletRequest request, Model model) {
+		System.out.println("deleteMember()");
+		model.addAttribute("request", request);
+		command = new AdminDeleteMemberCommand();
+		command.execute(model);
+		return "redirect:memberView";
 	}
 	
 	@RequestMapping("/story") // 오설록 스토리
 	public String story() {
 		System.out.println("story()");
 		return "/etc/story";
+	}
+	
+	@RequestMapping("/programView") // 프로그램 예약 관리 목록
+	public String programView(Model model) {
+		System.out.println("programView()");
+		command = new AdminProListCommand();
+		command.execute(model);
+		return "/admin/programView";
+	}
+	
+	@RequestMapping("/deleteProgram") // 프로그램 예약 삭제
+	public String deleteProgram(HttpServletRequest request, Model model) {
+		System.out.println("deleteProgram()");
+		model.addAttribute("request", request);
+		System.out.println(request);
+		command = new AdminDeleteProgramCommand();
+		command.execute(model);
+		return "redirect:programView";
 	}
 }

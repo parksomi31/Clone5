@@ -5,9 +5,19 @@
 
 <mapper namespace="kr.soft.study.dao.RDAO"> <!-- 인터페이스와 연결 -->
 
-    <insert id="insertReservation">
-        INSERT INTO reservation_table (name, email, date, time)
-        VALUES (#{name}, #{email}, #{date}, #{time})
-    </insert>
+	<insert id="insertReservation">
+		INSERT INTO reservation_table (name, email, date,
+		time)
+		VALUES (#{name}, #{email}, #{date}, #{time})
+	</insert>
+
+	<select id="programView" resultType="kr.soft.study.dto.RDTO">
+		SELECT id, name, email,
+		date, time FROM reservation_table
+	</select>
+
+	<delete id="deleteProgram">
+		DELETE FROM reservation_table WHERE id = #{param1}
+	</delete>
 
 </mapper>

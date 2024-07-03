@@ -1,10 +1,19 @@
 package kr.soft.study.dto;
 
 public class RDTO {
+	private int id;
     private String name;
     private String email;
     private String date;
     private String time;
+    
+    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -29,6 +38,4 @@ public class RDTO {
 	public void setTime(String time) {
 		this.time = time;
 	}
-
-    // Getters and Setters
 }
