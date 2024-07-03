@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
     <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
     <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
-    <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
+    <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1"> <!-- 풋터 갈색 -->
     <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
     <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=231108_1">
     <link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">

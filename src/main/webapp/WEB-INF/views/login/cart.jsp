@@ -57,9 +57,16 @@ body {
 	display: inline-block;
 }
 
+
 .btn:hover {
 	background-color: #45a049;
 }
+
+.product-list-btn {
+        text-decoration: none; 
+        padding: 6px 12px; 
+    }
+    
 </style>
 
 </head>
@@ -86,35 +93,37 @@ body {
 					<td>${item.total}</td>
 					<td>
 						<form action="removeCart" method="post">
-							<input type="hidden" name="cartItemId" value="${item.cartItemId}" />
-							<input type="submit" value="삭제" class="btn" />
+
+							<input type="hidden" name="cartItemId"
+								value="${item.cart_item_id}" /> <input type="submit" value="삭제"
+								class="btn" />
+
 						</form>
 					</td>
 				</tr>
 			</c:forEach>
 		</table>
+
+
 		<div class="cart-total">
-			<strong>총 합계: ${total}</strong>
+			<strong>총 합계: <c:set var="totalSum" value="0" /> <c:forEach
+					var="item" items="${cartItems}">
+					<c:set var="totalSum" value="${totalSum + item.total}" />
+				</c:forEach> ${totalSum}원
+			</strong>
 		</div>
+
 		<div style="text-align: center; margin-top: 20px;">
-			<form id="paymentForm">
+			<form action="checkout" method="post">
 				<input type="submit" value="결제하기" class="btn" />
 			</form>
-			<script>
-				document
-						.getElementById('paymentForm')
-						.addEventListener(
-								'submit',
-								function(event) {
-									event.preventDefault();
-									window
-											.open(
-													'https://online-pay.kakao.com/mockup/v1/615a7ae734b1fa5db23654cbd207cfeb84f42ba0f1aa889a7dd82f3a141acbc4/info',
-													'newwindow',
-													'width=800,height=1000');
-								});
-			</script>
 		</div>
+
+		<div style="text-align: center; margin-top: 20px;">
+			<a href="list" class="btn product-list-btn">제품목록으로 이동</a>
+		</div>
+
+
 	</div>
 	<div class="footer">
 		<p>2024 © Your Company. All rights reserved.</p>

@@ -24,7 +24,7 @@ import kr.soft.study.util.Constant;
  * Handles requests for the application home page.
  */
 
-@Controller // 이 클래스가 Spring MVC의 컨트롤러 역할
+@Controller // �씠 �겢�옒�뒪媛� Spring MVC�쓽 而⑦듃濡ㅻ윭 �뿭�븷
 public class BController3 {
 	private SqlSession sqlSession;
 
@@ -41,7 +41,6 @@ public class BController3 {
 	public String testView(Model model) {
 		System.out.println("test()");
 
-
 		return "login/test";
 
 	}
@@ -50,13 +49,12 @@ public class BController3 {
 	public String test2View(Model model) {
 		System.out.println("test2()");
 
-
 		return "login/test2";
 	}
 
 	@RequestMapping("/test3")
 	public String test3View(Model model) {
-		System.out.println("test2()");
+		System.out.println("test3()");
 
 		return "login/test3";
 
@@ -66,7 +64,6 @@ public class BController3 {
 	public String basketView(Model model) {
 		System.out.println("basketView()");
 
-
 		return "login/basketView";
 
 	}
@@ -75,12 +72,11 @@ public class BController3 {
 	public String login_view(Model model) {
 		System.out.println("login()");
 
-
 		return "login/login";
 
 	}
 
-	// HttpSession 클래스 주입.
+	// HttpSession �겢�옒�뒪 二쇱엯.
 	@Autowired
 	private HttpSession session;
 
@@ -97,15 +93,14 @@ public class BController3 {
 		System.out.println("###email#### : " + userInfo.getK_email());
 		System.out.println("###number#### : " + userInfo.getK_number());
 
-		// 아래 코드가 추가되는 내용
+		// �븘�옒 肄붾뱶媛� 異붽��릺�뒗 �궡�슜
 		session.invalidate();
-		// 위 코드는 session객체에 담긴 정보를 초기화 하는 코드.
+		// �쐞 肄붾뱶�뒗 session媛앹껜�뿉 �떞湲� �젙蹂대�� 珥덇린�솕 �븯�뒗 肄붾뱶.
 		session.setAttribute("kakaoN", userInfo.getK_name());
 		session.setAttribute("kakaoE", userInfo.getK_email());
 		session.setAttribute("kakaoId", userInfo.getK_number());
-		// 위 2개의 코드는 닉네임과 이메일을 session객체에 담는 코드
-		// jsp에서 ${sessionScope.kakaoN} 이런 형식으로 사용할 수 있다.
-
+		// �쐞 2媛쒖쓽 肄붾뱶�뒗 �땳�꽕�엫怨� �씠硫붿씪�쓣 session媛앹껜�뿉 �떞�뒗 肄붾뱶
+		// jsp�뿉�꽌 ${sessionScope.kakaoN} �씠�윴 �삎�떇�쑝濡� �궗�슜�븷 �닔 �엳�떎.
 
 		return "login/basketView";
 	}
@@ -119,37 +114,59 @@ public class BController3 {
 	@RequestMapping(value = "/reservation", method = RequestMethod.POST)
 	public String submitReservation(@ModelAttribute RDTO rdto, Model model) {
 		sqlSession.insert("kr.soft.study.dao.RDAO.insertReservation", rdto);
-		model.addAttribute("message", "예약이 성공적으로 완료되었습니다.");
+		model.addAttribute("message", "�삁�빟�씠 �꽦怨듭쟻�쑝濡� �셿猷뚮릺�뿀�뒿�땲�떎.");
 		return "login/reservationSuccess";
 	}
 
-	@RequestMapping(value = "/addCart", method = RequestMethod.POST)
+	/*@RequestMapping(value = "/addCart", method = RequestMethod.POST)
 	public String addCart(CartDTO cartItem) {
 		Integer kNumber = (Integer) session.getAttribute("kakaoId");
 		if (kNumber != null) {
 			cartItem.setKNumber(kNumber);
 			cartService.addCartItem(cartItem);
 		}
-		return "redirect:/login/cart";
-	}
+		return "redirect:/cart";
+	}*/
+	
+	@RequestMapping(value = "/addCart", method = RequestMethod.POST)
+    public String addCart(@RequestParam("productNum") int productNum,
+                          @RequestParam("title") String title,
+                          @RequestParam("price") int price,
+                          @RequestParam("image") String image,
+                          @RequestParam("quantity") int quantity) {
+        Integer kNumber = (Integer) session.getAttribute("kakaoId");
+        if (kNumber != null) {
+            CartDTO cartItem = new CartDTO();
+            cartItem.setKNumber(kNumber);
+            cartItem.setProductNum(productNum);
+            cartItem.setTitle(title);
+            cartItem.setPrice(price);
+            cartItem.setImage(image);
+            cartItem.setQuantity(quantity);
+            cartItem.setTotal(price * quantity);
+            cartService.addCartItem(cartItem);
+        }
+        return "redirect:/list"; // 장바구니에 추가 후 list 페이지로 리다이렉트
+    }
 
 	@RequestMapping(value = "/cart", method = RequestMethod.GET)
-	public String showCart(Model model) {
-		Integer kNumber = (Integer) session.getAttribute("kakaoId");
-		if (kNumber != null) {
-			List<CartDTO> cartItems = cartService.getCartItemsByUser(kNumber);
-			model.addAttribute("cartItems", cartItems);
-		} else {
-			model.addAttribute("cartItems", null);
-		}
-		return "login/cart";
-	}
-
+    public String showCart(Model model) {
+        Integer kNumber = (Integer) session.getAttribute("kakaoId");
+        if (kNumber != null) {
+            List<CartDTO> cartItems = cartService.getCartItemsByUser(kNumber);
+            model.addAttribute("cartItems", cartItems);
+        } else {
+            model.addAttribute("cartItems", null);
+        }
+        return "login/cart";
+    }
 
 	@RequestMapping(value = "/removeCart", method = RequestMethod.POST)
-	public String removeCart(@RequestParam("cartItemId") int cartItemId) {
-		cartService.deleteCartItem(cartItemId);
-		return "redirect:/login/cart";
+	public String removeCart(@RequestParam("cartItemId") int cart_item_id) {
+		System.out.println("Removing cart item: " + cart_item_id);
+		cartService.deleteCartItem(cart_item_id);
+		return "redirect:/cart";
+
 	}
 
 }
