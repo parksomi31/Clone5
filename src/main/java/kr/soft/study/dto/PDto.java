@@ -12,13 +12,14 @@ public class PDto {
 	String first_type_title;
 	int second_type_id;
 	String secont_type_title;
+	int product_num;
 
 	public PDto() {
 		super();
 	}
 
 	public PDto(String title, String description, int price, String image, int like, int review, int first_type_id,
-			String first_type_title, int second_type_id, String secont_type_title) {
+			String first_type_title, int second_type_id, String secont_type_title, int product_num) {
 		super();
 		this.title = title;
 		this.description = description;
@@ -30,6 +31,15 @@ public class PDto {
 		this.first_type_title = first_type_title;
 		this.second_type_id = second_type_id;
 		this.secont_type_title = secont_type_title;
+		this.product_num = product_num;
+	}
+
+	public int getProduct_num() {
+		return product_num;
+	}
+
+	public void setProduct_num(int product_num) {
+		this.product_num = product_num;
 	}
 
 	public String getTitle() {

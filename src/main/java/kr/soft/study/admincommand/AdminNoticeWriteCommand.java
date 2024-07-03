@@ -18,12 +18,12 @@ public class AdminNoticeWriteCommand implements AdminCommand{
 		
 		Map<String, Object> map = model.asMap(); //모델에 담겨져 있는 애들을 맵형태로 치환 스트링은 리퀘스트
 		HttpServletRequest request = (HttpServletRequest) map.get("request"); //키를 호출하면 밸류값을 가져옴.
-		String title = request.getParameter("title");
-		String content = request.getParameter("content");
+		String notice_title = request.getParameter("notice_title");
+		String notice_content = request.getParameter("notice_content");
 		
 		SqlSession sqlSession = Constant.sqlSession;
 		IDao dao = sqlSession.getMapper(IDao.class);
-		dao.noticeWrite(title,content);
+		dao.noticeWrite(notice_title,notice_content);
 	}
 
 }

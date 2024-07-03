@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 
 import kr.soft.study.dao.PDao;
 import kr.soft.study.dto.PDto;
-import kr.soft.study.product.ProductCommand;
 import kr.soft.study.util.Constant;
 
 public class PNewListCommand implements ProductCommand {
@@ -27,7 +26,6 @@ public class PNewListCommand implements ProductCommand {
 		 * 
 		 * String title = request.getParameter("title");
 		 */
-		System.out.println(title);
 		SqlSession sqlSession = Constant.sqlSession;
 		PDao dao = sqlSession.getMapper(PDao.class);
 

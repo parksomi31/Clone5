@@ -24,7 +24,7 @@ import kr.soft.study.util.Constant;
  * Handles requests for the application home page.
  */
 
-@Controller // ÀÌ Å¬·¡½º°¡ Spring MVCÀÇ ÄÁÆ®·Ñ·¯ ¿ªÇÒ
+@Controller // ì´ í´ë˜ìŠ¤ê°€ Spring MVCì˜ ì»¨íŠ¸ë¡¤ëŸ¬ ì—­í• 
 public class BController3 {
 	private SqlSession sqlSession;
 
@@ -41,12 +41,15 @@ public class BController3 {
 	public String testView(Model model) {
 		System.out.println("test()");
 
+
 		return "login/test";
+
 	}
 
 	@RequestMapping("/test2")
 	public String test2View(Model model) {
 		System.out.println("test2()");
+
 
 		return "login/test2";
 	}
@@ -56,23 +59,28 @@ public class BController3 {
 		System.out.println("test2()");
 
 		return "login/test3";
+
 	}
 
 	@RequestMapping("/basketView")
 	public String basketView(Model model) {
 		System.out.println("basketView()");
 
+
 		return "login/basketView";
+
 	}
 
 	@RequestMapping("/login")
 	public String login_view(Model model) {
 		System.out.println("login()");
 
+
 		return "login/login";
+
 	}
 
-	// HttpSession Å¬·¡½º ÁÖÀÔ.
+	// HttpSession í´ë˜ìŠ¤ ì£¼ì….
 	@Autowired
 	private HttpSession session;
 
@@ -89,14 +97,15 @@ public class BController3 {
 		System.out.println("###email#### : " + userInfo.getK_email());
 		System.out.println("###number#### : " + userInfo.getK_number());
 
-		// ¾Æ·¡ ÄÚµå°¡ Ãß°¡µÇ´Â ³»¿ë
+		// ì•„ë˜ ì½”ë“œê°€ ì¶”ê°€ë˜ëŠ” ë‚´ìš©
 		session.invalidate();
-		// À§ ÄÚµå´Â session°´Ã¼¿¡ ´ã±ä Á¤º¸¸¦ ÃÊ±âÈ­ ÇÏ´Â ÄÚµå.
+		// ìœ„ ì½”ë“œëŠ” sessionê°ì²´ì— ë‹´ê¸´ ì •ë³´ë¥¼ ì´ˆê¸°í™” í•˜ëŠ” ì½”ë“œ.
 		session.setAttribute("kakaoN", userInfo.getK_name());
 		session.setAttribute("kakaoE", userInfo.getK_email());
 		session.setAttribute("kakaoId", userInfo.getK_number());
-		// À§ 2°³ÀÇ ÄÚµå´Â ´Ğ³×ÀÓ°ú ÀÌ¸ŞÀÏÀ» session°´Ã¼¿¡ ´ã´Â ÄÚµå
-		// jsp¿¡¼­ ${sessionScope.kakaoN} ÀÌ·± Çü½ÄÀ¸·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+		// ìœ„ 2ê°œì˜ ì½”ë“œëŠ” ë‹‰ë„¤ì„ê³¼ ì´ë©”ì¼ì„ sessionê°ì²´ì— ë‹´ëŠ” ì½”ë“œ
+		// jspì—ì„œ ${sessionScope.kakaoN} ì´ëŸ° í˜•ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+
 
 		return "login/basketView";
 	}
@@ -110,7 +119,7 @@ public class BController3 {
 	@RequestMapping(value = "/reservation", method = RequestMethod.POST)
 	public String submitReservation(@ModelAttribute RDTO rdto, Model model) {
 		sqlSession.insert("kr.soft.study.dao.RDAO.insertReservation", rdto);
-		model.addAttribute("message", "¿¹¾àÀÌ ¼º°øÀûÀ¸·Î ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+		model.addAttribute("message", "ì˜ˆì•½ì´ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		return "login/reservationSuccess";
 	}
 
@@ -135,6 +144,7 @@ public class BController3 {
 		}
 		return "login/cart";
 	}
+
 
 	@RequestMapping(value = "/removeCart", method = RequestMethod.POST)
 	public String removeCart(@RequestParam("cartItemId") int cartItemId) {

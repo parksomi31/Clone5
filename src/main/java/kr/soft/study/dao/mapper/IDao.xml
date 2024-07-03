@@ -6,11 +6,25 @@
 <mapper namespace="kr.soft.study.dao.IDao"> <!-- 인터페이스와 연결 -->
 
 	<insert id="noticeWrite">
-		INSERT INTO notice (title, content) values (#{param1}, #{param2})
+		INSERT INTO notice (notice_title, notice_content)
+		values (#{param1}, #{param2})
 	</insert>
 
 	<select id="noticeView" resultType="kr.soft.study.dto.BDto">
-		SELECT notice_index, title, content, input_time FROM notice ORDER BY notice_index DESC
+		SELECT notice_index,
+		notice_title, notice_content, input_time FROM notice ORDER BY
+		notice_index DESC
 	</select>
+
+	<insert id="faqWrite">
+		INSERT INTO faq_order (faq_title, faq_content) values
+		(#{param1}, #{param2})
+	</insert>
+
+	<select id="faqView" resultType="kr.soft.study.dto.BDto">
+		SELECT faq_title, faq_content
+		FROM faq_order ORDER BY faq_index DESC
+	</select>
+
 
 </mapper>

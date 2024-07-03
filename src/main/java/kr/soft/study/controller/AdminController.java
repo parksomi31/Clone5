@@ -8,17 +8,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+import kr.soft.study.ProductCommand.PListCommand;
+import kr.soft.study.admincommand.AdminAddProductCommand;
 import kr.soft.study.admincommand.AdminCommand;
+import kr.soft.study.admincommand.AdminDeleteProductCommand;
+import kr.soft.study.admincommand.AdminFaqCommand;
 import kr.soft.study.admincommand.AdminFaqWriteCommand;
 import kr.soft.study.admincommand.AdminNoticeCommand;
 import kr.soft.study.admincommand.AdminNoticeWriteCommand;
+import kr.soft.study.admincommand.AdminPListCommand;
+
 import kr.soft.study.util.Constant;
 
 /**
  * Handles requests for the application home page.
  */
 
-@Controller // ÀÌ Å¬·¡½º°¡ Spring MVCÀÇ ÄÁÆ®·Ñ·¯ ¿ªÇÒ
+@Controller // ì´ í´ë˜ìŠ¤ê°€ Spring MVCì˜ ì»¨íŠ¸ë¡¤ëŸ¬ ì—­í• 
 public class AdminController {
 	
 	AdminCommand command = null;
@@ -30,47 +37,87 @@ public class AdminController {
 		Constant.sqlSession = this.sqlSession;
 	}
 
-	@RequestMapping("/noticeView") //°øÁö»çÇ× ¸ñ·Ï
+	@RequestMapping("/noticeView") //ê³µì§€ì‚¬í•­ ëª©ë¡
 	public String noticeView(Model model) {
 		System.out.println("noticeView()");
 		command = new AdminNoticeCommand();
 		command.execute(model);		
-		return "/noticeView";
+		return "/admin/noticeView";
 	}
 	
-	@RequestMapping("/noticeWriteForm") //°øÁö»çÇ× ÀÛ¼º Æû
+	@RequestMapping("/noticeWriteForm") //ê³µì§€ì‚¬í•­ ì‘ì„± í¼
 	public String noticeWriteForm() {
 		
-		return "/noticeWriteForm";
+		return "/admin/noticeWriteForm";
 	}
 	
-	@RequestMapping("/noticeWrite") //°øÁö»çÇ× µî·Ï ¾×¼Ç
+	@RequestMapping("/noticeWrite") //ê³µì§€ì‚¬í•­ ë“±ë¡ ì•¡ì…˜
 	public String noticeWrite(HttpServletRequest request, Model model) {
 		System.out.println("noticeWrite()");		
 		model.addAttribute("request", request);
 		command = new AdminNoticeWriteCommand();
 		command.execute(model);
-		return "redirect:noticeView";
+		return "redirect:/admin/noticeView";
 	}
 	
-	@RequestMapping("/faqView") //faq ¸ñ·Ï
-	public String faqView() {
-		System.out.println("faqView()");		
-		return "/faqView";
+	@RequestMapping("/faqView") //faq ëª©ë¡
+	public String faqView(Model model) {
+		System.out.println("faqView()");
+		command = new AdminFaqCommand();
+		command.execute(model);	 
+		return "/admin/faqView";
 	}
 	
-	@RequestMapping("/faqWriteForm") //°øÁö»çÇ× ÀÛ¼º Æû
+	@RequestMapping("/faqWriteForm") //faq ì‘ì„± í¼
 	public String faqWriteForm() {
 		System.out.println("faqWriteForm()");	
-		return "/faqWriteForm";
+		return "/admin/faqWriteForm";
 	}
 	
-	@RequestMapping("/faqWrite") //°øÁö»çÇ× µî·Ï ¾×¼Ç
+	@RequestMapping("/faqWrite") //faq ë“±ë¡ ì•¡ì…˜
 	public String faqWrite(HttpServletRequest request, Model model) {
 		System.out.println("faqWrite()");		
 		model.addAttribute("request", request);
 		command = new AdminFaqWriteCommand();
 		command.execute(model);
-		return "redirect:faqView";
+		return "redirect:/admin/faqView";
+	}
+	
+	@RequestMapping("/productView") //ì œí’ˆ ê´€ë¦¬ ëª©ë¡
+	public String productView(Model model) {
+		System.out.println("productView()");
+		command = new AdminPListCommand();
+		command.execute(model);
+		return "/admin/productView";
+	}
+	
+	@RequestMapping("/addProductForm") //ì œí’ˆ ì¶”ê°€ í¼
+	public String addProductForm() {
+		System.out.println("addProductForm()");
+		return "/admin/addProductForm";
+	}
+	
+	@RequestMapping("/addProduct") //ì œí’ˆ ì¶”ê°€ ì•¡ì…˜
+	public String addProduct(HttpServletRequest request, Model model) {
+		System.out.println("addProduct()");		
+		model.addAttribute("request", request);
+		command = new AdminAddProductCommand();
+		command.execute(model);
+		return "redirect:productView";
+	}
+	
+	@RequestMapping("/deleteProduct") //ì œí’ˆ ì‚­ì œ
+	public String deleteProduct(HttpServletRequest request, Model model) {
+		System.out.println("deleteProduct()");		
+		model.addAttribute("request", request);
+		command = new AdminDeleteProductCommand();
+		command.execute(model);
+		return "redirect:productView";
+	}
+	
+	@RequestMapping("/memberView") //íšŒì› ëª©ë¡
+	public String memberView() {
+		System.out.println("memberView()");		
+		return "/admin/memberView";
 	}
 }
