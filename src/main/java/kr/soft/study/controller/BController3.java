@@ -1,16 +1,22 @@
 package kr.soft.study.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import kr.soft.study.dto.CartDTO;
 import kr.soft.study.dto.KakaoDTO;
+import kr.soft.study.dto.RDTO;
+import kr.soft.study.service.CartService;
 import kr.soft.study.service.MemberService;
 import kr.soft.study.util.Constant;
 
@@ -18,48 +24,70 @@ import kr.soft.study.util.Constant;
  * Handles requests for the application home page.
  */
 
-@Controller // ÀÌ Å¬·¡½º°¡ Spring MVCÀÇ ÄÁÆ®·Ñ·¯ ¿ªÇÒ
+@Controller // ì´ í´ë˜ìŠ¤ê°€ Spring MVCì˜ ì»¨íŠ¸ë¡¤ëŸ¬ ì—­í• 
 public class BController3 {
 	private SqlSession sqlSession;
-
-	@Autowired
-	private MemberService ms;
 
 	@Autowired
 	public void setSqlSession(SqlSession sqlSession) {
 		this.sqlSession = sqlSession;
 		Constant.sqlSession = this.sqlSession;
 	}
+
+	@Autowired
+	private MemberService ms;
+
 	@RequestMapping("/test")
 	public String testView(Model model) {
 		System.out.println("test()");
 
-		return "/login/test";
+
+		return "login/test";
+
 	}
+
 	@RequestMapping("/test2")
 	public String test2View(Model model) {
 		System.out.println("test2()");
 
-		return "/login/test2";
+
+		return "login/test2";
+	}
+
+	@RequestMapping("/test3")
+	public String test3View(Model model) {
+		System.out.println("test2()");
+
+		return "login/test3";
+
 	}
 
 	@RequestMapping("/basketView")
 	public String basketView(Model model) {
 		System.out.println("basketView()");
 
-		return "/login/basketView";
+
+		return "login/basketView";
+
 	}
 
 	@RequestMapping("/login")
 	public String login_view(Model model) {
 		System.out.println("login()");
-		return "/login/login";
+
+
+		return "login/login";
+
 	}
-	// HttpSession Å¬·¡½º ÁÖÀÔ.
+
+	// HttpSession í´ë˜ìŠ¤ ì£¼ì….
 	@Autowired
 	private HttpSession session;
 
-	@RequestMapping(value="/kakaoLogin", method=RequestMethod.GET)
+	@Autowired
+	private CartService cartService;
+
+	@RequestMapping(value = "/kakaoLogin", method = RequestMethod.GET)
 	public String kakaoLogin(@RequestParam(value = "code", required = false) String code) throws Exception {
 		System.out.println("#########" + code);
 		String access_Token = ms.getAccessToken(code);
@@ -67,16 +95,61 @@ public class BController3 {
 		System.out.println("###access_Token#### : " + access_Token);
 		System.out.println("###nickname#### : " + userInfo.getK_name());
 		System.out.println("###email#### : " + userInfo.getK_email());
-	    
-		// ¾Æ·¡ ÄÚµå°¡ Ãß°¡µÇ´Â ³»¿ë
+		System.out.println("###number#### : " + userInfo.getK_number());
+
+		// ì•„ë˜ ì½”ë“œê°€ ì¶”ê°€ë˜ëŠ” ë‚´ìš©
 		session.invalidate();
-		// À§ ÄÚµå´Â session°´Ã¼¿¡ ´ã±ä Á¤º¸¸¦ ÃÊ±âÈ­ ÇÏ´Â ÄÚµå.
+		// ìœ„ ì½”ë“œëŠ” sessionê°ì²´ì— ë‹´ê¸´ ì •ë³´ë¥¼ ì´ˆê¸°í™” í•˜ëŠ” ì½”ë“œ.
 		session.setAttribute("kakaoN", userInfo.getK_name());
 		session.setAttribute("kakaoE", userInfo.getK_email());
-		// À§ 2°³ÀÇ ÄÚµå´Â ´Ğ³×ÀÓ°ú ÀÌ¸ŞÀÏÀ» session°´Ã¼¿¡ ´ã´Â ÄÚµå
-		// jsp¿¡¼­ ${sessionScope.kakaoN} ÀÌ·± Çü½ÄÀ¸·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-		return "/login/basketView";
+		session.setAttribute("kakaoId", userInfo.getK_number());
+		// ìœ„ 2ê°œì˜ ì½”ë“œëŠ” ë‹‰ë„¤ì„ê³¼ ì´ë©”ì¼ì„ sessionê°ì²´ì— ë‹´ëŠ” ì½”ë“œ
+		// jspì—ì„œ ${sessionScope.kakaoN} ì´ëŸ° í˜•ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
 
+
+		return "login/basketView";
+	}
+
+	@RequestMapping(value = "/reservation", method = RequestMethod.GET)
+	public String showReservationForm(Model model) {
+		model.addAttribute("reservation", new RDTO());
+		return "login/reservationForm";
+	}
+
+	@RequestMapping(value = "/reservation", method = RequestMethod.POST)
+	public String submitReservation(@ModelAttribute RDTO rdto, Model model) {
+		sqlSession.insert("kr.soft.study.dao.RDAO.insertReservation", rdto);
+		model.addAttribute("message", "ì˜ˆì•½ì´ ì„±ê³µì ìœ¼ë¡œ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+		return "login/reservationSuccess";
+	}
+
+	@RequestMapping(value = "/addCart", method = RequestMethod.POST)
+	public String addCart(CartDTO cartItem) {
+		Integer kNumber = (Integer) session.getAttribute("kakaoId");
+		if (kNumber != null) {
+			cartItem.setKNumber(kNumber);
+			cartService.addCartItem(cartItem);
+		}
+		return "redirect:/login/cart";
+	}
+
+	@RequestMapping(value = "/cart", method = RequestMethod.GET)
+	public String showCart(Model model) {
+		Integer kNumber = (Integer) session.getAttribute("kakaoId");
+		if (kNumber != null) {
+			List<CartDTO> cartItems = cartService.getCartItemsByUser(kNumber);
+			model.addAttribute("cartItems", cartItems);
+		} else {
+			model.addAttribute("cartItems", null);
+		}
+		return "login/cart";
+	}
+
+
+	@RequestMapping(value = "/removeCart", method = RequestMethod.POST)
+	public String removeCart(@RequestParam("cartItemId") int cartItemId) {
+		cartService.deleteCartItem(cartItemId);
+		return "redirect:/login/cart";
 	}
 
 }

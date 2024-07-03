@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 import kr.soft.study.ProductCommand.PListCommand;
 import kr.soft.study.admincommand.AdminAddProductCommand;
 import kr.soft.study.admincommand.AdminCommand;
@@ -17,13 +18,14 @@ import kr.soft.study.admincommand.AdminFaqWriteCommand;
 import kr.soft.study.admincommand.AdminNoticeCommand;
 import kr.soft.study.admincommand.AdminNoticeWriteCommand;
 import kr.soft.study.admincommand.AdminPListCommand;
+
 import kr.soft.study.util.Constant;
 
 /**
  * Handles requests for the application home page.
  */
 
-@Controller // ÀÌ Å¬·¡½º°¡ Spring MVCÀÇ ÄÁÆ®·Ñ·¯ ¿ªÇÒ
+@Controller // ì´ í´ë˜ìŠ¤ê°€ Spring MVCì˜ ì»¨íŠ¸ë¡¤ëŸ¬ ì—­í• 
 public class AdminController {
 	
 	AdminCommand command = null;
@@ -35,7 +37,7 @@ public class AdminController {
 		Constant.sqlSession = this.sqlSession;
 	}
 
-	@RequestMapping("/noticeView") //°øÁö»çÇ× ¸ñ·Ï
+	@RequestMapping("/noticeView") //ê³µì§€ì‚¬í•­ ëª©ë¡
 	public String noticeView(Model model) {
 		System.out.println("noticeView()");
 		command = new AdminNoticeCommand();
@@ -43,13 +45,13 @@ public class AdminController {
 		return "/admin/noticeView";
 	}
 	
-	@RequestMapping("/noticeWriteForm") //°øÁö»çÇ× ÀÛ¼º Æû
+	@RequestMapping("/noticeWriteForm") //ê³µì§€ì‚¬í•­ ì‘ì„± í¼
 	public String noticeWriteForm() {
 		
 		return "/admin/noticeWriteForm";
 	}
 	
-	@RequestMapping("/noticeWrite") //°øÁö»çÇ× µî·Ï ¾×¼Ç
+	@RequestMapping("/noticeWrite") //ê³µì§€ì‚¬í•­ ë“±ë¡ ì•¡ì…˜
 	public String noticeWrite(HttpServletRequest request, Model model) {
 		System.out.println("noticeWrite()");		
 		model.addAttribute("request", request);
@@ -58,7 +60,7 @@ public class AdminController {
 		return "redirect:/admin/noticeView";
 	}
 	
-	@RequestMapping("/faqView") //faq ¸ñ·Ï
+	@RequestMapping("/faqView") //faq ëª©ë¡
 	public String faqView(Model model) {
 		System.out.println("faqView()");
 		command = new AdminFaqCommand();
@@ -66,13 +68,13 @@ public class AdminController {
 		return "/admin/faqView";
 	}
 	
-	@RequestMapping("/faqWriteForm") //faq ÀÛ¼º Æû
+	@RequestMapping("/faqWriteForm") //faq ì‘ì„± í¼
 	public String faqWriteForm() {
 		System.out.println("faqWriteForm()");	
 		return "/admin/faqWriteForm";
 	}
 	
-	@RequestMapping("/faqWrite") //faq µî·Ï ¾×¼Ç
+	@RequestMapping("/faqWrite") //faq ë“±ë¡ ì•¡ì…˜
 	public String faqWrite(HttpServletRequest request, Model model) {
 		System.out.println("faqWrite()");		
 		model.addAttribute("request", request);
@@ -81,7 +83,7 @@ public class AdminController {
 		return "redirect:/admin/faqView";
 	}
 	
-	@RequestMapping("/productView") //Á¦Ç° °ü¸® ¸ñ·Ï
+	@RequestMapping("/productView") //ì œí’ˆ ê´€ë¦¬ ëª©ë¡
 	public String productView(Model model) {
 		System.out.println("productView()");
 		command = new AdminPListCommand();
@@ -89,13 +91,13 @@ public class AdminController {
 		return "/admin/productView";
 	}
 	
-	@RequestMapping("/addProductForm") //Á¦Ç° Ãß°¡ Æû
+	@RequestMapping("/addProductForm") //ì œí’ˆ ì¶”ê°€ í¼
 	public String addProductForm() {
 		System.out.println("addProductForm()");
 		return "/admin/addProductForm";
 	}
 	
-	@RequestMapping("/addProduct") //Á¦Ç° Ãß°¡ ¾×¼Ç
+	@RequestMapping("/addProduct") //ì œí’ˆ ì¶”ê°€ ì•¡ì…˜
 	public String addProduct(HttpServletRequest request, Model model) {
 		System.out.println("addProduct()");		
 		model.addAttribute("request", request);
@@ -104,7 +106,7 @@ public class AdminController {
 		return "redirect:productView";
 	}
 	
-	@RequestMapping("/deleteProduct") //Á¦Ç° »èÁ¦
+	@RequestMapping("/deleteProduct") //ì œí’ˆ ì‚­ì œ
 	public String deleteProduct(HttpServletRequest request, Model model) {
 		System.out.println("deleteProduct()");		
 		model.addAttribute("request", request);
@@ -113,7 +115,7 @@ public class AdminController {
 		return "redirect:productView";
 	}
 	
-	@RequestMapping("/memberView") //È¸¿ø ¸ñ·Ï
+	@RequestMapping("/memberView") //íšŒì› ëª©ë¡
 	public String memberView() {
 		System.out.println("memberView()");		
 		return "/admin/memberView";
