@@ -8,7 +8,6 @@
 		select * from kakao_table where k_name=#{nickname} and k_email=#{email}
 	</select>
 
-
 	<insert id="kakaoInsert" parameterType="java.util.HashMap">
 		insert into kakao_table(k_name, k_email)
 			values(#{nickname}, #{email})
