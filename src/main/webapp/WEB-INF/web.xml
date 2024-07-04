@@ -17,7 +17,7 @@
 </context-param>
 <context-param>
     <param-name>kakao.redirect-uri</param-name>
-    <param-value>http://localhost:8080/study/kakaoLogin</param-value>
+    <param-value>http://183.111.125.38:8080/kakaoLogin</param-value>
 </context-param>
 	
 
