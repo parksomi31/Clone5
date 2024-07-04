@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.soft.study.admincommand.AdminCommand;
 import kr.soft.study.customerCommand.CustomerNoticeDetailCommand;
+import kr.soft.study.customerCommand.FaqListCommand;
 import kr.soft.study.customerCommand.NoticeListCommand;
 import kr.soft.study.customerCommand.PListCommand;
 import kr.soft.study.util.Constant;
@@ -58,6 +59,15 @@ public class CustomerController {
 		command = new PListCommand();
 		command.execute(model);
 		return "/customer/reservationCheck";
+	}
+
+	@RequestMapping("/faqList") // 怨듭��궗�빆 �긽�꽭�궡�슜
+	public String faqView(Model model) {
+		System.out.println("faqView()");
+
+		command = new FaqListCommand();
+		command.execute(model);
+		return "/customer/faqList";
 	}
 
 }

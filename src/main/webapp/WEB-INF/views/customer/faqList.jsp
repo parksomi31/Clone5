@@ -1,32 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="ko">
 <head>
-<meta charset="EUC-KR">
-<title>고객센터</title>
-<!-- head -->
-
-
-
-
-
-
-
-
-<!-- main 변수 -->
-
-
-<!-- AWS 프로젝트 신규 추가  230213 GSW -->
-
-
-<!-- AWS 프로젝트 신규 추가  END -->
-
-
-<!-- 앱 접속 여부 추가 -->
-
-
 <style>
 .logo {
 	font-size: 27px;
@@ -38,34 +15,8 @@
 	background-color: transparent;
 	color: #333;
 }
-
-.sub_tit {
-	background-color: transparent;
-	color: #333;
-}
-
-.my_sub_tit {
-	background-color: transparent;
-	color: #333;
-}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- head -->
 
 <!-- main 변수 -->
 
@@ -98,11 +49,6 @@
 
 <!-- 카카오톡 링크 썸네일 -->
 
-
-
-
-
-
 <meta property="og:title" content="오설록">
 <meta property="og:image"
 	content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
@@ -113,7 +59,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <!-- <meta property="fb:app_id" content="APP_ID"> -->
-<title>고객센터 | 오설록</title>
+<title>자주찾는 질문 | 오설록</title>
 
 <!--fonts-->
 <link rel="preload"
@@ -138,32 +84,6 @@
 	href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026"
 	as="style">
 
-<script type="text/javascript" async=""
-	src="https://avd.innity.net/lib/dc.js"></script>
-<script type="text/javascript" async=""
-	src="https://avd.innity.net/750/container_5ed4ce0147e7045404000000.js"></script>
-<script async="" defer=""
-	src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-WTX6V4CQJN&amp;l=dataLayer&amp;cx=c"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-J7WQK8LYCD&amp;l=dataLayer&amp;cx=c"></script>
-<script
-	src="https://connect.facebook.net/signals/config/494913268302940?v=2.9.160&amp;r=stable&amp;domain=www.osulloc.com&amp;hme=733c3732ec767f7a62e7787aff967e6d19b1e13e533937876f2e15efe07bf678&amp;ex_m=67%2C113%2C100%2C104%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C160%2C163%2C175%2C171%2C172%2C174%2C28%2C94%2C50%2C73%2C173%2C155%2C158%2C168%2C169%2C176%2C122%2C39%2C33%2C134%2C14%2C48%2C181%2C180%2C124%2C17%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C101%2C103%2C37%2C102%2C29%2C25%2C156%2C159%2C131%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C98%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C34%2C80%2C2%2C35%2C60%2C40%2C99%2C43%2C75%2C65%2C105%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C106"
-	async=""></script>
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5BL3CZ7&amp;l=dataLayer"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5Q4PDFQ&amp;l=dataLayer"></script>
-<script type="text/javascript" async=""
-	src="https://www.google-analytics.com/analytics.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-46DFPHV30H&amp;l=dataLayer&amp;cx=c"></script>
-<script async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-KW8MKLBZ"></script>
-<script async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5JSBJN9"></script>
 <script
 	src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
 <script
@@ -174,7 +94,6 @@
 	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
 <script
 	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
-<style></style>
 <script
 	src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
 <!-- 2019-09-27 추가 -->
@@ -186,8 +105,6 @@
 
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
-
-
 
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
@@ -203,7 +120,7 @@
 
 
 <link rel="stylesheet"
-	href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=240628">
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=231108_1">
 
 
 <!-- 20190906 css 추가 -->
@@ -332,6 +249,9 @@
 			
 	  	
 	  
+	  	var ucstmid = CryptoJS.SHA512('113979959').toString();
+	  	_rblqueue.push(['setVar','userId',ucstmid]);		// optional
+	  
 	  _rblqueue.push(['track','visit']);	
 	  setTimeout(function() {
 	    (function(s,x){s=document.createElement('script');s.type='text/javascript';
@@ -413,9 +333,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 20230712 1979 예약프로그램 오픈 true일때 -->
 
-
-
-
 <script>
 	/**
 	 * 카트에 상품 담기 실패시 실행함수 (공통)
@@ -472,9 +389,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	}
 
 
-
-
-
 	/**
 	 * 카트에 상품 추가 공통 함수
 	 * @param {JSON} param - ajax param
@@ -500,45 +414,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	};
 
 
-
-
-
 </script>
 
 <!-- 네이버 연관채널 설정 -->
-<script type="text/javascript" async=""
-	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720060751181&amp;cv=11&amp;fst=1720060751181&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fcs&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
-<script type="text/javascript" charset="UTF-8" defer=""
-	src="https://kn.acrosspf.com/adn_check_1.0.2.ad?rb_adn_uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186"></script>
+<span itemscope="" itemtype="http://schema.org/Organization">
+	<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
+	itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
+	itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
+	<a itemprop="sameAs"
+	href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
+</span>
+
+
+<style>
+.button-style {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #DDDDDD; /* 버튼 배경색 */
+	color: #fff; /* 버튼 텍스트 색상 */
+	text-decoration: none; /* 링크 밑줄 제거 */
+	border: 1px solid transparent; /* 테두리 스타일 */
+	border-radius: 4px; /* 버튼 테두리 둥글기 */
+	cursor: pointer;
+	text-align: center;
+	margin-left: 1450px;
+	border-width: 1px; /* 테두리 두께 */
+}
+
+.button-style:hover {
+	background-color: #adabab; /* 마우스 호버시 배경색 변화 */
+	border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+}
+</style>
+
+
 </head>
-<body class="is_hover">
-	<span itemscope="" itemtype="http://schema.org/Organization">
-		<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
-		itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
-		itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
-		<a itemprop="sameAs"
-		href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
-	</span>
-
-	<!-- 오설록 RENEW STDD css/js -->
-	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css">
-	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_common.js"
-		type="text/javascript"></script>
-	<meta name="robots" content="noindex">
-
-	<iframe id="x-sso-check" name="sso_check_iframe"
-		title="SSO Session Check Iframe" hidden=""></iframe>
-
+<iframe id="x-sso-check" name="sso_check_iframe"
+	title="SSO Session Check Iframe" hidden></iframe>
+<body>
 
 	<!-- leo tagging 공통 변수 선언 -->
-
-
-
-
-
-
 
 
 
@@ -569,15 +484,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	// 태깅을위한 전역변수 선언
 	// 1. 공통
-	var AP_DATA_GCID = dataUndefinedChk('null');
-	var AP_DATA_CID  = dataUndefinedChk('null');
-	var AP_DATA_ISMEMBER = '';
-	var AP_DATA_ISLOGIN = 'N';
-	var AP_DATA_LOGINTYPE = '';
-	var AP_DATA_CA = '';
-	var AP_DATA_CD = '';
-	var AP_DATA_CG = dataUndefinedChk('null');
-	var AP_DATA_CT = dataUndefinedChk('null');
+	var AP_DATA_GCID = dataUndefinedChk('6cfa82229f3a9ae7cf5fcc47dbd8be01db43ac067daf511eb75fbaf7648a7e19dd6c69ccb2f92baf46389875bcb06cdf6bc52fa77770807b5d9af3f54e8ee93a');
+	var AP_DATA_CID  = dataUndefinedChk('1d956bda84c41659cb0d844f5bec80c2f77e33ba21de7ced689ba13b46d0a4562e25c719975af7bc8f573eda14bca39133cadc3561ec276bd6ea70a6d0d1472f');
+	var AP_DATA_ISMEMBER = 'Y';
+	var AP_DATA_ISLOGIN = 'Y';
+	var AP_DATA_LOGINTYPE = 'NORMAL';
+	var AP_DATA_CA = '31';
+	var AP_DATA_CD = '1994';
+	var AP_DATA_CG = dataUndefinedChk('F');
+	var AP_DATA_CT = dataUndefinedChk('welcome');
 	var AP_DATA_SITENAME = 'OSULLOC';
 	var AP_DATA_CHANNEL = 'PC';
 	var AP_DATA_PAGETYPE = 'OTHER';
@@ -585,7 +500,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	var AP_DATA_LANG = 'KO';
 	var AP_PROMO_ID = dataUndefinedChk('null');
 	var AP_PROMO_NAME = dataUndefinedChk('null');
-	var AP_DATA_BEAUTYCT = dataUndefinedChk('null');
+	var AP_DATA_BEAUTYCT = dataUndefinedChk('FAMILY');
 	var AP_DATA_ISEMPLOYEE = dataUndefinedChk('null');
 	var AP_DATA_BREAD = dataUndefinedChk('null');
 	var AP_DATA_ENV = 'PRD'
@@ -680,7 +595,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 		
 		
-			<input type="hidden" name="isLogin" value="false">
+			<input type="hidden" name="isLogin" value="true">
 		
 		
 </form>
@@ -710,17 +625,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 		<script>
     $(window).on('load', function(){
         $(".middleMenu").find("ul:eq(0)").find(".thirdMenu li").click(function(){
@@ -747,7 +651,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         //로그인 성공 시 datalayer 태그 추가
         var loginSet = "logloginNo";
         var isFirstLogin = false;
-        var loginAmr = 'null';
+        var loginAmr = 'ID';
         if (loginSet != null) {
 			if (loginSet == "loglogin") {
                 window.dataLayer.push({
@@ -847,7 +751,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 		<div class="cdj_renew">
-			<header id="cdj_header" class="cdj_header fixed sub_header">
+			<header id="cdj_header" class="cdj_header">
 				<div class="wrapper">
 					<div class="inner_box">
 						<div class="left_box">
@@ -866,148 +770,86 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<ul class="nav_list_dep1">
 									<li class="item_dep1"><a
 										href="https://www.osulloc.com/kr/ko/shop/item/list"
-										class="link_text">제품</a>
+										class='link_text'>제품</a>
 										<div class="nav_list_dep2_box">
 											<div class="wrapper">
 												<div class="flex_box">
 													<ul class="nav_list_dep2">
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
-															class="link_text">베스트</a>
+															class='link_text'>베스트</a>
 															<ul class="nav_list_dep3">
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
-																	class="link_text">위클리 베스트</a></li>
+																	class='link_text'>위클리 베스트</a></li>
 																<!-- 관리자 지정 메뉴 -->
 
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand"
-																	class="link_text">베스트</a></li>
+																	class='link_text'>베스트</a></li>
 
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
-															class="link_text">티 제품</a>
+															class='link_text'>티 제품</a>
 															<ul class="nav_list_dep3">
 
 
 
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=198"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|티 세트">티 세트</a></li>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201"
+																	class='link_text' data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
 
 
 
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=201"
-																	class="link_text" data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=197"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|녹차/말차">녹차/말차</a></li>
 
 
 
 
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=249"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|발효차/홍차">발효차/홍차</a></li>
 
 
 
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=196"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|블렌디드티">블렌디드티</a></li>
 
 
 
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=195"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|허브티">허브티</a></li>
 
 
 
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=250"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티">밀크티/아이스티</a></li>
 
 
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=252"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|콤부차">콤부차</a></li>
-
-
-
-
 
 
 
@@ -1015,131 +857,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
 															data-track-name="GNB 오설록|Tea Shop|Tea Food"
-															class="link_text">티푸드</a>
+															class='link_text'>티푸드</a>
 															<ul class="nav_list_dep3">
 
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=174"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|과자/초콜릿">과자/초콜릿</a></li>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=178"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|베이커리">베이커리</a></li>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=251"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|아이스크림">아이스크림</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/teawareshop"
-															class="link_text">티웨어</a>
+															class='link_text'>티웨어</a>
 															<ul class="nav_list_dep3">
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/use"
 																	data-track-name="GNB 오설록|Tea ware Shop|용도별"
-																	class="link_text">용도별</a></li>
+																	class='link_text'>용도별</a></li>
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand"
-																	class="link_text">브랜드별</a></li>
+																	class='link_text'>브랜드별</a></li>
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
-															class="link_text">라이프스타일</a>
+															class='link_text'>라이프스타일</a>
 															<ul class="nav_list_dep3">
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&amp;line=202"
-																	class="link_text">스킨케어</a></li>
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202"
+																	class='link_text'>스킨케어</a></li>
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=228"
-																	class="link_text">정기배송</a></li>
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+																	class='link_text'>정기배송</a></li>
 															</ul></li>
 													</ul>
 
@@ -1158,12 +921,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<!--gnb 프로모션-->
 
 									<!--//gnb 프로모션-->
-									<li class="item_dep1 no-child"><a
-										href="${pageContext.request.contextPath}/present"
+									<li class="item_dep1 no-child"><a href="present"
 										class="link_text">선물추천</a></li>
 
-									<li class="item_dep1"><a
-										href="${pageContext.request.contextPath}/reservation"
+									<li class="item_dep1"><a href="reservation"
 										class="link_text">프로그램</a>
 										<div class="nav_list_dep2_box">
 											<div class="wrapper">
@@ -1171,13 +932,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													<ul class="nav_list_dep2">
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/brandstory"
-															class="link_text">오설록 스토리</a></li>
+															class='link_text'>오설록 스토리</a></li>
 														<li class="item_dep2"><a
-															href="/kr/ko/store-introduction/2" class="link_text">제주
+															href="/kr/ko/store-introduction/2" class='link_text'>제주
 																티뮤지엄</a></li>
 														<li class="item_dep2"><a
 															href="/kr/ko/store-introduction" data-track-name="매장 소개"
-															class="link_text">매장 소개 및 예약</a></li>
+															class='link_text'>매장 소개 및 예약</a></li>
 
 													</ul>
 
@@ -1224,10 +985,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 								</li>
 								<li class="item"><a
-									class="nav_util_icon icon_cart nav_cart nav_menu empty"
+									class="nav_util_icon icon_cart nav_cart nav_menu filled"
 									href="https://www.osulloc.com/kr/ko/shop/cart"
 									id="x-gnb-cart-m" data-track-name="Header 장바구니"
-									data-gnb-role="cart"><span class="num">0</span></a></li>
+									data-gnb-role="cart"><span class="num">1</span></a></li>
 								<li class="item item_icon_more"><a
 									class="nav_util_icon icon_more" id="btn_nav"></a>
 									<ul class="drop_box drop_box1">
@@ -1254,17 +1015,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<ul class="nav_drop">
 
 
-
 								<li class="item"><a
-									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
-									data-track-name="Header 로그인">로그인</a>
-									<ul class="drop_box drop_box2">
+									href="https://www.osulloc.com/kr/ko/mypage"
+									data-track-name="Header 마이페이지">마이페이지</a>
+									<ul class="drop_box drop_box3">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
-											data-track-name="Header 로그인">로그인</a></li>
-										<li class="drop_item"><a href="/kr/ko/login/joinIn"
-											title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
+											href="https://www.osulloc.com/kr/ko/mypage"
+											data-track-name="Header 마이페이지">마이페이지</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/login/logout"
+											id="login-checker" data-track-name="Header 로그아웃">로그아웃</a></li>
 									</ul></li>
+
 
 
 								<li class="item arr">KOREAN <span class="icon_drop_arr"></span>
@@ -1293,102 +1055,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList">
 								<div class="tit">
 									<p>인기 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 01 기준 </em>
 								</div>
 								<ul class="popular_list">
-									<li class="rank"><p>
-											<b>1</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="녹차"
-												style="cursor: pointer;">녹차</strong>
-										</p> <i class="rankState flagstatus"></i></li>
-									<li class="rank"><p>
-											<b>2</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="달빛"
-												style="cursor: pointer;">달빛</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>3</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="그린티 랑드샤"
-												style="cursor: pointer;">그린티 랑드샤</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>4</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="복숭아"
-												style="cursor: pointer;">복숭아</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>5</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="루이보스"
-												style="cursor: pointer;">루이보스</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>6</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="비스킷"
-												style="cursor: pointer;">비스킷</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>7</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="가루 녹차"
-												style="cursor: pointer;">가루 녹차</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>8</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="달빛 걷기"
-												style="cursor: pointer;">달빛 걷기</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>9</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="그린티 웨하스"
-												style="cursor: pointer;">그린티 웨하스</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>10</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="귤 꽃 향 을 품 은 우잣 담"
-												style="cursor: pointer;">귤 꽃 향 을 품 은 우잣 담</strong>
-										</p> <i class="rankState flegUp"></i></li>
 								</ul>
 							</div>
 							<div class="chartList chartNewList auto_complete">
 								<div class="tit">
 									<p>최근 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 01 기준 </em>
 								</div>
-								<ul class="new_list">
-									<li class="no_result">최근 검색어가 없습니다.</li>
-								</ul>
+								<ul class="new_list"></ul>
 								<p class="logDel">
 									<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
 											기록 삭제</span>
 									</a>
 								</p>
 							</div>
-							<div class="bannerBox" id="bannerBoxPc">
-
-
-
-
-								<div class="swiper">
-									<div
-										class="swiperBanner swiper-container-initialized swiper-container-horizontal"
-										id="pc_banner_swiper">
-										<div class="swiper-wrapper"
-											style="transition-duration: 300ms;">
-											<div class="swiper-slide swiper-slide-duplicate"
-												data-swiper-slide-index="0"></div>
-											<div class="swiper-slide" data-swiper-slide-index="0">
-
-
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate"
-												data-swiper-slide-index="0"></div>
-										</div>
-										<span class="swiper-notification" aria-live="assertive"
-											aria-atomic="true"></span>
-									</div>
-								</div>
-								<div
-									class="swiper-pagination swiper-pagination-horizontal swiper-pagination-clickable swiper-pagination-bullets"></div>
-							</div>
+							<div class="bannerBox" id="bannerBoxPc"></div>
 							<div class="chartAuto"></div>
 						</div>
 					</div>
@@ -1416,65 +1100,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</div>
 								<div class="chartList not_auto_complete">
 									<div id="tab01" class="tabCnt" style="display: block;">
-										<ul class="popular_list">
-											<li class="rank"><p>
-													<b>1</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="녹차"
-														style="cursor: pointer;">녹차</strong>
-												</p> <i class="rankState flagstatus"></i></li>
-											<li class="rank"><p>
-													<b>2</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="달빛"
-														style="cursor: pointer;">달빛</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>3</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="그린티 랑드샤"
-														style="cursor: pointer;">그린티 랑드샤</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>4</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="복숭아"
-														style="cursor: pointer;">복숭아</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>5</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="루이보스"
-														style="cursor: pointer;">루이보스</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>6</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="비스킷"
-														style="cursor: pointer;">비스킷</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>7</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="가루 녹차"
-														style="cursor: pointer;">가루 녹차</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>8</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="달빛 걷기"
-														style="cursor: pointer;">달빛 걷기</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>9</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="그린티 웨하스"
-														style="cursor: pointer;">그린티 웨하스</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>10</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite"
-														data-text="귤 꽃 향 을 품 은 우잣 담" style="cursor: pointer;">귤
-														꽃 향 을 품 은 우잣 담</strong>
-												</p> <i class="rankState flegUp"></i></li>
-										</ul>
-										<p class="log date searchDateDiv">24. 07. 04 기준</p>
+										<ul class="popular_list"></ul>
+										<p class="log date searchDateDiv">24. 07. 01 기준</p>
 									</div>
 									<div id="tab02" class="tabCnt" style="display: none;">
-										<ul class="new_list">
-											<li class="no_result">최근 검색어가 없습니다.</li>
-										</ul>
+										<ul class="new_list"></ul>
 										<p class="log logDel">
 											<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
 													기록 삭제</span>
@@ -1486,29 +1116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 
 						</div>
-						<div class="bannerBox" id="bannerBoxMo">
-
-
-
-
-							<div class="swiper">
-								<div
-									class="swiperBanner swiper-container-initialized swiper-container-horizontal"
-									id="mo_banner_swiper">
-									<div class="swiper-wrapper" style="transition-duration: 300ms;">
-										<div class="swiper-slide swiper-slide-duplicate"
-											data-swiper-slide-index="0"></div>
-										<div class="swiper-slide" data-swiper-slide-index="0"></div>
-										<div class="swiper-slide swiper-slide-duplicate"
-											data-swiper-slide-index="0"></div>
-									</div>
-									<span class="swiper-notification" aria-live="assertive"
-										aria-atomic="true"></span>
-								</div>
-							</div>
-							<div
-								class="swiper-pagination swiper-pagination-horizontal swiper-pagination-bullets"></div>
-						</div>
+						<div class="bannerBox" id="bannerBoxMo"></div>
 					</div>
 				</div>
 			</div>
@@ -1520,14 +1128,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="mo_nav_header in">
 
 
-					<!-- 로그인 전 : S -->
-					<div class="logOut_top_box">
-						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
-							class="text"><span>로그인</span></a>
-					</div>
-					<!-- 로그인 전 : E -->
+					<!-- 로그인 후 : S -->
+					<div class="logOn_top_box">
+						<a href="https://www.osulloc.com/kr/ko/mypage"
+							style="display: flex; align-items: center;"> <span
+							class="mypage_btn"> <img
+								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.webp"
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.png"
+								alt="마이페이지 바로가기">
+						</span>
+							<p class="name">
+								<em class="pt">권예지</em>님
+							</p> <!-- 등급에 따라 다르게 표시 -->
+							<div class="grade_tag">
 
+
+
+								<span class="tag_item grade_welcome">Welcome</span>
+
+							</div>
+						</a>
+						<div class="barcodeBtn"></div>
+
+
+					</div>
+					<!-- 로그인 후 : E -->
 
 
 					<button class="mo_nav_close" type="button" title="닫기">
@@ -1544,17 +1169,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="mo_nav_util in">
 
 
-						<!-- 로그인 전 : S -->
-						<div class="logOut_box">
-							<p class="text">
-								가입하고 <em> 10% 쿠폰</em>을 바로 사용해보세요.
-							</p>
-							<button type="button" class="join_btn" title="회원가입"
-								onclick="javascript:location.href='/kr/ko/login/joinIn'"
-								data-track-name="Header 회원가입">회원가입</button>
-						</div>
-						<!-- 로그인 전 : E -->
 
+						<!-- 로그인 후 : S -->
+						<div class="logOn_box">
+							<div class="top">
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/order/normal"
+										data-track-name="Header 주문배송조회">주문배송 <span class="count">0</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/shop/cart"
+										data-track-name="Header 장바구니">장바구니 <span class="count">1</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/wishlist/list">찜한상품</a>
+								</div>
+							</div>
+							<div class="bottom">
+								<div class="item i_coupon">
+									사용 가능 쿠폰 <a class=""
+										href="https://www.osulloc.com/kr/ko/mypage/coupon/available/mypage">
+										<span class="num">2</span> <span class="unit">장</span>
+									</a>
+								</div>
+								<div class="item i_point">
+									뷰티포인트 <a href="https://www.osulloc.com/kr/ko/beautypoint/list">
+										<span class="num">1,500</span> <span class="unit">P</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="subscribe">
+
+								<div class="item">
+									<a
+										href="https://www.osulloc.com/kr/ko/mypage/subs/list?standingOrderType=A">정기배송
+										<strong>0 건</strong>
+									</a>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- 로그인 후 : E -->
 
 
 					</div>
@@ -1585,19 +1242,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										class="link_text">라이프 스타일</a></li>
 
 									<li class="item_dep2"><a
-										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=228"
-										class="link_text">정기배송</a></li>
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+										class='link_text'>정기배송</a></li>
 								</ul></li>
 							<!--gnb 프로모션-->
 
 							<!--//gnb 프로모션-->
-							<li class="item_dep1 no-child"><a
-								href="${pageContext.request.contextPath}/present"
-								class="link_text">선물추천</a></li>
+							<li class="item_dep1"><a
+								href="https://www.osulloc.com/kr/ko/shop/item/gift"
+								class="link_text no_fold">선물추천</a></li>
 
 							<li class="item_dep1"><a
-								href="${pageContext.request.contextPath}/reservation"
-								class="link_text">프로그램</a>
+								href="https://www.osulloc.com/kr/ko/brandstory"
+								class="link_text">브랜드</a>
 								<ul class="mo_nav_list_dep2">
 									<li class="item_dep2"><a
 										href="https://www.osulloc.com/kr/ko/brandstory"
@@ -1646,18 +1303,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 
 
-
 						<div class="item">
-							<a
-								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/beautypoint/list"
+							<a href="https://www.osulloc.com/kr/ko/beautypoint/list"
 								data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후 적립</a>
 						</div>
+
 
 
 					</div>
 					<!-- 하단 링크 영역 : E -->
 
 					<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
+
+					<div class="mo_nav_logout">
+						<button type="button" title="로그아웃" class="logOut_btn"
+							onclick="location.href='https://www.osulloc.com/kr/ko/login/logout'"
+							data-track-name="Header 로그아웃">로그아웃</button>
+					</div>
+					<!-- 로그아웃 버튼 - 로그인시 노출 : E -->
 
 				</div>
 			</aside>
@@ -1702,8 +1365,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 
 
-
-
 		<script>
 
 
@@ -1721,7 +1382,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-
 
 
     // PC
@@ -1982,8 +1642,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	//서치 배너 스와이퍼 세팅
 	function setSwiperSearchBannerPc(){
 
-
-
 		header_banner_swiper['pc'] = new Swiper("#bannerBoxPc .swiperBanner", {
 			slidesPerView: 1,
 			observer: true,
@@ -2139,8 +1797,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
 
 
-
-
 </script>
 
 		<script type="text/javascript">
@@ -2225,8 +1881,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
  	window.onload = function() {
 	  // 로그인 안되었을때
-	  if('false' == 'false'){
-		var chkCid = "449686334.1719986345";
+	  if('true' == 'false'){
+		var chkCid = "1485712983.1719794025";
         var cid = ga.getAll()[0].get('clientId');
         var gcid = ga.getAll()[0].get('_gid');
 		let chkEnv = "PRD";
@@ -2308,12 +1964,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
-		<!-- CDJ 개선 마이페이지 고객센터 : S -->
-		<main class="main cdj_renew my_cs_main_wrap">
+		<!-- CDJ 개선 마이페이지 자주찾는 질문 : S -->
+		<main class="main cdj_renew">
 			<!-- 타이틀 : S -->
 			<section class="section page_tit_box mypageT">
 				<div class="w1200">
-					<h2 class="page_tit">고객센터</h2>
+					<h2 class="page_tit">자주찾는 질문</h2>
 				</div>
 			</section>
 			<!-- 타이틀 : E -->
@@ -2419,161 +2075,148 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 			<!-- pc용 마이페이지 메뉴 : E -->
 
+			<style>
+.cdj_renew .my_cs_faq .faq_nav .search .box01 button {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background:
+		url(https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_search.png)
+		no-repeat center/15px 17px;
+	text-indent: -9999em;
+}
 
-
-
-
+.cdj_renew .my_cs_faq .faq_nav .search .box01::after {
+	display: none;
+}
+</style>
 			<!-- 컨텐츠 : S -->
-
-			<div class="my_cs_main">
+			<div class="my_cs_faq">
 				<section class="section">
-					<div class="cs_box01">
-						<div class="inner_box">
-							<div class="flex_box">
-								<div class="item">
-									<a href="/kr/ko/mypage/qna/new">
-										<div class="icon_box">
-											<img
-												src="https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_cs01.png"
-												alt="1:1 상담">
+					<div class="w1200">
+						<div class="faq_nav">
+							<div class="inner_box">
+								<form id="searchForm" name="searchForm"
+									action="/kr/ko/cs/faq/order" onsubmit="return false;">
+									<div class="search">
+										<div class="box01">
+											<input type="text" id="faq-search" name="q" class="inp_text"
+												placeholder="텍스트를 입력해주세요" value="">
+											<button type="button" class="button moBlock btnSearch"
+												title="검색" onclick="">검색</button>
 										</div>
-										<p class="text">1:1 문의</p>
-									</a>
-								</div>
-								<div class="item">
-									<a href="faqList">
-										<div class="icon_box">
-											<img
-												src="https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_cs02.png"
-												alt="1:1 답변 확인">
+										<div class="box02">
+											<button type="button" class="button pcBlock btnSearch"
+												title="검색">검색</button>
 										</div>
-										<p class="text">자주 찾는 질문</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-
-				<section class="section">
-					<div class="cs_box03">
-						<div class="w1200">
-							<div class="cs_list_box">
-								<h3 class="my_sub_tit">
-									공지사항
-									<button type="button" class="more"
-										onclick="location.href='/kr/ko/cs/notice/news'">더보기</button>
-								</h3>
-
-								<div class="cs_list">
-
-									<ul class="list">
-										<c:forEach items="${list}" var="dto">
-											<li class="item"><a href="/kr/ko/cs/notice/news/6320">
-													<span class="tag">NEW</span> <a
-													href="noticeDetail2?notice_index=${dto.notice_index}">${dto.notice_title}</a>
-											</a></li>
-											<p class="date">${dto.input_time}</p>
-										</c:forEach>
-									</ul>
-								</div>
-
-
-
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="section">
-					<div class="cs_box04">
-						<div class="w1200">
-							<div class="cs_list_box">
-								<h3 class="my_sub_tit">
-									이벤트 당첨 발표
-									<button type="button" class="more"
-										onclick="location.href='/kr/ko/cs/notice/event'">더보기</button>
-								</h3>
-								<div class="cs_list">
+									</div>
+								</form>
+								<div class="nav_list">
 									<ul class="list">
 
+										<li class="item on"><a href="/kr/ko/cs/faq/order"
+											data-track-name="주문/결제">주문/결제</a></li>
 
+										<li class="item "><a href="/kr/ko/cs/faq/refund"
+											data-track-name="환불/반품/교환">환불/반품/교환</a></li>
 
-										<li class="noItem">최근 당첨발표된 이벤트가 없습니다.</li>
+										<li class="item "><a href="/kr/ko/cs/faq/delivery"
+											data-track-name="배송">배송</a></li>
 
+										<li class="item "><a href="/kr/ko/cs/faq/member"
+											data-track-name="회원/포인트">회원/포인트</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/event"
+											data-track-name="이벤트/쿠폰">이벤트/쿠폰</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/site"
+											data-track-name="사이트 이용/기타">사이트 이용/기타</a></li>
 
 									</ul>
+									<input type="hidden" id="category" value="order">
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-
 				<section class="section">
-					<div class="cs_box05">
-						<div class="w1200">
-							<div class="btn_box">
+					<div class="w1200">
+						<div class="faq_con">
+							<div class="inner_box">
+								<ul class="faq_list">
 
-								<div class="item">
-									<button type="button" class="cs_main_btn"
-										title="비회원 주문 · 예약 조회"
-										onclick="location.href='/kr/ko/login/nonMember'">비회원
-										주문 · 예약 조회</button>
-								</div>
+									<c:forEach items="${faqlist}" var="dto">
+										<li class="item">
+											<div class="faq_q">
+												<div class="cate pcBlock">주문/결제</div>
+												<div class="faq_q_text">
+													<p class="text">${dto.faq_title}</p>
+												</div>
+											</div>
+											<div class="faq_a">
+												<div>
+													<p class="text">
+													<p>${dto.faq_content}</p>
+													</p>
+												</div>
+												<p class="more">
+													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
+													<button type="button" class="button"
+														onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1
+														상담 신청하기</button>
+												</p>
+											</div>
+										</li>
+									</c:forEach>
+									<li class="item">
+										<div class="faq_q">
+											<div class="cate pcBlock">주문/결제</div>
+											<div class="faq_q_text">
+												<p class="text">결제시 설치프로그램이 깔리지 않아요. 어떻게 하면 되나요?</p>
+											</div>
+										</div>
+										<div class="faq_a">
+											<div>
+												<p class="text">
+												<p>이니시스 닷컴 메인 홈페이지로 들어가신 후, 맨 위 [기술 지원] 페이지 클릭 → [INIpay
+													마법사] 클릭 → 플러그인 오류 자동 복구 프로그램 실행하기 클릭 → 설치완료</p>
+												</p>
+											</div>
+											<p class="more">
+												답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
+												<button type="button" class="button"
+													onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1
+													상담 신청하기</button>
+											</p>
+										</div>
+									</li>
 
-								<div class="item">
-									<button type="button" class="cs_main_btn" title="매장 찾기"
-										onclick="location.href='/kr/ko/store'">매장 찾기</button>
-								</div>
+
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="section">
-					<div class="cs_box06">
-						<div class="inner_box">
-							<div class="cs_main_info">
-								<div class="text_box01">
-									<p class="text01">고객 상담센터 주문/배송문의</p>
-									<p class="text02">
-										<a href="tel:080-805-5555">080-805-5555</a>
-									</p>
-								</div>
-								<div class="text_box02">
-									<p class="text">
-										<span class="left">상담시간</span>09:30~17:00(토/일요일, 공휴일 휴무)
-									</p>
-									<p class="text">
-										<span class="left">점심시간</span>11:30~13:00
-									</p>
-									<p class="text">
-										<span class="left">대량구매/제휴</span>help@osulloc.com
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+
+
+				<!-- pagination : S -->
+
+
+
+
+				<!-- pagination : E -->
 			</div>
 			<!-- 컨텐츠 : E -->
 
 		</main>
-		<!-- CDJ 개선 마이페이지 고객센터 : E -->
-
+		<!-- CDJ 개선 마이페이지 자주찾는 질문 : E -->
 
 
 		<!-- footer -->
-
-
-
-
-
-
-
 
 		<!--new_footer-->
 		<div id="new_footer">
@@ -2583,10 +2226,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="right">
 
 
-
-						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
-							class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
+						<a href="https://www.osulloc.com/kr/ko/login/logout"
+							class="footer_login" data-track-name="Footer 로그아웃">로그아웃</a> <a
 							href="https://www.tiktok.com/@osulloc_official" target="_blank"
 							class="btn-share--circle" style="z-index: 10000;"
 							data-track-name="Footer 오설록 틱톡"> <img
@@ -2616,7 +2257,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="wrap2 hide_tablet hide_mobile">
 				<div class="inner1600 clearfix">
 					<div class="left1">
-						<div class="tit">고객상담센터 · 주문/배송문의</div>
+						<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
 						<div>
 							<a href="mailto:help@osulloc.com"
 								style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
@@ -2651,8 +2292,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png"
 							alt="멤버십혜택"> <span>멤버십혜택</span>
 						</a> <a href="https://www.osulloc.com/kr/ko/cs/faq"
-							data-track-name="Footer FAQ" class="footerFAQ"
-							style="display: none;"> <img
+							data-track-name="Footer FAQ" class="footerFAQ"> <img
 							src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png"
 							alt="FAQ"> <span>FAQ</span>
 						</a> <a href="https://osulloc.biz/"
@@ -2712,7 +2352,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
 								390-87-01499 <a class="info"
 									href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
-									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 &gt;</a> <br>통신판매업신고번호:2019-서울용산-1173호
+									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 ></a> <br>통신판매업신고번호:2019-서울용산-1173호
 								호스팅제공자: ㈜오설록 <br> <br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에
 								대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및
 								거래에 대해 책임을 지지 않습니다.
@@ -2765,8 +2405,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="func">
 					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
 						data-track-name="Footer_M 고객센터">고객센터</a> <a
-						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
-						class="signIn" data-track-name="Footer_M 로그인">로그인</a>
+						href="https://www.osulloc.com/kr/ko/login/logout" class="signIn"
+						data-track-name="Footer_M 로그아웃">로그아웃</a>
+
 
 
 					<div class="lang js_select">
@@ -2821,7 +2462,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="footbottom">
 					<div class="footer_cs_m clearfix">
 						<div class="custCenter_Wrap cs_01">
-							<div class="tit">고객상담센터 · 주문/배송문의</div>
+							<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
 							<div
 								style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
 							<div class="phone">080-805-5555</div>
@@ -2949,20 +2590,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			}
 		});
 		
-		$('#btnSearch').click(function(){
+		$('.btnSearch').click(function(){
 			fnSearch();
 		});
 		
+		//검색
 		function fnSearch(){
 			$.ajax({
 				type : "POST",
 	 			url : "/kr/ko/cs/faq/search/count",
 	 			cache : false,
-	 			data : 'q='+encodeURIComponent($('#faq-search').val()),
+	 			data : 'q='+encodeURIComponent($('#faq-search').val())+'&category='+$('#category').val(),
 	 			async : false,
 	 			success : function(data) {
 	 				if(data.totalCount > 0){
-		 				document.faqSearchForm.submit();
+		 				document.searchForm.submit();
 	 				}else{
 	 					fnLayerAlert('검색하신 내용을 찾을 수</br>없습니다.', function(){});
 	 				}
@@ -2972,12 +2614,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	 			}
 			});
 		}
-		
 	});
+	
 	
 </script>
 
-	<!-- script -->
 
 
 
@@ -3004,105 +2645,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<script language="JavaScript" type="text/javascript">
        
+        $(function(){
+          if (pageInfo === undefined) {
+            var pageInfo = {};
+            pageInfo.WARNING_TIME = 60000 * 19;
+//            pageInfo.WARNING_TIME = 60000;
+          }
+          
+          pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+          
+          function warningEndOfSession() {
+            
+        	  var autoLoginYn = '';
+              console.log('autoLoginYn: '+autoLoginYn);
+              if(autoLoginYn != 'Y'){
+            	  
+	        	  var warningTime = new Date();
+	            var r = confirm("- 개인정보 보호를 위하여, 로그인 후 20분 동안 서비스 이용이 없을경우 자동으로 로그아웃 처리됩니다.\n"
+	                + "- 로그인 시간을 연장하시려면, '확인' 버튼을 클릭하세요.\n"
+	                + "- '취소' 버튼을 클릭하면, 로그아웃됩니다.");
+	
+	            if (r == true) {
+	              var clickTime = new Date();
+	              if (clickTime.getTime() - warningTime.getTime() > 60000) {
+	                endOfSession();
+	                return false;
+	              }
+	              if (pageInfo.warning != undefined) {
+	                clearTimeout(pageInfo.warning);
+	              }
+	              pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+	            } else {
+	              logout();
+	            }
+              }
+          }
+          
+          function endOfSession() {
+            alert("- 로그인 세션이 이미 종료되어, 자동으로 로그아웃 되었습니다.\n" +
+            "- 서비스를 다시 이용하시려면, '로그인' 해주시길 바랍니다.");
+            logout();
+          }
+          
+          $(document).keyup(function(evt) {
+            if (pageInfo.warning != undefined) {
+              clearTimeout(pageInfo.warning);
+            }
+            pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+          });
+          
+          function logout(){
+            $('#f_logout').submit();
+            }
+          
+        });
+        
         //일정시간이 지나면 자동로그아웃 e 20170601
     </script>
 
 
 
-
-	<a href="" class="goTop">위로 가기</a>
-	<script type="text/javascript" id="fb-pixel-code">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","494913268302940");</script>
-
-
-	<script type="text/javascript" id="" charset="UTF-8"
-		src="//t1.daumcdn.net/adfit/static/kp.js"></script>
-	<script type="text/javascript" id="">jQuery(document).on("click","[ap-click-area]",function(a){a=this.getAttribute("ap-click-area");var b=this.getAttribute("ap-click-name"),c=this.getAttribute("ap-click-data");dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})});
-function makeScriptGA_Event(a,b,c){dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})};</script>
-	<script type="text/javascript" id="">$("body").on("click","a",function(c){try{var a="",b="";var d=this;var k=d.getAttribute("href"),l=d.getAttribute("ap-click-area"),m=d.getAttribute("ap-click-name"),e=d.getAttribute("ap-click-data");a=k;if(null!=a&&-1<a.indexOf("\x26clickUrl")){a=a.split("\x26clickUrl");var g=d.tagName+"[href*\x3d'"+a[0]+"']"}else g=null!=a?d.tagName+"[href\x3d'"+k+"']":d.tagName;null!=l&&""!=l.trim()&&(b+="[ap-click-area\x3d'"+l+"']");null!=m&&""!=m.trim()&&(b+="[ap-click-name\x3d'"+m+"']");null!=e&&""!=e.trim()&&
-(b+="[ap-click-data\x3d'"+e+"']");g+=b;var f=d.parentElement;g=ga360_AddTag(g,f);var h=f.parentElement;g=ga360_AddTag(g,h);var n=h.parentElement;g=ga360_AddTag(g,n);b="Not Set";k=!1;0<ga360_Trim(d.innerText).length?(b=ga360_Trim(d.innerText),k=!0):0<ga360_Trim(f.innerText).length?b=ga360_Trim(f.innerText):0<ga360_Trim(h.innerText).length?b=ga360_Trim(h.innerText):0<ga360_Trim(n.innerText).length&&(b=ga360_Trim(n.innerText));l="ATag:"+document.title;m="";m=k?b:ga360_textLengthOverCut(b,20,null);e=
-g;if(1<$(e).length){var p=$(e).index(this);e=e+":eq("+p+")"}var q=c.pageX-$(e).offset().left,r=c.pageY-$(e).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),
-duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(t){console.log(t)}});
-$("body").on("click","button",function(c){try{var a="";var b=this;var d=b.className,k=b.id,l="",m="",e=b.getAttribute("ap-click-area"),g=b.getAttribute("ap-click-name"),f=b.getAttribute("ap-click-data");""!=d.trim()?l="[class*\x3d'"+d+"']":""!=k.trim()&&(l="[id\x3d'"+k+"']");var h=b.tagName+l;null!=e&&""!=e.trim()&&(m+="[ap-click-area\x3d'"+e+"']");null!=g&&""!=g.trim()&&(m+="[ap-click-name\x3d'"+g+"']");null!=f&&""!=f.trim()&&(m+="[ap-click-data\x3d'"+f+"']");h+=m;var n=b.parentElement;h=ga360_AddTag(h,
-n);var p=n.parentElement;h=ga360_AddTag(h,p);var q=p.parentElement;h=ga360_AddTag(h,q);d="Not Set";k=!1;0<ga360_Trim(b.innerText).length?(d=ga360_Trim(b.innerText),k=!0):0<ga360_Trim(n.innerText).length?d=ga360_Trim(n.innerText):0<ga360_Trim(p.innerText).length?d=ga360_Trim(p.innerText):0<ga360_Trim(q.innerText).length&&(d=ga360_Trim(q.innerText));e="ATag:"+document.title;g="";g=k?d:ga360_textLengthOverCut(d,20,null);f=h;if(1<$(f).length){var r=$(f).index(this);f=f+":eq("+r+")"}var t=c.pageX-$(f).offset().left,
-u=c.pageY-$(f).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:e,eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:e,
-eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(v){console.log(v)}});function ga360_AddTag(c,a){try{c=""!=a.id.trim()?a.tagName+"[id\x3d'"+a.id+"'] "+c:""!=a.className.trim()?a.tagName+"[class*\x3d'"+a.className+"'] "+c:a.tagName+" "+c}catch(b){}return c}function ga360_Trim(c){try{c=c.replace(/\s+/,""),c=c.replace(/\s+$/g,""),c=c.replace(/\n/g,""),c=c.replace(/\r/g,"")}catch(a){}return c}
-function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||null==b)b="...";c.length>a&&(c=c.substr(0,a)+b)}catch(d){}return c};</script>
-
-	<noscript>
-		<img height="1" width="1" style="display: none"
-			src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
-	</noscript>
-
-
-
-	<script type="text/javascript" id=""
-		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
-
-
-	<script type="text/javascript" id=""
-		src="https://www.googletagmanager.com/gtag/js?id=DC-10125800"></script>
-
-
-
-
-	<script type="text/javascript" id=""
-		src="//static.criteo.net/js/ld/ld.js"></script>
-
-	<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];</script>
-
-
-
-
-
-	<script type="text/javascript" id="">function getADCookie(a){try{var b=document.cookie;if(0<b.length&&(startIndex=b.indexOf(a),-1!=startIndex))return startIndex+=a.length,endIndex=b.indexOf(";",startIndex),-1==endIndex&&(endIndex=b.length),unescape(b.substring(startIndex+1,endIndex))}catch(c){}return""}
-function sendRequestFB(a){var b=!1;try{if("PageView"!=a.evt_name&&"InitiateCheckout"!=a.evt_name&&"CompleteRegistration"!=a.evt_name&&"ViewContent"!=a.evt_name&&"Search"!=a.evt_name&&"AddToCart"!=a.evt_name&&"Purchase"!=a.evt_name)return;a.event_source_url=window.location.href;a.action_source="website";Object.entries(a).map(function(c){return c.join("\x3d")}).join("\x26")}catch(c){}return b};</script>
-
-
-	<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
-
-	<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
-		data-load-time="1720060751196" height="0" width="0"
-		src="https://td.doubleclick.net/td/rul/645486124?random=1720060751181&amp;cv=11&amp;fst=1720060751181&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fcs&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
-		style="display: none; visibility: hidden;"></iframe>
-	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
-try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W";(function(a,d,e,b,c){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};b=d.createElement(e);b.async=!0;b.defer=!0;b.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(b,c)})(window,document,"script");enp("create","common","osulloc",{device:"B"});enp("send","common","osulloc")}}catch(a){};</script>
-
-
-	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","DC-10125800");</script>
-
-
-	<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
-
-	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](53);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
-
-
-	<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
-
-	<script type="text/javascript" id=""
-		src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
-	<div id="criteo-tags-div" style="display: none;"></div>
-	<div id="adn_container" style="display: none">
-		<div id="adn_wrap_79390185726" style="display: none"></div>
-	</div>
-
-
-
-
-	<script type="text/javascript" id="" src="//wcs.naver.net/wcslog.js"></script>
-	<iframe id="avdfi_1720060751280"
-		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
-		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
-		scrolling="no"
-		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
-	<script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_bf516546e48";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow(),wcs_do(_nasa));</script>
-
-
-	<script type="text/javascript" id="">kakaoPixel("6763084706725607045").pageView();</script>
-
-	<div style="display: none; visibility: hidden;">
-		<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
-	</div>
-	<script type="text/javascript" async="" defer=""
-		src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
 </body>
 </html>
