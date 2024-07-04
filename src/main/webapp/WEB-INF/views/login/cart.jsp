@@ -72,18 +72,14 @@ body {
 }
 
 .btn {
-	background-color: #4CAF50;
-	color: white;
+	background-color: #6C801A;
+	color: #fff;
 	padding: 12px 24px; /* 버튼 크기를 증가시킵니다 */
 	border: none;
 	cursor: pointer;
 	text-align: center;
 	display: inline-block;
 	font-size: 18px; /* 버튼 글씨 크기를 증가시킵니다 */
-}
-
-.btn:hover {
-	background-color: #45a049;
 }
 
 .product-list-btn {
