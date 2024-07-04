@@ -2419,7 +2419,6 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							</a>
 						</div>
 
-
 						<div class="swiper-slide swiper-slide-duplicate-active"
 							data-swiper-slide-index="0"
 							style="width: 933px; transition-duration: 0ms; opacity: 1; transform: translate3d(-933px, 0px, 0px);">

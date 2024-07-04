@@ -2209,7 +2209,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</section>
 
 
-				<div class="button-style">
+			
 					<a href="faqWriteForm">faq작성</a>
 				</div>
 				<!-- pagination : S -->
