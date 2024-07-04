@@ -1264,7 +1264,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 										href="https://www.osulloc.com/kr/ko/mypage"
 										data-track-name="Header 주문배송조회">주문배송조회</a></li>
 									<li class="drop_item"><a
-										href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
+										href="${pageContext.request.contextPath}/reservationCheck"
 										data-track-name="Header 예약조회">예약조회</a></li>
 
 								</ul></li>
@@ -4703,8 +4703,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
 								data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
 
-							<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
-								data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+							
 							<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
 								data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
 							<li><a
