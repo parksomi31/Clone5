@@ -1,117 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>매장찾기</title>
-<!-- head -->
-
-
-
-
-<link rel="stylesheet"
-	href="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/css/bootstrap.min.css' />">
-<link rel="stylesheet"
-	href="<c:url value='/resources/css/custom.css' />">
-<!-- jQuery -->
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/jquery-3.6.0.min.js' />"></script>
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/js/bootstrap.bundle.min.js' />"></script>
-<script type="text/javascript"
-	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b19ea389906187daf3c6ebed9c4708e"></script>
 
 <style>
-.map {
-	width: 100%;
-	height: 600px;
-}
-
-.form-control {
-	width: 100%;
-}
-
-.storebox {
-	padding: 20px;
-}
-
-.store-search {
-	margin-bottom: 20px;
-}
-
-.store-item {
-	margin-bottom: 20px;
-}
-
-.store-status .badge {
-	margin-right: 5px;
-}
-
-.header-body-gap {
-	margin-top: 200px; /* 헤더와 바디 사이 간격 조정 */
-}
-
-.store-search-title {
-	font-size: 55px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.store-list {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.card {
-	border: 1px solid #ddd;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
 }
 </style>
-
-<!-- main 변수 -->
-
-
-<!-- AWS 프로젝트 신규 추가  230213 GSW -->
-
-
-<!-- AWS 프로젝트 신규 추가  END -->
-
-
-<!-- 앱 접속 여부 추가 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- main 변수 -->
+<meta charset="UTF-8">
 
 <!-- 20190710 main html 추가 시작 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -185,13 +85,15 @@
 <script type="text/javascript" async=""
 	src="https://avd.innity.net/lib/dc.js"></script>
 <script type="text/javascript" async=""
-	src="https://avd.innity.net/750/container_5ed4ce0147e7045404000000.js"></script>
-<script async="" defer=""
-	src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js"></script>
-<script type="text/javascript" async=""
 	src="https://www.googletagmanager.com/gtag/js?id=G-WTX6V4CQJN&amp;l=dataLayer&amp;cx=c"></script>
 <script type="text/javascript" async=""
 	src="https://www.googletagmanager.com/gtag/js?id=G-J7WQK8LYCD&amp;l=dataLayer&amp;cx=c"></script>
+<script type="text/javascript" async=""
+	src="https://www.googletagmanager.com/gtag/js?id=G-46DFPHV30H&amp;l=dataLayer&amp;cx=c"></script>
+<script type="text/javascript" async=""
+	src="https://avd.innity.net/750/container_5ed4ce0147e7045404000000.js"></script>
+<script async="" defer=""
+	src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js"></script>
 <script
 	src="https://connect.facebook.net/signals/config/494913268302940?v=2.9.160&amp;r=stable&amp;domain=www.osulloc.com&amp;hme=733c3732ec767f7a62e7787aff967e6d19b1e13e533937876f2e15efe07bf678&amp;ex_m=67%2C113%2C100%2C104%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C160%2C163%2C175%2C171%2C172%2C174%2C28%2C94%2C50%2C73%2C173%2C155%2C158%2C168%2C169%2C176%2C122%2C39%2C33%2C134%2C14%2C48%2C181%2C180%2C124%2C17%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C101%2C103%2C37%2C102%2C29%2C25%2C156%2C159%2C131%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C98%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C34%2C80%2C2%2C35%2C60%2C40%2C99%2C43%2C75%2C65%2C105%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C106"
 	async=""></script>
@@ -202,8 +104,6 @@
 	src="https://www.googletagmanager.com/gtm.js?id=GTM-5Q4PDFQ&amp;l=dataLayer"></script>
 <script type="text/javascript" async=""
 	src="https://www.google-analytics.com/analytics.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-46DFPHV30H&amp;l=dataLayer&amp;cx=c"></script>
 <script async=""
 	src="https://www.googletagmanager.com/gtm.js?id=GTM-KW8MKLBZ"></script>
 <script async=""
@@ -551,20 +451,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 네이버 연관채널 설정 -->
 <script type="text/javascript" async=""
-	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
-<script type="text/javascript" charset="UTF-8" defer=""
-	src="https://openfpcdn.io/fingerprintjs/v3/iife.min.js"></script>
+	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720082763575&amp;cv=11&amp;fst=1720082763575&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%2F312&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
 <script type="text/javascript" charset="UTF-8" defer=""
 	src="https://kn.acrosspf.com/adn_check_1.0.2.ad?rb_adn_uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186"></script>
-<style>
-.logo {
-	font-size: 27px;
-	font-weight: 500;
-	background-color: transparent;
-}
-</style>
-
 </head>
+
+
+
 <body class="is_hover">
 	<span itemscope="" itemtype="http://schema.org/Organization">
 		<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
@@ -574,16 +467,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
 	</span>
 
+	<!-- 오설록 RENEW STDD css/js -->
 	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css?ver=230517_6">
+		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css?ver=231023_2">
 	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_store_home.css?ver=230829_1">
+		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_detail.css?ver=231114_1">
 	<script
 		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_common.js?ver=230517_6"
 		type="text/javascript"></script>
 	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_store_home.js?ver=230517_6"
+		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_store_detail.js?ver=230517_6"
 		type="text/javascript"></script>
+	<script type="text/javascript" id="fb-pixel-code">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","494913268302940");</script>
+
+
+	<script type="text/javascript" id="" charset="UTF-8"
+		src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+	<script type="text/javascript" id="">jQuery(document).on("click","[ap-click-area]",function(a){a=this.getAttribute("ap-click-area");var b=this.getAttribute("ap-click-name"),c=this.getAttribute("ap-click-data");dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})});
+function makeScriptGA_Event(a,b,c){dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})};</script>
+	<script type="text/javascript" id="">$("body").on("click","a",function(c){try{var a="",b="";var d=this;var k=d.getAttribute("href"),l=d.getAttribute("ap-click-area"),m=d.getAttribute("ap-click-name"),e=d.getAttribute("ap-click-data");a=k;if(null!=a&&-1<a.indexOf("\x26clickUrl")){a=a.split("\x26clickUrl");var g=d.tagName+"[href*\x3d'"+a[0]+"']"}else g=null!=a?d.tagName+"[href\x3d'"+k+"']":d.tagName;null!=l&&""!=l.trim()&&(b+="[ap-click-area\x3d'"+l+"']");null!=m&&""!=m.trim()&&(b+="[ap-click-name\x3d'"+m+"']");null!=e&&""!=e.trim()&&
+(b+="[ap-click-data\x3d'"+e+"']");g+=b;var f=d.parentElement;g=ga360_AddTag(g,f);var h=f.parentElement;g=ga360_AddTag(g,h);var n=h.parentElement;g=ga360_AddTag(g,n);b="Not Set";k=!1;0<ga360_Trim(d.innerText).length?(b=ga360_Trim(d.innerText),k=!0):0<ga360_Trim(f.innerText).length?b=ga360_Trim(f.innerText):0<ga360_Trim(h.innerText).length?b=ga360_Trim(h.innerText):0<ga360_Trim(n.innerText).length&&(b=ga360_Trim(n.innerText));l="ATag:"+document.title;m="";m=k?b:ga360_textLengthOverCut(b,20,null);e=
+g;if(1<$(e).length){var p=$(e).index(this);e=e+":eq("+p+")"}var q=c.pageX-$(e).offset().left,r=c.pageY-$(e).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),
+duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(t){console.log(t)}});
+$("body").on("click","button",function(c){try{var a="";var b=this;var d=b.className,k=b.id,l="",m="",e=b.getAttribute("ap-click-area"),g=b.getAttribute("ap-click-name"),f=b.getAttribute("ap-click-data");""!=d.trim()?l="[class*\x3d'"+d+"']":""!=k.trim()&&(l="[id\x3d'"+k+"']");var h=b.tagName+l;null!=e&&""!=e.trim()&&(m+="[ap-click-area\x3d'"+e+"']");null!=g&&""!=g.trim()&&(m+="[ap-click-name\x3d'"+g+"']");null!=f&&""!=f.trim()&&(m+="[ap-click-data\x3d'"+f+"']");h+=m;var n=b.parentElement;h=ga360_AddTag(h,
+n);var p=n.parentElement;h=ga360_AddTag(h,p);var q=p.parentElement;h=ga360_AddTag(h,q);d="Not Set";k=!1;0<ga360_Trim(b.innerText).length?(d=ga360_Trim(b.innerText),k=!0):0<ga360_Trim(n.innerText).length?d=ga360_Trim(n.innerText):0<ga360_Trim(p.innerText).length?d=ga360_Trim(p.innerText):0<ga360_Trim(q.innerText).length&&(d=ga360_Trim(q.innerText));e="ATag:"+document.title;g="";g=k?d:ga360_textLengthOverCut(d,20,null);f=h;if(1<$(f).length){var r=$(f).index(this);f=f+":eq("+r+")"}var t=c.pageX-$(f).offset().left,
+u=c.pageY-$(f).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:e,eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:e,
+eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(v){console.log(v)}});function ga360_AddTag(c,a){try{c=""!=a.id.trim()?a.tagName+"[id\x3d'"+a.id+"'] "+c:""!=a.className.trim()?a.tagName+"[class*\x3d'"+a.className+"'] "+c:a.tagName+" "+c}catch(b){}return c}function ga360_Trim(c){try{c=c.replace(/\s+/,""),c=c.replace(/\s+$/g,""),c=c.replace(/\n/g,""),c=c.replace(/\r/g,"")}catch(a){}return c}
+function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||null==b)b="...";c.length>a&&(c=c.substr(0,a)+b)}catch(d){}return c};</script>
+
+	<noscript>
+		<img height="1" width="1" style="display: none"
+			src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
+	</noscript>
+
+
+
+	<script type="text/javascript" id=""
+		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
+
 
 
 	<iframe id="x-sso-check" name="sso_check_iframe"
@@ -770,8 +691,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             //$('#renew201906').off('scroll touchmove mousewheel');
         });
         //로그인 성공 시 datalayer 태그 추가
-        var loginSet = "null";
-        var isFirstLogin = null;
+        var loginSet = "logloginNo";
+        var isFirstLogin = false;
         var loginAmr = 'null';
         if (loginSet != null) {
 			if (loginSet == "loglogin") {
@@ -1271,7 +1192,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<li class="drop_item"><a
 											href="${pageContext.request.contextPath}/reservationCheck"
 											data-track-name="Header 예약조회">예약조회</a></li>
-
 									</ul></li>
 								<li class="item item_icon_mo_nav"><a
 									class="nav_util_icon icon_mo_nav" href="#"></a></li>
@@ -1281,11 +1201,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 								<li class="item"><a
-									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction/312"
 									data-track-name="Header 로그인">로그인</a>
 									<ul class="drop_box drop_box2">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction/312"
 											data-track-name="Header 로그인">로그인</a></li>
 										<li class="drop_item"><a href="/kr/ko/login/joinIn"
 											title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
@@ -1318,7 +1238,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList">
 								<div class="tit">
 									<p>인기 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
 								<ul class="popular_list">
 									<li class="rank"><p>
@@ -1376,7 +1296,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList chartNewList auto_complete">
 								<div class="tit">
 									<p>최근 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
 								<ul class="new_list">
 									<li class="no_result">최근 검색어가 없습니다.</li>
@@ -1494,7 +1414,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														꽃 향 을 품 은 우잣 담</strong>
 												</p> <i class="rankState flegUp"></i></li>
 										</ul>
-										<p class="log date searchDateDiv">24. 07. 03 기준</p>
+										<p class="log date searchDateDiv">24. 07. 04 기준</p>
 									</div>
 									<div id="tab02" class="tabCnt" style="display: none;">
 										<ul class="new_list">
@@ -1537,7 +1457,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 				</div>
 			</div>
-			<div class="dim_bg" style="display: none;"></div>
+			<div class="dim_bg"></div>
 
 			<!-- 모바일 NAV : S  -->
 			<aside class="cdj_mo_nav">
@@ -1548,7 +1468,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<!-- 로그인 전 : S -->
 					<div class="logOut_top_box">
 						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction/312"
 							class="text"><span>로그인</span></a>
 					</div>
 					<!-- 로그인 전 : E -->
@@ -2332,135 +2252,578 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 
-
 		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
 		<main id="main" class="main cdj_renew" role="main">
-			<div class="stdd_store_wrap osl_stdd_common_wrap">
-				<section class="intro">
-					<div class="title_wrapper">
-						<p class="title ryu_gh_font">매장 검색</p>
-						<p class="description">
-							가장 가까운 <br class="mobile">오설록을 찾아보세요.
+			<div class="stdd_detail_wrap osl_stdd_common_wrap">
+				<section class="stdd_detail_top_bg_area">
+					<div class="img_box">
+						<img class="pcBlock"
+							src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_1_bg_pc.jpg">
+						<img class="moBlock"
+							src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_1_bg_mo.jpg">
+					</div>
+					<div class="stdd_detail_top_title">
+						<h6 class="ryu_gh_font">오설록 티하우스 북촌점</h6>
+						<p>
+							오설록이 재해석한 60년대의 가옥에서 <br>오설록의 취향과 차문화를 경험하는 공간
 						</p>
-					</div>
+						<div class="top_btn_reservation">
 
 
-				</section>
 
-				<section id="stddTeaShop"
-					class="section_wrap shop_find_place observe_tab active"
-					data-tab="3">
-					<div class="intro">
-						<div class="info"></div>
-						<div class="tool" id="findPlaceToggleBtn">
-							<img class="up"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt=""> <img class="down"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt="">
+							<button onclick="reservationDetail('22')"
+								class="btn_stroke white round btn_small mo_width_auto">예약하기</button>
+
+
 						</div>
 					</div>
-
-					<div class="contents">
-						<div class="new_search_box">
-							<form id="searchForm" action="/storeMap" method="get">
-								<input type="text" placeholder="매장 검색" id="storeName"
-									name="storeName"> <img
-									src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_search.svg"
-									alt="" style="cursor: pointer;"
-									onclick="document.getElementById('searchForm').submit();">
-							</form>
+					<div class="stdd_detail_top_nav_mo">
+						<div class="stdd_detail_top_nav_title">
+							<a href="javascript:void(0)"><span class="close_txt">오설록
+									티하우스 북촌점</span><span class="open_txt">매장소개</span></a>
 						</div>
-
-						<!-- Map Section -->
-						<div id="map" style="width: 100%; height: 600px;"></div>
-
-						<!-- Store List Section -->
-
-						<ul class="place_list">
-							<c:forEach items="${storeList}" var="dto">
-								<li class="place_item">
-									<p class="name ryu_gh_font" data-filter="true">${dto.title}</p>
-
-									<ul class="info">
-										<li class="info_row address">
-											<div class="label">주소</div>
-											<div class="content" data-filter="true">${dto.address}
-											</div>
-										</li>
-										<li class="info_row tel">
-											<div class="label">전화번호</div>
-											<div class="content" data-filter="true">${dto.phone}</div>
-										</li>
-										<li class="info_row time">
-											<div class="label">이용시간</div>
-											<div class="content">
-												<p>${dto.time}</p>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</c:forEach>
+						<ul>
+							<li><p class="stdd_detail_top_nav_sub_title">오설록 티뮤지엄</p></li>
+							<li><a href="/kr/ko/store-introduction/2">제주 오설록 티뮤지엄</a></li>
 						</ul>
-
+						<ul>
+							<li><p class="stdd_detail_top_nav_sub_title">오설록 티하우스</p></li>
+							<li class="active"><a href="/kr/ko/store-introduction/312">오설록
+									티하우스 북촌점</a></li>
+							<li><a href="/kr/ko/store-introduction/yongsan">오설록 티하우스
+									용산파크점</a></li>
+							<li><a href="/kr/ko/store-introduction/hannam">오설록 티하우스
+									한남점</a></li>
+							<li><a href="/kr/ko/store-introduction/mmca">오설록 티하우스
+									MMCA</a></li>
+							<li><a href="/kr/ko/store-introduction/174">오설록 1979</a></li>
+							<li><a href="/kr/ko/store-introduction/haeundae">오설록
+									티하우스 해운대점</a></li>
+							<li><a href="/kr/ko/store-introduction/gimpo">오설록 티하우스
+									김포공항점</a></li>
+						</ul>
 					</div>
-
-					<script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.500962635548, 127.044168622231), //지도의 중심좌표.
-            level: 6 //지도의 레벨(확대, 축소 정도)
-        };
-
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-        var positions = [
-            {
-                title: '현대백화점 무역점',
-                latlng: new kakao.maps.LatLng(37.5047087, 127.0030263)
-            },
-            {
-                title: '신세계백화점 강남점',
-                latlng: new kakao.maps.LatLng(37.49666645, 127.0629804)
-            },
-            {
-                title: '오설록 잠실점',
-                latlng: new kakao.maps.LatLng(37.5132612, 127.1001336)
-            },
-            {
-                title: '오설록 양재점',
-                latlng: new kakao.maps.LatLng(37.4856977332997, 127.036936055294)
-            }
-        ];
-
-        // 마커 이미지의 이미지 주소입니다
-        var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-        //var imageSrc = "${pageContext.request.contextPath}/resources/yupdduck/www.yupdduk.com/bj-images/yupdduk_sub/yupmap_marker.png"; 
-
-        for (var i = 0; i < positions.length; i++) {
-            // 마커 이미지의 이미지 크기 입니다
-            var imageSize = new kakao.maps.Size(24, 35);
-
-            var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-
-            // 마커 이미지를 생성합니다    
-            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
-
-            // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-                map: map, // 마커를 표시할 지도
-                position: positions[i].latlng, // 마커를 표시할 위치
-                title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-                image: markerImage // 마커 이미지 
-            });
-        }
-    </script>
+					<div class="btn_scroll_dn_wrap">
+						<a href="javascript:void(0)" class="btn_scroll_dn"
+							data-scroll-href="#stdd_detail_content"><img
+							src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_stdd_arrow_dn.png"
+							alt=""></a>
+					</div>
 				</section>
+				<section id="stdd_detail_content" class="stdd_detail_content_wrap">
+					<div class="stdd_detail_content_right">
+						<div class="section">
+							<div
+								class="main_info_txt_slider swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+								<ul class="swiper-wrapper" style="transition-duration: 0ms;">
+									<li
+										class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+										data-swiper-slide-index="2"
+										style="width: 600px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);"><p
+											class="main_info_txt ryu_gh_font">"차문화가 하나의 취향으로 자리잡을 수
+											있도록 가치소비와 새로운 페르소나의 생활 방식을 제안"</p></li>
+									<li class="swiper-slide swiper-slide-duplicate-active"
+										data-swiper-slide-index="0"
+										style="width: 600px; transition-duration: 0ms; opacity: 0; transform: translate3d(-600px, 0px, 0px);"><p
+											class="main_info_txt ryu_gh_font">"60년대의 양옥을 현대적으로 재해석한
+											공간"</p></li>
+									<li class="swiper-slide" data-swiper-slide-index="1"
+										style="width: 600px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1200px, 0px, 0px);"><p
+											class="main_info_txt ryu_gh_font">"옛것을 지키는 것과 동시의 오설록의
+											취향과 개성을 담아 감성적인 공간으로 재탄생"</p></li>
+									<li
+										class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+										data-swiper-slide-index="2"
+										style="width: 600px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1800px, 0px, 0px);"><p
+											class="main_info_txt ryu_gh_font">"차문화가 하나의 취향으로 자리잡을 수
+											있도록 가치소비와 새로운 페르소나의 생활 방식을 제안"</p></li>
+									<li
+										class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+										data-swiper-slide-index="0"
+										style="width: 600px; transition-duration: 0ms; opacity: 1; transform: translate3d(-2400px, 0px, 0px);"><p
+											class="main_info_txt ryu_gh_font">"60년대의 양옥을 현대적으로 재해석한
+											공간"</p></li>
+								</ul>
+								<div
+									class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+									<span
+										class="swiper-pagination-bullet swiper-pagination-bullet-active"
+										tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 2"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 3"></span>
+								</div>
+								<span class="swiper-notification" aria-live="assertive"
+									aria-atomic="true"></span>
+							</div>
+							<div
+								class="stdd_detail_main_slider swiper-container-initialized swiper-container-horizontal">
+								<ul class="swiper-wrapper"
+									style="transform: translate3d(-2400px, 0px, 0px); transition-duration: 0ms;">
+									<li class="swiper-slide swiper-slide-duplicate"
+										data-swiper-slide-index="5" style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-6.jpg"
+										alt=""></li>
+									<li class="swiper-slide" data-swiper-slide-index="0"
+										style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2.jpg"
+										alt=""></li>
+									<li class="swiper-slide swiper-slide-prev"
+										data-swiper-slide-index="1" style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-2.jpg"
+										alt=""></li>
+									<li class="swiper-slide swiper-slide-active"
+										data-swiper-slide-index="2" style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-3.jpg"
+										alt=""></li>
+									<li class="swiper-slide swiper-slide-next"
+										data-swiper-slide-index="3" style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-4.jpg"
+										alt=""></li>
+									<li class="swiper-slide" data-swiper-slide-index="4"
+										style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-5.jpg"
+										alt=""></li>
+									<li class="swiper-slide" data-swiper-slide-index="5"
+										style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2-6.jpg"
+										alt=""></li>
+									<li class="swiper-slide swiper-slide-duplicate"
+										data-swiper-slide-index="0" style="width: 800px;"><img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_2.jpg"
+										alt=""></li>
+								</ul>
+								<div class="swiper-button-prev" tabindex="0" role="button"
+									aria-label="Previous slide"></div>
+								<div class="swiper-button-next" tabindex="0" role="button"
+									aria-label="Next slide"></div>
+								<div
+									class="swiper-pagination dark_pagination swiper-pagination-clickable swiper-pagination-bullets">
+									<span class="swiper-pagination-bullet" tabindex="0"
+										role="button" aria-label="Go to slide 1"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 2"></span><span
+										class="swiper-pagination-bullet swiper-pagination-bullet-active"
+										tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 4"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 5"></span><span
+										class="swiper-pagination-bullet" tabindex="0" role="button"
+										aria-label="Go to slide 6"></span>
+								</div>
+								<span class="swiper-notification" aria-live="assertive"
+									aria-atomic="true"></span>
+							</div>
+							<div class="inner_box">
+								<ul>
+									<li class="title">주소</li>
+									<li class="txt">서울 종로구 북촌로 45 <a
+										href="http://kko.to/24XmmcFyFG" class="map_link_txt"
+										target="_blank"> <img
+											src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_store_map.png"
+											alt="" class="light_theme"> <img
+											src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_store_map_dark.png"
+											alt="" class="dark_theme"><span>지도보기</span></a>
+									</li>
+								</ul>
+								<ul>
+									<li class="title">운영시간</li>
+									<li class="txt">
+										<p>월 - 목 11:00 - 20:00</p>
+										<p>금 - 일 11:00 - 21:00</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="title">전화번호</li>
+									<li class="txt">070-4121-2019</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section store_list">
+							<div class="store_list_content_wrap">
+								<div class="store_list_content">
+									<div
+										class="left_slider swiper-container-initialized swiper-container-horizontal">
+										<ul class="swiper-wrapper"
+											style="transform: translate3d(-200px, 0px, 0px); transition-duration: 0ms;">
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
+												alt=""></li>
+										</ul>
+										<div class="swiper-pagination dark_pagination"></div>
+										<span class="swiper-notification" aria-live="assertive"
+											aria-atomic="true"></span>
+									</div>
+									<div class="right_txt">
+										<p class="store_list_title ryu_gh_font">1F 차향의 방(Tea
+											Atelier)</p>
+										<p class="store_list_subtitle">[오설록 가회다실 티클래스] 나만의 블랜디드 차
+											만들기</p>
+										<ul class="stdd_list_style">
+											<li>잎차를 소분하여 구매할 수 있는 지속가능한 티 라이프를 제안합니다.</li>
+											<li>티 마스터가 직접 블렌딩한 시그니처 티를 경험할 수 있습니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="store_list_content">
+									<div
+										class="left_slider swiper-container-initialized swiper-container-horizontal">
+										<ul class="swiper-wrapper"
+											style="transform: translate3d(-200px, 0px, 0px); transition-duration: 0ms;">
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_4.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_4.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_4.jpg"
+												alt=""></li>
+										</ul>
+										<div class="swiper-pagination dark_pagination"></div>
+										<span class="swiper-notification" aria-live="assertive"
+											aria-atomic="true"></span>
+									</div>
+									<div class="right_txt">
+										<p class="store_list_title ryu_gh_font">2F 찻마루(Tea Lounge)</p>
+										<p class="store_list_subtitle">[오설록 가회다실 티클래스] 나만의 블랜디드 차
+											만들기</p>
+										<ul class="stdd_list_style">
+											<li>제주 화산암반수로 우려낸 차의 본연의 색과 향미를<br> 오설록 전용 다구로
+												즐겨보세요.
+											</li>
+											<li>한국적 식재료를 활용한 북촌의 시그니처 티푸드를 만나보세요.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="store_list_content">
+									<div
+										class="left_slider swiper-container-initialized swiper-container-horizontal">
+										<ul class="swiper-wrapper"
+											style="transform: translate3d(-200px, 0px, 0px); transition-duration: 0ms;">
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_5.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_5.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_5.jpg"
+												alt=""></li>
+										</ul>
+										<div class="swiper-pagination dark_pagination"></div>
+										<span class="swiper-notification" aria-live="assertive"
+											aria-atomic="true"></span>
+									</div>
+									<div class="right_txt">
+										<p class="store_list_title ryu_gh_font">3F 바설록(Bar Sulloc)</p>
+										<p class="store_list_subtitle">[오설록 가회다실 티클래스] 나만의 블랜디드 차
+											만들기</p>
+										<ul class="stdd_list_style">
+											<li>북촌의 야경과 함께 차의 새로운 세계를 경험할 수 있는 공간</li>
+											<li>국내 정상급 바텐더들의 크리에이티브가 담긴 콜라보레이션 논알코올 티 칵테일</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="store_list_content">
+									<div
+										class="left_slider swiper-container-initialized swiper-container-horizontal">
+										<ul class="swiper-wrapper"
+											style="transform: translate3d(-200px, 0px, 0px); transition-duration: 0ms;">
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_6.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_6.jpg"
+												alt=""></li>
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_6.jpg"
+												alt=""></li>
+										</ul>
+										<div class="swiper-pagination dark_pagination"></div>
+										<span class="swiper-notification" aria-live="assertive"
+											aria-atomic="true"></span>
+									</div>
+									<div class="right_txt flex_col_between">
+										<p class="store_list_title ryu_gh_font">3F 가회다실(Tea Room)</p>
+										<ul class="stdd_list_style">
+											<li>기쁘고 즐거운 모임이라는 뜻의 가회의 의미를 담은 공간입니다.</li>
+											<li>오설록 명차와 다구를 통해 프라이빗한 차우림 클래스를 제공합니다.</li>
+										</ul>
+										<div class="bottom_btn_reservation"></div>
+									</div>
+								</div>
+
+
+								<!-- 여기서부터 데이터 넣기 -->
+								<div class="store_list_content">
+									<div
+										class="left_slider swiper-container-initialized swiper-container-horizontal">
+										<ul class="swiper-wrapper"
+											style="transform: translate3d(-200px, 0px, 0px); transition-duration: 0ms;">
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/upload/kr/ko/adminImage/JD/AU/20230626124815635YJ.jpg">
+											</li>
+											<li
+												class="swiper-slide swiper-slide-active swiper-slide-duplicate-next swiper-slide-duplicate-prev"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/upload/kr/ko/adminImage/JD/AU/20230626124815635YJ.jpg">
+											</li>
+											<li
+												class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-next"
+												data-swiper-slide-index="0" style="width: 200px;"><img
+												src="https://image.osulloc.com/upload/kr/ko/adminImage/JD/AU/20230626124815635YJ.jpg">
+											</li>
+										</ul>
+										<div class="swiper-pagination dark_pagination"></div>
+										<span class="swiper-notification" aria-live="assertive"
+											aria-atomic="true"></span>
+									</div>
+
+									<div class="right_txt flex_col_between">
+										<p class="store_list_title ryu_gh_font">북촌 티클래스</p>
+										<ul class="stdd_list_style no_dots">
+											<li>오설록이 제안하는 새로운 티 라이프 스타일을 소개합니다. <br> 티하우스 북촌점에서
+												갓 구운 신선한 차에 다양한 허브를 더해 취향이 담긴 블렌딩 티를 만들고, <br> 논알콜 티
+												칵테일 등 일상 속 차의 여러 모습을 오감으로 느낄 수 있는 프라이빗한 시간을 만나보세요! <br>
+												<br> 가격 : 50,000원 <br> ※ 말차 현미녹차 / 나만의 블렌딩 티 / 논알콜
+												티 칵테일 1잔 포함 <br></li>
+										</ul>
+										<div class="bottom_btn_reservation">
+											<button onclick="reservationDetail('22')"
+												class="btn_fill black round btn_medium mo_width_auto">예약하기</button>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="section store_list">
+							<div class="title_area border-top padding-20">
+								<h6 class="ryu_gh_font">스토리</h6>
+								<p class="subtitle">티하우스 북촌점의 순간들을 만나보세요</p>
+							</div>
+
+							<div
+								class="story_cards swiper-container-initialized swiper-container-horizontal">
+								<ul class="list swiper-wrapper"
+									style="transform: translate3d(0px, 0px, 0px);">
+									<li class="item swiper-slide swiper-slide-active"><a
+										href="https://www.osulloc.com/kr/ko/life/event/bukchon"
+										target="_blank"> <img class="thumbnail"
+											src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_7.jpg"
+											alt="">
+											<div class="info">
+												<div class="left">
+													<div class="description">
+														<p class="title">45 BUKCHONRO OSULLOC</p>
+														<p class="subtitle">우이 작가와 함께한 북촌점</p>
+													</div>
+												</div>
+												<span class="right"> <img
+													src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_link.png"
+													alt="">
+												</span>
+											</div>
+									</a></li>
+									<li class="item swiper-slide swiper-slide-next"><a
+										href="https://www.youtube.com/watch?v=1jxwg8cuVMQ"
+										target="_blank"> <img class="thumbnail"
+											src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_8.jpg"
+											alt="">
+											<div class="info">
+												<div class="left">
+													<div class="description">
+														<p class="title">Gift From Jeju</p>
+														<p class="subtitle">오설록이 따뜻한 행복을 선물합니다</p>
+													</div>
+													<span class="time">01:00</span>
+												</div>
+												<span class="right"> <img
+													src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_link.png"
+													alt="">
+												</span>
+											</div>
+									</a></li>
+								</ul>
+								<span class="swiper-notification" aria-live="assertive"
+									aria-atomic="true"></span>
+							</div>
+						</div>
+
+						<div class="section store_list">
+							<div class="title_area border-top padding-20">
+								<h6 class="ryu_gh_font">메뉴 안내</h6>
+								<p class="subtitle">오설록 티하우스 북촌점만의 메뉴를 소개합니다.</p>
+							</div>
+
+							<div>
+								<div class="bottom_btn_reservation">
+									<button onclick="openMenuModal()"
+										class="btn_fill black round btn_medium mo_width_auto">메뉴
+										보기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="stdd_detail_menu_modal">
+				<div class="wrapper">
+					<div class="modal_header">
+						<span class="close" onclick="closeMenuModal()"> <img
+							src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_close.png"
+							alt="">
+						</span>
+					</div>
+					<div
+						class="modal_body swiper-container-fade swiper-container-initialized swiper-container-horizontal"
+						id="menuItems">
+						<ul class="swiper-wrapper" style="transition-duration: 0ms;">
+							<li class="swiper-slide swiper-slide-duplicate"
+								data-swiper-slide-index="4">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p5.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">북촌의 색동</p>
+									<p class="name_en">Rice Dessert &amp; 4 Dipping Sauce</p>
+								</div>
+							</li>
+							<li class="swiper-slide" data-swiper-slide-index="0">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p1.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">볼케닉 한라티니</p>
+									<p class="name_en">Volcanic Hallatini</p>
+								</div>
+							</li>
+							<li class="swiper-slide" data-swiper-slide-index="1">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p2.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">텐저린 북촌 슬링</p>
+									<p class="name_en">Tangerine Bukchon Sling</p>
+								</div>
+							</li>
+							<li class="swiper-slide" data-swiper-slide-index="2">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p3.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">곶자왈 동백 피나콜라다</p>
+									<p class="name_en">Camellia Pinacolada</p>
+								</div>
+							</li>
+							<li class="swiper-slide" data-swiper-slide-index="3">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p4.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">북촌의 기와</p>
+									<p class="name_en">Green Tea Waffle Plate</p>
+								</div>
+							</li>
+							<li class="swiper-slide" data-swiper-slide-index="4">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p5.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">북촌의 색동</p>
+									<p class="name_en">Rice Dessert &amp; 4 Dipping Sauce</p>
+								</div>
+							</li>
+							<li
+								class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+								data-swiper-slide-index="0">
+								<div class="thumbnail">
+									<img
+										src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_p1.jpg"
+										alt="">
+								</div>
+								<div class="menu_info">
+									<p class="category">SIGNATURE</p>
+									<p class="name_ko">볼케닉 한라티니</p>
+									<p class="name_en">Volcanic Hallatini</p>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-button-prev" tabindex="0" role="button"
+							aria-label="Previous slide">
+							<img
+								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_left_line.png">
+						</div>
+						<div class="swiper-button-next" tabindex="0" role="button"
+							aria-label="Next slide">
+							<img
+								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_right_line.png">
+						</div>
+						<span class="swiper-notification" aria-live="assertive"
+							aria-atomic="true"></span>
+					</div>
+				</div>
 			</div>
 		</main>
 
+		<!-- footer -->
 
 
 
@@ -2479,7 +2842,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction/312"
 							class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
 							href="https://www.tiktok.com/@osulloc_official" target="_blank"
 							class="btn-share--circle" style="z-index: 10000;"
@@ -2584,8 +2947,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
 									data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
 
-								<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
-									data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+
 								<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
 									data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
 								<li><a
@@ -2659,7 +3021,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="func">
 					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
 						data-track-name="Footer_M 고객센터">고객센터</a> <a
-						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction/312"
 						class="signIn" data-track-name="Footer_M 로그인">로그인</a>
 
 
@@ -2858,47 +3220,527 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-	<a href="" class="goTop">위로 가기</a>
-	<script type="text/javascript" id="fb-pixel-code">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","494913268302940");</script>
-
-
-	<script type="text/javascript" id="" charset="UTF-8"
-		src="//t1.daumcdn.net/adfit/static/kp.js"></script>
-	<script type="text/javascript" id="">jQuery(document).on("click","[ap-click-area]",function(a){a=this.getAttribute("ap-click-area");var b=this.getAttribute("ap-click-name"),c=this.getAttribute("ap-click-data");dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})});
-function makeScriptGA_Event(a,b,c){dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})};</script>
-	<script type="text/javascript" id="">$("body").on("click","a",function(c){try{var a="",b="";var d=this;var k=d.getAttribute("href"),l=d.getAttribute("ap-click-area"),m=d.getAttribute("ap-click-name"),e=d.getAttribute("ap-click-data");a=k;if(null!=a&&-1<a.indexOf("\x26clickUrl")){a=a.split("\x26clickUrl");var g=d.tagName+"[href*\x3d'"+a[0]+"']"}else g=null!=a?d.tagName+"[href\x3d'"+k+"']":d.tagName;null!=l&&""!=l.trim()&&(b+="[ap-click-area\x3d'"+l+"']");null!=m&&""!=m.trim()&&(b+="[ap-click-name\x3d'"+m+"']");null!=e&&""!=e.trim()&&
-(b+="[ap-click-data\x3d'"+e+"']");g+=b;var f=d.parentElement;g=ga360_AddTag(g,f);var h=f.parentElement;g=ga360_AddTag(g,h);var n=h.parentElement;g=ga360_AddTag(g,n);b="Not Set";k=!1;0<ga360_Trim(d.innerText).length?(b=ga360_Trim(d.innerText),k=!0):0<ga360_Trim(f.innerText).length?b=ga360_Trim(f.innerText):0<ga360_Trim(h.innerText).length?b=ga360_Trim(h.innerText):0<ga360_Trim(n.innerText).length&&(b=ga360_Trim(n.innerText));l="ATag:"+document.title;m="";m=k?b:ga360_textLengthOverCut(b,20,null);e=
-g;if(1<$(e).length){var p=$(e).index(this);e=e+":eq("+p+")"}var q=c.pageX-$(e).offset().left,r=c.pageY-$(e).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),
-duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(t){console.log(t)}});
-$("body").on("click","button",function(c){try{var a="";var b=this;var d=b.className,k=b.id,l="",m="",e=b.getAttribute("ap-click-area"),g=b.getAttribute("ap-click-name"),f=b.getAttribute("ap-click-data");""!=d.trim()?l="[class*\x3d'"+d+"']":""!=k.trim()&&(l="[id\x3d'"+k+"']");var h=b.tagName+l;null!=e&&""!=e.trim()&&(m+="[ap-click-area\x3d'"+e+"']");null!=g&&""!=g.trim()&&(m+="[ap-click-name\x3d'"+g+"']");null!=f&&""!=f.trim()&&(m+="[ap-click-data\x3d'"+f+"']");h+=m;var n=b.parentElement;h=ga360_AddTag(h,
-n);var p=n.parentElement;h=ga360_AddTag(h,p);var q=p.parentElement;h=ga360_AddTag(h,q);d="Not Set";k=!1;0<ga360_Trim(b.innerText).length?(d=ga360_Trim(b.innerText),k=!0):0<ga360_Trim(n.innerText).length?d=ga360_Trim(n.innerText):0<ga360_Trim(p.innerText).length?d=ga360_Trim(p.innerText):0<ga360_Trim(q.innerText).length&&(d=ga360_Trim(q.innerText));e="ATag:"+document.title;g="";g=k?d:ga360_textLengthOverCut(d,20,null);f=h;if(1<$(f).length){var r=$(f).index(this);f=f+":eq("+r+")"}var t=c.pageX-$(f).offset().left,
-u=c.pageY-$(f).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:e,eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:e,
-eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(v){console.log(v)}});function ga360_AddTag(c,a){try{c=""!=a.id.trim()?a.tagName+"[id\x3d'"+a.id+"'] "+c:""!=a.className.trim()?a.tagName+"[class*\x3d'"+a.className+"'] "+c:a.tagName+" "+c}catch(b){}return c}function ga360_Trim(c){try{c=c.replace(/\s+/,""),c=c.replace(/\s+$/g,""),c=c.replace(/\n/g,""),c=c.replace(/\r/g,"")}catch(a){}return c}
-function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||null==b)b="...";c.length>a&&(c=c.substr(0,a)+b)}catch(d){}return c};</script>
-
-	<noscript>
-		<img height="1" width="1" style="display: none"
-			src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
-	</noscript>
+	<!-- 예약모달 -->
 
 
 
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-46DFPHV30H"
-		data-load-time="1720008264532" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-46DFPHV30H&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9171372174z89172994731za200zb9172994731&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=119304588"
-		style="display: none; visibility: hidden;"></iframe>
-	<script type="text/javascript" id=""
-		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
+	<!-- 날짜 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="date_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">날짜를 선택해주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="date_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 날짜 : E -->
+
+	<!-- 시간 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="time_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">시간을 선택해주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="time_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 시간 : E -->
+
+	<!-- 이름 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="name_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">이름을 확인해주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="name_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 이름 : E -->
+
+	<!-- 휴대폰번호 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="phone_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">휴대폰번호를 확인해주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="phone_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 휴대폰번호 : E -->
+
+	<!-- 이용약관동의 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="nmbrUsgTncAgrYn_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">이용약관에 동의해주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="nmbrUsgTncAgrYn_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 이용약관동의 : E -->
+
+	<!-- 개인정보수집동의 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="psnIncsYn_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">개인정보수집동의에 동의해주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="psnIncsYn_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 개인정보수집동의 : E -->
+
+	<!-- 개인정보제공동의 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="psnInfrDealTsAgrYn_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">개인정보제공동의에 동의해주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="psnInfrDealTsAgrYn_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
 
 
 	<script type="text/javascript" id=""
 		src="https://www.googletagmanager.com/gtag/js?id=DC-10125800"></script>
+	<!-- 개인정보제공동의 : E -->
+
+	<!-- 결제방식 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="payment_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">결제방식을 선택해 주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="payment_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 결제방식 : E -->
+
+	<!-- 신용카드선택 - 카드선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="card_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">카드를 선택해 주세요</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="card_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 신용카드선택 - 카드선택 : E -->
+
+	<!-- 임직원 로그인 : S -->
+	<div class="layer_popup_wrap cdj_renew basic stdd_apon_modal"
+		id="loginAuthModal" style="display: none;">
+		<div class="layer_box_new">
+			<!-- header -->
+			<div class="apon_header">
+				<div class="headerBox">
+					<div class="inner">
+						<h1 class="page_tit">임직원 인증</h1>
+						<button type="button" class="btn_page_close close-action"
+							onclick="loginAuthClose();">
+							<span class="blind">닫기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+			<section class="apon_container">
+				<div class="page_top_area">
+					<h2>
+						아모레퍼시픽 재직 중인 <br>임직원이라면 AP-ON 계정으로<br>임직원 등록을 할 수 있습니다.
+					</h2>
+				</div>
+				<div class="sec_login">
+					<form>
+						<div class="input_form">
+							<span class="inp" id="loginid-span"> <input type="text"
+								id="loginId" class="inp_text" placeholder="AP-ON 아이디 입력"
+								onkeyup="loginColor(this)">
+
+							</span>
+						</div>
+						<div class="input_form">
+							<span class="inp" id="password-span"> <input
+								type="password" id="loginPassword" class="inp_text"
+								placeholder="비밀번호 입력 (영문, 숫자, 특수문자 조합)"
+								onkeyup="loginColor(this);">
+							</span>
+						</div>
+						<div class="btn_submit">
+							<!-- disabled show/hide -->
+							<button id="dologin" type="button" onclick="loginAuth('T002')"
+								class="btn_w100 ptBtn" disabled="">임직원 인증하기</button>
+						</div>
+					</form>
+					<div class="mail_info_box">
+						<span>임직원 인증은 최초 1회 진행되며,<br>로그인한 뷰티 포인트 통합 멤버십 계정에
+							연동되므로 <br>인증 전 꼭 확인해주세요.
+						</span>
+					</div>
+				</div>
+				<div class="service_info_box">
+					<div class="service_info_detail top">
+						<span>임직원 인증 완료 후에 인증 요청한 사이트에서 로그아웃 후 다시 로그인 해주시기 바랍니다.</span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- 임직원 로그인 : E -->
+
+	<!-- 임직원 로그인 실패 - 카드선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="login_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">존재하지 않는 AP임직원 계정입니다.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="login_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 임직원 로그인 실패 - 카드선택 : E -->
+
+	<!-- 비회원 예약 팝업 : S -->
+	<div class="layer_popup_wrap cdj_renew type01 stdd_rsv_login_modal"
+		id="login_member_show_yn" style="display: none;">
+		<div class="layer_box_new bgF6">
+			<div class="text_box01">
+				<p class="text">회원으로 예약하시겠습니까?</p>
+			</div>
+			<div class="btn_typeB btn_pop">
+				<button id="member" class="btn_w50">로그인</button>
+				<a href="/kr/ko/login/joinIn" class="btn_w50">회원가입</a>
+			</div>
+			<div class="nonmem_pch">
+				<p class="text">회원가입 없이도 예약 할 수 있어요!</p>
+				<button id="nomemberReservation" class="btn_w100 ptBtn">비회원
+					예약하기</button>
+			</div>
+			<button class="btn_close" id="login_member_close_yn"></button>
+		</div>
+	</div>
+	<!-- 비회원 예약 팝업 : E -->
+
+	<!-- 신용카드선택 - 카드선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="selectLastDate_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box" id="selectLastDate"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="selectLastDate_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 신용카드선택 - 카드선택 : E -->
+
+	<!-- 신용카드선택 - 카드선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="selectStartDate_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box" id="selectStartDate"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="selectStartDate_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 신용카드선택 - 카드선택 : E -->
+
+	<!-- 테이블 선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="table_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">테이블을 선택해 주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="table_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 테이블 선택 : E -->
+
+	<!-- 인원 선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="person_number_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box" id="personHtml"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="person_number_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 인원 선택 : E -->
+
+	<!-- 인원 체크 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="person_number_minus_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">인원을 확인해 주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="person_number_minus_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 인원 체크 : E -->
+
+	<!-- 금액 체크 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="moeny_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">최종결제금액을 확인해 주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="moeny_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 금액 체크 : E -->
+
+	<!-- 에러 메세지 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="error_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box" id="htmlError"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="error_close_modal" class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 에러 메세지 : E -->
+
+	<!-- 신용카드할부 안내 : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="interest_show_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">신용카드 할부 50,000원 이상 가능합니다.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="interest_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 신용카드할부 안내 : E -->
+
+	<!-- 무이자 할부 안내 : S -->
+	<div class="cdj_renew reserveInterestInfo" style="display: none;">
+		<div class="no_interest_con" style="display: block;">
+			<div class="no_interest_pop">
+				<div class="top_box">
+					무이자 할부 안내
+					<button type="button" id="reserveInterestInfo_close_modal"
+						class="no_pop_close"></button>
+				</div>
+				<div class="con_box"></div>
+			</div>
+		</div>
+		<div class="no_interest_con_dim" style="display: block;"></div>
+	</div>
+	<!-- 무이자 할부 안내 : S -->
+
+	<!-- 신용카드할부 미선택 : S -->
+	<div class="layer_popup_wrap cdj_renew basic"
+		id="card_interest_show_modal" style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">할부를 선택해 주세요.</div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="card_interest_close_modal"
+					class="btn_w100 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 신용카드할부 미선택 : E -->
+
+	<!-- 위약금 발생 조건 날짜 결제 시 Alert : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="penalty_alert_modal"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box">
+				선택하신 날짜는 예약 취소 시, <br>취소/환불 규정에 따라 취소 수수료가 발생됩니다. <br> <br>
+				<strong>정말 예약하시겠습니까?</strong>
+			</div>
+			<div class="btn_typeB btn_pop">
+				<button type="button" id="penalty_alert_close_modal" class="btn_w50">취소</button>
+				<button type="button" onclick="confirmPenalty()"
+					class="btn_w50 ptBtn">확인</button>
+			</div>
+		</div>
+	</div>
+	<!-- 위약금 발생 조건 날짜 결제 시 Alert : E -->
+
+
+
+	<script>
+
+  document.querySelector("#date_close_modal").addEventListener('click', () => {
+    document.getElementById("date_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#time_close_modal").addEventListener('click', () => {
+    document.getElementById("time_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#name_close_modal").addEventListener('click', () => {
+    document.getElementById("name_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#phone_close_modal").addEventListener('click', () => {
+    document.getElementById("phone_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#nmbrUsgTncAgrYn_close_modal").addEventListener('click', () => {
+    document.getElementById("nmbrUsgTncAgrYn_show_modal").style.display ='none';
+  });
+  document.querySelector("#psnIncsYn_close_modal").addEventListener('click', () => {
+    document.getElementById("psnIncsYn_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#psnInfrDealTsAgrYn_close_modal").addEventListener('click', () => {
+    document.getElementById("psnInfrDealTsAgrYn_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#payment_close_modal").addEventListener('click', () => {
+    document.getElementById("payment_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#card_close_modal").addEventListener('click', () => {
+    document.getElementById("card_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#login_close_modal").addEventListener('click', () => {
+    document.getElementById("login_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#login_close_modal").addEventListener('click', () => {
+    document.getElementById("login_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#login_member_close_yn").addEventListener('click', () => {
+    document.getElementById("login_member_show_yn").style.display ='none';
+  });
+
+  document.querySelector("#selectLastDate_close_modal").addEventListener('click', () => {
+    document.getElementById("selectLastDate_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#selectStartDate_close_modal").addEventListener('click', () => {
+    document.getElementById("selectStartDate_show_modal").style.display ='none';
+  });
+
+  // 임직원 로그인 id, pw 입력 텍스트 색상변경
+  function loginColor(input) {
+    input.value = input.value.replace(/\s+/g, '');
+
+    if (document.querySelector("#loginId").value.length != 0 && document.querySelector("#loginPassword").value.length != 0) {
+      document.getElementById("dologin").removeAttribute("disabled");
+    } else {
+      document.getElementById("dologin").disabled = true;
+    }
+  }
+
+  document.querySelector("#table_close_modal").addEventListener('click', () => {
+    document.getElementById("table_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#person_number_close_modal").addEventListener('click', () => {
+    document.getElementById("person_number_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#person_number_minus_close_modal").addEventListener('click', () => {
+    document.getElementById("person_number_minus_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#moeny_close_modal").addEventListener('click', () => {
+    document.getElementById("moeny_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#error_close_modal").addEventListener('click', () => {
+    document.getElementById("error_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#interest_close_modal").addEventListener('click', () => {
+    document.getElementById("interest_show_modal").style.display ='none';
+  });
+
+  document.querySelector("#card_interest_close_modal").addEventListener('click', () => {
+    document.getElementById("card_interest_show_modal").style.display ='none';
+  });
+
+  /* 예약 무이자 할부 관련 : S */
+  var rsvInterestInfoModal = document.getElementById('reserveInterestInfo_show_modal');
+  if ( rsvInterestInfoModal !== null ) {
+    function openInstallmentPop(){
+      var popup = window.open('https://admin8.kcp.co.kr/html/popup/thismonth/html/kcp_pop_up.html', '무이자할부 안내', 'width=780, height=800, scrollbars=yes');
+    }
+    rsvInterestInfoModal.addEventListener('click', function() {
+      // document.querySelector('.cdj_renew.reserveInterestInfo').style.display = 'block';
+      // document.querySelector('.cdj_renew.reserveInterestInfo .no_interest_con_dim').style.display = 'block';
+      openInstallmentPop();
+    });
+  }
+
+  document.getElementById('reserveInterestInfo_close_modal').addEventListener('click', function() {
+    document.querySelector('.cdj_renew.reserveInterestInfo .no_interest_con').style.display = 'none';
+    document.querySelector('.cdj_renew.reserveInterestInfo .no_interest_con_dim').style.display = 'none';
+  });
+  /* 예약 무이자 할부 관련 : E */
+
+  document.querySelector("#penalty_alert_close_modal").addEventListener('click', () => {
+    document.getElementById("penalty_alert_modal").style.display ='none';
+  });
+
+</script>
+
+
+	<script>
+
+  let moveId = '';
+  // 예약하기 이동
+  const reservationDetail = (intgRsvtPgmId) => {
+    moveId = intgRsvtPgmId;
+
+    if ('' == null || '' == '') {
+      document.getElementById("login_member_show_yn").style.display ='flex';
+    } else {
+      location.href='/kr/ko/reservation/program/' + moveId;
+    }
+
+    // 비회원 결제이동
+    document.getElementById("nomemberReservation").onclick = function() {
+      location.href='/kr/ko/reservation/program/' + moveId;
+    };
+
+    document.getElementById("member").onclick = function() {
+      location.href="/kr/ko/login?r=" + '/kr/ko/reservation/program/' + moveId;
+    };
+
+  }
+
+
+</script>
+
+
+
 
 
 
 
 	<script type="text/javascript" id=""
 		src="//static.criteo.net/js/ld/ld.js"></script>
+	<a href="" class="goTop">위로 가기</a>
 
 	<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];</script>
 
@@ -2913,8 +3755,8 @@ function sendRequestFB(a){var b=!1;try{if("PageView"!=a.evt_name&&"InitiateCheck
 	<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
 
 	<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
-		data-load-time="1720008264773" height="0" width="0"
-		src="https://td.doubleclick.net/td/rul/645486124?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+		data-load-time="1720082763580" height="0" width="0"
+		src="https://td.doubleclick.net/td/rul/645486124?random=1720082763575&amp;cv=11&amp;fst=1720082763575&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%2F312&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
 		style="display: none; visibility: hidden;"></iframe>
 	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
 try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W";(function(a,d,e,b,c){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};b=d.createElement(e);b.async=!0;b.defer=!0;b.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(b,c)})(window,document,"script");enp("create","common","osulloc",{device:"B"});enp("send","common","osulloc")}}catch(a){};</script>
@@ -2925,38 +3767,21 @@ try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W
 
 	<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
 
-	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](44);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
+	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](23);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
 
 
 	<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
 
 	<script type="text/javascript" id=""
 		src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008264845" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=423527288"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008264894" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=376872417"
-		style="display: none; visibility: hidden;"></iframe>
 	<div id="criteo-tags-div" style="display: none;"></div>
-	<iframe id="avdfi_1720008264902"
+	<iframe id="avdfi_1720082763624"
 		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
 		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
 		scrolling="no"
 		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
 	<div id="adn_container" style="display: none">
-		<div id="adn_wrap_59290495639" style="display: none"></div>
-		<div id="adn_wrap_79584187290" style="display: none">
-			<iframe frameborder="0" scrolling="no" width="0px" height="0px"
-				src="https://kn.acrosspf.com/ads_1.0.2.ad?ad_ids=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;u=103669&amp;t=Home&amp;o=&amp;p=&amp;i=&amp;r=85955932516"></iframe>
-		</div>
-		<div id="adn_wrap_62648948645" style="display: none">
-			<img
-				src="https://idm.skplanet.com/pixel?nid=45&amp;uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;channel=web&amp;url=https%3A%2F%2Fidm.skplanet.com%2Fgetuid"
-				width="0" height="0">
-		</div>
+		<div id="adn_wrap_67102945861" style="display: none"></div>
 	</div>
 
 
@@ -2971,14 +3796,6 @@ try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W
 	<div style="display: none; visibility: hidden;">
 		<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
 	</div>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008341276" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=230551579"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008341288" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=1926116256"
-		style="display: none; visibility: hidden;"></iframe>
 	<script type="text/javascript" async="" defer=""
 		src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
 </body>

@@ -35,11 +35,10 @@ public class StoreController {
 
 		command = new StoreListCommand();
 		command.execute(model);
-		
+
 		return "/store/store";
 	}
 
-	
 	@RequestMapping("/map") // 상품 목록
 	public String storeMap(Model model) {
 
@@ -49,5 +48,10 @@ public class StoreController {
 		command.execute(model);
 
 		return "/store/storemap";
+	}
+
+	@RequestMapping("/storeDetail")
+	public String storeDetail() {
+		return "/store/storeDetail";
 	}
 }

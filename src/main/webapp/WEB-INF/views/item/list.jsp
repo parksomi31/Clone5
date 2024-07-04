@@ -43,12 +43,31 @@ img {
 	width: 150px; /* 이미지 크기 조절 */
 	height: auto;
 }
+
+.button-style {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #6C801A; /* 버튼 배경색 */
+	color: #fff; /* 버튼 텍스트 색상 */
+	text-decoration: none; /* 링크 밑줄 제거 */
+	border: 1px solid transparent; /* 테두리 스타일 */
+	border-radius: 4px; /* 버튼 테두리 둥글기 */
+	cursor: pointer;
+	text-align: center;
+	margin-left: 1450px;
+	border-width: 1px; /* 테두리 두께 */
+}
+
+.button-style:hover {
+	background-color: #ADABAB; /* 마우스 호버시 배경색 변화 */
+	border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+}
 </style>
 </head>
 
 
 <meta charset="UTF-8">
-<title>홈화면</title>
+<title>오설록</title>
 <head>
 <!-- 20190710 main html 추가 시작 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -596,12 +615,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 .btn {
-	background-color: #0071e3;
+	background-color: #8DB600; /* 살짝 연한 초록색 */
 	color: #fff;
-	padding: 5px 10px;
+	padding: 10px 20px; /* 패딩을 좀 더 크게 */
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 20px; /* 더 둥근 모서리 */
 	display: inline-block;
+	border: none; /* 테두리 없애기 */
+	text-align: center; /* 텍스트 가운데 정렬 */
+	font-size: 16px; /* 폰트 크기 */
+	cursor: pointer; /* 마우스 오버 시 포인터 모양 변경 */
+	transition: background-color 0.3s ease; /* 배경색 전환 애니메이션 */
+}
+
+.btn:hover {
+	background-color: #6C801A; /* 마우스 호버 시 배경색 변경 */
 }
 
 .icon-btn {
@@ -609,7 +637,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	background: none;
 	cursor: pointer;
 	font-size: 20px;
-	color: #0071e3;
+	color: #6c801a;
 }
 
 .logo {

@@ -89,7 +89,6 @@ body {
 .form-container a:hover {
 	text-decoration: underline;
 }
-
 </style>
 <!-- head -->
 <!-- main 변수 -->
@@ -374,7 +373,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</noscript>
 	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
 
-<<<<<<< HEAD
+	<<<<<<< HEAD
 	<!-- End Google Tag Manager (noscript) -->
 	<script type="text/javascript">
 	function dataUndefinedChk(inputValue) {
@@ -1867,29 +1866,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<!-- 타이틀 : E -->
 
 
-			<div class="container">
+			<section class="section">
+				<div class="w1200">
+					<div class="faq_con">
+						<div class="inner_box">
 
 
-				<form action="noticeWrite" method="post" class="form-container">
-					<table>
-						<tr>
-							<td>제목</td>
-							<td><input type="text" name="notice_title" size="50"></td>
-						</tr>
-						<tr>
-							<td>내용</td>
-							<td><input type="text" name="notice_content" size="50"></td>
-						</tr>
-						<tr>
-							<td colspan="2" style="text-align: center;"><input
-								type="submit" value="입력"> <a href="noticeView">목록보기</a></td>
-						</tr>
-					</table>
-				</form>
-			</div>
-
-
-
+							<table width="500" cellpadding="10" cellspacing="0" border="1">
+								<form action="noticeWrite" method="post">
+									<tr>
+										<td colspan="2"
+											style="background-color: #f0f0f0; text-align: center; font-size: 24px; padding: 10px;">
+											공지사항 작성</td>
+									</tr>
+									<tr>
+										<td
+											style="font-weight: bold; font-size: 16px; width: 30%; padding: 10px; text-align: center;">제목</td>
+										<td style="padding: 10px;"><input type="text"
+											name="notice_title" size="50"
+											style="width: 100%; padding: 5px;"></td>
+									</tr>
+									<tr>
+										<td
+											style="font-weight: bold; font-size: 16px; width: 30%; padding: 10px; text-align: center;">내용</td>
+										<td style="padding: 10px;"><textarea
+												name="notice_content" rows="5" cols="50"
+												style="width: 100%; padding: 5px;"></textarea></td>
+									</tr>
+									<tr>
+										<td colspan="2" align="center" style="padding: 10px;"><input
+											type="submit" value="입력"
+											style="padding: 10px 20px; font-size: 16px;"> <a
+											href="noticeView"
+											style="font-size: 16px; padding: 10px 20px;">목록보기</a></td>
+									</tr>
+								</form>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
 
@@ -2346,28 +2362,25 @@ function fileFunction(){
   	var pop = window.open("/kr/ko/file/fileDownload?fileName="+fileNm,"pop","scrollbars=yes, resizable=yes, width=400, height=600"); 
 }
 </script>
-=======
-    <form action="noticeWrite" method="post">
-        <table>
-            <tr>
-                <td>제목</td>
-                <td><input type="text" name="notice_title" size="50"></td>
-            </tr>
-            <tr>
-                <td>내용</td>
-                <td><input type="text" name="notice_content" size="50"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="입력">
-                    &nbsp;&nbsp;
-                    <a href="noticeView">목록보기</a>
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
->>>>>>> branch 'master' of https://github.com/parksomi31/Clone5.git
+	=======
+	<form action="noticeWrite" method="post">
+		<table>
+			<tr>
+				<td>제목</td>
+				<td><input type="text" name="notice_title" size="50"></td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td><input type="text" name="notice_content" size="50"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="입력">
+					&nbsp;&nbsp; <a href="noticeView">목록보기</a></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	>>>>>>> branch 'master' of https://github.com/parksomi31/Clone5.git
 </body>
 </html>
 F

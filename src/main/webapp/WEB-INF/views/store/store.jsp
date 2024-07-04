@@ -2573,7 +2573,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<p class="description">${dto.content}</p>
 									<div class="action">
 										<a class="link_btn"
-											href="/kr/ko/store-introduction/${dto.store_index}">더
+											href="storeDetail">더
 											알아보기</a> <a class="link_btn"
 											href="/kr/ko/store-introduction/${dto.store_index}">예약하기</a>
 									</div>

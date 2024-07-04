@@ -62,6 +62,27 @@ h1 {
 	background-color: #495057; /* 닫기 버튼 호버 배경색 */
 	border-color: #495057; /* 닫기 버튼 호버 테두리 색상 */
 }
+
+.btn-container {
+	text-align: center; /* 부모 요소를 가운데 정렬 */
+	margin-top: 50px; /* 필요한 경우 상단 여백 추가 */
+}
+
+.btn {
+	background-color: #8DB600; /* 살짝 연한 초록색 */
+	color: #fff;
+	padding: 10px 20px; /* 패딩을 좀 더 크게 */
+	text-decoration: none;
+	border-radius: 20px; /* 더 둥근 모서리 */
+	display: block; /* block 요소로 변경 */
+	border: none; /* 테두리 없애기 */
+	text-align: center; /* 텍스트 가운데 정렬 */
+	font-size: 16px; /* 폰트 크기 */
+	cursor: pointer; /* 마우스 오버 시 포인터 모양 변경 */
+	transition: background-color 0.3s ease; /* 배경색 전환 애니메이션 */
+	margin: 0 auto; /* 수평 가운데 정렬 */
+	width: 200px; /* 버튼의 고정 너비 */
+}
 </style>
 </head>
 
@@ -108,6 +129,9 @@ h1 {
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="btn-container">
+		<a href="admin" class="btn">관리자 홈으로</a>
 	</div>
 
 	<script
