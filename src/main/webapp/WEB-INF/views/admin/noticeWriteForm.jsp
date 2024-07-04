@@ -65,7 +65,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>FAQ 작성화면</h2>
+    <h2>공지사항 작성화면</h2>
 
     <form action="noticeWrite" method="post">
         <table>
