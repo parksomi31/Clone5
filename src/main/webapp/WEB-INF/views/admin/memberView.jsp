@@ -1887,7 +1887,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 
-
 		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
 		<!-- CDJ 개선 마이페이지 공지사항 뷰 : S -->
 		<main class="main cdj_renew">
@@ -1967,7 +1966,7 @@ table tr:nth-child(even) {
 </style>
 			</head>
 			<body>
-
+<br/><br/>
 				<table>
 					<thead>
 						<tr>
@@ -1989,7 +1988,7 @@ table tr:nth-child(even) {
 						</c:forEach>
 					</tbody>
 				</table>
-
+<br/><br/>
 				<!--new_footer-->
 				<div id="new_footer">
 					<!--PC-->
