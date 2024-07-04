@@ -1,106 +1,163 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
+<style>
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
+}
+
+.page_tit {
+	background-color: transparent;
+	color: #333;
+}
+</style>
 <!-- head -->
 
 <!-- main 변수 -->
 
 <!-- 20190710 main html 추가 시작 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
 <meta name="mobile-web-app-capable" content="yes">
 <!--20211111 파비콘 적용-->
-<link rel="shortcut icon" sizes="192*192" href="https://image.osulloc.com/upload/kr/ko/favicon.ico">
-<link rel="apple-touch-icon" href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
-<link rel="apple-touch-icon-precomposed" href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
+<link rel="shortcut icon" sizes="192*192"
+	href="https://image.osulloc.com/upload/kr/ko/favicon.ico">
+<link rel="apple-touch-icon"
+	href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
+<link rel="apple-touch-icon-precomposed"
+	href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
 <!--//20211111 파비콘 적용-->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent">
 <meta name="Generator" content="오설록">
 <meta name="Keywords" content="오설록">
 <meta name="description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
-<meta name="facebook-domain-verification" content="tdpu6fl67o5tlqp8etjrivmd5csnrk">
+<meta name="facebook-domain-verification"
+	content="tdpu6fl67o5tlqp8etjrivmd5csnrk">
 
-<meta name="naver-site-verification" content="385c3510efbba21ef957c2cf17a14c5492db3a6a">
+<meta name="naver-site-verification"
+	content="385c3510efbba21ef957c2cf17a14c5492db3a6a">
 
 <!-- 카카오톡 링크 썸네일 -->
 
-		<meta property="og:title" content="오설록">
-		<meta property="og:image" content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
-		<meta property="og:description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
-		<meta property="og:url" content="https://www.osulloc.com">
-	
+<meta property="og:title" content="오설록">
+<meta property="og:image"
+	content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
+<meta property="og:description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
+<meta property="og:url" content="https://www.osulloc.com">
+
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <!-- <meta property="fb:app_id" content="APP_ID"> -->
-<title>자주찾는 질문 | 오설록 </title>
+<title>자주찾는 질문 | 오설록</title>
 
 <!--fonts-->
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload stylesheet" href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026" as="style">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026"
+	as="style">
 
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery-1.12.1.ui.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/swiper.min.js?ver=220118"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery-1.12.1.ui.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/swiper.min.js?ver=220118"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
 <!-- 2019-09-27 추가 -->
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/jquery.datetimepicker.full.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/jquery.datetimepicker.full.min.js"></script>
 <!-- 2021-03-04 추가 IMQA 웹뷰데이터 수집 -->
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js"></script>
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
 
-	<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
-	
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
 
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
 
-	
-	
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=231108_1">
-	
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
+
+
+
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=231108_1">
+
 
 <!-- 20190906 css 추가 -->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">
 
 
 <!--CDJ-->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/style.css?ver=20240521">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/style2.css?ver=20231102_1">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/main.css">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage1.css?ver=20240514_3">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage2.css?ver=20240611_2">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/style.css?ver=20240521">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/style2.css?ver=20231102_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/main.css">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage1.css?ver=20240514_3">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage2.css?ver=20240611_2">
 
 <!-- 20221129 추가 -->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/ddis_mypage.css?ver=240223">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/ddis_mypage.css?ver=240223">
 
 <!--[if lt IE 9]><link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/old-ie.css"><![endif]-->
 <!-- 20180612 braze s-->
-<link rel="manifest" href="/manifest.json" >
+<link rel="manifest" href="/manifest.json">
 
 
-<script src="https://image.osulloc.com/kr/ko/static_cdj/js/layout_new.js?ver=230620"></script>
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/search/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/search/css/renew_search.css?ver=20230915_1">
+<script
+	src="https://image.osulloc.com/kr/ko/static_cdj/js/layout_new.js?ver=230620"></script>
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/search/swiper/swiper-bundle.min.css">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/search/css/renew_search.css?ver=20230915_1">
 
 <!-- Google Analytics & Google Tag Manager -->
-  <script type="text/javascript">
+<script type="text/javascript">
     var gv_DataLayer = [];
     // cdnUrl 전역변수로 저장
 	var gCdnUrl = 'https://image.osulloc.com';
@@ -125,17 +182,20 @@
   </script>
 
 <!-- 20180612 braze e -->
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/modernizr-custom.js"></script>  
-<script src="https://image.osulloc.com/kr/ko/static/js/shim.js?ver=230704"></script>
- 
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/modernizr-custom.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/shim.js?ver=230704"></script>
+
 <!-- CDJ 추가 js : S -->
 
 
 
-<script src="https://image.osulloc.com/kr/ko/static_cdj/js/shop.js?ver=20240612"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_cdj/js/shop.js?ver=20240612"></script>
 <script src="https://image.osulloc.com/kr/ko/static_cdj/js/pop.js"></script>
-<!-- CDJ 추가 js : E --> 
- 
+<!-- CDJ 추가 js : E -->
+
 <!-- 20180110 앱보이 암호화 -->
 <!-- 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha512.js"></script>
@@ -144,26 +204,28 @@
 <!-- 암호화 관련 js 다운로드 20190923 -->
 <script src="https://image.osulloc.com/kr/ko/static_renew/js/sha512.js"></script>
 <script src="https://image.osulloc.com/kr/ko/static_renew/js/md5.js"></script>
-  
+
 <!-- TODO HEAD 쪽으로 위치 이동 -->
 
 
-	
-	
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"></script>
-	
 
 
-<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script> 
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"></script>
+
+
+
+<script type="text/javascript" charset="UTF-8"
+	src="//t1.daumcdn.net/adfit/static/kp.js"></script>
 
 <!-- //TODO  
   @render(script){}
  -->
-  <!-- End Google Analytics & Google Tag Manager -->
+<!-- End Google Analytics & Google Tag Manager -->
 
 
-  
-  <script type="text/javascript">
+
+<script type="text/javascript">
 	 /*  window._rblqueue = window._rblqueue || [];
 	  
 	  var realBool = false;
@@ -198,8 +260,8 @@
 	    x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();
 	  }, 0); */
 	</script>
-	
-	<!-- Enliple Common Tracker v3.5 [공용] start -->
+
+<!-- Enliple Common Tracker v3.5 [공용] start -->
 <!-- 		<script type="text/javascript">
 			function mobRf(){
 		        require(['Utils','punycode','EN'], function (Utils, punycode, EN) {
@@ -245,7 +307,7 @@
 
 
 		</script> -->
-	<!-- Enliple Common Tracker v3.5 [공용] end -->
+<!-- Enliple Common Tracker v3.5 [공용] end -->
 
 <!-- Google Tag Manager -->
 <!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
@@ -356,10 +418,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 네이버 연관채널 설정 -->
 <span itemscope="" itemtype="http://schema.org/Organization">
-	<link itemprop="url" href="https://www.osulloc.com/kr/ko">
-	<a itemprop="sameAs" href="https://brand.naver.com/osulloc"></a>
-	<a itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
-	<a itemprop="sameAs" href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
+	<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
+	itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
+	itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
+	<a itemprop="sameAs"
+	href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
 </span>
 
 
@@ -374,7 +437,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	border-radius: 4px; /* 버튼 테두리 둥글기 */
 	cursor: pointer;
 	text-align: center;
-	margin-left:1450px;
+	margin-left: 1450px;
 	border-width: 1px; /* 테두리 두께 */
 }
 
@@ -386,27 +449,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 </head>
-<iframe id="x-sso-check" name="sso_check_iframe" title="SSO Session Check Iframe" hidden></iframe>
+<iframe id="x-sso-check" name="sso_check_iframe"
+	title="SSO Session Check Iframe" hidden></iframe>
 <body>
 
-<!-- leo tagging 공통 변수 선언 -->
+	<!-- leo tagging 공통 변수 선언 -->
 
 
 
-<!-- Google Tag Manager (noscript) -->
-<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JSBJN9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
-<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW8MKLBZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
+	<!-- Google Tag Manager (noscript) -->
+	<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JSBJN9"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
+	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW8MKLBZ"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
 
-<!-- End Google Tag Manager (noscript) -->
-<script type="text/javascript">
+	<!-- End Google Tag Manager (noscript) -->
+	<script type="text/javascript">
 	function dataUndefinedChk(inputValue) {
 		if (inputValue === 'null' || inputValue === null) {
 			return undefined;
@@ -520,11 +586,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	var AP_REFUND_PRDS = "";	// json Array
 
 </script>
-<!-- leo tagging 공통 변수 선언 -->
+	<!-- leo tagging 공통 변수 선언 -->
 
 
 
-<!-- //옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
+	<!-- //옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
 <form name="ssoForm" action="/kr/ko/login/ssoLogin" method="GET">
 	
 		
@@ -535,12 +601,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </form>
 -->
 
-<script type="text/javascript">
+	<script type="text/javascript">
 //옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
 //     document.ssoForm.target = "sso_check_iframe";
 //     document.ssoForm.submit();
 </script>
-  <!--[if lt IE 9]><div id="legacy-browser" style="display:none">
+	<!--[if lt IE 9]><div id="legacy-browser" style="display:none">
     <div class="legacy-pad">
         <p>
             사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
@@ -553,13 +619,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div><![endif]-->
 
 
-<div id="wrap">
-	<!-- header -->
-	<!-- @section(gnb){data-gnb="xxx"}가 있을 경우 jsp:param 으로 전달 -->
-	
+	<div id="wrap">
+		<!-- header -->
+		<!-- @section(gnb){data-gnb="xxx"}가 있을 경우 jsp:param 으로 전달 -->
 
 
-<script>
+
+		<script>
     $(window).on('load', function(){
         $(".middleMenu").find("ul:eq(0)").find(".thirdMenu li").click(function(){
             var url = $(this).find("a").attr("href");
@@ -660,13 +726,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 
-<form action="/kr/ko/login/logout" method="POST" id="f_logout"></form>
+		<form action="/kr/ko/login/logout" method="POST" id="f_logout"></form>
 
 
 
 
-<!--230420 대량구매 gnb & lnb-->
-<script>
+		<!--230420 대량구매 gnb & lnb-->
+		<script>
     $(function() {
         const datesetting = new Date();
     	const dateyear = datesetting.getFullYear();
@@ -684,494 +750,600 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
 </script>
 
-<div class="cdj_renew">
-	<header id="cdj_header" class="cdj_header">
-		<div class="wrapper">
-			<div class="inner_box">
-				<div class="left_box">
-					<h1 class="logo">
-						<a href="/kr/ko" class="logo_white"><img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp" src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png" alt="오설록 로고"></a>
-						<a href="/kr/ko" class="logo_black"><img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp" src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png" alt="오설록 로고"></a>
-					</h1>
-					<nav class="nav">
-						<ul class="nav_list_dep1">
-							<li class="item_dep1">
-								<a href="https://www.osulloc.com/kr/ko/shop/item/list" class='link_text'>제품</a>
-								<div class="nav_list_dep2_box">
-									<div class="wrapper">
-										<div class="flex_box">
-											<ul class="nav_list_dep2">
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class='link_text'>베스트</a>
-													<ul class="nav_list_dep3">
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class='link_text'>위클리 베스트</a></li>
-														<!-- 관리자 지정 메뉴 -->
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand" class='link_text'>베스트</a></li>
-														
+		<div class="cdj_renew">
+			<header id="cdj_header" class="cdj_header">
+				<div class="wrapper">
+					<div class="inner_box">
+						<div class="left_box">
+							<h1 class="logo">
+								<a href="${pageContext.request.contextPath}/admin"
+									class="logo_white"> <img
+									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+									alt="오설록 로고" style="user-select: none;">
+								</a> <a href="${pageContext.request.contextPath}/admin"
+									class="logo_black"> <img
+									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+									alt="오설록 로고" style="user-select: none;">
+								</a>
+							</h1>
+							<nav class="nav">
+								<ul class="nav_list_dep1">
+									<li class="item_dep1"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list"
+										class='link_text'>제품</a>
+										<div class="nav_list_dep2_box">
+											<div class="wrapper">
+												<div class="flex_box">
+													<ul class="nav_list_dep2">
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+															class='link_text'>베스트</a>
+															<ul class="nav_list_dep3">
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+																	class='link_text'>위클리 베스트</a></li>
+																<!-- 관리자 지정 메뉴 -->
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand"
+																	class='link_text'>베스트</a></li>
+
+															</ul></li>
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
+															class='link_text'>티 제품</a>
+															<ul class="nav_list_dep3">
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|티 세트">티 세트</a></li>
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201"
+																	class='link_text' data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
+
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|녹차/말차">녹차/말차</a></li>
+
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|발효차/홍차">발효차/홍차</a></li>
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|블렌디드티">블렌디드티</a></li>
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|허브티">허브티</a></li>
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티">밀크티/아이스티</a></li>
+
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|콤부차">콤부차</a></li>
+
+
+
+															</ul></li>
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
+															data-track-name="GNB 오설록|Tea Shop|Tea Food"
+															class='link_text'>티푸드</a>
+															<ul class="nav_list_dep3">
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|과자/초콜릿">과자/초콜릿</a></li>
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|베이커리">베이커리</a></li>
+
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251"
+																	class='link_text'
+																	data-track-name="GNB 오설록|Tea Shop|아이스크림">아이스크림</a></li>
+
+
+															</ul></li>
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/shop/teawareshop"
+															class='link_text'>티웨어</a>
+															<ul class="nav_list_dep3">
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/use"
+																	data-track-name="GNB 오설록|Tea ware Shop|용도별"
+																	class='link_text'>용도별</a></li>
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand"
+																	class='link_text'>브랜드별</a></li>
+															</ul></li>
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
+															class='link_text'>라이프스타일</a>
+															<ul class="nav_list_dep3">
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202"
+																	class='link_text'>스킨케어</a></li>
+
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+																	class='link_text'>정기배송</a></li>
+															</ul></li>
 													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop" class='link_text'>티 제품</a>
-													<ul class="nav_list_dep3">
-                                                        
 
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198" class='link_text' data-track-name="GNB 오설록|Tea Shop|티 세트" >티 세트</a></li>
-                                                                
+													<div class="img_bnr">
+														<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
+														<a
+															href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img
+															srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp"
+															src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg"
+															alt=""></a>
+													</div>
 
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201" class='link_text' data-track-name="GNB 오설록|Tea Shop|명차" >명차</a></li>
-                                                                
-                                                            
-   
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197" class='link_text' data-track-name="GNB 오설록|Tea Shop|녹차/말차" >녹차/말차</a></li>
-                                                                
-     
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249" class='link_text' data-track-name="GNB 오설록|Tea Shop|발효차/홍차" >발효차/홍차</a></li>
-                                                                
-
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196" class='link_text' data-track-name="GNB 오설록|Tea Shop|블렌디드티" >블렌디드티</a></li>
-                                                                
-
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195" class='link_text' data-track-name="GNB 오설록|Tea Shop|허브티" >허브티</a></li>
-                                                                
-
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250" class='link_text' data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티" >밀크티/아이스티</a></li>
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252" class='link_text' data-track-name="GNB 오설록|Tea Shop|콤부차" >콤부차</a></li>
-                                                                
-    
-                                                        
-													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery" data-track-name="GNB 오설록|Tea Shop|Tea Food" class='link_text'>티푸드</a>
-													<ul class="nav_list_dep3">
-
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174" class='link_text' data-track-name="GNB 오설록|Tea Shop|과자/초콜릿"  >과자/초콜릿</a></li>
-
-                                                                
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178" class='link_text' data-track-name="GNB 오설록|Tea Shop|베이커리"  >베이커리</a></li>
- 
-                                                                
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251" class='link_text' data-track-name="GNB 오설록|Tea Shop|아이스크림"  >아이스크림</a></li>
-                                                                  
-                                                         
-													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/teawareshop" class='link_text'>티웨어</a>
-													<ul class="nav_list_dep3">
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop/use" data-track-name="GNB 오설록|Tea ware Shop|용도별" class='link_text'>용도별</a></li>
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand" class='link_text'>브랜드별</a></li>
-													</ul>
-												</li>
-												<li class="item_dep2">
-													
-
-														
-													
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop" class='link_text'>라이프스타일</a>
-													<ul class="nav_list_dep3">
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202" class='link_text'>스킨케어</a></li>
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228" class='link_text'>정기배송</a></li>
-													</ul>
-												</li>
-											</ul>
-											
-											<div class="img_bnr">
-												<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-												<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg" alt=""></a>
+												</div>
 											</div>
-											
-										</div>
-									</div>
-								</div>
-							</li>
-							<!--gnb 프로모션-->
-							
-							<!--//gnb 프로모션-->
-							<li class="item_dep1 no-child">
-								<a href="https://www.osulloc.com/kr/ko/shop/item/gift" class='link_text'>선물추천</a>
-							</li>
-							
-							<li class="item_dep1">
-								<a href="https://www.osulloc.com/kr/ko/brandstory" class='link_text'>브랜드</a>
-								<div class="nav_list_dep2_box">
-									<div class="wrapper">
-										<div class="flex_box">
-											<ul class="nav_list_dep2">
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/brandstory" class='link_text'>오설록 스토리</a>
-												</li>
-												<li class="item_dep2">
-													
-														<a href="/kr/ko/store-introduction/2" class='link_text'>제주 티뮤지엄</a>
-													
-													
-													
-												</li>
-												<li class="item_dep2">
-													
-													
-														<a href="/kr/ko/store-introduction" data-track-name="매장 소개" class='link_text'>매장 소개 및 예약</a>
-													
-													
-												</li>
-												
-											</ul>
-											
-											<div class="img_bnr">
-												<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-												<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg" alt=""></a>
+										</div></li>
+									<!--gnb 프로모션-->
+
+									<!--//gnb 프로모션-->
+									<li class="item_dep1 no-child"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/gift"
+										class='link_text'>선물추천</a></li>
+
+									<li class="item_dep1"><a
+										href="https://www.osulloc.com/kr/ko/brandstory"
+										class='link_text'>브랜드</a>
+										<div class="nav_list_dep2_box">
+											<div class="wrapper">
+												<div class="flex_box">
+													<ul class="nav_list_dep2">
+														<li class="item_dep2"><a
+															href="https://www.osulloc.com/kr/ko/brandstory"
+															class='link_text'>오설록 스토리</a></li>
+														<li class="item_dep2"><a
+															href="/kr/ko/store-introduction/2" class='link_text'>제주
+																티뮤지엄</a></li>
+														<li class="item_dep2"><a
+															href="/kr/ko/store-introduction" data-track-name="매장 소개"
+															class='link_text'>매장 소개 및 예약</a></li>
+
+													</ul>
+
+													<div class="img_bnr">
+														<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
+														<a
+															href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img
+															srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp"
+															src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg"
+															alt=""></a>
+													</div>
+
+												</div>
 											</div>
-											
-										</div>
-									</div>
-								</div>
-
-							</li>
-							<li class="item_dep1 no-child">
-								<a href="https://osulloc.biz/" class="link_text" target="_blank">단체 및 기업 구매</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="right_box">
-					
-					<form style="display:none;" id="headerSearchForm" action="/kr/ko/shop/search/main/product" method="get" onsubmit="setSearchToSession()">
-						<input type="text" name="isSet" value="N">
-						<input type="text" name="q" id="header_search_Submit">
-						<input type="text" name="p"  value="0">
-						<input type="text" name="size"  value="24">
-						<input type="text" name="sort"  value="ranked">
-						<input type="text" name="reviewType"  value="">
-						<input type="text" name="searchType" id="inputSearchTypeSubmit" value="product">
-						<input type="text" name="tagSearchType" id="header_tagSearchType" >
-					</form>
-					<ul class="nav_util">
-						<li class="item">
-                            <div class="inpSrchWrap">
-                            	<input type="text" placeholder="검색어를 입력해주세요." id="header_search_pc" class="header-search-list" onkeyup="keyupSearchInput(event,'search_itag_pc')">
-                               	<i onclick="srchLayerPcOpen(this); srchLayerMoOpen(this);" id="search_itag_pc"></i>
-                            </div>
-                        </li>
-						<li class="item">
-							
-	                            
-	                            	<a class="nav_util_icon icon_cart nav_cart nav_menu filled" href="https://www.osulloc.com/kr/ko/shop/cart" id="x-gnb-cart-m" data-track-name="Header 장바구니" data-gnb-role="cart"><span class="num">1</span></a>
-	                            
-	                            
-                            
-						</li>
-						<li class="item item_icon_more">
-							<a class="nav_util_icon icon_more" id="btn_nav"></a>
-							<ul class="drop_box drop_box1">
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/cs" data-track-name="Header 고객센터">고객센터</a></li>
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/store-introduction" data-track-name="Header 매장찾기">매장찾기</a></li>
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/mypage" data-track-name="Header 주문배송조회">주문배송조회</a></li>
-								
-									
-										<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/mypage/reservation/list" data-track-name="Header 예약조회">예약조회</a></li>
-									
-									
-								
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
-
-							</ul>
-						</li>
-						<li class="item item_icon_mo_nav">
-							<a class="nav_util_icon icon_mo_nav" href="#"></a>
-						</li>
-					</ul>
-					<ul class="nav_drop">
-                    
-	                    
-							<li class="item">
-								<a href="https://www.osulloc.com/kr/ko/mypage" data-track-name="Header 마이페이지">마이페이지</a>
-								<ul class="drop_box drop_box3">
-									<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/mypage" data-track-name="Header 마이페이지">마이페이지</a></li>
-									<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/login/logout" id="login-checker" data-track-name="Header 로그아웃">로그아웃</a></li>
+										</div></li>
+									<li class="item_dep1 no-child"><a
+										href="https://osulloc.biz/" class="link_text" target="_blank">단체
+											및 기업 구매</a></li>
 								</ul>
-	                        </li>
-	                    
-	                    
-                    
-						<li class="item arr">
-							KOREAN <span class="icon_drop_arr"></span>
-							<ul class="drop_box drop_box4">
-								<li class="drop_item"><a href="/kr/ko" data-track-name="GNB Osulloc | Korea/Korean" >한국어</a></li>
-								<li class="drop_item"><a href="https://us.osulloc.com" data-track-name="GNB Osulloc | Korea/English">English</a></li>
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/zh" data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
+							</nav>
+						</div>
+						<div class="right_box">
+
+							<form style="display: none;" id="headerSearchForm"
+								action="/kr/ko/shop/search/main/product" method="get"
+								onsubmit="setSearchToSession()">
+								<input type="text" name="isSet" value="N"> <input
+									type="text" name="q" id="header_search_Submit"> <input
+									type="text" name="p" value="0"> <input type="text"
+									name="size" value="24"> <input type="text" name="sort"
+									value="ranked"> <input type="text" name="reviewType"
+									value=""> <input type="text" name="searchType"
+									id="inputSearchTypeSubmit" value="product"> <input
+									type="text" name="tagSearchType" id="header_tagSearchType">
+							</form>
+							<ul class="nav_util">
+								<li class="item">
+									<div class="inpSrchWrap">
+										<input type="text" placeholder="검색어를 입력해주세요."
+											id="header_search_pc" class="header-search-list"
+											onkeyup="keyupSearchInput(event,'search_itag_pc')"> <i
+											onclick="srchLayerPcOpen(this); srchLayerMoOpen(this);"
+											id="search_itag_pc"></i>
+									</div>
+								</li>
+								<li class="item"><a
+									class="nav_util_icon icon_cart nav_cart nav_menu filled"
+									href="https://www.osulloc.com/kr/ko/shop/cart"
+									id="x-gnb-cart-m" data-track-name="Header 장바구니"
+									data-gnb-role="cart"><span class="num">1</span></a></li>
+								<li class="item item_icon_more"><a
+									class="nav_util_icon icon_more" id="btn_nav"></a>
+									<ul class="drop_box drop_box1">
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/cs"
+											data-track-name="Header 고객센터">고객센터</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/store-introduction"
+											data-track-name="Header 매장찾기">매장찾기</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/mypage"
+											data-track-name="Header 주문배송조회">주문배송조회</a></li>
+
+
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/mypage/reservation/list"
+											data-track-name="Header 예약조회">예약조회</a></li>
+
+
+
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/beautypoint/list"
+											data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
+
+									</ul></li>
+								<li class="item item_icon_mo_nav"><a
+									class="nav_util_icon icon_mo_nav" href="#"></a></li>
 							</ul>
-						</li>
-					</ul>
+							<ul class="nav_drop">
+
+
+								<li class="item"><a
+									href="https://www.osulloc.com/kr/ko/mypage"
+									data-track-name="Header 마이페이지">마이페이지</a>
+									<ul class="drop_box drop_box3">
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/mypage"
+											data-track-name="Header 마이페이지">마이페이지</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/login/logout"
+											id="login-checker" data-track-name="Header 로그아웃">로그아웃</a></li>
+									</ul></li>
+
+
+
+								<li class="item arr">KOREAN <span class="icon_drop_arr"></span>
+									<ul class="drop_box drop_box4">
+										<li class="drop_item"><a href="/kr/ko"
+											data-track-name="GNB Osulloc | Korea/Korean">한국어</a></li>
+										<li class="drop_item"><a href="https://us.osulloc.com"
+											data-track-name="GNB Osulloc | Korea/English">English</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/zh"
+											data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header_dim_bg" style="display: none;"></div>
+			</header>
+			<div class="pcHeaderBannerArea">
+				<div class="searchArea">
+					<div class="searchInnerArea">
+						<span class="srchbtnClose" onclick="srchLayerPcClose();"
+							id="search_close_pc"></span>
+						<div class="chartBox">
+							<div class="chartList">
+								<div class="tit">
+									<p>인기 검색어</p>
+									<em class="searchDateDiv"> 24. 07. 01 기준 </em>
+								</div>
+								<ul class="popular_list">
+								</ul>
+							</div>
+							<div class="chartList chartNewList auto_complete">
+								<div class="tit">
+									<p>최근 검색어</p>
+									<em class="searchDateDiv"> 24. 07. 01 기준 </em>
+								</div>
+								<ul class="new_list"></ul>
+								<p class="logDel">
+									<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
+											기록 삭제</span>
+									</a>
+								</p>
+							</div>
+							<div class="bannerBox" id="bannerBoxPc"></div>
+							<div class="chartAuto"></div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="header_dim_bg" style="display:none;"></div>
-	</header>
-	<div class="pcHeaderBannerArea">
-        <div class="searchArea">
-       <div class="searchInnerArea">
-            <span class="srchbtnClose" onclick="srchLayerPcClose();" id="search_close_pc"></span>
-            <div class="chartBox">
-                <div class="chartList">
-                    <div class="tit">
-                        <p>인기 검색어</p>
-                        <em class="searchDateDiv">
-                        	
-                            24. 07. 01 기준
-						</em>
-                    </div>
-                    <ul class="popular_list"> </ul>
-                </div>
-                <div class="chartList chartNewList auto_complete">
-                    <div class="tit">
-                        <p>최근 검색어</p>
-                        <em class="searchDateDiv">
-                            24. 07. 01 기준
-                        </em>
-                    </div>
-                    <ul class="new_list"></ul>
-                    <p class="logDel">
-                        <a href="javascript:deleteRecentSearches();">
-                            <i></i><span>검색 기록 삭제</span>
-                        </a>
-                    </p>
-                </div>
-                <div class="bannerBox" id="bannerBoxPc">
+			<div class="moHeaderBannerArea" style="display: none;">
+				<div class="searchArea">
+					<div class="searchInnerArea">
+						<div class="searchBox">
+							<div class="inpWrap">
+								<input type="text" placeholder="검색어를 입력해주세요."
+									id="header_search_mo" class="header-search-list"
+									onkeyup="keyupSearchInput(event, 'search_itag_mo')"> <i
+									onclick="beforeSearchSubmit(this)" id="search_itag_mo"></i>
+							</div>
+							<span class="srchClose" onclick="srchLayerMoClose();"
+								id="search_close_mo"></span>
+						</div>
+						<div class="listBox">
+							<div class="chartBox">
+								<div class="tab not_auto_complete">
+									<span class="tabLinks active" onclick="openTab(event, 'tab01')">인기
+										검색어</span> <span class="tabLinks" onclick="openTab(event, 'tab02')">최근
+										검색어</span>
+								</div>
+								<div class="chartList not_auto_complete">
+									<div id="tab01" class="tabCnt" style="display: block;">
+										<ul class="popular_list"></ul>
+										<p class="log date searchDateDiv">24. 07. 01 기준</p>
+									</div>
+									<div id="tab02" class="tabCnt" style="display: none;">
+										<ul class="new_list"></ul>
+										<p class="log logDel">
+											<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
+													기록 삭제</span>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="chartAuto"></div>
+							</div>
 
-
+						</div>
+						<div class="bannerBox" id="bannerBoxMo"></div>
+					</div>
 				</div>
-                <div class="chartAuto"></div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="moHeaderBannerArea" style="display:none;">
-        <div class="searchArea">
-        <div class="searchInnerArea">
-            <div class="searchBox">
-                <div class="inpWrap">
-                    <input type="text" placeholder="검색어를 입력해주세요." id="header_search_mo" class="header-search-list" onkeyup="keyupSearchInput(event, 'search_itag_mo')">
-                    <i onclick="beforeSearchSubmit(this)" id="search_itag_mo"></i>
-                </div>
-                <span class="srchClose" onclick="srchLayerMoClose();" id="search_close_mo"></span>
-            </div>
-            <div class="listBox">
-                <div class="chartBox">
-                    <div class="tab not_auto_complete">
-                        <span class="tabLinks active" onclick="openTab(event, 'tab01')">인기 검색어</span>
-                        <span class="tabLinks" onclick="openTab(event, 'tab02')">최근 검색어</span>
-                    </div>
-                    <div class="chartList not_auto_complete">
-                        <div id="tab01" class="tabCnt" style="display: block;">
-                            <ul class="popular_list"></ul>
-                            <p class="log date searchDateDiv">
-                               24. 07. 01 기준
-                            </p>
-                        </div>
-                        <div id="tab02" class="tabCnt" style="display: none;">
-                            <ul class="new_list"></ul>
-                            <p class="log logDel">
-                                <a href="javascript:deleteRecentSearches();">
-                                    <i></i><span>검색 기록 삭제</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-               		 <div class="chartAuto"></div>
-                </div>
-
-            </div>
-            <div class="bannerBox" id="bannerBoxMo">
-
-
-
 			</div>
-            </div>
-        </div>
-    </div>
-	<div class="dim_bg"></div>
+			<div class="dim_bg"></div>
 
-	<!-- 모바일 NAV : S  -->
-	<aside class="cdj_mo_nav">
-		<!-- 모바일 메뉴 헤터 : S -->
-		<div class="mo_nav_header in">
-			
+			<!-- 모바일 NAV : S  -->
+			<aside class="cdj_mo_nav">
+				<!-- 모바일 메뉴 헤터 : S -->
+				<div class="mo_nav_header in">
+
 
 					<!-- 로그인 후 : S -->
 					<div class="logOn_top_box">
-						<a href="https://www.osulloc.com/kr/ko/mypage" style="display: flex; align-items: center;">
-                            <span class="mypage_btn">
-                                <img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.webp" src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.png" alt="마이페이지 바로가기">
-                            </span>
-                            <p class="name"><em class="pt">권예지</em>님</p>
-                            <!-- 등급에 따라 다르게 표시 -->
-                            <div class="grade_tag">
-                                
+						<a href="https://www.osulloc.com/kr/ko/mypage"
+							style="display: flex; align-items: center;"> <span
+							class="mypage_btn"> <img
+								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.webp"
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.png"
+								alt="마이페이지 바로가기">
+						</span>
+							<p class="name">
+								<em class="pt">권예지</em>님
+							</p> <!-- 등급에 따라 다르게 표시 -->
+							<div class="grade_tag">
 
-                                    
-                                        <span class="tag_item grade_welcome">Welcome</span>
 
-                            </div>
-                        </a>
-                        <div class="barcodeBtn"></div>
+
+								<span class="tag_item grade_welcome">Welcome</span>
+
+							</div>
+						</a>
+						<div class="barcodeBtn"></div>
 
 
 					</div>
 					<!-- 로그인 후 : E -->
-				
-			
-			<button class="mo_nav_close" type="button" title="닫기">
-				<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.webp" src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.png" alt="닫기">
-			</button>
-		</div>
-		<!-- 모바일 메뉴 헤터 : E -->
 
-		<div class="mo_nav_body">
-			<!-- 유틸 영역 : S -->
-			<div class="mo_nav_util in">
-				
-	            
-				
-				<!-- 로그인 후 : S -->
-				<div class="logOn_box">
-					<div class="top">
-						<div class="item"><a href="https://www.osulloc.com/kr/ko/mypage/order/normal" data-track-name="Header 주문배송조회">주문배송 <span class="count">0</span></a></div>
-						<div class="item"><a href="https://www.osulloc.com/kr/ko/shop/cart" data-track-name="Header 장바구니">장바구니 <span class="count">1</span></a></div>
-						<div class="item"><a href="https://www.osulloc.com/kr/ko/mypage/wishlist/list">찜한상품</a></div>
-					</div>
-					<div class="bottom">
-						<div class="item i_coupon">사용 가능 쿠폰
-                            <a class="" href="https://www.osulloc.com/kr/ko/mypage/coupon/available/mypage">
-                                <span class="num">2</span>
-                                <span class="unit">장</span>
-                            </a>
-                        </div>
-						<div class="item i_point">뷰티포인트
-                            <a href="https://www.osulloc.com/kr/ko/beautypoint/list">
-                                <span class="num">1,500</span>
-                                <span class="unit">P</span>
-                            </a>
-                        </div>
-					</div>
-					
-						<div class="subscribe">
-							
-							<div class="item">
-								<a href="https://www.osulloc.com/kr/ko/mypage/subs/list?standingOrderType=A">정기배송 <strong>0 건</strong></a>
-							</div>
-						</div>
-						
-					
+
+					<button class="mo_nav_close" type="button" title="닫기">
+						<img
+							srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.webp"
+							src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.png"
+							alt="닫기">
+					</button>
 				</div>
-				<!-- 로그인 후 : E -->
-				
-				
-			</div>
-			<!-- 유틸 영역 : E -->
+				<!-- 모바일 메뉴 헤터 : E -->
 
-			<!-- 모바일 네비게이션 : S -->
-			<div class="mo_nav">
-				<ul class="mo_nav_list_dep1">
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/shop/item/list" class="link_text">제품</a>
-						<ul class="mo_nav_list_dep2">
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class="link_text">베스트</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop" data-track-name="GNB 오설록|Tea Shop|전체상품" class="link_text">티 제품</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery" data-track-name="GNB 오설록|Tea Shop|Tea Food" class="link_text">티푸드</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop" class="link_text">티웨어</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop" class="link_text">라이프 스타일</a></li>
-							
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228" class='link_text'>정기배송</a></li>
+				<div class="mo_nav_body">
+					<!-- 유틸 영역 : S -->
+					<div class="mo_nav_util in">
+
+
+
+						<!-- 로그인 후 : S -->
+						<div class="logOn_box">
+							<div class="top">
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/order/normal"
+										data-track-name="Header 주문배송조회">주문배송 <span class="count">0</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/shop/cart"
+										data-track-name="Header 장바구니">장바구니 <span class="count">1</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/wishlist/list">찜한상품</a>
+								</div>
+							</div>
+							<div class="bottom">
+								<div class="item i_coupon">
+									사용 가능 쿠폰 <a class=""
+										href="https://www.osulloc.com/kr/ko/mypage/coupon/available/mypage">
+										<span class="num">2</span> <span class="unit">장</span>
+									</a>
+								</div>
+								<div class="item i_point">
+									뷰티포인트 <a href="https://www.osulloc.com/kr/ko/beautypoint/list">
+										<span class="num">1,500</span> <span class="unit">P</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="subscribe">
+
+								<div class="item">
+									<a
+										href="https://www.osulloc.com/kr/ko/mypage/subs/list?standingOrderType=A">정기배송
+										<strong>0 건</strong>
+									</a>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- 로그인 후 : E -->
+
+
+					</div>
+					<!-- 유틸 영역 : E -->
+
+					<!-- 모바일 네비게이션 : S -->
+					<div class="mo_nav">
+						<ul class="mo_nav_list_dep1">
+							<li class="item_dep1"><a
+								href="https://www.osulloc.com/kr/ko/shop/item/list"
+								class="link_text">제품</a>
+								<ul class="mo_nav_list_dep2">
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+										class="link_text">베스트</a></li>
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
+										data-track-name="GNB 오설록|Tea Shop|전체상품" class="link_text">티
+											제품</a></li>
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
+										data-track-name="GNB 오설록|Tea Shop|Tea Food" class="link_text">티푸드</a></li>
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/teawareshop"
+										class="link_text">티웨어</a></li>
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
+										class="link_text">라이프 스타일</a></li>
+
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+										class='link_text'>정기배송</a></li>
+								</ul></li>
+							<!--gnb 프로모션-->
+
+							<!--//gnb 프로모션-->
+							<li class="item_dep1"><a
+								href="https://www.osulloc.com/kr/ko/shop/item/gift"
+								class="link_text no_fold">선물추천</a></li>
+
+							<li class="item_dep1"><a
+								href="https://www.osulloc.com/kr/ko/brandstory"
+								class="link_text">브랜드</a>
+								<ul class="mo_nav_list_dep2">
+									<li class="item_dep2"><a
+										href="https://www.osulloc.com/kr/ko/brandstory"
+										data-track-name="GNB 오설록|About Osulloc|Since 1979"
+										class="link_text">오설록 스토리</a></li>
+
+									<li class="item_dep2"><a
+										href="/kr/ko/store-introduction/2" class="link_text">제주
+											티뮤지엄</a></li>
+									<li class="item_dep2"><a href="/kr/ko/store-introduction"
+										class="link_text">매장 소개 및 예약</a></li>
+
+
+
+								</ul></li>
+							<li class="item_dep1"><a href="https://osulloc.biz/"
+								class="link_text no_fold" target="_blank">단체 및 기업 구매</a></li>
 						</ul>
-					</li>
-					<!--gnb 프로모션-->
-					
-					<!--//gnb 프로모션-->
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/shop/item/gift" class="link_text no_fold">선물추천</a>
-					</li>
-					
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/brandstory" class="link_text">브랜드</a>
-						<ul class="mo_nav_list_dep2">
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/brandstory" data-track-name="GNB 오설록|About Osulloc|Since 1979" class="link_text">오설록 스토리</a></li>
-							
-								<li class="item_dep2"><a href="/kr/ko/store-introduction/2" class="link_text">제주 티뮤지엄</a></li>
-								<li class="item_dep2"><a href="/kr/ko/store-introduction" class="link_text">매장 소개 및 예약</a></li>
-							
-							
-							
-						</ul>
-					</li>
-					<li class="item_dep1">
-						<a href="https://osulloc.biz/" class="link_text no_fold" target="_blank">단체 및 기업 구매</a>
-					</li>
-				</ul>
-			</div>
-			<!-- 모바일 네비게이션 : E -->
+					</div>
+					<!-- 모바일 네비게이션 : E -->
 
-			<!-- 모바일 메뉴 배너 : S -->
+					<!-- 모바일 메뉴 배너 : S -->
 
-			
-			<div class="mo_nav_banner in">
-				<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646">
-					<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-					<img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.jpg" alt="">
-				</a>
-			</div>
-			
-			<!-- 모바일 메뉴 배너 : E -->
 
-			<!-- 하단 링크 영역 : S -->
-			<div class="mo_nav_link in">
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/store-introduction">매장찾기</a></div>
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/cs/notice">공지사항</a></div>
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/cs">고객센터</a></div>
-                
-	                
-					<div class="item"><a href="https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후 적립</a></div>
-	                
-	                
-                
-			</div>
-			<!-- 하단 링크 영역 : E -->
+					<div class="mo_nav_banner in">
+						<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646">
+							<!-- 2022-12-29 JHM, url userFunction 으로변경 --> <img
+							srcset="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.webp"
+							src="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.jpg"
+							alt="">
+						</a>
+					</div>
 
-			<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
-            
-			<div class="mo_nav_logout">
-				<button type="button" title="로그아웃" class="logOut_btn" onclick="location.href='https://www.osulloc.com/kr/ko/login/logout'" data-track-name="Header 로그아웃">로그아웃</button>
+					<!-- 모바일 메뉴 배너 : E -->
+
+					<!-- 하단 링크 영역 : S -->
+					<div class="mo_nav_link in">
+						<div class="item">
+							<a href="https://www.osulloc.com/kr/ko/store-introduction">매장찾기</a>
+						</div>
+						<div class="item">
+							<a href="https://www.osulloc.com/kr/ko/cs/notice">공지사항</a>
+						</div>
+						<div class="item">
+							<a href="https://www.osulloc.com/kr/ko/cs">고객센터</a>
+						</div>
+
+
+						<div class="item">
+							<a href="https://www.osulloc.com/kr/ko/beautypoint/list"
+								data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후 적립</a>
+						</div>
+
+
+
+					</div>
+					<!-- 하단 링크 영역 : E -->
+
+					<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
+
+					<div class="mo_nav_logout">
+						<button type="button" title="로그아웃" class="logOut_btn"
+							onclick="location.href='https://www.osulloc.com/kr/ko/login/logout'"
+							data-track-name="Header 로그아웃">로그아웃</button>
+					</div>
+					<!-- 로그아웃 버튼 - 로그인시 노출 : E -->
+
+				</div>
+			</aside>
+			<div class="popBarcode">
+				<div class="popBarcodeClose"></div>
+				<div class="barcodeWrapper">
+					<div class="barcodeThumb">
+						<svg id="barcode"></svg>
+						<!-- svg width="444px" id="barcode" height="100px" x="0px" y="0px" viewBox="0 0 444 100" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="444" height="100" style="fill:#ffffff;"></rect><g transform="translate(0, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="100"></rect><rect x="6" y="0" width="2" height="100"></rect><rect x="12" y="0" width="6" height="100"></rect><rect x="22" y="0" width="4" height="100"></rect><rect x="28" y="0" width="6" height="100"></rect><rect x="40" y="0" width="2" height="100"></rect><rect x="44" y="0" width="2" height="100"></rect><rect x="52" y="0" width="8" height="100"></rect><rect x="62" y="0" width="2" height="100"></rect><rect x="66" y="0" width="6" height="100"></rect><rect x="74" y="0" width="2" height="100"></rect><rect x="78" y="0" width="8" height="100"></rect><rect x="88" y="0" width="4" height="100"></rect><rect x="94" y="0" width="4" height="100"></rect><rect x="102" y="0" width="4" height="100"></rect><rect x="110" y="0" width="2" height="100"></rect><rect x="114" y="0" width="6" height="100"></rect><rect x="122" y="0" width="8" height="100"></rect><rect x="132" y="0" width="2" height="100"></rect><rect x="136" y="0" width="6" height="100"></rect><rect x="146" y="0" width="4" height="100"></rect><rect x="154" y="0" width="2" height="100"></rect><rect x="160" y="0" width="4" height="100"></rect><rect x="168" y="0" width="6" height="100"></rect><rect x="176" y="0" width="6" height="100"></rect><rect x="184" y="0" width="2" height="100"></rect><rect x="188" y="0" width="8" height="100"></rect><rect x="198" y="0" width="4" height="100"></rect><rect x="204" y="0" width="4" height="100"></rect><rect x="212" y="0" width="4" height="100"></rect><rect x="220" y="0" width="2" height="100"></rect><rect x="224" y="0" width="6" height="100"></rect><rect x="232" y="0" width="8" height="100"></rect><rect x="242" y="0" width="2" height="100"></rect><rect x="246" y="0" width="4" height="100"></rect><rect x="258" y="0" width="2" height="100"></rect><rect x="264" y="0" width="2" height="100"></rect><rect x="270" y="0" width="2" height="100"></rect><rect x="276" y="0" width="8" height="100"></rect><rect x="286" y="0" width="6" height="100"></rect><rect x="294" y="0" width="2" height="100"></rect><rect x="298" y="0" width="8" height="100"></rect><rect x="308" y="0" width="4" height="100"></rect><rect x="314" y="0" width="4" height="100"></rect><rect x="322" y="0" width="4" height="100"></rect><rect x="330" y="0" width="2" height="100"></rect><rect x="334" y="0" width="6" height="100"></rect><rect x="342" y="0" width="8" height="100"></rect><rect x="352" y="0" width="6" height="100"></rect><rect x="360" y="0" width="4" height="100"></rect><rect x="366" y="0" width="2" height="100"></rect><rect x="374" y="0" width="6" height="100"></rect><rect x="382" y="0" width="2" height="100"></rect><rect x="386" y="0" width="4" height="100"></rect><rect x="396" y="0" width="2" height="100"></rect><rect x="404" y="0" width="2" height="100"></rect><rect x="410" y="0" width="4" height="100"></rect><rect x="418" y="0" width="4" height="100"></rect><rect x="428" y="0" width="6" height="100"></rect><rect x="436" y="0" width="2" height="100"></rect><rect x="440" y="0" width="4" height="100"></rect></g></svg-->
+					</div>
+					<div class="barcodeNum" id="barcodeTxt"></div>
+				</div>
 			</div>
-			<!-- 로그아웃 버튼 - 로그인시 노출 : E -->
-            
-		</div>
-	</aside>
-    <div class="popBarcode">
-        <div class="popBarcodeClose"></div>
-        <div class="barcodeWrapper">
-            <div class="barcodeThumb">
-                <svg id="barcode"></svg>
-                <!-- svg width="444px" id="barcode" height="100px" x="0px" y="0px" viewBox="0 0 444 100" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="444" height="100" style="fill:#ffffff;"></rect><g transform="translate(0, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="100"></rect><rect x="6" y="0" width="2" height="100"></rect><rect x="12" y="0" width="6" height="100"></rect><rect x="22" y="0" width="4" height="100"></rect><rect x="28" y="0" width="6" height="100"></rect><rect x="40" y="0" width="2" height="100"></rect><rect x="44" y="0" width="2" height="100"></rect><rect x="52" y="0" width="8" height="100"></rect><rect x="62" y="0" width="2" height="100"></rect><rect x="66" y="0" width="6" height="100"></rect><rect x="74" y="0" width="2" height="100"></rect><rect x="78" y="0" width="8" height="100"></rect><rect x="88" y="0" width="4" height="100"></rect><rect x="94" y="0" width="4" height="100"></rect><rect x="102" y="0" width="4" height="100"></rect><rect x="110" y="0" width="2" height="100"></rect><rect x="114" y="0" width="6" height="100"></rect><rect x="122" y="0" width="8" height="100"></rect><rect x="132" y="0" width="2" height="100"></rect><rect x="136" y="0" width="6" height="100"></rect><rect x="146" y="0" width="4" height="100"></rect><rect x="154" y="0" width="2" height="100"></rect><rect x="160" y="0" width="4" height="100"></rect><rect x="168" y="0" width="6" height="100"></rect><rect x="176" y="0" width="6" height="100"></rect><rect x="184" y="0" width="2" height="100"></rect><rect x="188" y="0" width="8" height="100"></rect><rect x="198" y="0" width="4" height="100"></rect><rect x="204" y="0" width="4" height="100"></rect><rect x="212" y="0" width="4" height="100"></rect><rect x="220" y="0" width="2" height="100"></rect><rect x="224" y="0" width="6" height="100"></rect><rect x="232" y="0" width="8" height="100"></rect><rect x="242" y="0" width="2" height="100"></rect><rect x="246" y="0" width="4" height="100"></rect><rect x="258" y="0" width="2" height="100"></rect><rect x="264" y="0" width="2" height="100"></rect><rect x="270" y="0" width="2" height="100"></rect><rect x="276" y="0" width="8" height="100"></rect><rect x="286" y="0" width="6" height="100"></rect><rect x="294" y="0" width="2" height="100"></rect><rect x="298" y="0" width="8" height="100"></rect><rect x="308" y="0" width="4" height="100"></rect><rect x="314" y="0" width="4" height="100"></rect><rect x="322" y="0" width="4" height="100"></rect><rect x="330" y="0" width="2" height="100"></rect><rect x="334" y="0" width="6" height="100"></rect><rect x="342" y="0" width="8" height="100"></rect><rect x="352" y="0" width="6" height="100"></rect><rect x="360" y="0" width="4" height="100"></rect><rect x="366" y="0" width="2" height="100"></rect><rect x="374" y="0" width="6" height="100"></rect><rect x="382" y="0" width="2" height="100"></rect><rect x="386" y="0" width="4" height="100"></rect><rect x="396" y="0" width="2" height="100"></rect><rect x="404" y="0" width="2" height="100"></rect><rect x="410" y="0" width="4" height="100"></rect><rect x="418" y="0" width="4" height="100"></rect><rect x="428" y="0" width="6" height="100"></rect><rect x="436" y="0" width="2" height="100"></rect><rect x="440" y="0" width="4" height="100"></rect></g></svg-->
-            </div>
-            <div class="barcodeNum" id="barcodeTxt"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="https://image.osulloc.com/kr/ko/static_cdj/js/barcode.js"></script>
-    <script>
+			<script type="text/javascript"
+				src="https://image.osulloc.com/kr/ko/static_cdj/js/barcode.js"></script>
+			<script>
         // 바코드 클릭시 
         $(".barcodeBtn").on('click',function(e){
             jQuery.ajax({
@@ -1195,12 +1367,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $(".popBarcode").css("display", "none");
         });
     </script>
-	<!-- 모바일 NAV : E  -->
+			<!-- 모바일 NAV : E  -->
 
-</div>
+		</div>
 
 
-<script>
+		<script>
 
 
     // mobile - tab
@@ -1634,7 +1806,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 
-<script type="text/javascript">
+		<script type="text/javascript">
     let visi = 0;
     let banner = false;
     function bookchonPop() {
@@ -1797,205 +1969,192 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 
-	
-	<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
-	<!-- CDJ 개선 마이페이지 자주찾는 질문 : S -->
-	<main class="main cdj_renew">
-		<!-- 타이틀 : S -->
-		<section class="section page_tit_box mypageT">
-			<div class="w1200">
-				<h2 class="page_tit">자주찾는 질문</h2>
-			</div>
-		</section>
-		<!-- 타이틀 : E -->
-		
-	    
 
-
-
-
-
-
-<!-- pc용 마이페이지 메뉴 : S -->
-<div class="w1200 pcBlock">
-	<nav class="my_nav">
-		<ul class="nav_list_dep1">
-			<li class="item_dep1">
-				<a href="/kr/ko/mypage/order/normal" class="link_text">주문/예약관리</a>
-				<div class="box">
-					<ul class="nav_list_dep2">
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/order/normal" class="link_text">주문/배송 조회</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/order/otherThenList" class="link_text">취소/반품/교환 조회</a>
-						</li>
-                        
-						
-						
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/reservation/list" class="link_text">예약 조회</a>
-						</li>
-						
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/present/receive" class="link_text">선물함</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			
-				<li class="item_dep1">
-					<a href="/kr/ko/mypage/subs/list?standingOrderType=A" class="link_text">정기배송</a>
-					<div class="box">
-						<ul class="nav_list_dep2">
-							
-							<li class="item_dep2">
-								<a href="/kr/ko/mypage/subs/list?standingOrderType=A" class="link_text">정기배송</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			
-			<li class="item_dep1">
-				<a href="/kr/ko/mypage/wishlist/list" class="link_text">활동내역</a>
-				<div class="box">
-					<ul class="nav_list_dep2">
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/wishlist/list" class="link_text">찜하기</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/userHistory/list" class="link_text">히스토리</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/userReview/write" class="link_text">후기관리</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="item_dep1">
-				<a href="/kr/ko/cs/member/benefit" class="link_text">나의 혜택</a>
-				<div class="box">
-					<ul class="nav_list_dep2">
-						<li class="item_dep2">
-							<a href="/kr/ko/cs/member/benefit" class="link_text">멤버십혜택</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/coupon" class="link_text">보유 쿠폰</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/beautypoint/list" class="link_text">뷰티포인트</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/point" class="link_text">찻잎포인트</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="item_dep1">
-				<a href="/kr/ko/mypage/detail/profileCheck" class="link_text">정보관리</a>
-				<div class="box">
-					<ul class="nav_list_dep2">
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/detail/profileCheck" class="link_text">회원정보 관리</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/addressbook" class="link_text">배송지 관리</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="item_dep1">
-				<a href="/kr/ko/cs" class="link_text">고객센터</a>
-				<div class="box">
-					<ul class="nav_list_dep2">
-						<li class="item_dep2">
-							<a href="/kr/ko/cs/faq" class="link_text">자주찾는 질문</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/mypage/qna" class="link_text">1:1 문의내역</a>
-						</li>
-						<li class="item_dep2">
-							<a href="/kr/ko/cs/notice" class="link_text">공지사항</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-		<div class="my_nav_bg"></div>
-	</nav>
-</div>
-<!-- pc용 마이페이지 메뉴 : E -->
-
-		<style>
-			.cdj_renew .my_cs_faq .faq_nav .search .box01 button {
-				position: absolute;
-				top: 50%;
-				right: 12px;
-				transform: translateY(-50%);
-				width: 24px;
-				height: 24px;
-				background: url(https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_search.png) no-repeat center / 15px 17px;
-				text-indent: -9999em;
-			}
-			.cdj_renew .my_cs_faq .faq_nav .search .box01::after{
-				display: none;
-			}
-		</style>
-		<!-- 컨텐츠 : S -->
-		<div class="my_cs_faq">
-			<section class="section">
+		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
+		<!-- CDJ 개선 마이페이지 자주찾는 질문 : S -->
+		<main class="main cdj_renew">
+			<!-- 타이틀 : S -->
+			<section class="section page_tit_box mypageT">
 				<div class="w1200">
-					<div class="faq_nav">
-						<div class="inner_box">
-							<form id="searchForm" name="searchForm" action="/kr/ko/cs/faq/order" onsubmit="return false;">
-								<div class="search">
-									<div class="box01">
-										<input type="text" id="faq-search" name="q" class="inp_text" placeholder="텍스트를 입력해주세요" value="">
-										<button type="button" class="button moBlock btnSearch" title="검색" onclick="">검색</button>
-									</div>
-									<div class="box02"><button type="button" class="button pcBlock btnSearch" title="검색">검색</button></div>
-								</div>
-							</form>
-							<div class="nav_list">
-								<ul class="list">
-									
-										<li class="item on">
-											<a href="/kr/ko/cs/faq/order" data-track-name="주문/결제">주문/결제</a>
-										</li>
-									
-										<li class="item ">
-											<a href="/kr/ko/cs/faq/refund" data-track-name="환불/반품/교환">환불/반품/교환</a>
-										</li>
-									
-										<li class="item ">
-											<a href="/kr/ko/cs/faq/delivery" data-track-name="배송">배송</a>
-										</li>
-									
-										<li class="item ">
-											<a href="/kr/ko/cs/faq/member" data-track-name="회원/포인트">회원/포인트</a>
-										</li>
-									
-										<li class="item ">
-											<a href="/kr/ko/cs/faq/event" data-track-name="이벤트/쿠폰">이벤트/쿠폰</a>
-										</li>
-									
-										<li class="item ">
-											<a href="/kr/ko/cs/faq/site" data-track-name="사이트 이용/기타">사이트 이용/기타</a>
-										</li>
-									
+					<h2 class="page_tit">자주찾는 질문</h2>
+				</div>
+			</section>
+			<!-- 타이틀 : E -->
+
+
+
+
+
+
+
+
+			<!-- pc용 마이페이지 메뉴 : S -->
+			<div class="w1200 pcBlock">
+				<nav class="my_nav">
+					<ul class="nav_list_dep1">
+						<li class="item_dep1"><a href="/kr/ko/mypage/order/normal"
+							class="link_text">주문/예약관리</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/mypage/order/normal"
+										class="link_text">주문/배송 조회</a></li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/order/otherThenList" class="link_text">취소/반품/교환
+											조회</a></li>
+
+
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/reservation/list" class="link_text">예약
+											조회</a></li>
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/present/receive" class="link_text">선물함</a>
+									</li>
 								</ul>
-								<input type="hidden" id="category" value="order">
+							</div></li>
+
+						<li class="item_dep1"><a
+							href="/kr/ko/mypage/subs/list?standingOrderType=A"
+							class="link_text">정기배송</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/subs/list?standingOrderType=A"
+										class="link_text">정기배송</a></li>
+								</ul>
+							</div></li>
+
+						<li class="item_dep1"><a href="/kr/ko/mypage/wishlist/list"
+							class="link_text">활동내역</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/wishlist/list" class="link_text">찜하기</a></li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/userHistory/list" class="link_text">히스토리</a>
+									</li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/userReview/write" class="link_text">후기관리</a>
+									</li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a href="/kr/ko/cs/member/benefit"
+							class="link_text">나의 혜택</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/cs/member/benefit"
+										class="link_text">멤버십혜택</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/coupon"
+										class="link_text">보유 쿠폰</a></li>
+									<li class="item_dep2"><a href="/kr/ko/beautypoint/list"
+										class="link_text">뷰티포인트</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/point"
+										class="link_text">찻잎포인트</a></li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a
+							href="/kr/ko/mypage/detail/profileCheck" class="link_text">정보관리</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/detail/profileCheck" class="link_text">회원정보
+											관리</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/addressbook"
+										class="link_text">배송지 관리</a></li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a href="/kr/ko/cs" class="link_text">고객센터</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/cs/faq"
+										class="link_text">자주찾는 질문</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/qna"
+										class="link_text">1:1 문의내역</a></li>
+									<li class="item_dep2"><a href="/kr/ko/cs/notice"
+										class="link_text">공지사항</a></li>
+								</ul>
+							</div></li>
+					</ul>
+					<div class="my_nav_bg"></div>
+				</nav>
+			</div>
+			<!-- pc용 마이페이지 메뉴 : E -->
+
+			<style>
+.cdj_renew .my_cs_faq .faq_nav .search .box01 button {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background:
+		url(https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_search.png)
+		no-repeat center/15px 17px;
+	text-indent: -9999em;
+}
+
+.cdj_renew .my_cs_faq .faq_nav .search .box01::after {
+	display: none;
+}
+</style>
+			<!-- 컨텐츠 : S -->
+			<div class="my_cs_faq">
+				<section class="section">
+					<div class="w1200">
+						<div class="faq_nav">
+							<div class="inner_box">
+								<form id="searchForm" name="searchForm"
+									action="/kr/ko/cs/faq/order" onsubmit="return false;">
+									<div class="search">
+										<div class="box01">
+											<input type="text" id="faq-search" name="q" class="inp_text"
+												placeholder="텍스트를 입력해주세요" value="">
+											<button type="button" class="button moBlock btnSearch"
+												title="검색" onclick="">검색</button>
+										</div>
+										<div class="box02">
+											<button type="button" class="button pcBlock btnSearch"
+												title="검색">검색</button>
+										</div>
+									</div>
+								</form>
+								<div class="nav_list">
+									<ul class="list">
+
+										<li class="item on"><a href="/kr/ko/cs/faq/order"
+											data-track-name="주문/결제">주문/결제</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/refund"
+											data-track-name="환불/반품/교환">환불/반품/교환</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/delivery"
+											data-track-name="배송">배송</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/member"
+											data-track-name="회원/포인트">회원/포인트</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/event"
+											data-track-name="이벤트/쿠폰">이벤트/쿠폰</a></li>
+
+										<li class="item "><a href="/kr/ko/cs/faq/site"
+											data-track-name="사이트 이용/기타">사이트 이용/기타</a></li>
+
+									</ul>
+									<input type="hidden" id="category" value="order">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="section">
-				<div class="w1200">
-					<div class="faq_con">
-						<div class="inner_box">
-							<ul class="faq_list">
-								
+				</section>
+				<section class="section">
+					<div class="w1200">
+						<div class="faq_con">
+							<div class="inner_box">
+								<ul class="faq_list">
+
 									<c:forEach items="${faqlist}" var="dto">
 										<li class="item">
 											<div class="faq_q">
@@ -2007,201 +2166,226 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<div class="faq_a">
 												<div>
 													<p class="text">
-										
-								                    	<p>${dto.faq_content}</p>
+													<p>${dto.faq_content}</p>
 													</p>
 												</div>
 												<p class="more">
 													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
+													<button type="button" class="button"
+														onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1
+														상담 신청하기</button>
 												</p>
 											</div>
 										</li>
 									</c:forEach>
-										<li class="item">
-											<div class="faq_q">
-												<div class="cate pcBlock">주문/결제</div>
-												<div class="faq_q_text">
-													<p class="text">결제시 설치프로그램이 깔리지 않아요. 어떻게 하면 되나요?</p>
-												</div>
+									<li class="item">
+										<div class="faq_q">
+											<div class="cate pcBlock">주문/결제</div>
+											<div class="faq_q_text">
+												<p class="text">결제시 설치프로그램이 깔리지 않아요. 어떻게 하면 되나요?</p>
 											</div>
-											<div class="faq_a">
-												<div>
-													<p class="text">
-														
-								                    	
-								                    	
-								                    	<p>이니시스 닷컴 메인 홈페이지로 들어가신 후,  맨 위 [기술 지원] 페이지 클릭 → [INIpay 마법사] 클릭 → 플러그인 오류 자동 복구 프로그램 실행하기 클릭 → 설치완료 </p>
-													</p>
-												</div>
-												<p class="more">
-													답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
-													<button type="button" class="button" onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1 상담 신청하기</button>
+										</div>
+										<div class="faq_a">
+											<div>
+												<p class="text">
+												<p>이니시스 닷컴 메인 홈페이지로 들어가신 후, 맨 위 [기술 지원] 페이지 클릭 → [INIpay
+													마법사] 클릭 → 플러그인 오류 자동 복구 프로그램 실행하기 클릭 → 설치완료</p>
 												</p>
 											</div>
-										</li>
-									
-							
+											<p class="more">
+												답변이 충분하지 않으시다면 1:1상담신청을 이용해 주세요.
+												<button type="button" class="button"
+													onclick="location.href='/kr/ko/mypage/qna/new?type=order'">1:1
+													상담 신청하기</button>
+											</p>
+										</div>
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<div class="button-style">
+					<a href="faqWriteForm">faq작성</a>
+				</div>
+				<!-- pagination : S -->
+
+
+			
+
+				<!-- pagination : E -->
+			</div>
+			<!-- 컨텐츠 : E -->
+
+		</main>
+		<!-- CDJ 개선 마이페이지 자주찾는 질문 : E -->
+
+
+		<!-- footer -->
+
+		<!--new_footer-->
+		<div id="new_footer">
+			<!--PC-->
+			<div class="wrap1 m_pd15 hide_tablet hide_mobile">
+				<div class="inner1600 clearfix">
+					<div class="right">
+
+
+						<a href="https://www.osulloc.com/kr/ko/login/logout"
+							class="footer_login" data-track-name="Footer 로그아웃">로그아웃</a> <a
+							href="https://www.tiktok.com/@osulloc_official" target="_blank"
+							class="btn-share--circle" style="z-index: 10000;"
+							data-track-name="Footer 오설록 틱톡"> <img
+							class="hide_tablet hide_mobile"
+							src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png"
+							alt="틱톡">
+						</a> <a
+							href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+							target="_blank" class="btn-share--circle" style="z-index: 10000;"
+							data-track-name="Footer 오설록 유튜브"> <img
+							class="hide_tablet hide_mobile"
+							src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png"
+							alt="유튜브">
+						</a> <a href="https://www.instagram.com/osulloc_official/"
+							target="_blank" class="btn-share--circle" style="z-index: 10000;"
+							data-track-name="Footer 오설록 인스타그램"> <img
+							class="hide_tablet hide_mobile"
+							src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png"
+							alt="인스타그램"> <img class="hide_pc"
+							src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png"
+							alt="인스타그램">
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="wrap2 hide_tablet hide_mobile">
+				<div class="inner1600 clearfix">
+					<div class="left1">
+						<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
+						<div>
+							<a href="mailto:help@osulloc.com"
+								style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
+						</div>
+						<div class="phone" style="margin-top: 1px; line-height: 1;">080-805-5555</div>
+						<div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
+					</div>
+					<div class="left2">
+						<div class="tit">특판, 대량구매 문의</div>
+						<div class="phone">
+							<a href="mailto:mall@osulloc.com"
+								style="font-weight: 700; color: #595959; text-decoration: underline;"
+								data-track-name="Footer 이메일 문의">mall@osulloc.com</a><span></span>
+						</div>
+						<div class="mail" style="line-height: 1;">
+							<span
+								style="font-family: 'Noto_M,sans-serif'; font-weight: 700; font-size: 13px; color: #797979;">
+								<!--010-2515-1979 / -->카카오톡ID : osullocmall
+							</span>
+							<p style="margin-top: 10px;">
+								<span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span>
+							</p>
+						</div>
+					</div>
+					<div class="right">
+						<a href="https://www.osulloc.com/kr/ko/store-introduction"
+							data-track-name="Footer 매장안내"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png"
+							alt="매장안내"> <span>매장안내</span>
+						</a> <a href="https://www.osulloc.com/kr/ko/cs/member/benefit"
+							data-track-name="Footer 멤버십혜택"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png"
+							alt="멤버십혜택"> <span>멤버십혜택</span>
+						</a> <a href="https://www.osulloc.com/kr/ko/cs/faq"
+							data-track-name="Footer FAQ" class="footerFAQ"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png"
+							alt="FAQ"> <span>FAQ</span>
+						</a> <a href="https://osulloc.biz/"
+							data-track-name="Footer 단체 및 기업 구매" class="footerBulk"
+							target="_blank"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png"
+							alt="단체 및 기업 구매"> <span>단체 및 <br>기업 구매
+						</span>
+						</a> <a href="https://www.osulloc.com/kr/ko/mypage/qna"
+							data-track-name="Footer 1:1문의"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png"
+							alt="1:1문의"> <span>1:1문의</span>
+						</a> <a href="https://www.osulloc.com/kr/ko/beautypoint/list"
+							data-track-name="Footer 뷰티포인트"> <img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png"
+							alt="뷰티포인트"> <span>뷰티포인트<br>추후적립
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap3 hide_tablet hide_mobile">
+				<div class="inner1600 clearfix">
+					<div class="logo logo_footer">
+						<a href="https://www.osulloc.com/kr/ko/mypage/qna"
+							data-track-name="Footer 1:1문의"><img
+							src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png"
+							width="112" height="158" alt="1:1문의"></a>
+					</div>
+					<div class="left">
+						<div class="cont1">
+							<ul>
+								<li><a href="https://www.apgroup.com/int/ko"
+									data-track-name="Footer 회사소개">회사소개</a></li>
+								<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
+									data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
+
+								<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
+									data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+								<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
+									data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
+								<li><a
+									href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+									data-track-name="Footer 뷰티포인트">뷰티포인트</a></li>
+								<li><a
+									href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+									data-track-name="Footer 임직원할인">임직원할인</a></li>
+								<li><a href="https://www.osulloc.com/kr/ko/misc/sitemap"
+									data-track-name="Footer 사이트맵">사이트맵</a></li>
+								<li><a
+									href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+									data-track-name="Footer 전자공고">전자공고</a></li>
 							</ul>
+						</div>
+						<div class="cont2">
+							<div class="address">
+								㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
+								390-87-01499 <a class="info"
+									href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
+									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 ></a> <br>통신판매업신고번호:2019-서울용산-1173호
+								호스팅제공자: ㈜오설록 <br>
+								<br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의
+								당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+							</div>
+							<!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
+						</div>
+
+					</div>
+					<div class="right">
+						<div class="box clearfix">
+							<div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
+							<div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN
+								KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
+							<img
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png"
+								alt="에스크로 가입사실확인" class="escrow_img">
+							<!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
+							<!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
 						</div>
 					</div>
 				</div>
-			</section>
-			
-						
-						<div class="button-style">
-				<a href="faqWriteForm">fap작성</a>
-				</div>
-			<!-- pagination : S -->
-			
-
-<div id="pagination" class="newPagination for-mobile ">
-
-
-		
-			<span class="btn btn-home is-disabled">페이지 처음으로</span>
-        	<span class="btn btn-prev is-disabled">이전 페이지</span>
-		
-
-    	
-    	<a href="/kr/ko/cs/faq/order?q" class="num on" data-track-name="1 페이지 이동"  >1</a>
-    
-    	
-    	<a href="/kr/ko/cs/faq/order?q&p=1" class="num " data-track-name="2 페이지 이동"  >2</a>
-    
-    	
-    	<a href="/kr/ko/cs/faq/order?q&p=2" class="num " data-track-name="3 페이지 이동"  >3</a>
-    
-  
-    	
-    		<span class="btn btn-next is-disabled">다음 페이지</span>
-        	<span class="btn btn-end is-disabled">페이지 끝으로</span>
-
-
-</div>
-           	
-			<!-- pagination : E -->
-		</div>
-		<!-- 컨텐츠 : E -->
-		
-	</main>
-	<!-- CDJ 개선 마이페이지 자주찾는 질문 : E -->
-	
-	
-	<!-- footer -->
-
-<!--new_footer-->
-<div id="new_footer">
-  <!--PC-->
-  <div class="wrap1 m_pd15 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="right">
-        
-          
-            <a href="https://www.osulloc.com/kr/ko/login/logout" class="footer_login" data-track-name="Footer 로그아웃" >로그아웃</a>
-          
-          
-        
-        <a href="https://www.tiktok.com/@osulloc_official" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 틱톡"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="틱톡">
-        </a>
-        <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 유튜브"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="유튜브">
-        </a>
-        
-        <a href="https://www.instagram.com/osulloc_official/" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 인스타그램"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="인스타그램">
-          <img class="hide_pc" src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png" alt="인스타그램">
-        </a>
-      </div>
-
-    </div>
-  </div>
-  <div class="wrap2 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="left1">
-        <div class="tit">고객상담센터 &middot; 주문/배송문의</div>
-        <div><a href="mailto:help@osulloc.com" style="font-weight: 500;color:#595959;font-size: 18px;">help@osulloc.com</a></div>
-        <div class="phone" style="margin-top:1px;line-height:1;">080-805-5555</div>
-        <div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
-      </div>
-      <div class="left2">
-        <div class="tit">특판, 대량구매 문의</div>
-        <div class="phone"><a href="mailto:mall@osulloc.com" style="font-weight:700;color:#595959;text-decoration:underline;" data-track-name="Footer 이메일 문의"  >mall@osulloc.com</a><span></span></div>
-        <div class="mail" style="line-height:1;">
-            <span style="font-family:'Noto_M,sans-serif';font-weight:700;font-size:13px;color:#797979;"><!--010-2515-1979 / -->카카오톡ID : osullocmall</span>
-            <p style="margin-top:10px;"><span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span></p>
-        </div>
-      </div>         
-      <div class="right">
-        <a href="https://www.osulloc.com/kr/ko/store-introduction" data-track-name="Footer 매장안내"  >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="매장안내">
-          <span>매장안내</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/cs/member/benefit" data-track-name="Footer 멤버십혜택"  >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="멤버십혜택">
-          <span>멤버십혜택</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/cs/faq" data-track-name="Footer FAQ" class="footerFAQ">
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png" alt="FAQ">
-          <span>FAQ</span>
-        </a>
-        <a href="https://osulloc.biz/" data-track-name="Footer 단체 및 기업 구매" class="footerBulk" target="_blank">
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="단체 및 기업 구매">
-          <span>단체 및 <br>기업 구매</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/mypage/qna" data-track-name="Footer 1:1문의" >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="1:1문의">
-          <span>1:1문의</span>
-        </a>
-		<a href="https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Footer 뷰티포인트" >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="뷰티포인트">
-          <span>뷰티포인트<br>추후적립</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="wrap3 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="logo logo_footer"><a href="https://www.osulloc.com/kr/ko/mypage/qna" data-track-name="Footer 1:1문의"  ><img src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" width="112" height="158" alt="1:1문의"></a></div>
-      <div class="left">
-        <div class="cont1">
-          <ul>
-            <li><a href="https://www.apgroup.com/int/ko" data-track-name="Footer 회사소개">회사소개</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/terms" data-track-name="Footer 서비스 이용약관"  >서비스 이용약관</a></li>
-            
-            <li><a href="https://www.osulloc.com/kr/ko/misc/statement" data-track-name="Footer 개인정보 처리방침"  ><b>개인정보 처리방침</b></a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/procedures" data-track-name="Footer 영상정보 처리방침"  >영상정보 처리방침</a></li>
-            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do" data-track-name="Footer 뷰티포인트" >뷰티포인트</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP" data-track-name="Footer 임직원할인" >임직원할인</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/sitemap" data-track-name="Footer 사이트맵"  >사이트맵</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/cs/notice/announce" data-track-name="Footer 전자공고"  >전자공고</a></li>
-          </ul>
-        </div>
-        <div class="cont2">
-          <div class="address">㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 
-            <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a>
-            <br>통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록
-            <br><br>
-          (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
-          </div>
-          <!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
-        </div>
-        
-      </div>
-      <div class="right">
-        <div class="box clearfix">
-          <div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
-          <div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
-          <img src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png" alt="에스크로 가입사실확인" class="escrow_img">
-          <!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
-          <!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--//PC-->
-  <script>
+			</div>
+			<!--//PC-->
+			<script>
     $(function(){
       const datesetting = new Date();
       const dateyear = datesetting.getFullYear();
@@ -2223,123 +2407,143 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       });
     });
   </script>
-  
-  <!--모바일 m_footer-->
-  <div class="m_footer hide_pc">
-    
-    <div class="func">
-      <a href="https://www.osulloc.com/kr/ko/cs" class="contactUs" data-track-name="Footer_M 고객센터"  >고객센터</a>
-        
-          
-            <a href="https://www.osulloc.com/kr/ko/login/logout" class="signIn" data-track-name="Footer_M 로그아웃" >로그아웃</a>
-          
-          
-        
-      <div class="lang js_select">
-        <div class="tit menu">한국어</div>
-        <ul>
-          <li><a class="name" href="/kr/ko">한국어</a></li>
-          <li><a class="name" href="https://us.osulloc.com">English</a></li>
-          <li><a class="name" href="/kr/zh">中文</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="certificationInfo">
-      <a href="javascript:;"> <span>오설록 사업자 정보확인</span> </a>
-      <div class="txt_wrap">
-        <p>㈜ 오설록 <br>
-          대표이사 : 서혁제 
-          <br>주소 : 서울 특별시 용산구 한강대로 100 (한강로2가) 
-          <br>사업자 등록번호 : 390-87-01499
-          <br>통신판매업신고번호 : 2019-서울용산-1173호 
-          <br>호스팅제공자 : ㈜오설록
-        </p>
-        <p>(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>      
-        <p>NHN KCP 구매안전(에스크로)서비스 <br>
-          고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
-      </div>
-    </div>
-  <div class="footer_menu">
-      <div class="footer_menu_list">
-          <a href="https://www.apgroup.com/int/ko" data-track-name="Footer 회사소개"  >회사소개</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/terms" data-track-name="Footer 서비스 이용약관"  >서비스 이용약관</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/statement" data-track-name="Footer 개인정보 처리방침"  ><b>개인정보 처리방침</b></a>
-          <br>
-          <a href="https://www.osulloc.com/kr/ko/misc/procedures" data-track-name="Footer 영상정보 처리방침"  >영상정보 처리방침</a>
-          <a href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do" data-track-name="Footer 뷰티포인트"  >뷰티포인트</a>
-          <a href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP" data-track-name="Footer 임직원할인"  >임직원할인</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/sitemap" data-track-name="Footer 사이트맵"  >사이트맵</a>
-          <a href="https://www.osulloc.com/kr/ko/cs/notice/announce" data-track-name="Footer 전자공고"  >전자공고</a>
-      </div>
-  </div>
-  <!-- 19.12.05 모바일 고객상담센터  추가 -->
-  <div class="footbottom">
-    <div class="footer_cs_m clearfix">
-      <div class="custCenter_Wrap cs_01">
-          <div class="tit">고객상담센터 &middot; 주문/배송문의</div>
-          <div style="
-              font-size: 15px;
-              font-weight: 500;
-              height: 15px;
-              color: #595959;
-              line-height: 1;
-          ">help@osulloc.com</div>
-          <div class="phone">080-805-5555</div>
-          <div class="time">평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)</div>
-      </div>
-      <div class="custCenter_Wrap cs_02"><!--200728 추가-->
-        <div class="tit">특판, 대량구매 문의</div>
-        <div class="phone">mall@osulloc.com</div>
-        <div class="kakaotalk">카카오톡ID : osullocmall</div>
-        <div class="time">평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)</div>
-      </div>
-    </div>
-    <div class="snsWrap clearfix">
-      
-      
-      <a href="https://www.tiktok.com/@osulloc_official" target="_blank" class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡"  >tiktok</a>
-      <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" target="_blank" class="ic ic-youtube" data-track-name="Footer_M 오설록 유튜브"  >youtube</a>
-      <a href="https://www.instagram.com/osulloc_official/" target="_blank" class="ic ic-insta" data-track-name="Footer_M 오설록 인스타그램"  >instagram</a>
-      
-    </div>
-  </div>
-  </div>
-  <!--//모바일 m_footer-->
-</div>
-<!--//#new_footer-->
 
-<!-- CDJ 기본 레이어팝업 typeA : S -->
-<div class="layer_popup_wrap cdj_renew basic" id="layer_alert" style="display: none;">
-	<div class="layer_box_new">
-		<div class="text_box">
-			
-		</div>			
-		<div class="btn_typeA btn_pop">
-			<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn" onclick="">확인</button>
-		</div>
-	</div>
-</div>
-<!-- CDJ 기본 레이어팝업 typeA : E -->
+			<!--모바일 m_footer-->
+			<div class="m_footer hide_pc">
 
-<!-- CDJ 기본 레이어팝업 typeB : S -->
-<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm" style="display: none;">
-	<div class="layer_box_new">
-		<div class="text_box">
+				<div class="func">
+					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
+						data-track-name="Footer_M 고객센터">고객센터</a> <a
+						href="https://www.osulloc.com/kr/ko/login/logout" class="signIn"
+						data-track-name="Footer_M 로그아웃">로그아웃</a>
+
+
+
+					<div class="lang js_select">
+						<div class="tit menu">한국어</div>
+						<ul>
+							<li><a class="name" href="/kr/ko">한국어</a></li>
+							<li><a class="name" href="https://us.osulloc.com">English</a></li>
+							<li><a class="name" href="/kr/zh">中文</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="certificationInfo">
+					<a href="javascript:;"> <span>오설록 사업자 정보확인</span>
+					</a>
+					<div class="txt_wrap">
+						<p>
+							㈜ 오설록 <br> 대표이사 : 서혁제 <br>주소 : 서울 특별시 용산구 한강대로 100
+							(한강로2가) <br>사업자 등록번호 : 390-87-01499 <br>통신판매업신고번호 :
+							2019-서울용산-1173호 <br>호스팅제공자 : ㈜오설록
+						</p>
+						<p>
+							(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서
+							입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+						</p>
+						<p>
+							NHN KCP 구매안전(에스크로)서비스 <br> 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에
+							가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
+						</p>
+					</div>
+				</div>
+				<div class="footer_menu">
+					<div class="footer_menu_list">
+						<a href="https://www.apgroup.com/int/ko"
+							data-track-name="Footer 회사소개">회사소개</a> <a
+							href="https://www.osulloc.com/kr/ko/misc/terms"
+							data-track-name="Footer 서비스 이용약관">서비스 이용약관</a> <a
+							href="https://www.osulloc.com/kr/ko/misc/statement"
+							data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a> <br>
+						<a href="https://www.osulloc.com/kr/ko/misc/procedures"
+							data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a> <a
+							href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+							data-track-name="Footer 뷰티포인트">뷰티포인트</a> <a
+							href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+							data-track-name="Footer 임직원할인">임직원할인</a> <a
+							href="https://www.osulloc.com/kr/ko/misc/sitemap"
+							data-track-name="Footer 사이트맵">사이트맵</a> <a
+							href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+							data-track-name="Footer 전자공고">전자공고</a>
+					</div>
+				</div>
+				<!-- 19.12.05 모바일 고객상담센터  추가 -->
+				<div class="footbottom">
+					<div class="footer_cs_m clearfix">
+						<div class="custCenter_Wrap cs_01">
+							<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
+							<div
+								style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
+							<div class="phone">080-805-5555</div>
+							<div class="time">
+								평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
+							</div>
+						</div>
+						<div class="custCenter_Wrap cs_02">
+							<!--200728 추가-->
+							<div class="tit">특판, 대량구매 문의</div>
+							<div class="phone">mall@osulloc.com</div>
+							<div class="kakaotalk">카카오톡ID : osullocmall</div>
+							<div class="time">
+								평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
+							</div>
+						</div>
+					</div>
+					<div class="snsWrap clearfix">
+
+
+						<a href="https://www.tiktok.com/@osulloc_official" target="_blank"
+							class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡">tiktok</a>
+						<a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+							target="_blank" class="ic ic-youtube"
+							data-track-name="Footer_M 오설록 유튜브">youtube</a> <a
+							href="https://www.instagram.com/osulloc_official/"
+							target="_blank" class="ic ic-insta"
+							data-track-name="Footer_M 오설록 인스타그램">instagram</a>
+
+					</div>
+				</div>
+			</div>
+			<!--//모바일 m_footer-->
 		</div>
-		<div class="btn_typeB btn_pop">
-			<button type="button" id="btn_confirm_cancel" class="btn_w50" onclick="">취소</button>
-			<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn" onclick="">확인</button>
+		<!--//#new_footer-->
+
+		<!-- CDJ 기본 레이어팝업 typeA : S -->
+		<div class="layer_popup_wrap cdj_renew basic" id="layer_alert"
+			style="display: none;">
+			<div class="layer_box_new">
+				<div class="text_box"></div>
+				<div class="btn_typeA btn_pop">
+					<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn"
+						onclick="">확인</button>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-<!-- CDJ 기본 레이어팝업 typeB : E -->
-<!-- CDJ 로딩 : S -->
-<div class="loading_wrap" style="display:none;">
-	<div class="loading_inner">
-		<img class="loading_gif" src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif" alt="로딩이미지">
-	</div>
-</div>
-<script>
+		<!-- CDJ 기본 레이어팝업 typeA : E -->
+
+		<!-- CDJ 기본 레이어팝업 typeB : S -->
+		<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm"
+			style="display: none;">
+			<div class="layer_box_new">
+				<div class="text_box"></div>
+				<div class="btn_typeB btn_pop">
+					<button type="button" id="btn_confirm_cancel" class="btn_w50"
+						onclick="">취소</button>
+					<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn"
+						onclick="">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- CDJ 기본 레이어팝업 typeB : E -->
+		<!-- CDJ 로딩 : S -->
+		<div class="loading_wrap" style="display: none;">
+			<div class="loading_inner">
+				<img class="loading_gif"
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif"
+					alt="로딩이미지">
+			</div>
+		</div>
+		<script>
 	/* 로딩 호출 함수 */
 	function loadingOn() {
 		$('.loading_wrap').fadeIn();
@@ -2349,9 +2553,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$('.loading_wrap').fadeOut();
 	}
 </script>
-<!-- CDJ 로딩 : E -->
+		<!-- CDJ 로딩 : E -->
 
-<script>
+		<script>
   //footer notice list
 /*   require(['TweenMax'], function(a){
       function footerNotice() {
@@ -2377,14 +2581,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }footerNotice();
   }); */
 </script>
-</div>
+	</div>
 
-<!-- sidenav -->
-<div id="match-media"></div>
-<div id="igm-blocker"></div>
+	<!-- sidenav -->
+	<div id="match-media"></div>
+	<div id="igm-blocker"></div>
 
-<!-- @render(last) { } = @section(last){} 내용  -->
-<script type="text/javascript">
+	<!-- @render(last) { } = @section(last){} 내용  -->
+	<script type="text/javascript">
 
 	$(function(){
 		$('#faq-search').keyup(function(event) {
@@ -2431,7 +2635,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <script type="text/javascript">
+	<script type="text/javascript">
         $( function(){
             $('.x-valid-q').submit( function(){
                 var q = $(this).find('input[name="q"]').val();
@@ -2444,11 +2648,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
     </script>
-    
-    
-    <!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
-    
-    <script language="JavaScript" type="text/javascript">
+
+
+	<!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
+
+	<script language="JavaScript" type="text/javascript">
        
         $(function(){
           if (pageInfo === undefined) {
@@ -2507,7 +2711,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         //일정시간이 지나면 자동로그아웃 e 20170601
     </script>
- 
+
 
 
 </body>

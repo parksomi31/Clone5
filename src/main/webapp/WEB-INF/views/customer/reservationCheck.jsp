@@ -1195,12 +1195,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 									<!--//gnb 프로모션-->
 									<li class="item_dep1 no-child"><a
-										href="https://www.osulloc.com/kr/ko/shop/item/gift"
+										href="${pageContext.request.contextPath}/present"
 										class="link_text">선물추천</a></li>
 
 									<li class="item_dep1"><a
-										href="https://www.osulloc.com/kr/ko/brandstory"
-										class="link_text">브랜드</a>
+										href="${pageContext.request.contextPath}/reservation"
+										class="link_text">프로그램</a>
 										<div class="nav_list_dep2_box">
 											<div class="wrapper">
 												<div class="flex_box">
@@ -1268,25 +1268,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									class="nav_util_icon icon_more" id="btn_nav"></a>
 									<ul class="drop_box drop_box1">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/cs"
+											href="${pageContext.request.contextPath}/notice"
 											data-track-name="Header 고객센터">고객센터</a></li>
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/store-introduction"
+											href="${pageContext.request.contextPath}/store"
+											data-track-name="Header 매장찾기">매장정보</a></li>
+										<li class="drop_item"><a
+											href="${pageContext.request.contextPath}/map"
 											data-track-name="Header 매장찾기">매장찾기</a></li>
 										<li class="drop_item"><a
 											href="https://www.osulloc.com/kr/ko/mypage"
 											data-track-name="Header 주문배송조회">주문배송조회</a></li>
-
-
-
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
+											href="${pageContext.request.contextPath}/reservationCheck"
 											data-track-name="Header 예약조회">예약조회</a></li>
-
-
-										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/beautypoint/list"
-											data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
 
 									</ul></li>
 								<li class="item item_icon_mo_nav"><a
@@ -2542,13 +2537,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				id="form-order">
 				<div class="inner_box">
 					<div class="my_order_info_box">
-						 <h3 class="my_order_tit">
+						<h3 class="my_order_tit">
 							<div class="left">
 								<p class="text">예약자 정보</p>
 								<input type="hidden" id="isCustomer" value="false">
 							</div>
-						</h3> 
-						 <div class="con_box">
+						</h3>
+						<div class="con_box">
 							<table class="my_table_type01">
 								<caption>예약자 정보</caption>
 								<colgroup class="mo">

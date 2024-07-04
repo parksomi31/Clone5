@@ -31,14 +31,14 @@
 <html lang="ko">
 
 <head>
-<style>    
+<style>
 .logo {
 	font-size: 27px;
 	font-weight: 500;
 	background-color: transparent;
 }
 </style>
-	
+
 
 
 
@@ -50,18 +50,18 @@
 
 
 <!-- AWS 프로젝트 신규 추가  230213 GSW -->
-	
-	
+
+
 <!-- AWS 프로젝트 신규 추가  END -->
 
 
- <!-- 앱 접속 여부 추가 -->
+<!-- 앱 접속 여부 추가 -->
 
 
-	
-	
-		
-	
+
+
+
+
 
 
 
@@ -81,104 +81,149 @@
 
 <!-- 20190710 main html 추가 시작 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
 <meta name="mobile-web-app-capable" content="yes">
 <!--20211111 파비콘 적용-->
-<link rel="shortcut icon" sizes="192*192" href="https://image.osulloc.com/upload/kr/ko/favicon.ico">
-<link rel="apple-touch-icon" href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
-<link rel="apple-touch-icon-precomposed" href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
+<link rel="shortcut icon" sizes="192*192"
+	href="https://image.osulloc.com/upload/kr/ko/favicon.ico">
+<link rel="apple-touch-icon"
+	href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
+<link rel="apple-touch-icon-precomposed"
+	href="https://image.osulloc.com/upload/kr/ko/favicon114.png">
 <!--//20211111 파비콘 적용-->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent">
 <meta name="Generator" content="오설록">
 <meta name="Keywords" content="오설록">
 <meta name="description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
-<meta name="facebook-domain-verification" content="tdpu6fl67o5tlqp8etjrivmd5csnrk">
+<meta name="facebook-domain-verification"
+	content="tdpu6fl67o5tlqp8etjrivmd5csnrk">
 
-<meta name="naver-site-verification" content="385c3510efbba21ef957c2cf17a14c5492db3a6a">
+<meta name="naver-site-verification"
+	content="385c3510efbba21ef957c2cf17a14c5492db3a6a">
 
 <!-- 카카오톡 링크 썸네일 -->
 
-	
-	
-	
-	
-	
-		<meta property="og:title" content="오설록">
-		<meta property="og:image" content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
-		<meta property="og:description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
-		<meta property="og:url" content="https://www.osulloc.com">
-	
+
+
+
+
+
+<meta property="og:title" content="오설록">
+<meta property="og:image"
+	content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
+<meta property="og:description" content="오설록, 차와 제주가 선사하는 가치 있는 쉼">
+<meta property="og:url" content="https://www.osulloc.com">
+
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <!-- <meta property="fb:app_id" content="APP_ID"> -->
-<title>GIFT SHOP | 오설록 </title>
+<title>GIFT SHOP | 오설록</title>
 
 <!--fonts-->
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload stylesheet" href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026" as="style">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_renew/fonts/NotoSansKR-Regular.subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumM-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumSB-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumL-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/Arita-dotumB-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload"
+	href="https://image.osulloc.com/kr/ko/static_cdj/fonts/GowunDodum-Regular-subset.woff2"
+	as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026"
+	as="style">
 
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery-1.12.1.ui.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/swiper.min.js?ver=220118"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery-1.12.1.ui.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/swiper.min.js?ver=220118"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
 <!-- 2019-09-27 추가 -->
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/jquery.datetimepicker.full.min.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/jquery.datetimepicker.full.min.js"></script>
 <!-- 2021-03-04 추가 IMQA 웹뷰데이터 수집 -->
-<script src="https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_renew/js/webview-agent.js"></script>
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
-
-
-
-	<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
-	
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
 
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
 
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
 
-	
-	
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=240628">
-	
+
+
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
+
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
+
+
+
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=240628">
+
 
 <!-- 20190906 css 추가 -->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">
 
 
 <!--CDJ-->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/style.css?ver=20240521">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/style2.css?ver=20231102_1">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/main.css">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage1.css?ver=20240514_3">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage2.css?ver=20240611_2">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/style.css?ver=20240521">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/style2.css?ver=20231102_1">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/main.css">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage1.css?ver=20240514_3">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/css/mypage2.css?ver=20240611_2">
 
 <!-- 20221129 추가 -->
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_renew/css/style/ddis_mypage.css?ver=240223">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_renew/css/style/ddis_mypage.css?ver=240223">
 
 <!--[if lt IE 9]><link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static/css/old-ie.css"><![endif]-->
 <!-- 20180612 braze s-->
-<link rel="manifest" href="/manifest.json" >
+<link rel="manifest" href="/manifest.json">
 
 
-<script src="https://image.osulloc.com/kr/ko/static_cdj/js/layout_new.js?ver=230620"></script>
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/search/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://image.osulloc.com/kr/ko/static_cdj/search/css/renew_search.css?ver=20230915_1">
+<script
+	src="https://image.osulloc.com/kr/ko/static_cdj/js/layout_new.js?ver=230620"></script>
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/search/swiper/swiper-bundle.min.css">
+<link rel="stylesheet"
+	href="https://image.osulloc.com/kr/ko/static_cdj/search/css/renew_search.css?ver=20230915_1">
 
 <!-- Google Analytics & Google Tag Manager -->
-  <script type="text/javascript">
+<script type="text/javascript">
     var gv_DataLayer = [];
     // cdnUrl 전역변수로 저장
 	var gCdnUrl = 'https://image.osulloc.com';
@@ -203,17 +248,20 @@
   </script>
 
 <!-- 20180612 braze e -->
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/modernizr-custom.js"></script>  
-<script src="https://image.osulloc.com/kr/ko/static/js/shim.js?ver=230704"></script>
- 
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/modernizr-custom.js"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/shim.js?ver=230704"></script>
+
 <!-- CDJ 추가 js : S -->
 
 
 
-<script src="https://image.osulloc.com/kr/ko/static_cdj/js/shop.js?ver=20240612"></script>
+<script
+	src="https://image.osulloc.com/kr/ko/static_cdj/js/shop.js?ver=20240612"></script>
 <script src="https://image.osulloc.com/kr/ko/static_cdj/js/pop.js"></script>
-<!-- CDJ 추가 js : E --> 
- 
+<!-- CDJ 추가 js : E -->
+
 <!-- 20180110 앱보이 암호화 -->
 <!-- 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha512.js"></script>
@@ -222,26 +270,28 @@
 <!-- 암호화 관련 js 다운로드 20190923 -->
 <script src="https://image.osulloc.com/kr/ko/static_renew/js/sha512.js"></script>
 <script src="https://image.osulloc.com/kr/ko/static_renew/js/md5.js"></script>
-  
+
 <!-- TODO HEAD 쪽으로 위치 이동 -->
 
 
-	
-	
-<script src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"></script>
-	
 
 
-<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script> 
+<script
+	src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"></script>
+
+
+
+<script type="text/javascript" charset="UTF-8"
+	src="//t1.daumcdn.net/adfit/static/kp.js"></script>
 
 <!-- //TODO  
   @render(script){}
  -->
-  <!-- End Google Analytics & Google Tag Manager -->
+<!-- End Google Analytics & Google Tag Manager -->
 
 
-  
-  <script type="text/javascript">
+
+<script type="text/javascript">
 	 /*  window._rblqueue = window._rblqueue || [];
 	  
 	  var realBool = false;
@@ -273,8 +323,8 @@
 	    x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();
 	  }, 0); */
 	</script>
-	
-	<!-- Enliple Common Tracker v3.5 [공용] start -->
+
+<!-- Enliple Common Tracker v3.5 [공용] start -->
 <!-- 		<script type="text/javascript">
 			function mobRf(){
 		        require(['Utils','punycode','EN'], function (Utils, punycode, EN) {
@@ -320,7 +370,7 @@
 
 
 		</script> -->
-	<!-- Enliple Common Tracker v3.5 [공용] end -->
+<!-- Enliple Common Tracker v3.5 [공용] end -->
 
 <!-- Google Tag Manager -->
 <!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
@@ -440,19 +490,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 네이버 연관채널 설정 -->
 <span itemscope="" itemtype="http://schema.org/Organization">
-	<link itemprop="url" href="https://www.osulloc.com/kr/ko">
-	<a itemprop="sameAs" href="https://brand.naver.com/osulloc"></a>
-	<a itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
-	<a itemprop="sameAs" href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
+	<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
+	itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
+	itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
+	<a itemprop="sameAs"
+	href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
 </span>
 
 
 </head>
-<iframe id="x-sso-check" name="sso_check_iframe" title="SSO Session Check Iframe" hidden></iframe>
+<iframe id="x-sso-check" name="sso_check_iframe"
+	title="SSO Session Check Iframe" hidden></iframe>
 
 
 <body>
-    
 
 
 
@@ -461,20 +512,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<!-- Google Tag Manager (noscript) -->
-<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JSBJN9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
-<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW8MKLBZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
 
-<!-- End Google Tag Manager (noscript) -->
-<script type="text/javascript">
+	<!-- Google Tag Manager (noscript) -->
+	<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JSBJN9"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
+	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW8MKLBZ"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
+
+	<!-- End Google Tag Manager (noscript) -->
+	<script type="text/javascript">
 	function dataUndefinedChk(inputValue) {
 		if (inputValue === 'null' || inputValue === null) {
 			return undefined;
@@ -588,8 +642,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	var AP_REFUND_PRDS = "";	// json Array
 
 </script>
-	
-    
 
 
 
@@ -603,7 +655,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<script>
+
+
+	<script>
     $(window).on('load', function(){
         $(".middleMenu").find("ul:eq(0)").find(".thirdMenu li").click(function(){
             var url = $(this).find("a").attr("href");
@@ -704,13 +758,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 
-<form action="/kr/ko/login/logout" method="POST" id="f_logout"></form>
+	<form action="/kr/ko/login/logout" method="POST" id="f_logout"></form>
 
 
 
 
-<!--230420 대량구매 gnb & lnb-->
-<script>
+	<!--230420 대량구매 gnb & lnb-->
+	<script>
     $(function() {
         const datesetting = new Date();
     	const dateyear = datesetting.getFullYear();
@@ -728,498 +782,427 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
 </script>
 
-<div class="cdj_renew">
-	<header id="cdj_header" class="cdj_header">
-		<div class="wrapper">
-			<div class="inner_box">
-				<div class="left_box">
-					<h1 class="logo">
-								<a href="${pageContext.request.contextPath}/home"
-									class="logo_white"> <img
-									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-									alt="오설록 로고" style="user-select: none;">
-								</a> <a href="${pageContext.request.contextPath}/home"
-									class="logo_black"> <img
-									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
-									alt="오설록 로고" style="user-select: none;">
-								</a>
-							</h1>
-					<nav class="nav">
-						<ul class="nav_list_dep1">
-							<li class="item_dep1">
-								<a href="https://www.osulloc.com/kr/ko/shop/item/list" class='link_text'>제품</a>
-								<div class="nav_list_dep2_box">
-									<div class="wrapper">
-										<div class="flex_box">
-											<ul class="nav_list_dep2">
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class='link_text'>베스트</a>
-													<ul class="nav_list_dep3">
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class='link_text'>위클리 베스트</a></li>
-														<!-- 관리자 지정 메뉴 -->
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand" class='link_text'>베스트</a></li>
-														
-													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop" class='link_text'>티 제품</a>
-													<ul class="nav_list_dep3">
-                                                        
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198" class='link_text' data-track-name="GNB 오설록|Tea Shop|티 세트" >티 세트</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201" class='link_text' data-track-name="GNB 오설록|Tea Shop|명차" >명차</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197" class='link_text' data-track-name="GNB 오설록|Tea Shop|녹차/말차" >녹차/말차</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249" class='link_text' data-track-name="GNB 오설록|Tea Shop|발효차/홍차" >발효차/홍차</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196" class='link_text' data-track-name="GNB 오설록|Tea Shop|블렌디드티" >블렌디드티</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195" class='link_text' data-track-name="GNB 오설록|Tea Shop|허브티" >허브티</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250" class='link_text' data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티" >밀크티/아이스티</a></li>
-                                                                
-                                                            
-                                                                
-                                                                <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252" class='link_text' data-track-name="GNB 오설록|Tea Shop|콤부차" >콤부차</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                        
-													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery" data-track-name="GNB 오설록|Tea Shop|Tea Food" class='link_text'>티푸드</a>
-													<ul class="nav_list_dep3">
-                                                        
-                                                            
-                                                                
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174" class='link_text' data-track-name="GNB 오설록|Tea Shop|과자/초콜릿"  >과자/초콜릿</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178" class='link_text' data-track-name="GNB 오설록|Tea Shop|베이커리"  >베이커리</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                                    <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251" class='link_text' data-track-name="GNB 오설록|Tea Shop|아이스크림"  >아이스크림</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                         
-													</ul>
-												</li>
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/shop/teawareshop" class='link_text'>티웨어</a>
-													<ul class="nav_list_dep3">
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop/use" data-track-name="GNB 오설록|Tea ware Shop|용도별" class='link_text'>용도별</a></li>
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand" class='link_text'>브랜드별</a></li>
-													</ul>
-												</li>
-												<li class="item_dep2">
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-															
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-														
-														
-													
-													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop" class='link_text'>라이프스타일</a>
-													<ul class="nav_list_dep3">
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202" class='link_text'>스킨케어</a></li>
-														
-														<li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228" class='link_text'>정기배송</a></li>
-													</ul>
-												</li>
-											</ul>
-											
-											<div class="img_bnr">
-												<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-												<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg" alt=""></a>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-							</li>
-							<!--gnb 프로모션-->
-							
-							<!--//gnb 프로모션-->
-							<li class="item_dep1 no-child">
-								<a href="https://www.osulloc.com/kr/ko/shop/item/gift" class='link_text'>선물추천</a>
-							</li>
-							
-							<li class="item_dep1">
-								<a href="https://www.osulloc.com/kr/ko/brandstory" class='link_text'>브랜드</a>
-								<div class="nav_list_dep2_box">
-									<div class="wrapper">
-										<div class="flex_box">
-											<ul class="nav_list_dep2">
-												<li class="item_dep2">
-													<a href="https://www.osulloc.com/kr/ko/brandstory" class='link_text'>오설록 스토리</a>
-												</li>
-												<li class="item_dep2">
-													
-														<a href="/kr/ko/store-introduction/2" class='link_text'>제주 티뮤지엄</a>
-													
-													
-													
-												</li>
-												<li class="item_dep2">
-													
-													
-														<a href="/kr/ko/store-introduction" data-track-name="매장 소개" class='link_text'>매장 소개 및 예약</a>
-													
-													
-												</li>
-												
-											</ul>
-											
-											<div class="img_bnr">
-												<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-												<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg" alt=""></a>
-											</div>
-											
-										</div>
-									</div>
-								</div>
+	<div class="cdj_renew">
+		<header id="cdj_header" class="cdj_header">
+			<div class="wrapper">
+				<div class="inner_box">
+					<div class="left_box">
+						<h1 class="logo">
+							<a href="${pageContext.request.contextPath}/home"
+								class="logo_white"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a> <a href="${pageContext.request.contextPath}/home"
+								class="logo_black"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a>
+						</h1>
+						<nav class="nav">
+							<ul class="nav_list_dep1">
+								<li class="item_dep1"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list"
+									class='link_text'>제품</a>
+									<div class="nav_list_dep2_box">
+										<div class="wrapper">
+											<div class="flex_box">
+												<ul class="nav_list_dep2">
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+														class='link_text'>베스트</a>
+														<ul class="nav_list_dep3">
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+																class='link_text'>위클리 베스트</a></li>
+															<!-- 관리자 지정 메뉴 -->
 
-							</li>
-							<li class="item_dep1 no-child">
-								<a href="https://osulloc.biz/" class="link_text" target="_blank">단체 및 기업 구매</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="right_box">
-					
-					<form style="display:none;" id="headerSearchForm" action="/kr/ko/shop/search/main/product" method="get" onsubmit="setSearchToSession()">
-						<input type="text" name="isSet" value="N">
-						<input type="text" name="q" id="header_search_Submit">
-						<input type="text" name="p"  value="0">
-						<input type="text" name="size"  value="24">
-						<input type="text" name="sort"  value="ranked">
-						<input type="text" name="reviewType"  value="">
-						<input type="text" name="searchType" id="inputSearchTypeSubmit" value="product">
-						<input type="text" name="tagSearchType" id="header_tagSearchType" >
-					</form>
-					<ul class="nav_util">
-						<li class="item">
-                            <div class="inpSrchWrap">
-                            	<input type="text" placeholder="검색어를 입력해주세요." id="header_search_pc" class="header-search-list" onkeyup="keyupSearchInput(event,'search_itag_pc')">
-                               	<i onclick="srchLayerPcOpen(this); srchLayerMoOpen(this);" id="search_itag_pc"></i>
-                            </div>
-                        </li>
-						<li class="item">
-							
-	                            
-	                            
-	                            	<a class="nav_util_icon icon_cart nav_cart nav_menu empty" href="https://www.osulloc.com/kr/ko/shop/cart" id="x-gnb-cart-m" data-track-name="Header 장바구니" data-gnb-role="cart"><span class="num">0</span></a>
-	                            
-                            
-						</li>
-						<li class="item item_icon_more">
-							<a class="nav_util_icon icon_more" id="btn_nav"></a>
-							<ul class="drop_box drop_box1">
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/cs" data-track-name="Header 고객센터">고객센터</a></li>
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/store-introduction" data-track-name="Header 매장찾기">매장찾기</a></li>
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/mypage" data-track-name="Header 주문배송조회">주문배송조회</a></li>
-								
-									
-									
-										<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation" data-track-name="Header 예약조회">예약조회</a></li>
-									
-								
-								<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand"
+																class='link_text'>베스트</a></li>
 
+														</ul></li>
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
+														class='link_text'>티 제품</a>
+														<ul class="nav_list_dep3">
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|티 세트">티 세트</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201"
+																class='link_text' data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|녹차/말차">녹차/말차</a></li>
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|발효차/홍차">발효차/홍차</a></li>
+
+
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|블렌디드티">블렌디드티</a></li>
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195"
+																class='link_text' data-track-name="GNB 오설록|Tea Shop|허브티">허브티</a></li>
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티">밀크티/아이스티</a></li>
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252"
+																class='link_text' data-track-name="GNB 오설록|Tea Shop|콤부차">콤부차</a></li>
+
+
+
+
+
+
+
+														</ul></li>
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
+														data-track-name="GNB 오설록|Tea Shop|Tea Food"
+														class='link_text'>티푸드</a>
+														<ul class="nav_list_dep3">
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|과자/초콜릿">과자/초콜릿</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|베이커리">베이커리</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251"
+																class='link_text'
+																data-track-name="GNB 오설록|Tea Shop|아이스크림">아이스크림</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+														</ul></li>
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/shop/teawareshop"
+														class='link_text'>티웨어</a>
+														<ul class="nav_list_dep3">
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/teawareshop/use"
+																data-track-name="GNB 오설록|Tea ware Shop|용도별"
+																class='link_text'>용도별</a></li>
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand"
+																class='link_text'>브랜드별</a></li>
+														</ul></li>
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
+														class='link_text'>라이프스타일</a>
+														<ul class="nav_list_dep3">
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202"
+																class='link_text'>스킨케어</a></li>
+
+															<li class="item_dep3"><a
+																href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+																class='link_text'>정기배송</a></li>
+														</ul></li>
+												</ul>
+
+												<div class="img_bnr">
+													<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
+													<a
+														href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img
+														srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp"
+														src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg"
+														alt=""></a>
+												</div>
+
+											</div>
+										</div>
+									</div></li>
+								<!--gnb 프로모션-->
+
+								<!--//gnb 프로모션-->
+								<li class="item_dep1 no-child"><a
+									href="${pageContext.request.contextPath}/present"
+									class="link_text">선물추천</a></li>
+
+								<li class="item_dep1"><a
+									href="${pageContext.request.contextPath}/reservation"
+									class="link_text">프로그램</a>
+									<div class="nav_list_dep2_box">
+										<div class="wrapper">
+											<div class="flex_box">
+												<ul class="nav_list_dep2">
+													<li class="item_dep2"><a
+														href="https://www.osulloc.com/kr/ko/brandstory"
+														class='link_text'>오설록 스토리</a></li>
+													<li class="item_dep2"><a
+														href="/kr/ko/store-introduction/2" class='link_text'>제주
+															티뮤지엄</a></li>
+													<li class="item_dep2"><a
+														href="/kr/ko/store-introduction" data-track-name="매장 소개"
+														class='link_text'>매장 소개 및 예약</a></li>
+
+												</ul>
+
+												<div class="img_bnr">
+													<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
+													<a
+														href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646"><img
+														srcset="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.webp"
+														src="https://image.osulloc.com/upload/kr/ko/adminImage/XK/CR/20240229100150980BC.jpg"
+														alt=""></a>
+												</div>
+
+											</div>
+										</div>
+									</div></li>
+								<li class="item_dep1 no-child"><a
+									href="https://osulloc.biz/" class="link_text" target="_blank">단체
+										및 기업 구매</a></li>
 							</ul>
-						</li>
-						<li class="item item_icon_mo_nav">
-							<a class="nav_util_icon icon_mo_nav" href="#"></a>
-						</li>
-					</ul>
-					<ul class="nav_drop">
-                    
-	                    
-	                    
+						</nav>
+					</div>
+					<div class="right_box">
+
+						<form style="display: none;" id="headerSearchForm"
+							action="/kr/ko/shop/search/main/product" method="get"
+							onsubmit="setSearchToSession()">
+							<input type="text" name="isSet" value="N"> <input
+								type="text" name="q" id="header_search_Submit"> <input
+								type="text" name="p" value="0"> <input type="text"
+								name="size" value="24"> <input type="text" name="sort"
+								value="ranked"> <input type="text" name="reviewType"
+								value=""> <input type="text" name="searchType"
+								id="inputSearchTypeSubmit" value="product"> <input
+								type="text" name="tagSearchType" id="header_tagSearchType">
+						</form>
+						<ul class="nav_util">
 							<li class="item">
-								<a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" data-track-name="Header 로그인">로그인</a>
-								<!-- <ul class="drop_box drop_box2">
+								<div class="inpSrchWrap">
+									<input type="text" placeholder="검색어를 입력해주세요."
+										id="header_search_pc" class="header-search-list"
+										onkeyup="keyupSearchInput(event,'search_itag_pc')"> <i
+										onclick="srchLayerPcOpen(this); srchLayerMoOpen(this);"
+										id="search_itag_pc"></i>
+								</div>
+							</li>
+							<li class="item"><a
+								class="nav_util_icon icon_cart nav_cart nav_menu empty"
+								href="https://www.osulloc.com/kr/ko/shop/cart" id="x-gnb-cart-m"
+								data-track-name="Header 장바구니" data-gnb-role="cart"><span
+									class="num">0</span></a></li>
+							<li class="item item_icon_more"><a
+								class="nav_util_icon icon_more" id="btn_nav"></a>
+								<ul class="drop_box drop_box1">
+									<li class="drop_item"><a
+										href="https://www.osulloc.com/kr/ko/cs"
+										data-track-name="Header 고객센터">고객센터</a></li>
+									<li class="drop_item"><a
+										href="https://www.osulloc.com/kr/ko/store-introduction"
+										data-track-name="Header 매장찾기">매장찾기</a></li>
+									<li class="drop_item"><a
+										href="https://www.osulloc.com/kr/ko/mypage"
+										data-track-name="Header 주문배송조회">주문배송조회</a></li>
+
+
+
+									<li class="drop_item"><a
+										href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
+										data-track-name="Header 예약조회">예약조회</a></li>
+
+
+									<li class="drop_item"><a
+										href="https://www.osulloc.com/kr/ko/beautypoint/list"
+										data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
+
+								</ul></li>
+							<li class="item item_icon_mo_nav"><a
+								class="nav_util_icon icon_mo_nav" href="#"></a></li>
+						</ul>
+						<ul class="nav_drop">
+
+
+
+							<li class="item"><a
+								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift"
+								data-track-name="Header 로그인">로그인</a> <!-- <ul class="drop_box drop_box2">
 									<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" data-track-name="Header 로그인">로그인</a></li>
 									<li class="drop_item"><a href="/kr/ko/login/joinIn" title="새 창"  target="_self"  data-track-name="Header 회원가입">회원가입</a></li>
-								</ul> -->
-							</li>
-	                    
-                    
-						<!-- <li class="item arr">
+								</ul> --></li>
+
+
+							<!-- <li class="item arr">
 							KOREAN <span class="icon_drop_arr"></span>
 							<ul class="drop_box drop_box4">
 								<li class="drop_item"><a href="/kr/ko" data-track-name="GNB Osulloc | Korea/Korean" >한국어</a></li>
@@ -1227,214 +1210,244 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li class="drop_item"><a href="https://www.osulloc.com/kr/zh" data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
 							</ul>
 						</li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="header_dim_bg" style="display:none;"></div>
-	</header>
-	<div class="pcHeaderBannerArea">
-        <div class="searchArea">
-       <div class="searchInnerArea">
-            <span class="srchbtnClose" onclick="srchLayerPcClose();" id="search_close_pc"></span>
-            <div class="chartBox">
-                <div class="chartList">
-                    <div class="tit">
-                        <p>인기 검색어</p>
-                        <em class="searchDateDiv">
-                        	
-                            24. 07. 03 기준
-						</em>
-                    </div>
-                    <ul class="popular_list"> </ul>
-                </div>
-                <div class="chartList chartNewList auto_complete">
-                    <div class="tit">
-                        <p>최근 검색어</p>
-                        <em class="searchDateDiv">
-                            24. 07. 03 기준
-                        </em>
-                    </div>
-                    <ul class="new_list"></ul>
-                    <p class="logDel">
-                        <a href="javascript:deleteRecentSearches();">
-                            <i></i><span>검색 기록 삭제</span>
-                        </a>
-                    </p>
-                </div>
-                <div class="bannerBox" id="bannerBoxPc">
-
-
-				</div>
-                <div class="chartAuto"></div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="moHeaderBannerArea" style="display:none;">
-        <div class="searchArea">
-        <div class="searchInnerArea">
-            <div class="searchBox">
-                <div class="inpWrap">
-                    <input type="text" placeholder="검색어를 입력해주세요." id="header_search_mo" class="header-search-list" onkeyup="keyupSearchInput(event, 'search_itag_mo')">
-                    <i onclick="beforeSearchSubmit(this)" id="search_itag_mo"></i>
-                </div>
-                <span class="srchClose" onclick="srchLayerMoClose();" id="search_close_mo"></span>
-            </div>
-            <div class="listBox">
-                <div class="chartBox">
-                    <div class="tab not_auto_complete">
-                        <span class="tabLinks active" onclick="openTab(event, 'tab01')">인기 검색어</span>
-                        <span class="tabLinks" onclick="openTab(event, 'tab02')">최근 검색어</span>
-                    </div>
-                    <div class="chartList not_auto_complete">
-                        <div id="tab01" class="tabCnt" style="display: block;">
-                            <ul class="popular_list"></ul>
-                            <p class="log date searchDateDiv">
-                               24. 07. 03 기준
-                            </p>
-                        </div>
-                        <div id="tab02" class="tabCnt" style="display: none;">
-                            <ul class="new_list"></ul>
-                            <p class="log logDel">
-                                <a href="javascript:deleteRecentSearches();">
-                                    <i></i><span>검색 기록 삭제</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-               		 <div class="chartAuto"></div>
-                </div>
-
-            </div>
-            <div class="bannerBox" id="bannerBoxMo">
-
-
-
-			</div>
-            </div>
-        </div>
-    </div>
-	<div class="dim_bg"></div>
-
-	<!-- 모바일 NAV : S  -->
-	<aside class="cdj_mo_nav">
-		<!-- 모바일 메뉴 헤터 : S -->
-		<div class="mo_nav_header in">
-			
-	            
-					<!-- 로그인 전 : S -->
-					<div class="logOut_top_box">
-						<a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" class="text"><span>로그인</span></a>
+						</ul>
 					</div>
-					<!-- 로그인 전 : E -->
-				
-				
-			
-			<button class="mo_nav_close" type="button" title="닫기">
-				<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.webp" src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.png" alt="닫기">
-			</button>
+				</div>
+			</div>
+			<div class="header_dim_bg" style="display: none;"></div>
+		</header>
+		<div class="pcHeaderBannerArea">
+			<div class="searchArea">
+				<div class="searchInnerArea">
+					<span class="srchbtnClose" onclick="srchLayerPcClose();"
+						id="search_close_pc"></span>
+					<div class="chartBox">
+						<div class="chartList">
+							<div class="tit">
+								<p>인기 검색어</p>
+								<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+							</div>
+							<ul class="popular_list">
+							</ul>
+						</div>
+						<div class="chartList chartNewList auto_complete">
+							<div class="tit">
+								<p>최근 검색어</p>
+								<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+							</div>
+							<ul class="new_list"></ul>
+							<p class="logDel">
+								<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
+										기록 삭제</span>
+								</a>
+							</p>
+						</div>
+						<div class="bannerBox" id="bannerBoxPc"></div>
+						<div class="chartAuto"></div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- 모바일 메뉴 헤터 : E -->
+		<div class="moHeaderBannerArea" style="display: none;">
+			<div class="searchArea">
+				<div class="searchInnerArea">
+					<div class="searchBox">
+						<div class="inpWrap">
+							<input type="text" placeholder="검색어를 입력해주세요."
+								id="header_search_mo" class="header-search-list"
+								onkeyup="keyupSearchInput(event, 'search_itag_mo')"> <i
+								onclick="beforeSearchSubmit(this)" id="search_itag_mo"></i>
+						</div>
+						<span class="srchClose" onclick="srchLayerMoClose();"
+							id="search_close_mo"></span>
+					</div>
+					<div class="listBox">
+						<div class="chartBox">
+							<div class="tab not_auto_complete">
+								<span class="tabLinks active" onclick="openTab(event, 'tab01')">인기
+									검색어</span> <span class="tabLinks" onclick="openTab(event, 'tab02')">최근
+									검색어</span>
+							</div>
+							<div class="chartList not_auto_complete">
+								<div id="tab01" class="tabCnt" style="display: block;">
+									<ul class="popular_list"></ul>
+									<p class="log date searchDateDiv">24. 07. 03 기준</p>
+								</div>
+								<div id="tab02" class="tabCnt" style="display: none;">
+									<ul class="new_list"></ul>
+									<p class="log logDel">
+										<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
+												기록 삭제</span>
+										</a>
+									</p>
+								</div>
+							</div>
+							<div class="chartAuto"></div>
+						</div>
 
-		<div class="mo_nav_body">
-			<!-- 유틸 영역 : S -->
-			<div class="mo_nav_util in">
-				
-	            
+					</div>
+					<div class="bannerBox" id="bannerBoxMo"></div>
+				</div>
+			</div>
+		</div>
+		<div class="dim_bg"></div>
+
+		<!-- 모바일 NAV : S  -->
+		<aside class="cdj_mo_nav">
+			<!-- 모바일 메뉴 헤터 : S -->
+			<div class="mo_nav_header in">
+
+
 				<!-- 로그인 전 : S -->
-				<div class="logOut_box">
-					<p class="text">가입하고 <em> 10% 쿠폰</em>을 바로 사용해보세요.</p>
-					<button type="button" class="join_btn" title="회원가입" onclick="javascript:location.href='/kr/ko/login/joinIn'" data-track-name="Header 회원가입">회원가입</button>
+				<div class="logOut_top_box">
+					<a
+						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift"
+						class="text"><span>로그인</span></a>
 				</div>
 				<!-- 로그인 전 : E -->
-				
-				
-				
+
+
+
+				<button class="mo_nav_close" type="button" title="닫기">
+					<img
+						srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.webp"
+						src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_mo_nav_close.png"
+						alt="닫기">
+				</button>
 			</div>
-			<!-- 유틸 영역 : E -->
+			<!-- 모바일 메뉴 헤터 : E -->
 
-			<!-- 모바일 네비게이션 : S -->
-			<div class="mo_nav">
-				<ul class="mo_nav_list_dep1">
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/shop/item/list" class="link_text">제품</a>
-						<ul class="mo_nav_list_dep2">
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale" class="link_text">베스트</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop" data-track-name="GNB 오설록|Tea Shop|전체상품" class="link_text">티 제품</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery" data-track-name="GNB 오설록|Tea Shop|Tea Food" class="link_text">티푸드</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/teawareshop" class="link_text">티웨어</a></li>
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop" class="link_text">라이프 스타일</a></li>
-							
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228" class='link_text'>정기배송</a></li>
-						</ul>
-					</li>
-					<!--gnb 프로모션-->
-					
-					<!--//gnb 프로모션-->
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/shop/item/gift" class="link_text no_fold">선물추천</a>
-					</li>
-					
-					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/brandstory" class="link_text">프로그램</a>
-						<ul class="mo_nav_list_dep2">
-							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/brandstory" data-track-name="GNB 오설록|About Osulloc|Since 1979" class="link_text">오설록 스토리</a></li>
-							
-								<li class="item_dep2"><a href="/kr/ko/store-introduction/2" class="link_text">제주 티뮤지엄</a></li>
-								<li class="item_dep2"><a href="/kr/ko/store-introduction" class="link_text">매장 소개 및 예약</a></li>
-							
-						</ul>
-					</li>
-					<li class="item_dep1">
-						<a href="https://osulloc.biz/" class="link_text no_fold" target="_blank">단체 및 기업 구매</a>
-					</li>
-				</ul>
+			<div class="mo_nav_body">
+				<!-- 유틸 영역 : S -->
+				<div class="mo_nav_util in">
+
+
+					<!-- 로그인 전 : S -->
+					<div class="logOut_box">
+						<p class="text">
+							가입하고 <em> 10% 쿠폰</em>을 바로 사용해보세요.
+						</p>
+						<button type="button" class="join_btn" title="회원가입"
+							onclick="javascript:location.href='/kr/ko/login/joinIn'"
+							data-track-name="Header 회원가입">회원가입</button>
+					</div>
+					<!-- 로그인 전 : E -->
+
+
+
+				</div>
+				<!-- 유틸 영역 : E -->
+
+				<!-- 모바일 네비게이션 : S -->
+				<div class="mo_nav">
+					<ul class="mo_nav_list_dep1">
+						<li class="item_dep1"><a
+							href="https://www.osulloc.com/kr/ko/shop/item/list"
+							class="link_text">제품</a>
+							<ul class="mo_nav_list_dep2">
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
+									class="link_text">베스트</a></li>
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
+									data-track-name="GNB 오설록|Tea Shop|전체상품" class="link_text">티
+										제품</a></li>
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
+									data-track-name="GNB 오설록|Tea Shop|Tea Food" class="link_text">티푸드</a></li>
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/teawareshop"
+									class="link_text">티웨어</a></li>
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
+									class="link_text">라이프 스타일</a></li>
+
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+									class='link_text'>정기배송</a></li>
+							</ul></li>
+						<!--gnb 프로모션-->
+
+						<!--//gnb 프로모션-->
+						<li class="item_dep1"><a
+							href="https://www.osulloc.com/kr/ko/shop/item/gift"
+							class="link_text no_fold">선물추천</a></li>
+
+						<li class="item_dep1"><a
+							href="https://www.osulloc.com/kr/ko/brandstory" class="link_text">프로그램</a>
+							<ul class="mo_nav_list_dep2">
+								<li class="item_dep2"><a
+									href="https://www.osulloc.com/kr/ko/brandstory"
+									data-track-name="GNB 오설록|About Osulloc|Since 1979"
+									class="link_text">오설록 스토리</a></li>
+
+								<li class="item_dep2"><a href="/kr/ko/store-introduction/2"
+									class="link_text">제주 티뮤지엄</a></li>
+								<li class="item_dep2"><a href="/kr/ko/store-introduction"
+									class="link_text">매장 소개 및 예약</a></li>
+
+							</ul></li>
+						<li class="item_dep1"><a href="https://osulloc.biz/"
+							class="link_text no_fold" target="_blank">단체 및 기업 구매</a></li>
+					</ul>
+				</div>
+				<!-- 모바일 네비게이션 : E -->
+
+				<!-- 모바일 메뉴 배너 : S -->
+
+
+				<div class="mo_nav_banner in">
+					<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646">
+						<!-- 2022-12-29 JHM, url userFunction 으로변경 --> <img
+						srcset="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.webp"
+						src="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.jpg"
+						alt="">
+					</a>
+				</div>
+
+				<!-- 모바일 메뉴 배너 : E -->
+
+				<!-- 하단 링크 영역 : S -->
+				<div class="mo_nav_link in">
+					<div class="item">
+						<a href="https://www.osulloc.com/kr/ko/store-introduction">매장찾기</a>
+					</div>
+					<div class="item">
+						<a href="https://www.osulloc.com/kr/ko/cs/notice">공지사항</a>
+					</div>
+					<div class="item">
+						<a href="https://www.osulloc.com/kr/ko/cs">고객센터</a>
+					</div>
+
+
+
+					<div class="item">
+						<a
+							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/beautypoint/list"
+							data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후 적립</a>
+					</div>
+
+
+				</div>
+				<!-- 하단 링크 영역 : E -->
+
+				<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
+
 			</div>
-			<!-- 모바일 네비게이션 : E -->
-
-			<!-- 모바일 메뉴 배너 : S -->
-
-			
-			<div class="mo_nav_banner in">
-				<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646">
-					<!-- 2022-12-29 JHM, url userFunction 으로변경 -->
-					<img srcset="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/AI/MP/20240229100155225ZA.jpg" alt="">
-				</a>
+		</aside>
+		<div class="popBarcode">
+			<div class="popBarcodeClose"></div>
+			<div class="barcodeWrapper">
+				<div class="barcodeThumb">
+					<svg id="barcode"></svg>
+					<!-- svg width="444px" id="barcode" height="100px" x="0px" y="0px" viewBox="0 0 444 100" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="444" height="100" style="fill:#ffffff;"></rect><g transform="translate(0, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="100"></rect><rect x="6" y="0" width="2" height="100"></rect><rect x="12" y="0" width="6" height="100"></rect><rect x="22" y="0" width="4" height="100"></rect><rect x="28" y="0" width="6" height="100"></rect><rect x="40" y="0" width="2" height="100"></rect><rect x="44" y="0" width="2" height="100"></rect><rect x="52" y="0" width="8" height="100"></rect><rect x="62" y="0" width="2" height="100"></rect><rect x="66" y="0" width="6" height="100"></rect><rect x="74" y="0" width="2" height="100"></rect><rect x="78" y="0" width="8" height="100"></rect><rect x="88" y="0" width="4" height="100"></rect><rect x="94" y="0" width="4" height="100"></rect><rect x="102" y="0" width="4" height="100"></rect><rect x="110" y="0" width="2" height="100"></rect><rect x="114" y="0" width="6" height="100"></rect><rect x="122" y="0" width="8" height="100"></rect><rect x="132" y="0" width="2" height="100"></rect><rect x="136" y="0" width="6" height="100"></rect><rect x="146" y="0" width="4" height="100"></rect><rect x="154" y="0" width="2" height="100"></rect><rect x="160" y="0" width="4" height="100"></rect><rect x="168" y="0" width="6" height="100"></rect><rect x="176" y="0" width="6" height="100"></rect><rect x="184" y="0" width="2" height="100"></rect><rect x="188" y="0" width="8" height="100"></rect><rect x="198" y="0" width="4" height="100"></rect><rect x="204" y="0" width="4" height="100"></rect><rect x="212" y="0" width="4" height="100"></rect><rect x="220" y="0" width="2" height="100"></rect><rect x="224" y="0" width="6" height="100"></rect><rect x="232" y="0" width="8" height="100"></rect><rect x="242" y="0" width="2" height="100"></rect><rect x="246" y="0" width="4" height="100"></rect><rect x="258" y="0" width="2" height="100"></rect><rect x="264" y="0" width="2" height="100"></rect><rect x="270" y="0" width="2" height="100"></rect><rect x="276" y="0" width="8" height="100"></rect><rect x="286" y="0" width="6" height="100"></rect><rect x="294" y="0" width="2" height="100"></rect><rect x="298" y="0" width="8" height="100"></rect><rect x="308" y="0" width="4" height="100"></rect><rect x="314" y="0" width="4" height="100"></rect><rect x="322" y="0" width="4" height="100"></rect><rect x="330" y="0" width="2" height="100"></rect><rect x="334" y="0" width="6" height="100"></rect><rect x="342" y="0" width="8" height="100"></rect><rect x="352" y="0" width="6" height="100"></rect><rect x="360" y="0" width="4" height="100"></rect><rect x="366" y="0" width="2" height="100"></rect><rect x="374" y="0" width="6" height="100"></rect><rect x="382" y="0" width="2" height="100"></rect><rect x="386" y="0" width="4" height="100"></rect><rect x="396" y="0" width="2" height="100"></rect><rect x="404" y="0" width="2" height="100"></rect><rect x="410" y="0" width="4" height="100"></rect><rect x="418" y="0" width="4" height="100"></rect><rect x="428" y="0" width="6" height="100"></rect><rect x="436" y="0" width="2" height="100"></rect><rect x="440" y="0" width="4" height="100"></rect></g></svg-->
+				</div>
+				<div class="barcodeNum" id="barcodeTxt"></div>
 			</div>
-			
-			<!-- 모바일 메뉴 배너 : E -->
-
-			<!-- 하단 링크 영역 : S -->
-			<div class="mo_nav_link in">
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/store-introduction">매장찾기</a></div>
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/cs/notice">공지사항</a></div>
-				<div class="item"><a href="https://www.osulloc.com/kr/ko/cs">고객센터</a></div>
-                
-	                
-	                
-	                <div class="item"><a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Header 뷰티포인트추후적립"  >뷰티포인트 추후 적립</a></div>
-	                
-                
-			</div>
-			<!-- 하단 링크 영역 : E -->
-
-			<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
-            
 		</div>
-	</aside>
-    <div class="popBarcode">
-        <div class="popBarcodeClose"></div>
-        <div class="barcodeWrapper">
-            <div class="barcodeThumb">
-                <svg id="barcode"></svg>
-                <!-- svg width="444px" id="barcode" height="100px" x="0px" y="0px" viewBox="0 0 444 100" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="444" height="100" style="fill:#ffffff;"></rect><g transform="translate(0, 0)" style="fill:#000000;"><rect x="0" y="0" width="4" height="100"></rect><rect x="6" y="0" width="2" height="100"></rect><rect x="12" y="0" width="6" height="100"></rect><rect x="22" y="0" width="4" height="100"></rect><rect x="28" y="0" width="6" height="100"></rect><rect x="40" y="0" width="2" height="100"></rect><rect x="44" y="0" width="2" height="100"></rect><rect x="52" y="0" width="8" height="100"></rect><rect x="62" y="0" width="2" height="100"></rect><rect x="66" y="0" width="6" height="100"></rect><rect x="74" y="0" width="2" height="100"></rect><rect x="78" y="0" width="8" height="100"></rect><rect x="88" y="0" width="4" height="100"></rect><rect x="94" y="0" width="4" height="100"></rect><rect x="102" y="0" width="4" height="100"></rect><rect x="110" y="0" width="2" height="100"></rect><rect x="114" y="0" width="6" height="100"></rect><rect x="122" y="0" width="8" height="100"></rect><rect x="132" y="0" width="2" height="100"></rect><rect x="136" y="0" width="6" height="100"></rect><rect x="146" y="0" width="4" height="100"></rect><rect x="154" y="0" width="2" height="100"></rect><rect x="160" y="0" width="4" height="100"></rect><rect x="168" y="0" width="6" height="100"></rect><rect x="176" y="0" width="6" height="100"></rect><rect x="184" y="0" width="2" height="100"></rect><rect x="188" y="0" width="8" height="100"></rect><rect x="198" y="0" width="4" height="100"></rect><rect x="204" y="0" width="4" height="100"></rect><rect x="212" y="0" width="4" height="100"></rect><rect x="220" y="0" width="2" height="100"></rect><rect x="224" y="0" width="6" height="100"></rect><rect x="232" y="0" width="8" height="100"></rect><rect x="242" y="0" width="2" height="100"></rect><rect x="246" y="0" width="4" height="100"></rect><rect x="258" y="0" width="2" height="100"></rect><rect x="264" y="0" width="2" height="100"></rect><rect x="270" y="0" width="2" height="100"></rect><rect x="276" y="0" width="8" height="100"></rect><rect x="286" y="0" width="6" height="100"></rect><rect x="294" y="0" width="2" height="100"></rect><rect x="298" y="0" width="8" height="100"></rect><rect x="308" y="0" width="4" height="100"></rect><rect x="314" y="0" width="4" height="100"></rect><rect x="322" y="0" width="4" height="100"></rect><rect x="330" y="0" width="2" height="100"></rect><rect x="334" y="0" width="6" height="100"></rect><rect x="342" y="0" width="8" height="100"></rect><rect x="352" y="0" width="6" height="100"></rect><rect x="360" y="0" width="4" height="100"></rect><rect x="366" y="0" width="2" height="100"></rect><rect x="374" y="0" width="6" height="100"></rect><rect x="382" y="0" width="2" height="100"></rect><rect x="386" y="0" width="4" height="100"></rect><rect x="396" y="0" width="2" height="100"></rect><rect x="404" y="0" width="2" height="100"></rect><rect x="410" y="0" width="4" height="100"></rect><rect x="418" y="0" width="4" height="100"></rect><rect x="428" y="0" width="6" height="100"></rect><rect x="436" y="0" width="2" height="100"></rect><rect x="440" y="0" width="4" height="100"></rect></g></svg-->
-            </div>
-            <div class="barcodeNum" id="barcodeTxt"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="https://image.osulloc.com/kr/ko/static_cdj/js/barcode.js"></script>
-    <script>
+		<script type="text/javascript"
+			src="https://image.osulloc.com/kr/ko/static_cdj/js/barcode.js"></script>
+		<script>
         // 바코드 클릭시 
         $(".barcodeBtn").on('click',function(e){
             jQuery.ajax({
@@ -1458,14 +1471,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $(".popBarcode").css("display", "none");
         });
     </script>
-	<!-- 모바일 NAV : E  -->
+		<!-- 모바일 NAV : E  -->
 
-</div>
-
-
+	</div>
 
 
-<script>
+
+
+	<script>
 
 
     // mobile - tab
@@ -1904,7 +1917,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
     let visi = 0;
     let banner = false;
     function bookchonPop() {
@@ -2066,697 +2079,888 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         return str;
     }
 </script>
-    
-	
+
+
 	<!-- CDJ 개선 선물추천 페이지 : S -->
 	<main class="main cdj_renew giftShopWrap giftshop_main">
-		
-		
+
+
 
 		<section class="gifts_visual">
 			<div class="imgbox box_1920">
 				<picture>
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.webp?ver=240523" media="(max-width:768px)" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.webp?ver=240523" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.jpg?ver=240523" media="(max-width:768px)" type="image/jpg">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.jpg?ver=240523" type="image/jpg">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.jpg?ver=240523" class="m_view" alt="따뜻한 마음을 전하는 오설록 선물하기">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.jpg?ver=240523" class="w_view" alt="따뜻한 마음을 전하는 오설록 선물하기">
-				</picture>
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.webp?ver=240523"
+					media="(max-width:768px)" type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.webp?ver=240523"
+					type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.jpg?ver=240523"
+					media="(max-width:768px)" type="image/jpg">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.jpg?ver=240523"
+					type="image/jpg">
+				<img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top_m.jpg?ver=240523"
+					class="m_view" alt="따뜻한 마음을 전하는 오설록 선물하기"> <img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_top.jpg?ver=240523"
+					class="w_view" alt="따뜻한 마음을 전하는 오설록 선물하기"> </picture>
 			</div>
 		</section>
-		
+
 		<section class="gifts_evtwrap">
 			<div class="evtbox">
 				<picture>
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.webp" media="(max-width:768px)" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.webp" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.jpg" media="(max-width:768px)" type="image/jpg">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.jpg" type="image/jpg">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.jpg" class="m_view" alt="선물하기 서비스 이용 가이드" />
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.jpg" class="w_view" alt="선물하기 서비스 이용 가이드" />
-				</picture>
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.webp"
+					media="(max-width:768px)" type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.webp"
+					type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.jpg"
+					media="(max-width:768px)" type="image/jpg">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.jpg"
+					type="image/jpg">
+				<img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_01.jpg"
+					class="m_view" alt="선물하기 서비스 이용 가이드" /> <img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_01.jpg"
+					class="w_view" alt="선물하기 서비스 이용 가이드" /> </picture>
 				<div class="slidebox gifts_step">
 					<div class="slide_list slide_gifts_step swiper-container">
 						<div class="swiper-wrapper">
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_01.webp" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_01.png" alt="STEP 01">
-								<p class="a11y_hidden">선물하고 싶은 상품 상세페이지에서 "구매하기"를 누른 후 "선물하기" 버튼을 눌러주세요.</p>
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_01.webp"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_01.png"
+									alt="STEP 01">
+								<p class="a11y_hidden">선물하고 싶은 상품 상세페이지에서 "구매하기"를 누른 후
+									"선물하기" 버튼을 눌러주세요.</p>
 							</div>
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_02.webp" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_02.png" alt="TIP">
-								<p class="a11y_hidden">여러 상품을 선물하고 싶다면, 장바구니에 담은 뒤 장바구니에서 "선택 상품 선물하기" 버튼을 눌러주세요.</p>
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_02.webp"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_02.png"
+									alt="TIP">
+								<p class="a11y_hidden">여러 상품을 선물하고 싶다면, 장바구니에 담은 뒤 장바구니에서
+									"선택 상품 선물하기" 버튼을 눌러주세요.</p>
 							</div>
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_03.webp" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_03.png" alt="STEP 02">
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_03.webp"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_03.png"
+									alt="STEP 02">
 								<p class="a11y_hidden">받는 사람 연락처와 선물 메세지를 작성해주세요.</p>
 							</div>
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_04.webp" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_04.png" alt="STEP 03">
-								<p class="a11y_hidden">선물 받는 분께 카카오톡 알림이 발송됩니다. 받는 분이 비회원이어도 주소 입력이 가능합니다.</p>
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_04.webp"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/step_04.png"
+									alt="STEP 03">
+								<p class="a11y_hidden">선물 받는 분께 카카오톡 알림이 발송됩니다. 받는 분이 비회원이어도
+									주소 입력이 가능합니다.</p>
 							</div>
 						</div>
 					</div>
-					<button type="button" class="buttonPrev"><span class="a11y_hidden">이전 보기</span></button>
-					<button type="button" class="buttonNext"><span class="a11y_hidden">다음 보기</span></button>
+					<button type="button" class="buttonPrev">
+						<span class="a11y_hidden">이전 보기</span>
+					</button>
+					<button type="button" class="buttonNext">
+						<span class="a11y_hidden">다음 보기</span>
+					</button>
 				</div>
 			</div>
 			<div class="evtbox">
 				<picture>
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.webp" media="(max-width:768px)" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.webp" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.jpg" media="(max-width:768px)" type="image/jpg">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.jpg" type="image/jpg">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.jpg" class="m_view" alt="오설록몰 단독 선물포장 서비스" />
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.jpg" class="w_view" alt="오설록몰 단독 선물포장 서비스" />
-				</picture>
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.webp"
+					media="(max-width:768px)" type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.webp"
+					type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.jpg"
+					media="(max-width:768px)" type="image/jpg">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.jpg"
+					type="image/jpg">
+				<img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_02.jpg"
+					class="m_view" alt="오설록몰 단독 선물포장 서비스" /> <img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_02.jpg"
+					class="w_view" alt="오설록몰 단독 선물포장 서비스" /> </picture>
 				<div class="slidebox gifts_wrap">
 					<div class="slide_list slide_gifts_wrap swiper-container">
 						<div class="swiper-wrapper">
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_01.webp?ver=240523" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_01.jpg?ver=240523" alt="">
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_01.webp?ver=240523"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_01.jpg?ver=240523"
+									alt="">
 							</div>
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_02.webp?ver=240523" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_02.jpg?ver=240523" alt="">
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_02.webp?ver=240523"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_02.jpg?ver=240523"
+									alt="">
 							</div>
 							<div class="slide_item swiper-slide">
-								<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_03.webp?ver=240523" 
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_03.jpg?ver=240523" alt="">
+								<img
+									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_03.webp?ver=240523"
+									src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/giftwrap_03.jpg?ver=240523"
+									alt="">
 							</div>
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-				<p class="a11y_hidden">우리나라 대표 차 브랜드로서, 단아하고 부드러운 색감으로 한국적인 멋을 살리고 페이퍼 참, 리본으로 디테일하게 마감한 포장</p>
+				<p class="a11y_hidden">우리나라 대표 차 브랜드로서, 단아하고 부드러운 색감으로 한국적인 멋을
+					살리고 페이퍼 참, 리본으로 디테일하게 마감한 포장</p>
 				<small class="a11y_hidden">세트 상품마다 포장 디테일이 상이할 수 있습니다.</small>
 			</div>
 			<div class="evtbox">
 				<picture>
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.webp" media="(max-width:768px)" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.webp" type="image/webp">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.jpg" media="(max-width:768px)" type="image/jpg">
-					<source srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.jpg" type="image/jpg">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.jpg" class="m_view" alt="포장 서비스 구매 가이드">
-					<img src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.jpg" class="w_view" alt="포장 서비스 구매 가이드">
-				</picture>
-				<p class="a11y_hidden">선물하고 싶은 상품 상세페이지에서 "선물포장"의 "포장 추가" 버튼을 눌러주세요.</p>
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.webp"
+					media="(max-width:768px)" type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.webp"
+					type="image/webp">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.jpg"
+					media="(max-width:768px)" type="image/jpg">
+				<source
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.jpg"
+					type="image/jpg">
+				<img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/m_gifts_info_03.jpg"
+					class="m_view" alt="포장 서비스 구매 가이드"> <img
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/w_gifts_info_03.jpg"
+					class="w_view" alt="포장 서비스 구매 가이드"> </picture>
+				<p class="a11y_hidden">선물하고 싶은 상품 상세페이지에서 "선물포장"의 "포장 추가" 버튼을
+					눌러주세요.</p>
 			</div>
 		</section>
-		
+
 		<!-- 선물추천 컨텐츠 : S -->
 		<div class="gifts_container gifts_recommend">
 
 			<section class="gifts_list_top">
-				<img srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_list_title.webp" 
-					 src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_list_title.png" width="230" height="118" alt="마음이 전해지는 선물 추천">
+				<img
+					srcset="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_list_title.webp"
+					src="https://image.osulloc.com/kr/ko/static_cdj/images/gifts_shop/gifts_list_title.png"
+					width="230" height="118" alt="마음이 전해지는 선물 추천">
 			</section>
-			
-			
-				
-				
-					
-					
-					
-						<section class="gifts_sec gifts_typeA">
-							<!-- <div class="w1200"> -->
-								
 
-								<div class="gifts_type_header">
-									
-									<p class="sub_title">1~2만원대 선물</p>
-								</div>
-								
-								<!-- 상품 리스트 영역 : S-->
-								<div class="prd_list_wrap">
-									<ul class="list_box">
-										
-											
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/1461" data-track-name="러블리 티 박스 4종 12입" data-item-id="1461" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="러블리 티 박스 4종 12입/1461" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ER/BD/304_20240426170838736RJ.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/ER/BD/304_20240426170838736RJ.png" alt="러블리 티 박스 4종 12입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BQ/QH/20240426170845549GD.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/BQ/QH/20240426170845549GD.png" alt="러블리 티 박스 4종 12입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('1461','21000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">러블리 티 박스 4종 12입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">21,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21660" data-track-name="티 베리에이션 30 6종 30입" data-item-id="21660" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 베리에이션 30 6종 30입/21660" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/QC/UK/304_20240426144844472JD.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/QC/UK/304_20240426144844472JD.png" alt="티 베리에이션 30 6종 30입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ER/WL/20240426144848379AO.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/ER/WL/20240426144848379AO.png" alt="티 베리에이션 30 6종 30입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21660','22000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 베리에이션 30 6종 30입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">22,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21665" data-track-name="티 베리에이션 O 6종 36입" data-item-id="21665" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 베리에이션 O 6종 36입/21665" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BP/KN/304_20240528181148327SM.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/BP/KN/304_20240528181148327SM.png" alt="티 베리에이션 O 6종 36입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/IE/KB/20240528181152255OP.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/IE/KB/20240528181152255OP.png" alt="티 베리에이션 O 6종 36입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21665','27000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 베리에이션 O 6종 36입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">27,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/15263" data-track-name="프리미엄 티 컬렉션 10종 40입" data-item-id="15263" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="프리미엄 티 컬렉션 10종 40입/15263" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/UC/IK/304_20240426171406496WL.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/UC/IK/304_20240426171406496WL.png" alt="프리미엄 티 컬렉션 10종 40입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/DY/ZF/20240426171412407HU.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/DY/ZF/20240426171412407HU.png" alt="프리미엄 티 컬렉션 10종 40입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('15263','28000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">프리미엄 티 컬렉션 10종 40입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">28,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-											
-										
-											
-										
-											
-										
-											
-										
-									</ul>
-									<!-- 상품 리스트 영역 : E -->
-									
-									<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
-									<div class="gifts_btn">
-										<button type="button" class="btn_A"><span>더 보기</span></button>
+
+
+			<section class="gifts_sec gifts_typeA">
+				<!-- <div class="w1200"> -->
+
+
+				<div class="gifts_type_header">
+
+					<p class="sub_title">1~2만원대 선물</p>
+				</div>
+
+				<!-- 상품 리스트 영역 : S-->
+				<div class="prd_list_wrap">
+					<ul class="list_box">
+
+
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/1461"
+										data-track-name="러블리 티 박스 4종 12입" data-item-id="1461"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click" ap-click-data="러블리 티 박스 4종 12입/1461">
+										<!-- 기본 썸네일 prd_thumb_default --> <img
+										class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ER/BD/304_20240426170838736RJ.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/ER/BD/304_20240426170838736RJ.png"
+										alt="러블리 티 박스 4종 12입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BQ/QH/20240426170845549GD.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/BQ/QH/20240426170845549GD.png"
+										alt="러블리 티 박스 4종 12입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('1461','21000')">선물하기</button>
 									</div>
 								</div>
-							<!-- </div> -->
-						</section>
-					
-				
-			
-				
-				
-					
-					
-					
-						<section class="gifts_sec gifts_typeA">
-							<!-- <div class="w1200"> -->
-								
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">러블리 티 박스 4종 12입</a>
+										</p>
+										<div class="prd_price">
 
-								<div class="gifts_type_header">
-									
-									<p class="sub_title">3~5만원대 선물</p>
+
+
+											<div class="flex_box">
+												<p class="price_result">21,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
 								</div>
-								
-								<!-- 상품 리스트 영역 : S-->
-								<div class="prd_list_wrap">
-									<ul class="list_box">
-										
-											
-										
-											
-												
-													
- 													
+							</div>
+						</li>
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21638" data-track-name="티 에디션 아일랜드 6종 18입" data-item-id="21638" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 에디션 아일랜드 6종 18입/21638" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/QF/AT/304_20240426171259245QY.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/QF/AT/304_20240426171259245QY.png" alt="티 에디션 아일랜드 6종 18입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/JL/ES/20240426171306378VU.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/JL/ES/20240426171306378VU.png" alt="티 에디션 아일랜드 6종 18입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21638','36000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 에디션 아일랜드 6종 18입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">36,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/5764" data-track-name="시크릿 티 스토리 9종 27입" data-item-id="5764" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="시크릿 티 스토리 9종 27입/5764" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/GG/WY/304_20240426171133386WS.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/GG/WY/304_20240426171133386WS.png" alt="시크릿 티 스토리 9종 27입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/VY/GE/20240426171138794JQ.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/VY/GE/20240426171138794JQ.png" alt="시크릿 티 스토리 9종 27입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('5764','47000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">시크릿 티 스토리 9종 27입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">47,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21666" data-track-name="티 에디션 까멜리아 힐 6종 24입" data-item-id="21666" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 에디션 까멜리아 힐 6종 24입/21666" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/YD/EZ/304_20240528181219041WN.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/YD/EZ/304_20240528181219041WN.png" alt="티 에디션 까멜리아 힐 6종 24입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/EW/UV/20240528181222359XV.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/EW/UV/20240528181222359XV.png" alt="티 에디션 까멜리아 힐 6종 24입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21666','48000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 에디션 까멜리아 힐 6종 24입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">48,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/14123" data-track-name="마스터 블렌드 8종 32입" data-item-id="14123" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="마스터 블렌드 8종 32입/14123" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ZL/JV/304_20240426170919189SS.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/ZL/JV/304_20240426170919189SS.png" alt="마스터 블렌드 8종 32입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/YF/MY/20240426170925293TV.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/YF/MY/20240426170925293TV.png" alt="마스터 블렌드 8종 32입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('14123','55000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">마스터 블렌드 8종 32입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">55,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-											
-										
-											
-										
-											
-										
-									</ul>
-									<!-- 상품 리스트 영역 : E -->
-									
-									<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
-									<div class="gifts_btn">
-										<button type="button" class="btn_A"><span>더 보기</span></button>
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21660"
+										data-track-name="티 베리에이션 30 6종 30입" data-item-id="21660"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 베리에이션 30 6종 30입/21660"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/QC/UK/304_20240426144844472JD.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/QC/UK/304_20240426144844472JD.png"
+										alt="티 베리에이션 30 6종 30입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ER/WL/20240426144848379AO.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/ER/WL/20240426144848379AO.png"
+										alt="티 베리에이션 30 6종 30입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21660','22000')">선물하기</button>
 									</div>
 								</div>
-							<!-- </div> -->
-						</section>
-					
-				
-			
-				
-				
-					
-					
-					
-						<section class="gifts_sec gifts_typeA">
-							<!-- <div class="w1200"> -->
-								
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 베리에이션 30 6종 30입</a>
+										</p>
+										<div class="prd_price">
 
-								<div class="gifts_type_header">
-									
-									<p class="sub_title">7~10만원대 선물</p>
+
+
+											<div class="flex_box">
+												<p class="price_result">22,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
 								</div>
-								
-								<!-- 상품 리스트 영역 : S-->
-								<div class="prd_list_wrap">
-									<ul class="list_box">
-										
-											
-										
-											
-										
-											
-												
-													
- 													
+							</div>
+						</li>
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/16045" data-track-name="프리미엄 티 컬렉션 9종 90입" data-item-id="16045" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="프리미엄 티 컬렉션 9종 90입/16045" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/FB/GY/304_20240426171441600LR.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/FB/GY/304_20240426171441600LR.png" alt="프리미엄 티 컬렉션 9종 90입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/HT/KU/20240426171447464RM.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/HT/KU/20240426171447464RM.png" alt="프리미엄 티 컬렉션 9종 90입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('16045','70000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">프리미엄 티 컬렉션 9종 90입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">70,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21639" data-track-name="티 에디션 시그니처 6종 42입" data-item-id="21639" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 에디션 시그니처 6종 42입/21639" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BM/AM/304_20240426171221202RZ.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/BM/AM/304_20240426171221202RZ.png" alt="티 에디션 시그니처 6종 42입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/RG/GA/20240426171228430YV.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/RG/GA/20240426171228430YV.png" alt="티 에디션 시그니처 6종 42입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21639','85000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 에디션 시그니처 6종 42입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">85,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/20826" data-track-name="스페셜 티 에디션 9종 54입" data-item-id="20826" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="스페셜 티 에디션 9종 54입/20826" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/LT/RT/304_20240426171042477FJ.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/LT/RT/304_20240426171042477FJ.png" alt="스페셜 티 에디션 9종 54입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/EN/KT/20240426171048953TW.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/EN/KT/20240426171048953TW.png" alt="스페셜 티 에디션 9종 54입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('20826','110000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">스페셜 티 에디션 9종 54입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">110,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-													
- 													
 
-													<li class="list_item">
-														<div class="item_inner">
-															<div class="prd_thumb">
-																<a href="/kr/ko/shop/item/teashop/21637" data-track-name="티 에디션 헤리티지 9종 63입" data-item-id="21637" 
-																	data-item-cate="teashop" ap-click-area="prds-티 세트" ap-click-name="prd click" ap-click-data="티 에디션 헤리티지 9종 63입/21637" >
-																	<!-- 기본 썸네일 prd_thumb_default -->
-																	<img class="prd_thumb_default" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/GM/FC/304_20240426171333996WO.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/GM/FC/304_20240426171333996WO.png" alt="티 에디션 헤리티지 9종 63입">
-																	<!-- 마우스 오버시 썸네일 prd_thumb_hover -->
-																	<img class="prd_thumb_hover" srcset="https://image.osulloc.com/upload/kr/ko/adminImage/CY/PS/20240426171341960MV.webp" src="https://image.osulloc.com/upload/kr/ko/adminImage/CY/PS/20240426171341960MV.png" alt="티 에디션 헤리티지 9종 63입">
-																</a>
-																<div class="fnc_btn_wrap">
-																	<button type="button" class="gift_btn" onclick="goPresent('21637','150000')">선물하기</button>
-																</div>
-															</div>
-															<div class="prd_desc">
-																<div class="prd_info">
-																	<p class="prd_name">
-																		<a href="#">티 에디션 헤리티지 9종 63입</a>
-																	</p>
-																	<div class="prd_price">
-																		
-																			
-																			
-																				<div class="flex_box"><p class="price_result">150,000원</p></div>
-																			
-																		
-																	</div>
-																</div>
-																
-															</div>
-														</div>
-													</li>
-												
-											
-										
-											
-										
-									</ul>
-									<!-- 상품 리스트 영역 : E -->
-									
-									<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
-									<div class="gifts_btn">
-										<button type="button" class="btn_A"><span>더 보기</span></button>
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21665"
+										data-track-name="티 베리에이션 O 6종 36입" data-item-id="21665"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 베리에이션 O 6종 36입/21665"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BP/KN/304_20240528181148327SM.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/BP/KN/304_20240528181148327SM.png"
+										alt="티 베리에이션 O 6종 36입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/IE/KB/20240528181152255OP.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/IE/KB/20240528181152255OP.png"
+										alt="티 베리에이션 O 6종 36입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21665','27000')">선물하기</button>
 									</div>
 								</div>
-							<!-- </div> -->
-						</section>
-					
-				
-			
-				
-				
-					
-					
-						
-					
-					
-				
-			
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 베리에이션 O 6종 36입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">27,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/15263"
+										data-track-name="프리미엄 티 컬렉션 10종 40입" data-item-id="15263"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="프리미엄 티 컬렉션 10종 40입/15263"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/UC/IK/304_20240426171406496WL.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/UC/IK/304_20240426171406496WL.png"
+										alt="프리미엄 티 컬렉션 10종 40입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/DY/ZF/20240426171412407HU.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/DY/ZF/20240426171412407HU.png"
+										alt="프리미엄 티 컬렉션 10종 40입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('15263','28000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">프리미엄 티 컬렉션 10종 40입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">28,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+
+
+
+
+
+					</ul>
+					<!-- 상품 리스트 영역 : E -->
+
+					<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
+					<div class="gifts_btn">
+						<button type="button" class="btn_A">
+							<span>더 보기</span>
+						</button>
+					</div>
+				</div>
+				<!-- </div> -->
+			</section>
+
+
+
+
+
+
+
+
+			<section class="gifts_sec gifts_typeA">
+				<!-- <div class="w1200"> -->
+
+
+				<div class="gifts_type_header">
+
+					<p class="sub_title">3~5만원대 선물</p>
+				</div>
+
+				<!-- 상품 리스트 영역 : S-->
+				<div class="prd_list_wrap">
+					<ul class="list_box">
+
+
+
+
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21638"
+										data-track-name="티 에디션 아일랜드 6종 18입" data-item-id="21638"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 에디션 아일랜드 6종 18입/21638"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/QF/AT/304_20240426171259245QY.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/QF/AT/304_20240426171259245QY.png"
+										alt="티 에디션 아일랜드 6종 18입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/JL/ES/20240426171306378VU.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/JL/ES/20240426171306378VU.png"
+										alt="티 에디션 아일랜드 6종 18입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21638','36000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 에디션 아일랜드 6종 18입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">36,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/5764"
+										data-track-name="시크릿 티 스토리 9종 27입" data-item-id="5764"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="시크릿 티 스토리 9종 27입/5764"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/GG/WY/304_20240426171133386WS.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/GG/WY/304_20240426171133386WS.png"
+										alt="시크릿 티 스토리 9종 27입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/VY/GE/20240426171138794JQ.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/VY/GE/20240426171138794JQ.png"
+										alt="시크릿 티 스토리 9종 27입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('5764','47000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">시크릿 티 스토리 9종 27입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">47,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21666"
+										data-track-name="티 에디션 까멜리아 힐 6종 24입" data-item-id="21666"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 에디션 까멜리아 힐 6종 24입/21666"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/YD/EZ/304_20240528181219041WN.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/YD/EZ/304_20240528181219041WN.png"
+										alt="티 에디션 까멜리아 힐 6종 24입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/EW/UV/20240528181222359XV.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/EW/UV/20240528181222359XV.png"
+										alt="티 에디션 까멜리아 힐 6종 24입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21666','48000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 에디션 까멜리아 힐 6종 24입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">48,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/14123"
+										data-track-name="마스터 블렌드 8종 32입" data-item-id="14123"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click" ap-click-data="마스터 블렌드 8종 32입/14123">
+										<!-- 기본 썸네일 prd_thumb_default --> <img
+										class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/ZL/JV/304_20240426170919189SS.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/ZL/JV/304_20240426170919189SS.png"
+										alt="마스터 블렌드 8종 32입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/YF/MY/20240426170925293TV.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/YF/MY/20240426170925293TV.png"
+										alt="마스터 블렌드 8종 32입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('14123','55000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">마스터 블렌드 8종 32입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">55,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+
+
+
+					</ul>
+					<!-- 상품 리스트 영역 : E -->
+
+					<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
+					<div class="gifts_btn">
+						<button type="button" class="btn_A">
+							<span>더 보기</span>
+						</button>
+					</div>
+				</div>
+				<!-- </div> -->
+			</section>
+
+
+
+
+
+
+
+
+			<section class="gifts_sec gifts_typeA">
+				<!-- <div class="w1200"> -->
+
+
+				<div class="gifts_type_header">
+
+					<p class="sub_title">7~10만원대 선물</p>
+				</div>
+
+				<!-- 상품 리스트 영역 : S-->
+				<div class="prd_list_wrap">
+					<ul class="list_box">
+
+
+
+
+
+
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/16045"
+										data-track-name="프리미엄 티 컬렉션 9종 90입" data-item-id="16045"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="프리미엄 티 컬렉션 9종 90입/16045"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/FB/GY/304_20240426171441600LR.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/FB/GY/304_20240426171441600LR.png"
+										alt="프리미엄 티 컬렉션 9종 90입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/HT/KU/20240426171447464RM.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/HT/KU/20240426171447464RM.png"
+										alt="프리미엄 티 컬렉션 9종 90입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('16045','70000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">프리미엄 티 컬렉션 9종 90입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">70,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21639"
+										data-track-name="티 에디션 시그니처 6종 42입" data-item-id="21639"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 에디션 시그니처 6종 42입/21639"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/BM/AM/304_20240426171221202RZ.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/BM/AM/304_20240426171221202RZ.png"
+										alt="티 에디션 시그니처 6종 42입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/RG/GA/20240426171228430YV.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/RG/GA/20240426171228430YV.png"
+										alt="티 에디션 시그니처 6종 42입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21639','85000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 에디션 시그니처 6종 42입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">85,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/20826"
+										data-track-name="스페셜 티 에디션 9종 54입" data-item-id="20826"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="스페셜 티 에디션 9종 54입/20826"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/LT/RT/304_20240426171042477FJ.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/LT/RT/304_20240426171042477FJ.png"
+										alt="스페셜 티 에디션 9종 54입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/EN/KT/20240426171048953TW.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/EN/KT/20240426171048953TW.png"
+										alt="스페셜 티 에디션 9종 54입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('20826','110000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">스페셜 티 에디션 9종 54입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">110,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+						<li class="list_item">
+							<div class="item_inner">
+								<div class="prd_thumb">
+									<a href="/kr/ko/shop/item/teashop/21637"
+										data-track-name="티 에디션 헤리티지 9종 63입" data-item-id="21637"
+										data-item-cate="teashop" ap-click-area="prds-티 세트"
+										ap-click-name="prd click"
+										ap-click-data="티 에디션 헤리티지 9종 63입/21637"> <!-- 기본 썸네일 prd_thumb_default -->
+										<img class="prd_thumb_default"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/GM/FC/304_20240426171333996WO.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/GM/FC/304_20240426171333996WO.png"
+										alt="티 에디션 헤리티지 9종 63입"> <!-- 마우스 오버시 썸네일 prd_thumb_hover -->
+										<img class="prd_thumb_hover"
+										srcset="https://image.osulloc.com/upload/kr/ko/adminImage/CY/PS/20240426171341960MV.webp"
+										src="https://image.osulloc.com/upload/kr/ko/adminImage/CY/PS/20240426171341960MV.png"
+										alt="티 에디션 헤리티지 9종 63입">
+									</a>
+									<div class="fnc_btn_wrap">
+										<button type="button" class="gift_btn"
+											onclick="goPresent('21637','150000')">선물하기</button>
+									</div>
+								</div>
+								<div class="prd_desc">
+									<div class="prd_info">
+										<p class="prd_name">
+											<a href="#">티 에디션 헤리티지 9종 63입</a>
+										</p>
+										<div class="prd_price">
+
+
+
+											<div class="flex_box">
+												<p class="price_result">150,000원</p>
+											</div>
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+
+
+
+
+					</ul>
+					<!-- 상품 리스트 영역 : E -->
+
+					<!-- gifts_btn - 모바일에서는 4개 노출, 4개 이상 등록시 더보기버튼 // 피씨에서는 10개 노출, 10개 이상 등록시 더보기버튼  -->
+					<div class="gifts_btn">
+						<button type="button" class="btn_A">
+							<span>더 보기</span>
+						</button>
+					</div>
+				</div>
+				<!-- </div> -->
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 		<!-- 선물추천 컨텐츠 : E -->
 
 	</main>
-	
+
 	<!-- CDJ 개선 선물추천 페이지 : E -->
-	
-	
 
 
 
 
 
 
-    <script type="text/javascript">
+
+
+	<script type="text/javascript">
         $( function(){
             $('.x-valid-q').submit( function(){
                 var q = $(this).find('input[name="q"]').val();
@@ -2769,17 +2973,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
     </script>
-    
-    
-    <!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
-    
-    <script language="JavaScript" type="text/javascript">
+
+
+	<!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
+
+	<script language="JavaScript" type="text/javascript">
        
         //일정시간이 지나면 자동로그아웃 e 20170601
     </script>
- 
-
-	
 
 
 
@@ -2787,118 +2988,168 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<!--new_footer-->
-<div id="new_footer">
-  <!--PC-->
-  <div class="wrap1 m_pd15 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="right">
-        
-          
-          
-            <a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" class="footer_login" data-track-name="Footer 로그인">로그인</a>
-          
-        
-        <a href="https://www.tiktok.com/@osulloc_official" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 틱톡"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png" alt="틱톡">
-        </a>
-        <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 유튜브"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png" alt="유튜브">
-        </a>
-        
-        <a href="https://www.instagram.com/osulloc_official/" target="_blank" class="btn-share--circle" style="z-index: 10000;" data-track-name="Footer 오설록 인스타그램"  >
-          <img class="hide_tablet hide_mobile" src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png" alt="인스타그램">
-          <img class="hide_pc" src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png" alt="인스타그램">
-        </a>
-      </div>
 
-    </div>
-  </div>
-  <div class="wrap2 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="left1">
-        <div class="tit">고객상담센터 &middot; 주문/배송문의</div>
-        <div><a href="mailto:help@osulloc.com" style="font-weight: 500;color:#595959;font-size: 18px;">help@osulloc.com</a></div>
-        <div class="phone" style="margin-top:1px;line-height:1;">080-805-5555</div>
-        <div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
-      </div>
-      <div class="left2">
-        <div class="tit">특판, 대량구매 문의</div>
-        <div class="phone"><a href="mailto:mall@osulloc.com" style="font-weight:700;color:#595959;text-decoration:underline;" data-track-name="Footer 이메일 문의"  >mall@osulloc.com</a><span></span></div>
-        <div class="mail" style="line-height:1;">
-            <span style="font-family:'Noto_M,sans-serif';font-weight:700;font-size:13px;color:#797979;"><!--010-2515-1979 / -->카카오톡ID : osullocmall</span>
-            <p style="margin-top:10px;"><span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span></p>
-        </div>
-      </div>         
-      <div class="right">
-        <a href="https://www.osulloc.com/kr/ko/store-introduction" data-track-name="Footer 매장안내"  >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png" alt="매장안내">
-          <span>매장안내</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/cs/member/benefit" data-track-name="Footer 멤버십혜택"  >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png" alt="멤버십혜택">
-          <span>멤버십혜택</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/cs/faq" data-track-name="Footer FAQ" class="footerFAQ">
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png" alt="FAQ">
-          <span>FAQ</span>
-        </a>
-        <a href="https://osulloc.biz/" data-track-name="Footer 단체 및 기업 구매" class="footerBulk" target="_blank">
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png" alt="단체 및 기업 구매">
-          <span>단체 및 <br>기업 구매</span>
-        </a>
-        <a href="https://www.osulloc.com/kr/ko/mypage/qna" data-track-name="Footer 1:1문의" >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png" alt="1:1문의">
-          <span>1:1문의</span>
-        </a>
-		<a href="https://www.osulloc.com/kr/ko/beautypoint/list" data-track-name="Footer 뷰티포인트" >
-          <img src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png" alt="뷰티포인트">
-          <span>뷰티포인트<br>추후적립</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="wrap3 hide_tablet hide_mobile">
-    <div class="inner1600 clearfix">
-      <div class="logo logo_footer"><a href="https://www.osulloc.com/kr/ko/mypage/qna" data-track-name="Footer 1:1문의"  ><img src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png" width="112" height="158" alt="1:1문의"></a></div>
-      <div class="left">
-        <div class="cont1">
-          <ul>
-            <li><a href="https://www.apgroup.com/int/ko" data-track-name="Footer 회사소개">회사소개</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/terms" data-track-name="Footer 서비스 이용약관"  >서비스 이용약관</a></li>
-            
-            <li><a href="https://www.osulloc.com/kr/ko/misc/statement" data-track-name="Footer 개인정보 처리방침"  ><b>개인정보 처리방침</b></a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/procedures" data-track-name="Footer 영상정보 처리방침"  >영상정보 처리방침</a></li>
-            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do" data-track-name="Footer 뷰티포인트" >뷰티포인트</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP" data-track-name="Footer 임직원할인" >임직원할인</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/misc/sitemap" data-track-name="Footer 사이트맵"  >사이트맵</a></li>
-            <li><a href="https://www.osulloc.com/kr/ko/cs/notice/announce" data-track-name="Footer 전자공고"  >전자공고</a></li>
-          </ul>
-        </div>
-        <div class="cont2">
-          <div class="address">㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호: 390-87-01499 
-            <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a>
-            <br>통신판매업신고번호:2019-서울용산-1173호 호스팅제공자: ㈜오설록
-            <br><br>
-          (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
-          </div>
-          <!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
-        </div>
-        
-      </div>
-      <div class="right">
-        <div class="box clearfix">
-          <div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
-          <div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
-          <img src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png" alt="에스크로 가입사실확인" class="escrow_img">
-          <!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
-          <!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--//PC-->
-  <script>
+
+
+	<!--new_footer-->
+	<div id="new_footer">
+		<!--PC-->
+		<div class="wrap1 m_pd15 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="right">
+
+
+
+					<a
+						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift"
+						class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
+						href="https://www.tiktok.com/@osulloc_official" target="_blank"
+						class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 틱톡"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png"
+						alt="틱톡">
+					</a> <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+						target="_blank" class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 유튜브"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png"
+						alt="유튜브">
+					</a> <a href="https://www.instagram.com/osulloc_official/"
+						target="_blank" class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 인스타그램"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png"
+						alt="인스타그램"> <img class="hide_pc"
+						src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png"
+						alt="인스타그램">
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="wrap2 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="left1">
+					<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
+					<div>
+						<a href="mailto:help@osulloc.com"
+							style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
+					</div>
+					<div class="phone" style="margin-top: 1px; line-height: 1;">080-805-5555</div>
+					<div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
+				</div>
+				<div class="left2">
+					<div class="tit">특판, 대량구매 문의</div>
+					<div class="phone">
+						<a href="mailto:mall@osulloc.com"
+							style="font-weight: 700; color: #595959; text-decoration: underline;"
+							data-track-name="Footer 이메일 문의">mall@osulloc.com</a><span></span>
+					</div>
+					<div class="mail" style="line-height: 1;">
+						<span
+							style="font-family: 'Noto_M,sans-serif'; font-weight: 700; font-size: 13px; color: #797979;">
+							<!--010-2515-1979 / -->카카오톡ID : osullocmall
+						</span>
+						<p style="margin-top: 10px;">
+							<span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span>
+						</p>
+					</div>
+				</div>
+				<div class="right">
+					<a href="https://www.osulloc.com/kr/ko/store-introduction"
+						data-track-name="Footer 매장안내"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/f1.png"
+						alt="매장안내"> <span>매장안내</span>
+					</a> <a href="https://www.osulloc.com/kr/ko/cs/member/benefit"
+						data-track-name="Footer 멤버십혜택"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png"
+						alt="멤버십혜택"> <span>멤버십혜택</span>
+					</a> <a href="https://www.osulloc.com/kr/ko/cs/faq"
+						data-track-name="Footer FAQ" class="footerFAQ"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png"
+						alt="FAQ"> <span>FAQ</span>
+					</a> <a href="https://osulloc.biz/" data-track-name="Footer 단체 및 기업 구매"
+						class="footerBulk" target="_blank"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/f5.png"
+						alt="단체 및 기업 구매"> <span>단체 및 <br>기업 구매
+					</span>
+					</a> <a href="https://www.osulloc.com/kr/ko/mypage/qna"
+						data-track-name="Footer 1:1문의"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/f4.png"
+						alt="1:1문의"> <span>1:1문의</span>
+					</a> <a href="https://www.osulloc.com/kr/ko/beautypoint/list"
+						data-track-name="Footer 뷰티포인트"> <img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/beauti.png"
+						alt="뷰티포인트"> <span>뷰티포인트<br>추후적립
+					</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="wrap3 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="logo logo_footer">
+					<a href="https://www.osulloc.com/kr/ko/mypage/qna"
+						data-track-name="Footer 1:1문의"><img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png"
+						width="112" height="158" alt="1:1문의"></a>
+				</div>
+				<div class="left">
+					<div class="cont1">
+						<ul>
+							<li><a href="https://www.apgroup.com/int/ko"
+								data-track-name="Footer 회사소개">회사소개</a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
+								data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
+
+							<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
+								data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
+								data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
+							<li><a
+								href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+								data-track-name="Footer 뷰티포인트">뷰티포인트</a></li>
+							<li><a
+								href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+								data-track-name="Footer 임직원할인">임직원할인</a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/sitemap"
+								data-track-name="Footer 사이트맵">사이트맵</a></li>
+							<li><a
+								href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+								data-track-name="Footer 전자공고">전자공고</a></li>
+						</ul>
+					</div>
+					<div class="cont2">
+						<div class="address">
+							㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
+							390-87-01499 <a class="info"
+								href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
+								data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 ></a> <br>통신판매업신고번호:2019-서울용산-1173호
+							호스팅제공자: ㈜오설록 <br>
+							<br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가
+							아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+						</div>
+						<!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="box clearfix">
+						<div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
+						<div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN
+							KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
+						<img
+							src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png"
+							alt="에스크로 가입사실확인" class="escrow_img">
+						<!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
+						<!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//PC-->
+		<script>
     $(function(){
       const datesetting = new Date();
       const dateyear = datesetting.getFullYear();
@@ -2920,123 +3171,141 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       });
     });
   </script>
-  
-  <!--모바일 m_footer-->
-  <div class="m_footer hide_pc">
-    
-    <div class="func">
-      <a href="https://www.osulloc.com/kr/ko/cs" class="contactUs" data-track-name="Footer_M 고객센터"  >고객센터</a>
-        
-          
-          
-            <a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" class="signIn" data-track-name="Footer_M 로그인"  >로그인</a>
-          
-        
-      <div class="lang js_select">
-        <div class="tit menu">한국어</div>
-        <ul>
-          <li><a class="name" href="/kr/ko">한국어</a></li>
-          <li><a class="name" href="https://us.osulloc.com">English</a></li>
-          <li><a class="name" href="/kr/zh">中文</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="certificationInfo">
-      <a href="javascript:;"> <span>오설록 사업자 정보확인</span> </a>
-      <div class="txt_wrap">
-        <p>㈜ 오설록 <br>
-          대표이사 : 서혁제 
-          <br>주소 : 서울 특별시 용산구 한강대로 100 (한강로2가) 
-          <br>사업자 등록번호 : 390-87-01499
-          <br>통신판매업신고번호 : 2019-서울용산-1173호 
-          <br>호스팅제공자 : ㈜오설록
-        </p>
-        <p>(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.</p>      
-        <p>NHN KCP 구매안전(에스크로)서비스 <br>
-          고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.</p>
-      </div>
-    </div>
-  <div class="footer_menu">
-      <div class="footer_menu_list">
-          <a href="https://www.apgroup.com/int/ko" data-track-name="Footer 회사소개"  >회사소개</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/terms" data-track-name="Footer 서비스 이용약관"  >서비스 이용약관</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/statement" data-track-name="Footer 개인정보 처리방침"  ><b>개인정보 처리방침</b></a>
-          <br>
-          <a href="https://www.osulloc.com/kr/ko/misc/procedures" data-track-name="Footer 영상정보 처리방침"  >영상정보 처리방침</a>
-          <a href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do" data-track-name="Footer 뷰티포인트"  >뷰티포인트</a>
-          <a href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP" data-track-name="Footer 임직원할인"  >임직원할인</a>
-          <a href="https://www.osulloc.com/kr/ko/misc/sitemap" data-track-name="Footer 사이트맵"  >사이트맵</a>
-          <a href="https://www.osulloc.com/kr/ko/cs/notice/announce" data-track-name="Footer 전자공고"  >전자공고</a>
-      </div>
-  </div>
-  <!-- 19.12.05 모바일 고객상담센터  추가 -->
-  <div class="footbottom">
-    <div class="footer_cs_m clearfix">
-      <div class="custCenter_Wrap cs_01">
-          <div class="tit">고객상담센터 &middot; 주문/배송문의</div>
-          <div style="
-              font-size: 15px;
-              font-weight: 500;
-              height: 15px;
-              color: #595959;
-              line-height: 1;
-          ">help@osulloc.com</div>
-          <div class="phone">080-805-5555</div>
-          <div class="time">평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)</div>
-      </div>
-      <div class="custCenter_Wrap cs_02"><!--200728 추가-->
-        <div class="tit">특판, 대량구매 문의</div>
-        <div class="phone">mall@osulloc.com</div>
-        <div class="kakaotalk">카카오톡ID : osullocmall</div>
-        <div class="time">평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)</div>
-      </div>
-    </div>
-    <div class="snsWrap clearfix">
-      
-      
-      <a href="https://www.tiktok.com/@osulloc_official" target="_blank" class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡"  >tiktok</a>
-      <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA" target="_blank" class="ic ic-youtube" data-track-name="Footer_M 오설록 유튜브"  >youtube</a>
-      <a href="https://www.instagram.com/osulloc_official/" target="_blank" class="ic ic-insta" data-track-name="Footer_M 오설록 인스타그램"  >instagram</a>
-      
-    </div>
-  </div>
-  </div>
-  <!--//모바일 m_footer-->
-</div>
-<!--//#new_footer-->
 
-<!-- CDJ 기본 레이어팝업 typeA : S -->
-<div class="layer_popup_wrap cdj_renew basic" id="layer_alert" style="display: none;">
-	<div class="layer_box_new">
-		<div class="text_box">
-			
-		</div>			
-		<div class="btn_typeA btn_pop">
-			<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn" onclick="">확인</button>
-		</div>
-	</div>
-</div>
-<!-- CDJ 기본 레이어팝업 typeA : E -->
+		<!--모바일 m_footer-->
+		<div class="m_footer hide_pc">
 
-<!-- CDJ 기본 레이어팝업 typeB : S -->
-<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm" style="display: none;">
-	<div class="layer_box_new">
-		<div class="text_box">
+			<div class="func">
+				<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
+					data-track-name="Footer_M 고객센터">고객센터</a> <a
+					href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift"
+					class="signIn" data-track-name="Footer_M 로그인">로그인</a>
+
+
+				<div class="lang js_select">
+					<div class="tit menu">한국어</div>
+					<ul>
+						<li><a class="name" href="/kr/ko">한국어</a></li>
+						<li><a class="name" href="https://us.osulloc.com">English</a></li>
+						<li><a class="name" href="/kr/zh">中文</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="certificationInfo">
+				<a href="javascript:;"> <span>오설록 사업자 정보확인</span>
+				</a>
+				<div class="txt_wrap">
+					<p>
+						㈜ 오설록 <br> 대표이사 : 서혁제 <br>주소 : 서울 특별시 용산구 한강대로 100
+						(한강로2가) <br>사업자 등록번호 : 390-87-01499 <br>통신판매업신고번호 :
+						2019-서울용산-1173호 <br>호스팅제공자 : ㈜오설록
+					</p>
+					<p>
+						(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서
+						입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+					</p>
+					<p>
+						NHN KCP 구매안전(에스크로)서비스 <br> 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에
+						가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
+					</p>
+				</div>
+			</div>
+			<div class="footer_menu">
+				<div class="footer_menu_list">
+					<a href="https://www.apgroup.com/int/ko"
+						data-track-name="Footer 회사소개">회사소개</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/terms"
+						data-track-name="Footer 서비스 이용약관">서비스 이용약관</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/statement"
+						data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a> <br>
+					<a href="https://www.osulloc.com/kr/ko/misc/procedures"
+						data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a> <a
+						href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+						data-track-name="Footer 뷰티포인트">뷰티포인트</a> <a
+						href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+						data-track-name="Footer 임직원할인">임직원할인</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/sitemap"
+						data-track-name="Footer 사이트맵">사이트맵</a> <a
+						href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+						data-track-name="Footer 전자공고">전자공고</a>
+				</div>
+			</div>
+			<!-- 19.12.05 모바일 고객상담센터  추가 -->
+			<div class="footbottom">
+				<div class="footer_cs_m clearfix">
+					<div class="custCenter_Wrap cs_01">
+						<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
+						<div
+							style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
+						<div class="phone">080-805-5555</div>
+						<div class="time">
+							평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
+						</div>
+					</div>
+					<div class="custCenter_Wrap cs_02">
+						<!--200728 추가-->
+						<div class="tit">특판, 대량구매 문의</div>
+						<div class="phone">mall@osulloc.com</div>
+						<div class="kakaotalk">카카오톡ID : osullocmall</div>
+						<div class="time">
+							평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
+						</div>
+					</div>
+				</div>
+				<div class="snsWrap clearfix">
+
+
+					<a href="https://www.tiktok.com/@osulloc_official" target="_blank"
+						class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡">tiktok</a>
+					<a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+						target="_blank" class="ic ic-youtube"
+						data-track-name="Footer_M 오설록 유튜브">youtube</a> <a
+						href="https://www.instagram.com/osulloc_official/" target="_blank"
+						class="ic ic-insta" data-track-name="Footer_M 오설록 인스타그램">instagram</a>
+
+				</div>
+			</div>
 		</div>
-		<div class="btn_typeB btn_pop">
-			<button type="button" id="btn_confirm_cancel" class="btn_w50" onclick="">취소</button>
-			<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn" onclick="">확인</button>
+		<!--//모바일 m_footer-->
+	</div>
+	<!--//#new_footer-->
+
+	<!-- CDJ 기본 레이어팝업 typeA : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="layer_alert"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn"
+					onclick="">확인</button>
+			</div>
 		</div>
 	</div>
-</div>
-<!-- CDJ 기본 레이어팝업 typeB : E -->
-<!-- CDJ 로딩 : S -->
-<div class="loading_wrap" style="display:none;">
-	<div class="loading_inner">
-		<img class="loading_gif" src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif" alt="로딩이미지">
+	<!-- CDJ 기본 레이어팝업 typeA : E -->
+
+	<!-- CDJ 기본 레이어팝업 typeB : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box"></div>
+			<div class="btn_typeB btn_pop">
+				<button type="button" id="btn_confirm_cancel" class="btn_w50"
+					onclick="">취소</button>
+				<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn"
+					onclick="">확인</button>
+			</div>
+		</div>
 	</div>
-</div>
-<script>
+	<!-- CDJ 기본 레이어팝업 typeB : E -->
+	<!-- CDJ 로딩 : S -->
+	<div class="loading_wrap" style="display: none;">
+		<div class="loading_inner">
+			<img class="loading_gif"
+				src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif"
+				alt="로딩이미지">
+		</div>
+	</div>
+	<script>
 	/* 로딩 호출 함수 */
 	function loadingOn() {
 		$('.loading_wrap').fadeIn();
@@ -3046,9 +3315,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$('.loading_wrap').fadeOut();
 	}
 </script>
-<!-- CDJ 로딩 : E -->
+	<!-- CDJ 로딩 : E -->
 
-<script>
+	<script>
   //footer notice list
 /*   require(['TweenMax'], function(a){
       function footerNotice() {

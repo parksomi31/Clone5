@@ -1984,7 +1984,7 @@ table tr:nth-child(even) {
 								<td>${dto.k_name}</td>
 								<td>${dto.k_email}</td>
 								<td><a href="deleteMember?k_number=${dto.k_number}"
-									class="delete-button">탈퇴</a></td>
+									class="delete-button">삭제</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>

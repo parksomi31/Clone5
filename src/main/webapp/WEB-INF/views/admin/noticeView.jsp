@@ -1886,30 +1886,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<!-- pagination : S -->
 
 
-				<div id="pagination" class="newPagination for-mobile ">
-
-
-					<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
-						class="btn btn-prev is-disabled">이전 페이지</span> <a
-						href="/kr/ko/cs/notice/news?q=" class="num on"
-						data-track-name="1 페이지 이동">1</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=1" class="num "
-						data-track-name="2 페이지 이동">2</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=2" class="num "
-						data-track-name="3 페이지 이동">3</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=3" class="num "
-						data-track-name="4 페이지 이동">4</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=4" class="num "
-						data-track-name="5 페이지 이동">5</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=5" class="btn btn-next"
-						data-track-name="뒷 페이지 그룸 이동">다음 페이지</a> <a
-						href="/kr/ko/cs/notice/news?q=&p=14" class="btn btn-end "
-						data-track-name="맨 뒷 페이지 이동"> 페이지 끝으로 </a>
-
-
-
-
-				</div>
+				
 
 				<!-- pagination : E -->
 

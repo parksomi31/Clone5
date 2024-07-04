@@ -1313,12 +1313,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 								<!--//gnb 프로모션-->
 								<li class="item_dep1 no-child"><a
-									href="https://www.osulloc.com/kr/ko/shop/item/gift"
+									href="${pageContext.request.contextPath}/present"
 									class="link_text">선물추천</a></li>
 
 								<li class="item_dep1"><a
-									href="https://www.osulloc.com/kr/ko/brandstory"
-									class="link_text">브랜드</a>
+									href="${pageContext.request.contextPath}/reservation"
+									class="link_text">프로그램</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
 											<div class="flex_box">
@@ -1385,14 +1385,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<li class="item item_icon_more"><a
 								class="nav_util_icon icon_more" id="btn_nav"></a>
 								<ul class="drop_box drop_box1">
-									<li class="drop_item">										
-									<a
+									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/notice"
 										data-track-name="Header 고객센터">고객센터</a></li>
 									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/store"
 										data-track-name="Header 매장찾기">매장정보</a></li>
-										<li class="drop_item"><a
+									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/map"
 										data-track-name="Header 매장찾기">매장찾기</a></li>
 									<li class="drop_item"><a

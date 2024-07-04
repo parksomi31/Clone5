@@ -709,11 +709,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="inner_box">
 						<div class="left_box">
 							<h1 class="logo">
-								<a href="${pageContext.request.contextPath}/home"
+								<a href="${pageContext.request.contextPath}/admin"
 									class="logo_white"> <img
 									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
 									alt="오설록 로고" style="user-select: none;">
-								</a> <a href="${pageContext.request.contextPath}/home"
+								</a> <a href="${pageContext.request.contextPath}/admin"
 									class="logo_black"> <img
 									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
 									alt="오설록 로고" style="user-select: none;">

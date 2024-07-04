@@ -1882,7 +1882,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align: center;"><input
-								type="submit" value="입력"> <a href="list">목록보기</a></td>
+								type="submit" value="입력"> <a href="noticeView">목록보기</a></td>
 						</tr>
 					</table>
 				</form>

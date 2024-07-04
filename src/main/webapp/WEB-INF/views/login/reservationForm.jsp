@@ -6,7 +6,6 @@
 <html>
 <head>
 <style>
-
 .logo {
 	font-size: 27px;
 	font-weight: 500;
@@ -1261,11 +1260,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 								<!--//gnb 프로모션-->
 								<li class="item_dep1 no-child"><a
-									href="https://www.osulloc.com/kr/ko/shop/item/gift"
+									href="${pageContext.request.contextPath}/present"
 									class="link_text">선물추천</a></li>
 
 								<li class="item_dep1"><a
-									href="https://www.osulloc.com/kr/ko/brandstory"
+									href="${pageContext.request.contextPath}/reservation"
 									class="link_text">프로그램</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
@@ -1346,7 +1345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										href="https://www.osulloc.com/kr/ko/mypage"
 										data-track-name="Header 주문배송조회">주문배송조회</a></li>
 									<li class="drop_item"><a
-										href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
+										href="${pageContext.request.contextPath}/reservationCheck"
 										data-track-name="Header 예약조회">예약조회</a></li>
 
 								</ul></li>
@@ -2801,53 +2800,29 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 					<!-- //리스트 정렬 -->
 					<!-- filter -->
 
-						 <div class="container">
-       <%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
-        <section class="section">
-            <div class="page_tit">예약하기</div>
-            <div id='calendar'></div>
-            <form action="${pageContext.request.contextPath}/reservationCheck" method="post">
-                <label for="name">이름:</label>
-                <input type="text" id="name" name="name" value="${sessionScope.kakaoN}" readonly><br>
-                <label for="email">이메일:</label>
-                <input type="text" id="email" name="email" value="${sessionScope.kakaoE}" readonly><br>
-                <label for="date">날짜:</label>
-                <input type="text" id="datepicker" name="date" readonly><br>
-                <label for="time">시간:</label>
-                <input type="time" id="time" name="time"><br>
-                <input type="submit" value="예약하기">
-            </form>
-        </section>
-    </div>
-
-
-
-					<div id="pagination" class="newPagination for-mobile ">
-
-
-
-
-						<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
-							class="btn btn-prev is-disabled">이전 페이지</span> <a
-							href="/kr/ko/shop/item/list?sort=review" class="num on"
-							data-track-name="1 페이지 이동">1</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=1" class="num "
-							data-track-name="2 페이지 이동">2</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=2" class="num "
-							data-track-name="3 페이지 이동">3</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=3" class="num "
-							data-track-name="4 페이지 이동">4</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=4" class="num "
-							data-track-name="5 페이지 이동">5</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=5"
-							class="btn btn-next" data-track-name="뒷 페이지 그룸 이동">다음 페이지</a> <a
-							href="/kr/ko/shop/item/list?sort=review&amp;p=6"
-							class="btn btn-end " data-track-name="맨 뒷 페이지 이동"> 페이지 끝으로 </a>
-
-
-
-
+					<div class="container">
+						<%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
+						<section class="section">
+							<div class="page_tit">예약하기</div>
+							<div id='calendar'></div>
+							<form
+								action="${pageContext.request.contextPath}/reservationCheck"
+								method="post">
+								<label for="name">이름:</label> <input type="text" id="name"
+									name="name" value="${sessionScope.kakaoN}" readonly><br>
+								<label for="email">이메일:</label> <input type="text" id="email"
+									name="email" value="${sessionScope.kakaoE}" readonly><br>
+								<label for="date">날짜:</label> <input type="text" id="datepicker"
+									name="date" readonly><br> <label for="time">시간:</label>
+								<input type="time" id="time" name="time"><br> <input
+									type="submit" value="예약하기">
+							</form>
+						</section>
 					</div>
+
+
+
+
 				</div>
 
 
