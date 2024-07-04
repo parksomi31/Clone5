@@ -2799,7 +2799,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
         <section class="section">
             <div class="page_tit">예약하기</div>
             <div id='calendar'></div>
-            <form action="${pageContext.request.contextPath}/reservation" method="post">
+            <form action="${pageContext.request.contextPath}/reservationCheck" method="post">
                 <label for="name">이름:</label>
                 <input type="text" id="name" name="name" value="${sessionScope.kakaoN}" readonly><br>
                 <label for="email">이메일:</label>

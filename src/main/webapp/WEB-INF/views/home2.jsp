@@ -454,6 +454,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	font-weight: 500;
 	background-color: transparent;
 }
+.btn {
+    
+    color: white;
+    padding: 10px 20px;
+    border: none; /* 테두리 제거 */
+    cursor: pointer;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    display: inline-block;
+    vertical-align: middle; /* 텍스트 중앙 정렬을 돕기 위해 추가 */
+}
+
+
+
 </style>
 
 
@@ -1261,18 +1274,31 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 						
 						<ul class="nav_drop">
 
-			   <c:choose>
-                <c:when test="${sessionScope.kakaoN == '예지'}">
-                    <li class="item"><a href="${pageContext.request.contextPath}/admin" class="btn">관리자기능 이동</a></li>
-                </c:when>
-                <c:when test="${not empty sessionScope.kakaoN}">
-                    <li class="item"><span>${sessionScope.kakaoN}님이 로그인 중입니다.</span></li>
-                  <%--   <li class="item"><a href="${pageContext.request.contextPath}/logout" class="btn">로그아웃</a></li> --%>
-                </c:when>
-                <c:otherwise>
-                    <li class="item"><a href="${pageContext.request.contextPath}/login" data-track-name="Header 로그인">로그인</a></li>
-                </c:otherwise>
-            </c:choose>
+			<c:choose>
+    <c:when test="${sessionScope.kakaoN == '예지'}">
+        <li class="item"><a href="${pageContext.request.contextPath}/admin" class="btn">관리자기능 이동</a></li>
+         <li class="item">
+            <a href="#" id="kakaoLogoutBtn" class="btn">로그아웃</a>
+        </li>
+    </c:when>
+    <c:when test="${not empty sessionScope.kakaoN}">
+        <li class="item"><span>${sessionScope.kakaoN}님이 로그인 중입니다.</span></li>
+        <li class="item">
+            <a href="#" id="kakaoLogoutBtn" class="btn">로그아웃</a>
+        </li>
+    </c:when>
+    <c:otherwise>
+        <li class="item"><a href="${pageContext.request.contextPath}/login" data-track-name="Header 로그인">로그인</a></li>
+    </c:otherwise>
+</c:choose>
+
+<script>
+    document.getElementById('kakaoLogoutBtn').addEventListener('click', function(event) {
+        event.preventDefault();
+        // 서버 사이드에서 로그아웃 처리를 수행하는 엔드포인트로 리다이렉트
+        location.href = '${pageContext.request.contextPath}/logout';
+    });
+</script>
 
 
 								<!-- <ul class="drop_box drop_box2">
