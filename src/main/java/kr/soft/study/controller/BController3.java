@@ -96,11 +96,11 @@ public class BController3 {
 	    System.out.println(accessToken);
 
 	    if (accessToken != null) {
-	        kakaoService.kakaoLogout(accessToken);
+	        kakaoService.kakaoUnlink(accessToken); // 연결 끊기
 	        session.removeAttribute("accessToken"); // 세션에서 액세스 토큰 제거
 	    }
 	    session.invalidate(); // 세션 무효화
-	    
+
 	    // 쿠키 제거
 	    Cookie[] cookies = request.getCookies();
 	    if (cookies != null) {
@@ -110,10 +110,11 @@ public class BController3 {
 	            response.addCookie(cookie);
 	        }
 	    }
-	    System.out.println(accessToken);
 	    System.out.println("logout2()");
 	    return "redirect:/login";
 	}
+
+
 
 
 
@@ -216,5 +217,11 @@ public class BController3 {
 		return "redirect:/cart";
 
 	}
+	@RequestMapping(value = "/updateCartQuantity", method = RequestMethod.POST)
+	public String updateCartQuantity(@RequestParam("cartItemId") int cart_item_id, @RequestParam("quantity") int quantity) {
+	    cartService.updateCartItemQuantity(cart_item_id, quantity);
+	    return "redirect:/cart";
+	}
+
 
 }
