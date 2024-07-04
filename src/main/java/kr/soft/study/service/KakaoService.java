@@ -21,10 +21,10 @@ public class KakaoService {
 
     private void init() {
         restApiKey = servletContext.getInitParameter("7bdcbdc77dde1eadcc53e0828cc9c91c");
-        logoutRedirectUri = servletContext.getInitParameter("http://localhost:8080/study/home");
+        logoutRedirectUri = servletContext.getInitParameter("http://183.111.125.38:8080");
     }
 
     public String getLogoutUrl() {
-        return "https://kauth.kakao.com/oauth/logout?client_id=7bdcbdc77dde1eadcc53e0828cc9c91c&logout_redirect_uri=http://localhost:8080/study/home";
+        return "https://kauth.kakao.com/oauth/logout?client_id=7bdcbdc77dde1eadcc53e0828cc9c91c&logout_redirect_uri=http://183.111.125.38:8080";
     }
 }
