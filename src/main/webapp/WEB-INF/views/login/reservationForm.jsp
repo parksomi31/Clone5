@@ -16,7 +16,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <meta charset="UTF-8">
 <title>예약하기</title>
-<link
+<!-- <link
 	href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css'
 	rel='stylesheet' />
 <script
@@ -32,59 +32,92 @@
             });
             calendar.render();
         });
-    </script>
-<style>
-body {
-	font-family: Arial, sans-serif;
-}
+    </script> -->
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+             margin-bottom: 20px; /* 푸터와의 거리 확보를 위해 아래쪽 마진 추가 */
+        }
 
-.banner {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 20px;
-}
+        .banner {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-.section {
-	text-align: left;
-}
+        .section {
+            text-align: left;
+        }
 
-.page_tit {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
+        .page_tit {
+            font-size: 32px; /* 글자 크기 증가 */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .CatBannerTit {
+			background-color: transparent;
+			color: #333;
+		}
+		.fc-toolbar-title{
+			background-color: transparent;
+			color: #333;
+		}
 
-label {
-	display: block;
-	margin-top: 10px;
-}
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 20px; /* 글자 크기 증가 */
+        }
 
-input[type="text"], input[type="time"], input[type="submit"] {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	margin-top: 5px;
-	box-sizing: border-box;
-}
+        input[type="text"], input[type="time"] {
+            display: block;
+            width: 100%;
+            padding: 15px; /* 패딩 증가 */
+            margin-top: 5px;
+            box-sizing: border-box;
+            font-size: 18px; /* 입력 필드 글자 크기 증가 */
+        }
 
-input[type="submit"] {
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	cursor: pointer;
-	margin-top: 20px;
-}
+       .button-container {
+            text-align: center; /* 버튼을 중앙 정렬 */
+            margin-top: 40px; /* 위쪽 여백 */
+            margin-bottom: 40px; /* 푸터와의 거리 확보를 위해 아래쪽 마진 추가 */
+        }
 
-input[type="submit"]:hover {
-	background-color: #45a049;
-}
-</style>
+       .button-style {
+            padding: 15px 30px; /* 버튼 크기 증가 */
+            background-color: #525D76; /* 버튼 배경색 */
+            color: #fff; /* 버튼 텍스트 색상 */
+            text-decoration: none; /* 링크 밑줄 제거 */
+            border: 1px solid transparent; /* 테두리 스타일 */
+            border-radius: 4px; /* 버튼 테두리 둥글기 */
+            cursor: pointer;
+            text-align: center;
+            border-width: 1px; /* 테두리 두께 */
+            font-size: 20px; /* 버튼 글자 크기 */
+        }
+
+       .button-style:hover {
+            background-color: #ADABAB; /* 마우스 호버시 배경색 변화 */
+            border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+        }
+       .fc-daygrid-day-number {
+    		font-size: 20px; /* 날짜 숫자 글자 크기 증가 */
+		}
+		.fc .fc-col-header-cell {
+   			font-size: 18px; /* 요일 헤더 글자 크기 증가 */
+		}
+		
+        
+
+        
+    </style>
 
 <meta charset="UTF-8">
 <title>홈화면</title>
@@ -437,7 +470,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 20230712 1979 예약프로그램 오픈 true일때 -->
 
+ <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var datepicker = document.getElementById('datepicker');
 
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                dateClick: function(info) {
+                    datepicker.value = info.dateStr;
+                    Swal.fire({
+                        icon: 'success',
+                        title: '예약날짜가 선택되었습니다',
+                        text: info.dateStr
+                    });
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
 
 
 <script>
@@ -2799,9 +2854,9 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 					<!-- //리스트 정렬 -->
 					<!-- filter -->
-
+	<!--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> -->
 					<div class="container">
-						<%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
+					
 						<section class="section">
 							<div class="page_tit">예약하기</div>
 							<div id='calendar'></div>
@@ -2814,8 +2869,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 									name="email" value="${sessionScope.kakaoE}" readonly><br>
 								<label for="date">날짜:</label> <input type="text" id="datepicker"
 									name="date" readonly><br> <label for="time">시간:</label>
-								<input type="time" id="time" name="time"><br> <input
-									type="submit" value="예약하기">
+								<input type="time" id="time" name="time"><br> 
+								 <input type="submit" class="button-style" value="예약하기">
 							</form>
 						</section>
 					</div>

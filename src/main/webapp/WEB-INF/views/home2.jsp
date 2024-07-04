@@ -455,7 +455,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	background-color: transparent;
 }
 .btn {
-    
     color: white;
     padding: 10px 20px;
     border: none; /* 테두리 제거 */
@@ -463,7 +462,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center; /* 텍스트 중앙 정렬 */
     display: inline-block;
     vertical-align: middle; /* 텍스트 중앙 정렬을 돕기 위해 추가 */
+    background-color: initial; /* 기본 배경 색상 */
 }
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: initial; /* hover, focus, active 상태에서 배경 색상 유지 */
+    color: white; /* hover, focus, active 상태에서 글자 색상 유지 */
+    outline: none; /* 포커스된 상태에서 아웃라인 제거 */
+}
+
 
 
 
