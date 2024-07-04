@@ -410,7 +410,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- 2022-04-11 추가-->
 <meta name="robots" content="noindex">
+
+<style>
+.button-style {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #DDDDDD; /* 버튼 배경색 */
+	color: #fff; /* 버튼 텍스트 색상 */
+	text-decoration: none; /* 링크 밑줄 제거 */
+	border: 1px solid transparent; /* 테두리 스타일 */
+	border-radius: 4px; /* 버튼 테두리 둥글기 */
+	cursor: pointer;
+	text-align: center;
+	margin-left: 1450px;
+	border-width: 1px; /* 테두리 두께 */
+}
+
+.button-style:hover {
+	background-color: #adabab; /* 마우스 호버시 배경색 변화 */
+	border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+}
+</style>
 </head>
+
+
 <iframe id="x-sso-check" name="sso_check_iframe"
 	title="SSO Session Check Iframe" hidden></iframe>
 <body>
@@ -1983,10 +2006,16 @@ table tr:nth-child(even) {
 	background-color: transparent;
 	color: #333;
 }
+
+.section page_tit_box mypageT {
+	background-color: transparent;
+}
 </style>
 			</head>
 			<body>
-
+				<br />
+				<br />
+				<br />
 				<table>
 					<thead>
 						<tr>
@@ -2009,9 +2038,15 @@ table tr:nth-child(even) {
 						</c:forEach>
 					</tbody>
 				</table>
+				<br />
+				<br />
 
-				<a href="addProductForm" class="add-button">상품 추가하기</a>
+				<div class="button-style">
+					<a href="addProductForm">상품 추가하기</a>
+				</div>
 
+				<br />
+				<br />&nbsp;&nbsp;&nbsp;&nbsp;
 				<!--new_footer-->
 				<div id="new_footer">
 					<!--PC-->
