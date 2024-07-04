@@ -2396,11 +2396,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 										</h3>
 										<p class="onepoint">
 
-
-
 											해차 수확을 맞이해 시즌 한정으로 준비한<br> 특별한 구성. 20%~ 할인 및 쇼핑백 증정 등
 											다양한 혜택까지!
-
 
 										</p>
 										<p class="date">05.21 - 06.28</p>
