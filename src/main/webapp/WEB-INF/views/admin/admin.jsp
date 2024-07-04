@@ -105,7 +105,7 @@ body {
         <a href="noticeView" class="btn btn-primary btn-lg">공지사항 등록</a>
         <a href="faqView" class="btn btn-success btn-lg">FAQ 등록</a>
         <a href="memberView" class="btn btn-warning btn-lg">회원 관리</a>
-        <a href="productView" class="btn btn-info btn-lg">물품 관리</a>
+        <a href="productView" class="btn btn-info btn-lg">상품 관리</a>
         <a href="programView" class="btn btn-danger btn-lg">예약 내역 확인</a>
     </div>
 

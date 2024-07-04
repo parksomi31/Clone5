@@ -35,11 +35,11 @@
 			value="com.mysql.cj.jdbc.Driver" />
 		<beans:property name="url"
 			value="jdbc:mysql://localhost:3306/mydb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />
-		<!-- <beans:property name="username" value="manager" /> <beans:property 
-			name="password" value="!Q@W3e4r" /> -->
+		<beans:property name="username" value="manager" /> <beans:property 
+			name="password" value="!Q@W3e4r" />
 
-		<beans:property name="username" value="root" />
-		<beans:property name="password" value="qwe123!@#" />
+		<!-- <beans:property name="username" value="root" />
+		<beans:property name="password" value="qwe123!@#" /> -->
 	</beans:bean>
 
 	<!-- <beans:bean name="template" class="org.springframework.jdbc.core.JdbcTemplate"> 
