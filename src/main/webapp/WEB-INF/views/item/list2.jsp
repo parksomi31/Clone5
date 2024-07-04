@@ -44,7 +44,6 @@ img {
 	height: auto;
 }
 </style>
-</head>
 
 
 <meta charset="UTF-8">
@@ -527,99 +526,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" charset="utf-8" async=""
 	data-requirecontext="_" data-requiremodule="utils/nav"
 	src="https://image.osulloc.com/kr/ko/static/js/utils/nav.js?ver=230704"></script>
-<style>
-.item-list2 {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-}
-
-.item2 {
-	border: 1px solid #e0e0e0;
-	border-radius: 10px;
-	overflow: hidden;
-	width: 250px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.thumb img {
-	width: 100%;
-	height: auto;
-}
-
-.info {
-	padding: 10px;
-	text-align: center;
-}
-
-.info .title {
-	font-size: 19px;
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
-.info .price {
-	color: #b12704;
-	margin-bottom: 5px;
-	font-size: 16px;
-}
-
-.info .like, .info .review {
-	font-size: 14px;
-	color: #757575;
-}
-
-.action {
-	padding: 10px;
-	text-align: center;
-}
-
-.action .link_btn, .action .btn {
-	display: block;
-	margin-bottom: 5px;
-	padding: 5px 10px;
-	background-color: #0071e3;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 5px;
-}
-
-.action .btn {
-	border: none;
-	cursor: pointer;
-	background-color: #0071e3;
-	color: #fff;
-	padding: 5px 10px;
-	border-radius: 5px;
-	text-decoration: none;
-	display: inline-block;
-}
-
-.btn {
-	background-color: #0071e3;
-	color: #fff;
-	padding: 5px 10px;
-	text-decoration: none;
-	border-radius: 5px;
-	display: inline-block;
-}
-
-.icon-btn {
-	border: none;
-	background: none;
-	cursor: pointer;
-	font-size: 20px;
-	color: #0071e3;
-}
-
-.logo {
-	font-size: 27px;
-	font-weight: 500;
-	background-color: transparent;
-}
-</style>
-
-
+</head>
 </head>
 
 <body>
@@ -1169,15 +1076,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="inner_box">
 					<div class="left_box">
 						<h1 class="logo">
-							<a href="${pageContext.request.contextPath}/home"
-								class="logo_white"> <img
-								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-								alt="오설록 로고" style="user-select: none;">
-							</a> <a href="${pageContext.request.contextPath}/home"
-								class="logo_black"> <img
-								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
-								alt="오설록 로고" style="user-select: none;">
-							</a>
+							<a href="${pageContext.request.contextPath}/home" class="logo_white"><img
+								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+								alt="오설록 로고"></a> <a
+								href="${pageContext.request.contextPath}/home" class="logo_black"><img
+								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+								alt="오설록 로고"></a>
 						</h1>
 						<nav class="nav">
 							<ul class="nav_list_dep1">
@@ -2897,6 +2803,17 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							<div class="filterGroup packageType">
 
 
+
+
+
+
+
+
+
+
+
+
+
 								<a style="cursor: pointer;" class="all on">전체</a>
 								<!-- 							<a href="#" class="filter">잎차</a>
 								<a href="#" class="filter">피라미드</a>
@@ -2924,47 +2841,78 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-						<div class="list-wrapper clearfix">
+	<div class="goods-list">
+    <div class="list-wrappdbtper clearfix">
+        <table>
+            <thead>
+                <tr>
+                    <th>상품이미지</th>
+                    <th>상품명</th>
+                    <th>가격</th>
+                    <th>좋아요</th>
+                    <th>리뷰</th>
+                    <th>장바구니 추가</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach items="${products}" var="dto" varStatus="loop">
+                    <tr>
+                        <td class="image-cell"><img src="${dto.image}" alt="${dto.title}"></td>
+                        <td>${dto.title}</td>
+                        <td>${dto.price}</td>
+                        <td><span class="s f1"><a href="./newlist?title=${dto.title}"><i class="fas fa-heart"></i>${dto.like}</a></span></td>
+                        <td><span class="s f1"><a href="./review?product_num=${dto.product_num}"><i class="fas fa-comment"></i>${dto.review}</a></span></td>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/addCart" method="post">
+                                <input type="hidden" name="productNum" value="${dto.product_num}" />
+                                <input type="hidden" name="title" value="${dto.title}" />
+                                <input type="hidden" name="price" value="${dto.price}" />
+                                <input type="hidden" name="image" value="${dto.image}" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <input type="submit" value="장바구니 추가" class="btn" />
+                            </form>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+        <div style="text-align: right; margin-top: 20px;">
+            <a href="${pageContext.request.contextPath}/cart" class="btn">장바구니로 이동</a>
+        </div>
 
-							<div class="item-list2">
-								<c:forEach items="${products}" var="dto">
-									<div class="item2">
-										<div class="thumb">
-											<a href="/kr/ko/shop/item/${dto.product_num}" class="window">
-												<img src="${dto.image}" alt="${dto.title}">
-											</a>
-										</div>
-										<div class="info">
-											<p class="title">${dto.title}</p>
-											<p class="price">${dto.price}원</p>
-											<p class="like">
-												<a href="./newlist?title=${dto.title}"><i
-													class="fas fa-heart"></i> ${dto.like}</a> <a
-													href="./review?product_num=${dto.product_num}"><i
-													class="fas fa-comment"></i> ${dto.review}</a>
-											</p>
-										</div>
-										<div class="action">
-											<form action="${pageContext.request.contextPath}/addCart"
-												method="post">
-												<input type="hidden" name="productNum"
-													value="${dto.product_num}" /> <input type="hidden"
-													name="title" value="${dto.title}" /> <input type="hidden"
-													name="price" value="${dto.price}" /> <input type="hidden"
-													name="image" value="${dto.image}" /> <input type="hidden"
-													name="quantity" value="1" />
-												<button type="submit" class="icon-btn" title="장바구니 추가">
-													<i class="fas fa-cart-plus"></i>
-												</button>
-											</form>
-										</div>
-									</div>
-								</c:forEach>
+
+
+								<div id="pagination" class="newPagination for-mobile ">
+
+
+
+
+									<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
+										class="btn btn-prev is-disabled">이전 페이지</span> <a
+										href="/kr/ko/shop/item/list?sort=review" class="num on"
+										data-track-name="1 페이지 이동">1</a> <a
+										href="/kr/ko/shop/item/list?sort=review&amp;p=1" class="num "
+										data-track-name="2 페이지 이동">2</a> <a
+										href="/kr/ko/shop/item/list?sort=review&amp;p=2" class="num "
+										data-track-name="3 페이지 이동">3</a> <a
+										href="/kr/ko/shop/item/list?sort=review&amp;p=3" class="num "
+										data-track-name="4 페이지 이동">4</a> <a
+										href="/kr/ko/shop/item/list?sort=review&amp;p=4" class="num "
+										data-track-name="5 페이지 이동">5</a> <a
+										href="/kr/ko/shop/item/list?sort=review&amp;p=5"
+										class="btn btn-next" data-track-name="뒷 페이지 그룸 이동">다음 페이지</a>
+									<a href="/kr/ko/shop/item/list?sort=review&amp;p=6"
+										class="btn btn-end " data-track-name="맨 뒷 페이지 이동"> 페이지 끝으로
+									</a>
+
+
+
+
+								</div>
 							</div>
-							<div style="text-align: right; margin-top: 20px;">
-								<a href="${pageContext.request.contextPath}/cart" class="btn">장바구니로
-									이동</a>
-							</div>
+
+
+
 
 
 
@@ -3357,7 +3305,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							</p>
 						</div>
 					</div>
-
+					
 				</div>
 			</div>
 			<div class="wrap3 hide_tablet hide_mobile">

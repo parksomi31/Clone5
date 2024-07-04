@@ -863,7 +863,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 						</h1>
 						<nav class="nav">
 							<ul class="nav_list_dep1">
-								<li class="item_dep1"><a href="/study/list"
+								<li class="item_dep1"><a href="${pageContext.request.contextPath}/list"
 									class="link_text">제품</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
@@ -1572,7 +1572,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 				<div class="mo_nav">
 					<ul class="mo_nav_list_dep1">
 						<li class="item_dep1"><a
-							href="https://www.osulloc.com/kr/ko/shop/item/list"
+							href="${pageContext.request.contextPath}/list"
 							class="link_text">제품</a>
 							<ul class="mo_nav_list_dep2">
 								<li class="item_dep2"><a
