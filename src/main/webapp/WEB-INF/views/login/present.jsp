@@ -26,6 +26,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -1211,21 +1212,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	                    
 							<li class="item">
 								<a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" data-track-name="Header 로그인">로그인</a>
-								<ul class="drop_box drop_box2">
+								<!-- <ul class="drop_box drop_box2">
 									<li class="drop_item"><a href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/gift" data-track-name="Header 로그인">로그인</a></li>
 									<li class="drop_item"><a href="/kr/ko/login/joinIn" title="새 창"  target="_self"  data-track-name="Header 회원가입">회원가입</a></li>
-								</ul>
+								</ul> -->
 							</li>
 	                    
                     
-						<li class="item arr">
+						<!-- <li class="item arr">
 							KOREAN <span class="icon_drop_arr"></span>
 							<ul class="drop_box drop_box4">
 								<li class="drop_item"><a href="/kr/ko" data-track-name="GNB Osulloc | Korea/Korean" >한국어</a></li>
 								<li class="drop_item"><a href="https://us.osulloc.com" data-track-name="GNB Osulloc | Korea/English">English</a></li>
 								<li class="drop_item"><a href="https://www.osulloc.com/kr/zh" data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
@@ -1376,14 +1377,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</li>
 					
 					<li class="item_dep1">
-						<a href="https://www.osulloc.com/kr/ko/brandstory" class="link_text">브랜드</a>
+						<a href="https://www.osulloc.com/kr/ko/brandstory" class="link_text">프로그램</a>
 						<ul class="mo_nav_list_dep2">
 							<li class="item_dep2"><a href="https://www.osulloc.com/kr/ko/brandstory" data-track-name="GNB 오설록|About Osulloc|Since 1979" class="link_text">오설록 스토리</a></li>
 							
 								<li class="item_dep2"><a href="/kr/ko/store-introduction/2" class="link_text">제주 티뮤지엄</a></li>
 								<li class="item_dep2"><a href="/kr/ko/store-introduction" class="link_text">매장 소개 및 예약</a></li>
-							
-							
 							
 						</ul>
 					</li>

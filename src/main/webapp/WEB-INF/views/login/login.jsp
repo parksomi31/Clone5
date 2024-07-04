@@ -120,6 +120,7 @@
     <div class="container">
         <section class="section">
             <div class="page_tit">로그인</div>
+            <div class="page_tit">간편하게 로그인 후 오설록의 서비스를 이용해보세요</div><br/><br/><br/><br/>
             <div class="login-form">
                 <a class="btnPresent"
                     href="https://kauth.kakao.com/oauth/authorize?client_id=7bdcbdc77dde1eadcc53e0828cc9c91c&redirect_uri=http://localhost:8080/study/kakaoLogin&response_type=code">

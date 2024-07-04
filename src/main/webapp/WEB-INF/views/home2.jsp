@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html lang="ko" style="-vh: 9.11px;"
 	class="video csscalc opacity csspointerevents rgba videoloop videopreload supports mediaqueries no-touchevents cssvhunit cssvwunit cssanimations backgroundsize borderradius cssfilters csstransforms3d csstransitions chrome">
@@ -845,6 +846,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
     });
 </script>
 
+
+
 	<div class="cdj_renew">
 		<header id="cdj_header" class="cdj_header">
 			<div class="wrapper">
@@ -861,6 +864,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 								alt="오설록 로고" style="user-select: none;">
 							</a>
 						</h1>
+					
 						<nav class="nav">
 							<ul class="nav_list_dep1">
 								<li class="item_dep1"><a href="/study/list"
@@ -1155,12 +1159,11 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 								<!--//gnb 프로모션-->
 								<li class="item_dep1 no-child"><a
-									href="https://www.osulloc.com/kr/ko/shop/item/gift"
+									href="present"
 									class="link_text">선물추천</a></li>
 
-								<li class="item_dep1"><a
-									href="https://www.osulloc.com/kr/ko/brandstory"
-									class="link_text">브랜드</a>
+								<li class="item_dep1"> 
+								<a href="reservation" class="link_text">프로그램</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
 											<div class="flex_box">
@@ -1192,7 +1195,14 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 								<li class="item_dep1 no-child"><a
 									href="https://osulloc.biz/" class="link_text" target="_blank">단체
 										및 기업 구매</a></li>
+								<%-- 		<c:choose>
+                        <c:when test="${not empty sessionScope.kakaoN}">
+                            <p>${sessionScope.kakaoN}님이 로그인 중입니다.</p>
+                        </c:when>                      
+                    </c:choose>	 --%>
+										
 							</ul>
+							
 						</nav>
 					</div>
 					<div class="right_box">
@@ -1252,23 +1262,33 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 							<li class="item item_icon_mo_nav"><a
 								class="nav_util_icon icon_mo_nav" href="#"></a></li>
 						</ul>
+						
 						<ul class="nav_drop">
 
+			   <c:choose>
+                <c:when test="${sessionScope.kakaoN == '예지'}">
+                    <li class="item"><a href="${pageContext.request.contextPath}/adminHome" class="btn">관리자기능 이동</a></li>
+                </c:when>
+                <c:when test="${not empty sessionScope.kakaoN}">
+                    <li class="item"><span>${sessionScope.kakaoN}님이 로그인 중입니다.</span></li>
+                    <li class="item"><a href="${pageContext.request.contextPath}/logout" class="btn">로그아웃</a></li>
+                </c:when>
+                <c:otherwise>
+                    <li class="item"><a href="${pageContext.request.contextPath}/login" data-track-name="Header 로그인">로그인</a></li>
+                </c:otherwise>
+            </c:choose>
 
 
-							<li class="item"><a
-								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko"
-								data-track-name="Header 로그인">로그인</a>
-								<ul class="drop_box drop_box2">
+								<!-- <ul class="drop_box drop_box2">
 									<li class="drop_item"><a
 										href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko"
 										data-track-name="Header 로그인">로그인</a></li>
 									<li class="drop_item"><a href="/kr/ko/login/joinIn"
 										title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
-								</ul></li>
+								</ul> </li>-->
 
 
-							<li class="item arr">KOREAN <span class="icon_drop_arr"></span>
+							<!-- <li class="item arr">KOREAN <span class="icon_drop_arr"></span>
 								<ul class="drop_box drop_box4">
 									<li class="drop_item"><a href="/kr/ko"
 										data-track-name="GNB Osulloc | Korea/Korean">한국어</a></li>
@@ -1278,7 +1298,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 										href="https://www.osulloc.com/kr/zh"
 										data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
 								</ul>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
