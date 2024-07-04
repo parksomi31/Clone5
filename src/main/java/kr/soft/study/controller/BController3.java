@@ -2,6 +2,9 @@ package kr.soft.study.controller;
 
 import java.util.List;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -17,6 +20,7 @@ import kr.soft.study.dto.CartDTO;
 import kr.soft.study.dto.KakaoDTO;
 import kr.soft.study.dto.RDTO;
 import kr.soft.study.service.CartService;
+import kr.soft.study.service.KakaoService;
 import kr.soft.study.service.MemberService;
 import kr.soft.study.util.Constant;
 
@@ -37,6 +41,9 @@ public class BController3 {
 	@Autowired
 	private MemberService ms;
 
+	@Autowired
+    private KakaoService kakaoService;
+	
 	@RequestMapping("/test")
 	public String testView(Model model) {
 		System.out.println("test()");
@@ -59,6 +66,13 @@ public class BController3 {
 		return "login/test3";
 
 	}
+	@RequestMapping("/present")
+	public String presentView(Model model) {
+		System.out.println("present()");
+
+		return "login/present";
+
+	}
 
 	@RequestMapping("/basketView")
 	public String basketView(Model model) {
@@ -73,8 +87,35 @@ public class BController3 {
 		System.out.println("login()");
 
 		return "login/login";
-
 	}
+	
+	@RequestMapping("/logout")
+	public String logout(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+	    String accessToken = (String) session.getAttribute("accessToken");
+	    System.out.println("logout()");
+	    System.out.println(accessToken);
+
+	    if (accessToken != null) {
+	        kakaoService.kakaoLogout(accessToken);
+	        session.removeAttribute("accessToken"); // 세션에서 액세스 토큰 제거
+	    }
+	    session.invalidate(); // 세션 무효화
+	    
+	    // 쿠키 제거
+	    Cookie[] cookies = request.getCookies();
+	    if (cookies != null) {
+	        for (Cookie cookie : cookies) {
+	            cookie.setMaxAge(0);
+	            cookie.setPath("/");
+	            response.addCookie(cookie);
+	        }
+	    }
+	    System.out.println(accessToken);
+	    System.out.println("logout2()");
+	    return "redirect:/login";
+	}
+
+
 
 	// HttpSession �겢�옒�뒪 二쇱엯.
 	@Autowired
@@ -84,7 +125,7 @@ public class BController3 {
 	private CartService cartService;
 
 	@RequestMapping(value = "/kakaoLogin", method = RequestMethod.GET)
-	public String kakaoLogin(@RequestParam(value = "code", required = false) String code) throws Exception {
+	public String kakaoLogin(@RequestParam(value = "code", required = false) String code, HttpServletRequest request) throws Exception {
 		System.out.println("#########" + code);
 		String access_Token = ms.getAccessToken(code);
 		KakaoDTO userInfo = ms.getUserInfo(access_Token);
@@ -92,9 +133,16 @@ public class BController3 {
 		System.out.println("###nickname#### : " + userInfo.getK_name());
 		System.out.println("###email#### : " + userInfo.getK_email());
 		System.out.println("###number#### : " + userInfo.getK_number());
-
+		  HttpSession session = request.getSession(false);
+		    if (session != null) {
+		        session.invalidate(); // 기존 세션 무효화
+		    }
+		    session = request.getSession(true); // 새로운 세션 생성
+		    session.setAttribute("accessToken", access_Token); // accessToken 세션에 저장
+		
+		
 		// �븘�옒 肄붾뱶媛� 異붽��릺�뒗 �궡�슜
-		session.invalidate();
+		//session.invalidate();
 		// �쐞 肄붾뱶�뒗 session媛앹껜�뿉 �떞湲� �젙蹂대�� 珥덇린�솕 �븯�뒗 肄붾뱶.
 		session.setAttribute("kakaoN", userInfo.getK_name());
 		session.setAttribute("kakaoE", userInfo.getK_email());
@@ -102,7 +150,7 @@ public class BController3 {
 		// �쐞 2媛쒖쓽 肄붾뱶�뒗 �땳�꽕�엫怨� �씠硫붿씪�쓣 session媛앹껜�뿉 �떞�뒗 肄붾뱶
 		// jsp�뿉�꽌 ${sessionScope.kakaoN} �씠�윴 �삎�떇�쑝濡� �궗�슜�븷 �닔 �엳�떎.
 
-		return "login/basketView";
+		return "home2";
 	}
 
 	@RequestMapping(value = "/reservation", method = RequestMethod.GET)
@@ -114,7 +162,7 @@ public class BController3 {
 	@RequestMapping(value = "/reservation", method = RequestMethod.POST)
 	public String submitReservation(@ModelAttribute RDTO rdto, Model model) {
 		sqlSession.insert("kr.soft.study.dao.RDAO.insertReservation", rdto);
-		model.addAttribute("message", "�삁�빟�씠 �꽦怨듭쟻�쑝濡� �셿猷뚮릺�뿀�뒿�땲�떎.");
+		model.addAttribute("message", "예약이 성공적으로 완료되었습니다.");
 		return "login/reservationSuccess";
 	}
 

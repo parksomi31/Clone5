@@ -1108,10 +1108,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="inner_box">
 					<div class="left_box">
 						<h1 class="logo">
-							<a href="/kr/ko" class="logo_white"><img
+							<a href="home" class="logo_white"><img
 								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
 								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-								alt="오설록 로고"></a> <a href="/kr/ko" class="logo_black"><img
+								alt="오설록 로고"></a> <a href="home" class="logo_black"><img
 								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
 								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
 								alt="오설록 로고"></a>
@@ -1255,7 +1255,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 								<li class="item_dep1"><a
 									href="https://www.osulloc.com/kr/ko/brandstory"
-									class="link_text">브랜드</a>
+									class="link_text">프로그램</a>
 									<div class="nav_list_dep2_box">
 										<div class="wrapper">
 											<div class="flex_box">
@@ -1354,16 +1354,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<li class="item"><a
 								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
 								data-track-name="Header 로그인">로그인</a>
-								<ul class="drop_box drop_box2">
+								<!-- <ul class="drop_box drop_box2">
 									<li class="drop_item"><a
 										href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
 										data-track-name="Header 로그인">로그인</a></li>
 									<li class="drop_item"><a href="/kr/ko/login/joinIn"
 										title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
-								</ul></li>
+								</ul> --></li>
 
 
-							<li class="item arr">KOREAN <span class="icon_drop_arr"></span>
+							<!-- <li class="item arr">KOREAN <span class="icon_drop_arr"></span>
 								<ul class="drop_box drop_box4">
 									<li class="drop_item"><a href="/kr/ko"
 										data-track-name="GNB Osulloc | Korea/Korean">한국어</a></li>
@@ -1373,7 +1373,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										href="https://www.osulloc.com/kr/zh"
 										data-track-name="GNB Osulloc | Korea/Chinese">中文</a></li>
 								</ul>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -2512,7 +2512,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 			<div class="inner1600 itemListPocus">
 				<div class="teashopWrapper ">
 					<!--  -->
-					<div class="sub-lnb">
+					<!-- <div class="sub-lnb">
 
 						<ul class="for-pc">
 
@@ -2730,7 +2730,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<!-- // -->
 					<!--  -->
@@ -2766,8 +2766,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-
-						<p class="pageLocation">제품</p>
+<!-- 
+						<p class="pageLocation">제품</p> -->
 
 
 
