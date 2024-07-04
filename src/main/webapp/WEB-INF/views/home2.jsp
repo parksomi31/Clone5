@@ -1267,7 +1267,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 			   <c:choose>
                 <c:when test="${sessionScope.kakaoN == '예지'}">
-                    <li class="item"><a href="${pageContext.request.contextPath}/adminHome" class="btn">관리자기능 이동</a></li>
+                    <li class="item"><a href="${pageContext.request.contextPath}/admin" class="btn">관리자기능 이동</a></li>
                 </c:when>
                 <c:when test="${not empty sessionScope.kakaoN}">
                     <li class="item"><span>${sessionScope.kakaoN}님이 로그인 중입니다.</span></li>
