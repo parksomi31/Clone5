@@ -1,17 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
 <!-- head -->
-
-
 <!-- main 변수 -->
 
 <!-- 앱 접속 여부 추가 -->
-
-
 
 <!-- main 변수 -->
 
@@ -43,8 +39,6 @@
 	content="385c3510efbba21ef957c2cf17a14c5492db3a6a">
 
 <!-- 카카오톡 링크 썸네일 -->
-
-
 
 
 <meta property="og:title" content="오설록">
@@ -220,91 +214,6 @@
 <!-- End Google Analytics & Google Tag Manager -->
 
 
-
-<script type="text/javascript">
-	 /*  window._rblqueue = window._rblqueue || [];
-	  
-	  var realBool = false;
-	  var mobionId = "";
-	  var tmpHostname =  window.location.hostname;
-	  if(tmpHostname.indexOf("osulloc.com") > -1 && tmpHostname.indexOf("dev") == -1){//운영 도메인 일 시
-	  	realBool = true;
-	  }
-	  if(realBool){//운영
-		  _rblqueue.push(['setVar','cuid','2f854096-46eb-476c-87b1-044b200d3d26']);  
-		  mobionId = "osulloc";
-	  }else{//개발
-		  _rblqueue.push(['setVar','cuid','2f854096-46eb-476c-87b1-044b200d3d27']);
-		  mobionId = "osullocDev";
-	  }
-	  
-	  
-			
-			
-				_rblqueue.push(['setVar','device','PW']);
-			
-	  	
-	  
-	  	var ucstmid = CryptoJS.SHA512('113979959').toString();
-	  	_rblqueue.push(['setVar','userId',ucstmid]);		// optional
-	  
-	  _rblqueue.push(['track','visit']);	
-	  setTimeout(function() {
-	    (function(s,x){s=document.createElement('script');s.type='text/javascript';
-	    s.async=true;s.defer=true;s.src=(('https:'==document.location.protocol)?'https':'http')+
-	    '://assets.recobell.io/rblc/js/rblc-apne1.min.js';
-	    x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();
-	  }, 0); */
-	</script>
-
-<!-- Enliple Common Tracker v3.5 [공용] start -->
-<!-- 		<script type="text/javascript">
-			function mobRf(){
-		        require(['Utils','punycode','EN'], function (Utils, punycode, EN) {
-		            try {
-		                var rf = new EN(Utils, punycode);
-		                if(document.location.protocol == 'https:') {
-		                    rf.setSSL(true);
-		                }
-		                rf.setData("userid", mobionId);
-		                rf.sendRf();
-		            } catch(e){}
-		        });	
-		    }
-		try{
-			require.config({  
-			    paths: {
-					'Utils': 'https://log.mediacategory.com/mediaCategory/js/en_script/3.7/enliple_min3.7_amd',
-					'punycode': 'https://log.mediacategory.com/mediaCategory/js/en_script/3.7/enliple_min3.7_amd',
-					'EN': 'https://log.mediacategory.com/mediaCategory/js/en_script/3.7/enliple_min3.7_amd'
-			    },
-			    shim: {
-			            'Utils': { 
-			                exports:function() {
-			                    var u = new Utils();
-			                return u;
-			                        }
-			                },
-			                'punycode': { 
-			                    exports:function() {
-			                        return punycode;
-			                        } 
-			                },
-			                'EN': { 
-			                    deps: ['Utils', 'punycode'],
-			                        exports: 'EN' 
-			                }
-			        }
-			    });
-					mobRf();
-			    } catch (e){	  
-			    	mobRf();
-			    }
-
-
-		</script> -->
-<!-- Enliple Common Tracker v3.5 [공용] end -->
-
 <!-- Google Tag Manager -->
 <!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
 <script>
@@ -325,101 +234,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
 <!-- End Google Tag Manager -->
 
-<!-- 2023026 제주, 북촌 예약프로그램 오픈 true일때 -->
-
-<!-- 20230712 1979 예약프로그램 오픈 true일때 -->
 
 
-
-
-<script>
-	/**
-	 * 카트에 상품 담기 실패시 실행함수 (공통)
-	 * @param {boolean} isFn - 펑션 alert/confirm 쓸지여부(false:내장 alert/confirm사용)
-	 * @param {String} message - 성공했을경우 해당 콜백함수 실행(실패함수 공통 )
-	 * @param {function} fnAlert - alert시 실행함수
-	 * @return {void} 반환값없음
-	 */
-	const fnInsertCartMessage = (isFn,message="장바구니 담기에 실패했습니다. 다시 시도해주세요.",fnAlert)=>{
-
-		let { origin,pathname } = location;
-		const loginUrl = '/kr/ko/login?r='+origin+pathname;
-		const isLoginGo = message.includes("로그인 하시겠습니까?");
-
-		//내장함수 사용시 줄바꾸기 바꿔줌
-		if(!isFn){message = message.replaceAll("</br>","\n")}
-
-		//로그인 화면 갈 거 아니면 기존 로직대로 alert
-		if(!isLoginGo){
-			if(isFn) {fnLayerAlert(message,fnAlert);}
-			else{alert(message);};
-
-			return false;
-		}
-
-
-
-		//수량제한추가: 수량제한상품 + 로그인 안된상태면 confirm띄워야함.
-		//로그인 화면으로 이동해야할경우 confirm;
-		if(isFn)fnLayerConfirm(message,(res)=>{if(res)location.href=loginUrl})
-		else{if(confirm(message))location.href=loginUrl};
-
-		return false;
-	}
-
-	//선물하기 함수
-	const fnInsertCartPresentMessage = (data)=>{
-
-		let { origin,pathname } = location;
-		const loginUrl = '/kr/ko/login?r='+origin+pathname;
-		const isLoginGo = data.message.includes("로그인 하시겠습니까?");
-
-		if(isLoginGo) {
-			fnLayerConfirm(data.message, (res) => {
-				if (res) location.href = '/kr/ko/login?r=' + loginUrl;
-			});
-		}else{
-			fnLayerAlert(data.message, function(){
-				location.href='/kr/ko/login?r=' + loginUrl;
-			});
-		}
-
-		return false;
-	}
-
-
-
-
-
-	/**
-	 * 카트에 상품 추가 공통 함수
-	 * @param {JSON} param - ajax param
-	 * @param {boolean} isFn - 펑션 alert/confirm 쓸지여부(false:내장 alert/confirm사용)
-	 * @param {function} callback - 성공했을경우 해당 콜백함수 실행(실패함수 공통 )
-	 * @param {function} failCallBack - 실패했을경우 해당 콜백함수 실행 (이 함수에 값을 넣을 경우 공통 함수 안태우고 이 함수 태움)
-	 * @return {void} 반환값없음
-	 */
-	const fnAddCartCommon = (param,isFn,callback, failCallBack) => {
-		$.ajax(param).done((data)=>{
-			//실패 했을 때 로직 공통으로 변경
-			if(!data.success){
-				console.info(data);
-				//실패했을때 커스텀함수 쓰고싶으면 여기에
-				if(failCallBack)failCallBack(data);
-				//아니면 공통함수 태움
-				else{fnInsertCartMessage(isFn,data.message,()=>{});}
-				return false;
-			}
-			//성공한 경우 각자 화면에서 콜백함수 실행
-			callback(data);
-		});
-	};
-
-
-
-
-
-</script>
 
 <!-- 네이버 연관채널 설정 -->
 <span itemscope="" itemtype="http://schema.org/Organization">
@@ -431,21 +247,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </span>
 <!-- 2022-04-11 추가-->
 <meta name="robots" content="noindex">
+
+<style>
+.button-style {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #DDDDDD; /* 버튼 배경색 */
+	color: #fff; /* 버튼 텍스트 색상 */
+	text-decoration: none; /* 링크 밑줄 제거 */
+	border: 1px solid transparent; /* 테두리 스타일 */
+	border-radius: 4px; /* 버튼 테두리 둥글기 */
+	cursor: pointer;
+	text-align: center;
+	margin-left:1500px;
+	border-width: 1px; /* 테두리 두께 */
+}
+
+.button-style:hover {
+	background-color: #adabab; /* 마우스 호버시 배경색 변화 */
+	border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+}
+</style>
 </head>
 <iframe id="x-sso-check" name="sso_check_iframe"
 	title="SSO Session Check Iframe" hidden></iframe>
 <body>
-
 	<!-- leo tagging 공통 변수 선언 -->
-
-
-
-
-
-
-
-
-
 	<!-- Google Tag Manager (noscript) -->
 	<!-- 2019.10.17 leo 태깅 전달 스크립트 삽입 -->
 	<noscript>
@@ -2031,7 +1858,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<p class="num pcBlock">${dto.notice_index}</p>
 											<p class="subject">
 												<a class="link_text" href="/kr/ko/cs/notice/news/6319?">
-													<span class="new">NEW</span><a href="noticeDetail?notice_index=${dto.notice_index}">${dto.notice_title}</a>
+													<span class="new">NEW</span><a
+													href="noticeDetail?notice_index=${dto.notice_index}">${dto.notice_title}</a>
 												</a>
 											</p>
 											<p class="date">${dto.input_time}</p>
@@ -2046,13 +1874,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<!-- pagination : S -->
 
 
-
-
-
-
 				<div id="pagination" class="newPagination for-mobile ">
-
-
 
 
 					<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
@@ -2078,11 +1900,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 
 				<!-- pagination : E -->
+
+				<div class="button-style">
+					<a href="noticeWriteForm">글작성</a>
+				</div>
+
 			</div>
 			<!-- 컨텐츠 : E -->
-			<p>
-				<a href="noticeWriteForm">글작성</a>
-			</p>
+
 		</main>
 		<!-- CDJ 개선 마이페이지 공지사항 리스트 : E -->
 
@@ -2420,32 +2245,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 		<!-- CDJ 로딩 : E -->
 
-		<script>
-  //footer notice list
-/*   require(['TweenMax'], function(a){
-      function footerNotice() {
-        var $noticeList = $('.footer-notice-list-new'),
-          tweenTime = 0.8;
-
-        $noticeList.each(function(i, el){
-          var $el = $(el),
-            $item = $el.find('li'),
-            currentSlide = 0;
-
-          TweenLite.set($item.filter(":gt(0)"), {y: '100%'});
-          TweenLite.delayedCall(tweenTime*3, nextSlide);
-
-          function nextSlide() {
-            TweenLite.to( $item.eq(currentSlide), tweenTime, {y: '-100%'} );
-
-            currentSlide < $item.length - 1 ? currentSlide++ : currentSlide = 0;
-            TweenLite.fromTo( $item.eq(currentSlide), tweenTime, {y: '100%'}, {y: '0%'} );
-            TweenLite.delayedCall(tweenTime*3, nextSlide);
-          }
-        });
-      }footerNotice();
-  }); */
-</script>
 	</div>
 
 	<!-- sidenav -->
@@ -2508,70 +2307,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
     </script>
-
-
-	<!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
-
-	<script language="JavaScript" type="text/javascript">
-       
-        $(function(){
-          if (pageInfo === undefined) {
-            var pageInfo = {};
-            pageInfo.WARNING_TIME = 60000 * 19;
-//            pageInfo.WARNING_TIME = 60000;
-          }
-          
-          pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
-          
-          function warningEndOfSession() {
-            
-        	  var autoLoginYn = '';
-              console.log('autoLoginYn: '+autoLoginYn);
-              if(autoLoginYn != 'Y'){
-            	  
-	        	  var warningTime = new Date();
-	            var r = confirm("- 개인정보 보호를 위하여, 로그인 후 20분 동안 서비스 이용이 없을경우 자동으로 로그아웃 처리됩니다.\n"
-	                + "- 로그인 시간을 연장하시려면, '확인' 버튼을 클릭하세요.\n"
-	                + "- '취소' 버튼을 클릭하면, 로그아웃됩니다.");
-	
-	            if (r == true) {
-	              var clickTime = new Date();
-	              if (clickTime.getTime() - warningTime.getTime() > 60000) {
-	                endOfSession();
-	                return false;
-	              }
-	              if (pageInfo.warning != undefined) {
-	                clearTimeout(pageInfo.warning);
-	              }
-	              pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
-	            } else {
-	              logout();
-	            }
-              }
-          }
-          
-          function endOfSession() {
-            alert("- 로그인 세션이 이미 종료되어, 자동으로 로그아웃 되었습니다.\n" +
-            "- 서비스를 다시 이용하시려면, '로그인' 해주시길 바랍니다.");
-            logout();
-          }
-          
-          $(document).keyup(function(evt) {
-            if (pageInfo.warning != undefined) {
-              clearTimeout(pageInfo.warning);
-            }
-            pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
-          });
-          
-          function logout(){
-            $('#f_logout').submit();
-            }
-          
-        });
-        
-        //일정시간이 지나면 자동로그아웃 e 20170601
-    </script>
-
 
 
 </body>

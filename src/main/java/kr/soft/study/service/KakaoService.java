@@ -18,8 +18,7 @@ public class KakaoService {
     private ServletContext servletContext;
 
     private String restApiKey;
-    private String redirectUri;
-    private final String LOGOUT_URL = "https://kapi.kakao.com/v1/user/logout";
+    private final String UNLINK_URL = "https://kapi.kakao.com/v1/user/unlink";
 
     @Autowired
     public KakaoService(ServletContext servletContext) {
@@ -29,10 +28,9 @@ public class KakaoService {
 
     private void init() {
         restApiKey = servletContext.getInitParameter("7bdcbdc77dde1eadcc53e0828cc9c91c");
-        redirectUri = servletContext.getInitParameter("http://localhost:8080/study/kakaoLogin");
     }
 
-    public void kakaoLogout(String accessToken) {
+    public void kakaoUnlink(String accessToken) {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", "Bearer " + accessToken);
@@ -41,14 +39,14 @@ public class KakaoService {
 
         try {
             ResponseEntity<String> response = restTemplate.exchange(
-                LOGOUT_URL, HttpMethod.POST, entity, String.class);
+                UNLINK_URL, HttpMethod.POST, entity, String.class);
             if (response.getStatusCode() == HttpStatus.OK) {
-                System.out.println("Successfully logged out from Kakao.");
+                System.out.println("Successfully unlinked from Kakao.");
             } else {
-                System.out.println("Failed to log out from Kakao: " + response.getBody());
+                System.out.println("Failed to unlink from Kakao: " + response.getBody());
             }
         } catch (HttpClientErrorException e) {
-            System.out.println("Error during Kakao logout: " + e.getMessage());
+            System.out.println("Error during Kakao unlink: " + e.getMessage());
         }
     }
 }
