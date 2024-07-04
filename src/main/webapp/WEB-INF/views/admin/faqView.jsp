@@ -361,6 +361,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<a itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
 	<a itemprop="sameAs" href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
 </span>
+
+
+<style>
+.button-style {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #DDDDDD; /* 버튼 배경색 */
+	color: #fff; /* 버튼 텍스트 색상 */
+	text-decoration: none; /* 링크 밑줄 제거 */
+	border: 1px solid transparent; /* 테두리 스타일 */
+	border-radius: 4px; /* 버튼 테두리 둥글기 */
+	cursor: pointer;
+	text-align: center;
+	margin-left:1450px;
+	border-width: 1px; /* 테두리 두께 */
+}
+
+.button-style:hover {
+	background-color: #adabab; /* 마우스 호버시 배경색 변화 */
+	border-color: #004799; /* 마우스 호버시 테두리 색상 변화 */
+}
+</style>
+
+
 </head>
 <iframe id="x-sso-check" name="sso_check_iframe" title="SSO Session Check Iframe" hidden></iframe>
 <body>
@@ -691,91 +715,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop" class='link_text'>티 제품</a>
 													<ul class="nav_list_dep3">
                                                         
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198" class='link_text' data-track-name="GNB 오설록|Tea Shop|티 세트" >티 세트</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201" class='link_text' data-track-name="GNB 오설록|Tea Shop|명차" >명차</a></li>
                                                                 
                                                             
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+   
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197" class='link_text' data-track-name="GNB 오설록|Tea Shop|녹차/말차" >녹차/말차</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
+     
                                                             
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249" class='link_text' data-track-name="GNB 오설록|Tea Shop|발효차/홍차" >발효차/홍차</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196" class='link_text' data-track-name="GNB 오설록|Tea Shop|블렌디드티" >블렌디드티</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195" class='link_text' data-track-name="GNB 오설록|Tea Shop|허브티" >허브티</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250" class='link_text' data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티" >밀크티/아이스티</a></li>
                                                                 
@@ -783,36 +749,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                 
                                                                 <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252" class='link_text' data-track-name="GNB 오설록|Tea Shop|콤부차" >콤부차</a></li>
                                                                 
-                                                            
-                                                                
-                                                            
-                                                                
-                                                            
+    
                                                         
 													</ul>
 												</li>
 												<li class="item_dep2">
 													<a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery" data-track-name="GNB 오설록|Tea Shop|Tea Food" class='link_text'>티푸드</a>
 													<ul class="nav_list_dep3">
-                                                        
-                                                            
-                                                                
+
                                                                     <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174" class='link_text' data-track-name="GNB 오설록|Tea Shop|과자/초콜릿"  >과자/초콜릿</a></li>
-                                                                
-                                                            
-    
-                                                                
-                                                            
-                                                                
-                                                            
+
                                                                 
                                                                     <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178" class='link_text' data-track-name="GNB 오설록|Tea Shop|베이커리"  >베이커리</a></li>
-                                                                
-                                                            
-                                                                
-                                                            
-
-                                                            
+ 
                                                                 
                                                                     <li class="item_dep3"><a href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251" class='link_text' data-track-name="GNB 오설록|Tea Shop|아이스크림"  >아이스크림</a></li>
                                                                   
@@ -2099,9 +2048,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 			</section>
 			
-						<p>
+						
+						<div class="button-style">
 				<a href="faqWriteForm">fap작성</a>
-			</p>
+				</div>
 			<!-- pagination : S -->
 			
 

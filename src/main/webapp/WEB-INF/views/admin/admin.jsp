@@ -98,7 +98,7 @@ body {
 </head>
 <body>
     <div class="header">
-        <h2>관리자 페이지</h2>
+        <h2>오설록 관리자 페이지</h2>
     </div>
 
     <div class="btn-container">

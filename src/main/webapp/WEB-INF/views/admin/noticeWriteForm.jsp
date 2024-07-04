@@ -374,6 +374,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</noscript>
 	<!-- 2024.06.05 leo 태깅 전달 스크립트 삽입 -->
 
+<<<<<<< HEAD
 	<!-- End Google Tag Manager (noscript) -->
 	<script type="text/javascript">
 	function dataUndefinedChk(inputValue) {
@@ -2345,6 +2346,28 @@ function fileFunction(){
   	var pop = window.open("/kr/ko/file/fileDownload?fileName="+fileNm,"pop","scrollbars=yes, resizable=yes, width=400, height=600"); 
 }
 </script>
+=======
+    <form action="noticeWrite" method="post">
+        <table>
+            <tr>
+                <td>제목</td>
+                <td><input type="text" name="notice_title" size="50"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><input type="text" name="notice_content" size="50"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="입력">
+                    &nbsp;&nbsp;
+                    <a href="noticeView">목록보기</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+>>>>>>> branch 'master' of https://github.com/parksomi31/Clone5.git
 </body>
 </html>
 F
