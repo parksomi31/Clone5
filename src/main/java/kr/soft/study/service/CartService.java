@@ -25,4 +25,11 @@ public class CartService {
     public void deleteCartItem(int cartItemId) {
         sqlSession.delete("kr.soft.study.dao.CartDAO.deleteCartItem", cartItemId);
     }
+    
+    public void updateCartItemQuantity(int cartItemId, int quantity) {
+        CartDTO cartItem = new CartDTO();
+        cartItem.setCart_item_id(cartItemId);
+        cartItem.setQuantity(quantity);
+        sqlSession.update("kr.soft.study.dao.CartDAO.updateCartItemQuantity", cartItem);
+    }
 }
