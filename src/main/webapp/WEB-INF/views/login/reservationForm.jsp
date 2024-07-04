@@ -5,13 +5,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
+}
+</style>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <meta charset="UTF-8">
-    <title>예약하기</title>
-    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
-    <script>
+<title>예약하기</title>
+<link
+	href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css'
+	rel='stylesheet' />
+<script
+	src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -23,60 +34,58 @@
             calendar.render();
         });
     </script>
-   <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+<style>
+body {
+	font-family: Arial, sans-serif;
+}
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
 
-        .banner {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
+.banner {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
 
-        .section {
-            text-align: left;
-        }
+.section {
+	text-align: left;
+}
 
-        .page_tit {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+.page_tit {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
 
-        label {
-            display: block;
-            margin-top: 10px;
-        }
+label {
+	display: block;
+	margin-top: 10px;
+}
 
-        input[type="text"],
-        input[type="time"],
-        input[type="submit"] {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            box-sizing: border-box;
-        }
+input[type="text"], input[type="time"], input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	box-sizing: border-box;
+}
 
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+}
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+</style>
 
 <meta charset="UTF-8">
 <title>홈화면</title>
@@ -1108,13 +1117,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="inner_box">
 					<div class="left_box">
 						<h1 class="logo">
-							<a href="home" class="logo_white"><img
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-								alt="오설록 로고"></a> <a href="home" class="logo_black"><img
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
-								alt="오설록 로고"></a>
+							<a href="${pageContext.request.contextPath}/home"
+								class="logo_white"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a> <a href="${pageContext.request.contextPath}/home"
+								class="logo_black"> <img
+								src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+								alt="오설록 로고" style="user-select: none;">
+							</a>
 						</h1>
 						<nav class="nav">
 							<ul class="nav_list_dep1">
@@ -1322,14 +1333,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<li class="item item_icon_more"><a
 								class="nav_util_icon icon_more" id="btn_nav"></a>
 								<ul class="drop_box drop_box1">
-									<li class="drop_item">										
-									<a
+									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/notice"
 										data-track-name="Header 고객센터">고객센터</a></li>
 									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/store"
 										data-track-name="Header 매장찾기">매장정보</a></li>
-										<li class="drop_item"><a
+									<li class="drop_item"><a
 										href="${pageContext.request.contextPath}/map"
 										data-track-name="Header 매장찾기">매장찾기</a></li>
 									<li class="drop_item"><a
@@ -1349,8 +1359,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 							<li class="item"><a
 								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
-								data-track-name="Header 로그인">로그인</a>
-								<!-- <ul class="drop_box drop_box2">
+								data-track-name="Header 로그인">로그인</a> <!-- <ul class="drop_box drop_box2">
 									<li class="drop_item"><a
 										href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
 										data-track-name="Header 로그인">로그인</a></li>
@@ -2465,8 +2474,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 </style>
 			<div class="CatBanner"
 				style="background-image: url(https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th2/osl_stdd_th2_1_bg_pc.jpg)">
-				 <h2 class="CatBannerTit" style="color: white;">프로그램</h2>
-				
+				<h2 class="CatBannerTit" style="color: white;">프로그램</h2>
+
 			</div>
 			<script>
 				$(function(){
@@ -2727,12 +2736,12 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 								</div>
 							</div>
 						</div> -->
-					</div>
-					<!-- // -->
-					<!--  -->
-					<!-- 상품 리스트 -->
-					<div class="containter">
-						<input type="hidden" id="tag_search_name" value="">
+				</div>
+				<!-- // -->
+				<!--  -->
+				<!-- 상품 리스트 -->
+				<div class="containter">
+					<input type="hidden" id="tag_search_name" value="">
 
 
 
@@ -2762,7 +2771,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-<!-- 
+					<!-- 
 						<p class="pageLocation">제품</p> -->
 
 
@@ -2772,7 +2781,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-						<input type="hidden" id="tag_search_type" value="">
+					<input type="hidden" id="tag_search_type" value="">
 
 
 
@@ -2784,99 +2793,98 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-						<!-- 리스트 정렬 -->
-						<!-- 첫 list진입 시 sort 리뷰많은순으로 지정 -->
-
-					
-
-						<!-- //리스트 정렬 -->
-						<!-- filter -->
-						
-
-
-						 <div class="container">
-       <%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
-        <section class="section">
-            <div class="page_tit">예약하기</div>
-            <div id='calendar'></div>
-            <form action="${pageContext.request.contextPath}/reservation" method="post">
-                <label for="name">이름:</label>
-                <input type="text" id="name" name="name" value="${sessionScope.kakaoN}" readonly><br>
-                <label for="email">이메일:</label>
-                <input type="text" id="email" name="email" value="${sessionScope.kakaoE}" readonly><br>
-                <label for="date">날짜:</label>
-                <input type="text" id="datepicker" name="date" readonly><br>
-                <label for="time">시간:</label>
-                <input type="time" id="time" name="time"><br>
-                <input type="submit" value="예약하기">
-            </form>
-        </section>
-    </div>
-
-
-								<div id="pagination" class="newPagination for-mobile ">
+					<!-- 리스트 정렬 -->
+					<!-- 첫 list진입 시 sort 리뷰많은순으로 지정 -->
 
 
 
-
-									<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
-										class="btn btn-prev is-disabled">이전 페이지</span> <a
-										href="/kr/ko/shop/item/list?sort=review" class="num on"
-										data-track-name="1 페이지 이동">1</a> <a
-										href="/kr/ko/shop/item/list?sort=review&amp;p=1" class="num "
-										data-track-name="2 페이지 이동">2</a> <a
-										href="/kr/ko/shop/item/list?sort=review&amp;p=2" class="num "
-										data-track-name="3 페이지 이동">3</a> <a
-										href="/kr/ko/shop/item/list?sort=review&amp;p=3" class="num "
-										data-track-name="4 페이지 이동">4</a> <a
-										href="/kr/ko/shop/item/list?sort=review&amp;p=4" class="num "
-										data-track-name="5 페이지 이동">5</a> <a
-										href="/kr/ko/shop/item/list?sort=review&amp;p=5"
-										class="btn btn-next" data-track-name="뒷 페이지 그룸 이동">다음 페이지</a>
-									<a href="/kr/ko/shop/item/list?sort=review&amp;p=6"
-										class="btn btn-end " data-track-name="맨 뒷 페이지 이동"> 페이지 끝으로
-									</a>
+					<!-- //리스트 정렬 -->
+					<!-- filter -->
 
 
 
-
-								</div>
-							</div>
-
-
-
-
-
-
-						</div>
-						<!-- //상품 리스트 -->
-						<!-- // -->
+					<div class="container">
+						<%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
+						<section class="section">
+							<div class="page_tit">예약하기</div>
+							<div id='calendar'></div>
+							<form action="${pageContext.request.contextPath}/reservation"
+								method="post">
+								<label for="name">이름:</label> <input type="text" id="name"
+									name="name" value="${sessionScope.kakaoN}" readonly><br>
+								<label for="email">이메일:</label> <input type="text" id="email"
+									name="email" value="${sessionScope.kakaoE}" readonly><br>
+								<label for="date">날짜:</label> <input type="text" id="datepicker"
+									name="date" readonly><br> <label for="time">시간:</label>
+								<input type="time" id="time" name="time"><br> <input
+									type="submit" value="예약하기">
+							</form>
+						</section>
 					</div>
 
 
+					<div id="pagination" class="newPagination for-mobile ">
+
+
+
+
+						<span class="btn btn-home is-disabled">페이지 처음으로</span> <span
+							class="btn btn-prev is-disabled">이전 페이지</span> <a
+							href="/kr/ko/shop/item/list?sort=review" class="num on"
+							data-track-name="1 페이지 이동">1</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=1" class="num "
+							data-track-name="2 페이지 이동">2</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=2" class="num "
+							data-track-name="3 페이지 이동">3</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=3" class="num "
+							data-track-name="4 페이지 이동">4</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=4" class="num "
+							data-track-name="5 페이지 이동">5</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=5"
+							class="btn btn-next" data-track-name="뒷 페이지 그룸 이동">다음 페이지</a> <a
+							href="/kr/ko/shop/item/list?sort=review&amp;p=6"
+							class="btn btn-end " data-track-name="맨 뒷 페이지 이동"> 페이지 끝으로 </a>
+
+
+
+
+					</div>
 				</div>
-				<!-- //티샵 -->
+
+
+
+
+
 
 			</div>
+			<!-- //상품 리스트 -->
+			<!-- // -->
 		</div>
-		<!-- //컨텐츠 바디 영역 -->
 
 
-		<script type="text/javascript"
-			src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"
-			data-main="shop/item"></script>
+	</div>
+	<!-- //티샵 -->
+
+	</div>
+	</div>
+	<!-- //컨텐츠 바디 영역 -->
 
 
-		<noscript>
-			<img height="1" width="1" style="display: none"
-				src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
-		</noscript>
+	<script type="text/javascript"
+		src="https://image.osulloc.com/kr/ko/static/js/lib/require.min.js"
+		data-main="shop/item"></script>
+
+
+	<noscript>
+		<img height="1" width="1" style="display: none"
+			src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
+	</noscript>
 
 
 
-		<script type="text/javascript" id=""
-			src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
-		<script type="text/javascript">
+	<script type="text/javascript" id=""
+		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
+	<script type="text/javascript">
 //$(window).load(function(){
 	//var gv_videoVisible = false; 
 	
@@ -3163,7 +3171,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
     });
 </script>
 
-		<!--푸터-->
+	<!--푸터-->
 
 
 
@@ -3172,137 +3180,136 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-		<div id="new_footer">
-			<!--PC-->
-			<div class="wrap1 m_pd15 hide_tablet hide_mobile">
-				<div class="inner1600 clearfix">
-					<div class="right">
+	<div id="new_footer">
+		<!--PC-->
+		<div class="wrap1 m_pd15 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="right">
 
 
 
-						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
-							class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
-							href="https://www.tiktok.com/@osulloc_official" target="_blank"
-							class="btn-share--circle" style="z-index: 10000;"
-							data-track-name="Footer 오설록 틱톡"> <img
-							class="hide_tablet hide_mobile"
-							src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png"
-							alt="틱톡">
-						</a> <a
-							href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
-							target="_blank" class="btn-share--circle" style="z-index: 10000;"
-							data-track-name="Footer 오설록 유튜브"> <img
-							class="hide_tablet hide_mobile"
-							src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png"
-							alt="유튜브">
-						</a> <a href="https://www.instagram.com/osulloc_official/"
-							target="_blank" class="btn-share--circle" style="z-index: 10000;"
-							data-track-name="Footer 오설록 인스타그램"> <img
-							class="hide_tablet hide_mobile"
-							src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png"
-							alt="인스타그램"> <img class="hide_pc"
-							src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png"
-							alt="인스타그램">
-						</a>
+					<a
+						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
+						class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
+						href="https://www.tiktok.com/@osulloc_official" target="_blank"
+						class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 틱톡"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_t.png"
+						alt="틱톡">
+					</a> <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+						target="_blank" class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 유튜브"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_cdj/images/sns/sns_y.png"
+						alt="유튜브">
+					</a> <a href="https://www.instagram.com/osulloc_official/"
+						target="_blank" class="btn-share--circle" style="z-index: 10000;"
+						data-track-name="Footer 오설록 인스타그램"> <img
+						class="hide_tablet hide_mobile"
+						src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i.png"
+						alt="인스타그램"> <img class="hide_pc"
+						src="https://image.osulloc.com/kr/ko/static_renew/images/sns_i_m.png"
+						alt="인스타그램">
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="wrap2 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="left1">
+					<div class="tit">고객상담센터 · 주문/배송문의</div>
+					<div>
+						<a href="mailto:help@osulloc.com"
+							style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
+					</div>
+					<div class="phone" style="margin-top: 1px; line-height: 1;">080-805-5555</div>
+					<div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
+				</div>
+				<div class="left2">
+					<div class="tit">특판, 대량구매 문의</div>
+					<div class="phone">
+						<a href="mailto:mall@osulloc.com"
+							style="font-weight: 700; color: #595959; text-decoration: underline;"
+							data-track-name="Footer 이메일 문의">mall@osulloc.com</a><span></span>
+					</div>
+					<div class="mail" style="line-height: 1;">
+						<span
+							style="font-family: 'Noto_M,sans-serif'; font-weight: 700; font-size: 13px; color: #797979;">
+							<!--010-2515-1979 / -->카카오톡ID : osullocmall
+						</span>
+						<p style="margin-top: 10px;">
+							<span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="wrap3 hide_tablet hide_mobile">
+			<div class="inner1600 clearfix">
+				<div class="logo logo_footer">
+					<a href="https://www.osulloc.com/kr/ko/mypage/qna"
+						data-track-name="Footer 1:1문의"><img
+						src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png"
+						width="112" height="158" alt="1:1문의"></a>
+				</div>
+				<div class="left">
+					<div class="cont1">
+						<ul>
+							<li><a href="https://www.apgroup.com/int/ko"
+								data-track-name="Footer 회사소개">회사소개</a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
+								data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
+
+							<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
+								data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
+								data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
+							<li><a
+								href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+								data-track-name="Footer 뷰티포인트">뷰티포인트</a></li>
+							<li><a
+								href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+								data-track-name="Footer 임직원할인">임직원할인</a></li>
+							<li><a href="https://www.osulloc.com/kr/ko/misc/sitemap"
+								data-track-name="Footer 사이트맵">사이트맵</a></li>
+							<li><a
+								href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+								data-track-name="Footer 전자공고">전자공고</a></li>
+						</ul>
+					</div>
+					<div class="cont2">
+						<div class="address">
+							㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
+							390-87-01499 <a class="info"
+								href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
+								data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 &gt;</a> <br>통신판매업신고번호:2019-서울용산-1173호
+							호스팅제공자: ㈜오설록 <br> <br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에
+							대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및
+							거래에 대해 책임을 지지 않습니다.
+						</div>
+						<!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
 					</div>
 
 				</div>
-			</div>
-			<div class="wrap2 hide_tablet hide_mobile">
-				<div class="inner1600 clearfix">
-					<div class="left1">
-						<div class="tit">고객상담센터 · 주문/배송문의</div>
-						<div>
-							<a href="mailto:help@osulloc.com"
-								style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
-						</div>
-						<div class="phone" style="margin-top: 1px; line-height: 1;">080-805-5555</div>
-						<div class="time">평일 09:30 - 17:00 (점심 11:30 - 13:00)</div>
-					</div>
-					<div class="left2">
-						<div class="tit">특판, 대량구매 문의</div>
-						<div class="phone">
-							<a href="mailto:mall@osulloc.com"
-								style="font-weight: 700; color: #595959; text-decoration: underline;"
-								data-track-name="Footer 이메일 문의">mall@osulloc.com</a><span></span>
-						</div>
-						<div class="mail" style="line-height: 1;">
-							<span
-								style="font-family: 'Noto_M,sans-serif'; font-weight: 700; font-size: 13px; color: #797979;">
-								<!--010-2515-1979 / -->카카오톡ID : osullocmall
-							</span>
-							<p style="margin-top: 10px;">
-								<span>평일 09:30 - 17:00 (점심 11:30 - 13:00)</span>
-							</p>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			<div class="wrap3 hide_tablet hide_mobile">
-				<div class="inner1600 clearfix">
-					<div class="logo logo_footer">
-						<a href="https://www.osulloc.com/kr/ko/mypage/qna"
-							data-track-name="Footer 1:1문의"><img
-							src="https://image.osulloc.com/kr/ko/static_renew/images/logo_f.png"
-							width="112" height="158" alt="1:1문의"></a>
-					</div>
-					<div class="left">
-						<div class="cont1">
-							<ul>
-								<li><a href="https://www.apgroup.com/int/ko"
-									data-track-name="Footer 회사소개">회사소개</a></li>
-								<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
-									data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
-
-								<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
-									data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
-								<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
-									data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
-								<li><a
-									href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
-									data-track-name="Footer 뷰티포인트">뷰티포인트</a></li>
-								<li><a
-									href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
-									data-track-name="Footer 임직원할인">임직원할인</a></li>
-								<li><a href="https://www.osulloc.com/kr/ko/misc/sitemap"
-									data-track-name="Footer 사이트맵">사이트맵</a></li>
-								<li><a
-									href="https://www.osulloc.com/kr/ko/cs/notice/announce"
-									data-track-name="Footer 전자공고">전자공고</a></li>
-							</ul>
-						</div>
-						<div class="cont2">
-							<div class="address">
-								㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
-								390-87-01499 <a class="info"
-									href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
-									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 &gt;</a> <br>통신판매업신고번호:2019-서울용산-1173호
-								호스팅제공자: ㈜오설록 <br> <br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에
-								대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및
-								거래에 대해 책임을 지지 않습니다.
-							</div>
-							<!-- <a class="info" href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499" data-track-name="Footer_M 사업자 정보확인"  >사업자 정보확인 ></a> -->
-						</div>
-
-					</div>
-					<div class="right">
-						<div class="box clearfix">
-							<div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
-							<div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN
-								KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
-							<img
-								src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png"
-								alt="에스크로 가입사실확인" class="escrow_img">
-							<!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
-							<!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
-						</div>
+				<div class="right">
+					<div class="box clearfix">
+						<div class="tit">NHN KCP 구매안전(에스크로)서비스</div>
+						<div class="note">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN
+							KCP의 구매안전서비스를 이용하실 수 있습니다.</div>
+						<img
+							src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/bannerEscrow.png"
+							alt="에스크로 가입사실확인" class="escrow_img">
+						<!--<img src='https://image.inicis.com/mkt/certmark/escrow/escrow_43x43_gray.png' border="0" alt="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open('https://mark.inicis.com/mark/escrow_popup.php?mid=osulloc101','mark','scrollbars=no,resizable=no,width=565,height=683');" class="escrow_img">-->
+						<!-- <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448" data-track-name="Footer_M 이니시스 서비스 가입 확인"  >서비스 가입사실 확인</a> -->
 					</div>
 				</div>
 			</div>
-			<!--//PC-->
-			<script>
+		</div>
+		<!--//PC-->
+		<script>
     $(function(){
       const datesetting = new Date();
       const dateyear = datesetting.getFullYear();
@@ -3325,140 +3332,139 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
     });
   </script>
 
-			<!--모바일 m_footer-->
-			<div class="m_footer hide_pc">
+		<!--모바일 m_footer-->
+		<div class="m_footer hide_pc">
 
-				<div class="func">
-					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
-						data-track-name="Footer_M 고객센터">고객센터</a> <a
-						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
-						class="signIn" data-track-name="Footer_M 로그인">로그인</a>
+			<div class="func">
+				<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
+					data-track-name="Footer_M 고객센터">고객센터</a> <a
+					href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/shop/item/list"
+					class="signIn" data-track-name="Footer_M 로그인">로그인</a>
 
 
-					<div class="lang js_select">
-						<div class="tit menu">한국어</div>
-						<ul>
-							<li><a class="name" href="/kr/ko">한국어</a></li>
-							<li><a class="name" href="https://us.osulloc.com">English</a></li>
-							<li><a class="name" href="/kr/zh">中文</a></li>
-						</ul>
-					</div>
+				<div class="lang js_select">
+					<div class="tit menu">한국어</div>
+					<ul>
+						<li><a class="name" href="/kr/ko">한국어</a></li>
+						<li><a class="name" href="https://us.osulloc.com">English</a></li>
+						<li><a class="name" href="/kr/zh">中文</a></li>
+					</ul>
 				</div>
-				<div class="certificationInfo">
-					<a href="javascript:;"> <span>오설록 사업자 정보확인</span>
-					</a>
-					<div class="txt_wrap">
-						<p>
-							㈜ 오설록 <br> 대표이사 : 서혁제 <br>주소 : 서울 특별시 용산구 한강대로 100
-							(한강로2가) <br>사업자 등록번호 : 390-87-01499 <br>통신판매업신고번호 :
-							2019-서울용산-1173호 <br>호스팅제공자 : ㈜오설록
-						</p>
-						<p>
-							(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서
-							입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
-						</p>
-						<p>
-							NHN KCP 구매안전(에스크로)서비스 <br> 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에
-							가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
-						</p>
-					</div>
+			</div>
+			<div class="certificationInfo">
+				<a href="javascript:;"> <span>오설록 사업자 정보확인</span>
+				</a>
+				<div class="txt_wrap">
+					<p>
+						㈜ 오설록 <br> 대표이사 : 서혁제 <br>주소 : 서울 특별시 용산구 한강대로 100
+						(한강로2가) <br>사업자 등록번호 : 390-87-01499 <br>통신판매업신고번호 :
+						2019-서울용산-1173호 <br>호스팅제공자 : ㈜오설록
+					</p>
+					<p>
+						(주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서
+						입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+					</p>
+					<p>
+						NHN KCP 구매안전(에스크로)서비스 <br> 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에
+						가입한 NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
+					</p>
 				</div>
-				<div class="footer_menu">
-					<div class="footer_menu_list">
-						<a href="https://www.apgroup.com/int/ko"
-							data-track-name="Footer 회사소개">회사소개</a> <a
-							href="https://www.osulloc.com/kr/ko/misc/terms"
-							data-track-name="Footer 서비스 이용약관">서비스 이용약관</a> <a
-							href="https://www.osulloc.com/kr/ko/misc/statement"
-							data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a> <br>
-						<a href="https://www.osulloc.com/kr/ko/misc/procedures"
-							data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a> <a
-							href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
-							data-track-name="Footer 뷰티포인트">뷰티포인트</a> <a
-							href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
-							data-track-name="Footer 임직원할인">임직원할인</a> <a
-							href="https://www.osulloc.com/kr/ko/misc/sitemap"
-							data-track-name="Footer 사이트맵">사이트맵</a> <a
-							href="https://www.osulloc.com/kr/ko/cs/notice/announce"
-							data-track-name="Footer 전자공고">전자공고</a>
-					</div>
+			</div>
+			<div class="footer_menu">
+				<div class="footer_menu_list">
+					<a href="https://www.apgroup.com/int/ko"
+						data-track-name="Footer 회사소개">회사소개</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/terms"
+						data-track-name="Footer 서비스 이용약관">서비스 이용약관</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/statement"
+						data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a> <br>
+					<a href="https://www.osulloc.com/kr/ko/misc/procedures"
+						data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a> <a
+						href="https://www.amoremall.com/kr/ko/beautypoint/app/guide/main.do"
+						data-track-name="Footer 뷰티포인트">뷰티포인트</a> <a
+						href="https://www.osulloc.com/kr/ko/mypage/coupon/available/AP"
+						data-track-name="Footer 임직원할인">임직원할인</a> <a
+						href="https://www.osulloc.com/kr/ko/misc/sitemap"
+						data-track-name="Footer 사이트맵">사이트맵</a> <a
+						href="https://www.osulloc.com/kr/ko/cs/notice/announce"
+						data-track-name="Footer 전자공고">전자공고</a>
 				</div>
-				<!-- 19.12.05 모바일 고객상담센터  추가 -->
-				<div class="footbottom">
-					<div class="footer_cs_m clearfix">
-						<div class="custCenter_Wrap cs_01">
-							<div class="tit">고객상담센터 · 주문/배송문의</div>
-							<div
-								style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
-							<div class="phone">080-805-5555</div>
-							<div class="time">
-								평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
-							</div>
-						</div>
-						<div class="custCenter_Wrap cs_02">
-							<!--200728 추가-->
-							<div class="tit">특판, 대량구매 문의</div>
-							<div class="phone">mall@osulloc.com</div>
-							<div class="kakaotalk">카카오톡ID : osullocmall</div>
-							<div class="time">
-								평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
-							</div>
+			</div>
+			<!-- 19.12.05 모바일 고객상담센터  추가 -->
+			<div class="footbottom">
+				<div class="footer_cs_m clearfix">
+					<div class="custCenter_Wrap cs_01">
+						<div class="tit">고객상담센터 · 주문/배송문의</div>
+						<div
+							style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
+						<div class="phone">080-805-5555</div>
+						<div class="time">
+							평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
 						</div>
 					</div>
-					<div class="snsWrap clearfix">
-
-
-						<a href="https://www.tiktok.com/@osulloc_official" target="_blank"
-							class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡">tiktok</a>
-						<a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
-							target="_blank" class="ic ic-youtube"
-							data-track-name="Footer_M 오설록 유튜브">youtube</a> <a
-							href="https://www.instagram.com/osulloc_official/"
-							target="_blank" class="ic ic-insta"
-							data-track-name="Footer_M 오설록 인스타그램">instagram</a>
-
+					<div class="custCenter_Wrap cs_02">
+						<!--200728 추가-->
+						<div class="tit">특판, 대량구매 문의</div>
+						<div class="phone">mall@osulloc.com</div>
+						<div class="kakaotalk">카카오톡ID : osullocmall</div>
+						<div class="time">
+							평일 09:30 - 17:00 <br>(점심 11:30 - 13:00)
+						</div>
 					</div>
 				</div>
-			</div>
-			<!--//모바일 m_footer-->
-		</div>
+				<div class="snsWrap clearfix">
 
-		<!-- CDJ 기본 레이어팝업 typeA : S -->
-		<div class="layer_popup_wrap cdj_renew basic" id="layer_alert"
-			style="display: none;">
-			<div class="layer_box_new">
-				<div class="text_box"></div>
-				<div class="btn_typeA btn_pop">
-					<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn"
-						onclick="">확인</button>
+
+					<a href="https://www.tiktok.com/@osulloc_official" target="_blank"
+						class="ic ic-tiktok" data-track-name="Footer_M 오설록 틱톡">tiktok</a>
+					<a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+						target="_blank" class="ic ic-youtube"
+						data-track-name="Footer_M 오설록 유튜브">youtube</a> <a
+						href="https://www.instagram.com/osulloc_official/" target="_blank"
+						class="ic ic-insta" data-track-name="Footer_M 오설록 인스타그램">instagram</a>
+
 				</div>
 			</div>
 		</div>
-		<!-- CDJ 기본 레이어팝업 typeA : E -->
+		<!--//모바일 m_footer-->
+	</div>
 
-		<!-- CDJ 기본 레이어팝업 typeB : S -->
-		<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm"
-			style="display: none;">
-			<div class="layer_box_new">
-				<div class="text_box"></div>
-				<div class="btn_typeB btn_pop">
-					<button type="button" id="btn_confirm_cancel" class="btn_w50"
-						onclick="">취소</button>
-					<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn"
-						onclick="">확인</button>
-				</div>
+	<!-- CDJ 기본 레이어팝업 typeA : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="layer_alert"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box"></div>
+			<div class="btn_typeA btn_pop">
+				<button type="button" id="btn_alert_ok" class="btn_w100 ptBtn"
+					onclick="">확인</button>
 			</div>
 		</div>
-		<!-- CDJ 기본 레이어팝업 typeB : E -->
-		<!-- CDJ 로딩 : S -->
-		<div class="loading_wrap" style="display: none;">
-			<div class="loading_inner">
-				<img class="loading_gif"
-					src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif"
-					alt="로딩이미지">
+	</div>
+	<!-- CDJ 기본 레이어팝업 typeA : E -->
+
+	<!-- CDJ 기본 레이어팝업 typeB : S -->
+	<div class="layer_popup_wrap cdj_renew basic" id="layer_confirm"
+		style="display: none;">
+		<div class="layer_box_new">
+			<div class="text_box"></div>
+			<div class="btn_typeB btn_pop">
+				<button type="button" id="btn_confirm_cancel" class="btn_w50"
+					onclick="">취소</button>
+				<button type="button" id="btn_confirm_ok" class="btn_w50 ptBtn"
+					onclick="">확인</button>
 			</div>
 		</div>
-		<script>
+	</div>
+	<!-- CDJ 기본 레이어팝업 typeB : E -->
+	<!-- CDJ 로딩 : S -->
+	<div class="loading_wrap" style="display: none;">
+		<div class="loading_inner">
+			<img class="loading_gif"
+				src="https://image.osulloc.com/kr/ko/static_cdj/images/etc/loading.gif"
+				alt="로딩이미지">
+		</div>
+	</div>
+	<script>
 	/* 로딩 호출 함수 */
 	function loadingOn() {
 		$('.loading_wrap').fadeIn();
@@ -3468,9 +3474,9 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 		$('.loading_wrap').fadeOut();
 	}
 </script>
-		<!-- CDJ 로딩 : E -->
+	<!-- CDJ 로딩 : E -->
 
-		<script>
+	<script>
   //footer notice list
 /*   require(['TweenMax'], function(a){
       function footerNotice() {
@@ -3496,12 +3502,12 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
       }footerNotice();
   }); */
 </script>
-		<!--//푸터-->
+	<!--//푸터-->
 
 
-		<script type="text/javascript"
-			src="https://image.osulloc.com/kr/ko/static/js/index.js"></script>
-		<script type="text/javascript">
+	<script type="text/javascript"
+		src="https://image.osulloc.com/kr/ko/static/js/index.js"></script>
+	<script type="text/javascript">
 
 	$(document).ready(function(){
 		$(".teashopThumnails").addClass("hide_mobile");
@@ -3870,8 +3876,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 	});
     
 </script>
-		<!-- 검색결과시 태깅 변수설정 스크립트 -->
-		<script type="text/javascript">
+	<!-- 검색결과시 태깅 변수설정 스크립트 -->
+	<script type="text/javascript">
 // 검색시 태깅정보 설정(2019.11.08)
 	$(document).ready(function(){
 		if($('#tag_search_name').val()!= null && $('#tag_search_name').val() != ''){  /// 검색 리스트 조회
@@ -4042,8 +4048,8 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 	
 	});
 </script>
-		<!-- 검색결과시 태깅 변수설정 스크립트 -->
-		<!-- script -->
+	<!-- 검색결과시 태깅 변수설정 스크립트 -->
+	<!-- script -->
 
 
 
@@ -4051,7 +4057,7 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-		<script type="text/javascript">
+	<script type="text/javascript">
         $( function(){
             $('.x-valid-q').submit( function(){
                 var q = $(this).find('input[name="q"]').val();
@@ -4066,9 +4072,9 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
     </script>
 
 
-		<!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
+	<!--script type="text/javascript" src="https://image.osulloc.com/kr/ko/static/js/sCommon.js"></script>-->
 
-		<script language="JavaScript" type="text/javascript">
+	<script language="JavaScript" type="text/javascript">
        
         //일정시간이 지나면 자동로그아웃 e 20170601
     </script>
@@ -4080,83 +4086,83 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-		<script type="text/javascript" id=""
-			src="https://www.googletagmanager.com/gtag/js?id=DC-10125800"></script>
-		<a href="" class="goTop">위로 가기</a>
+	<script type="text/javascript" id=""
+		src="https://www.googletagmanager.com/gtag/js?id=DC-10125800"></script>
+	<a href="" class="goTop">위로 가기</a>
 
 
 
 
-		<script type="text/javascript" id=""
-			src="//static.criteo.net/js/ld/ld.js"></script>
+	<script type="text/javascript" id=""
+		src="//static.criteo.net/js/ld/ld.js"></script>
 
-		<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];</script>
-
-
+	<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];</script>
 
 
 
-		<script type="text/javascript" id="">function getADCookie(a){try{var b=document.cookie;if(0<b.length&&(startIndex=b.indexOf(a),-1!=startIndex))return startIndex+=a.length,endIndex=b.indexOf(";",startIndex),-1==endIndex&&(endIndex=b.length),unescape(b.substring(startIndex+1,endIndex))}catch(c){}return""}
+
+
+	<script type="text/javascript" id="">function getADCookie(a){try{var b=document.cookie;if(0<b.length&&(startIndex=b.indexOf(a),-1!=startIndex))return startIndex+=a.length,endIndex=b.indexOf(";",startIndex),-1==endIndex&&(endIndex=b.length),unescape(b.substring(startIndex+1,endIndex))}catch(c){}return""}
 function sendRequestFB(a){var b=!1;try{if("PageView"!=a.evt_name&&"InitiateCheckout"!=a.evt_name&&"CompleteRegistration"!=a.evt_name&&"ViewContent"!=a.evt_name&&"Search"!=a.evt_name&&"AddToCart"!=a.evt_name&&"Purchase"!=a.evt_name)return;a.event_source_url=window.location.href;a.action_source="website";Object.entries(a).map(function(c){return c.join("\x3d")}).join("\x26")}catch(c){}return b};</script>
 
 
-		<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
+	<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
 
-		<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
-			data-load-time="1719799514954" height="0" width="0"
-			src="https://td.doubleclick.net/td/rul/645486124?random=1719799514939&amp;cv=11&amp;fst=1719799514939&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be46q0v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fshop%2Fitem%2Flist&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EC%A0%84%EC%B2%B4%EC%83%81%ED%92%88%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1024826354.1719211052&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
-			style="display: none; visibility: hidden;"></iframe>
-		<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
+	<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
+		data-load-time="1719799514954" height="0" width="0"
+		src="https://td.doubleclick.net/td/rul/645486124?random=1719799514939&amp;cv=11&amp;fst=1719799514939&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be46q0v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fshop%2Fitem%2Flist&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EC%A0%84%EC%B2%B4%EC%83%81%ED%92%88%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1024826354.1719211052&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+		style="display: none; visibility: hidden;"></iframe>
+	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
 try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W";(function(a,d,e,b,c){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};b=d.createElement(e);b.async=!0;b.defer=!0;b.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(b,c)})(window,document,"script");enp("create","common","osulloc",{device:"B"});enp("send","common","osulloc")}}catch(a){};</script>
 
 
-		<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","DC-10125800");</script>
+	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","DC-10125800");</script>
 
 
-		<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
+	<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
 
-		<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](61);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
-
-
-		<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
-
-		<script type="text/javascript" id=""
-			src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
-		<script type="text/javascript" id="fb-pixel-view-content">window.fbq?fbq("track","ViewContent"):void 0;try{var cri_employee="",criteoDeviceType="",prodInfo=[];criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";for(var i=0;3>i;i++)prodInfo.push(AP_LISTPAGE_PRDS[i].code);criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewList",item:prodInfo})}catch(a){};</script>
-		<div id="criteo-tags-div" style="display: none;"></div>
-		<div id="adn_container" style="display: none">
-			<div id="adn_wrap_91759152361" style="display: none"></div>
-		</div>
+	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](61);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
 
 
+	<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
+
+	<script type="text/javascript" id=""
+		src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
+	<script type="text/javascript" id="fb-pixel-view-content">window.fbq?fbq("track","ViewContent"):void 0;try{var cri_employee="",criteoDeviceType="",prodInfo=[];criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";for(var i=0;3>i;i++)prodInfo.push(AP_LISTPAGE_PRDS[i].code);criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewList",item:prodInfo})}catch(a){};</script>
+	<div id="criteo-tags-div" style="display: none;"></div>
+	<div id="adn_container" style="display: none">
+		<div id="adn_wrap_91759152361" style="display: none"></div>
+	</div>
 
 
-		<script type="text/javascript" id="" src="//wcs.naver.net/wcslog.js"></script>
-		<iframe id="avdfi_1719799515202"
-			src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
-			height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
-			scrolling="no"
-			style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
-		<script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_bf516546e48";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow(),wcs_do(_nasa));</script>
 
 
-		<script type="text/javascript" id="">kakaoPixel("6763084706725607045").pageView();</script>
+	<script type="text/javascript" id="" src="//wcs.naver.net/wcslog.js"></script>
+	<iframe id="avdfi_1719799515202"
+		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
+		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
+		scrolling="no"
+		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
+	<script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_bf516546e48";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow(),wcs_do(_nasa));</script>
 
-		<iframe height="0" width="0" sandbox="allow-same-origin allow-scripts"
-			title="Criteo DIS iframe" style="display: none;"></iframe>
-		<div style="display: none; visibility: hidden;">
-			<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
-		</div>
-		<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-			data-load-time="1719799833030" height="0" width="0"
-			src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=1713533988.1716520330&amp;gtm=45je46q0v896109433za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=244554406"
-			style="display: none; visibility: hidden;"></iframe>
-		<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-			data-load-time="1719799833045" height="0" width="0"
-			src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=1713533988.1716520330&amp;gtm=45je46q0v9132860867za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=1386354899"
-			style="display: none; visibility: hidden;"></iframe>
-		<script type="text/javascript" async="" defer=""
-			src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
+
+	<script type="text/javascript" id="">kakaoPixel("6763084706725607045").pageView();</script>
+
+	<iframe height="0" width="0" sandbox="allow-same-origin allow-scripts"
+		title="Criteo DIS iframe" style="display: none;"></iframe>
+	<div style="display: none; visibility: hidden;">
+		<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
+	</div>
+	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
+		data-load-time="1719799833030" height="0" width="0"
+		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=1713533988.1716520330&amp;gtm=45je46q0v896109433za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=244554406"
+		style="display: none; visibility: hidden;"></iframe>
+	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
+		data-load-time="1719799833045" height="0" width="0"
+		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=1713533988.1716520330&amp;gtm=45je46q0v9132860867za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=1386354899"
+		style="display: none; visibility: hidden;"></iframe>
+	<script type="text/javascript" async="" defer=""
+		src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
 </body>
 
 

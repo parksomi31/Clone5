@@ -4,6 +4,19 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko">
 <head>
+
+<style>
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
+}
+
+.page_tit {
+	background-color: transparent;
+	color: #333;
+}
+</style>
 <!-- head -->
 <!-- main 변수 -->
 
@@ -259,7 +272,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	border-radius: 4px; /* 버튼 테두리 둥글기 */
 	cursor: pointer;
 	text-align: center;
-	margin-left:1500px;
+	margin-left: 1500px;
 	border-width: 1px; /* 테두리 두께 */
 }
 
@@ -571,13 +584,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="inner_box">
 						<div class="left_box">
 							<h1 class="logo">
-								<a href="/kr/ko" class="logo_white"><img
-									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.webp"
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
-									alt="오설록 로고"></a> <a href="/kr/ko" class="logo_black"><img
-									srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.webp"
-									src="https://image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
-									alt="오설록 로고"></a>
+								<a href="${pageContext.request.contextPath}/admin"
+									class="logo_white"> <img
+									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_white.png"
+									alt="오설록 로고" style="user-select: none;">
+								</a> <a href="${pageContext.request.contextPath}/admin"
+									class="logo_black"> <img
+									src="${pageContext.request.contextPath}/resources/image.osulloc.com/kr/ko/static_cdj/images/main/logo_black.png"
+									alt="오설록 로고" style="user-select: none;">
+								</a>
 							</h1>
 							<nav class="nav">
 								<ul class="nav_list_dep1">
@@ -789,23 +804,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									class="nav_util_icon icon_more" id="btn_nav"></a>
 									<ul class="drop_box drop_box1">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/cs"
+											href="${pageContext.request.contextPath}/notice"
 											data-track-name="Header 고객센터">고객센터</a></li>
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/store-introduction"
+											href="${pageContext.request.contextPath}/store"
+											data-track-name="Header 매장찾기">매장정보</a></li>
+										<li class="drop_item"><a
+											href="${pageContext.request.contextPath}/map"
 											data-track-name="Header 매장찾기">매장찾기</a></li>
 										<li class="drop_item"><a
 											href="https://www.osulloc.com/kr/ko/mypage"
 											data-track-name="Header 주문배송조회">주문배송조회</a></li>
-
-
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/mypage/reservation/list"
+											href="${pageContext.request.contextPath}/reservationCheck"
 											data-track-name="Header 예약조회">예약조회</a></li>
-
-										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/beautypoint/list"
-											data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
 
 									</ul></li>
 								<li class="item item_icon_mo_nav"><a
@@ -2029,8 +2041,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li><a href="https://www.osulloc.com/kr/ko/misc/terms"
 									data-track-name="Footer 서비스 이용약관">서비스 이용약관</a></li>
 
-								<li><a href="https://www.osulloc.com/kr/ko/misc/statement"
-									data-track-name="Footer 개인정보 처리방침"><b>개인정보 처리방침</b></a></li>
+
 								<li><a href="https://www.osulloc.com/kr/ko/misc/procedures"
 									data-track-name="Footer 영상정보 처리방침">영상정보 처리방침</a></li>
 								<li><a
