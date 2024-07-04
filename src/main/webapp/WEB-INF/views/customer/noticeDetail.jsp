@@ -2,117 +2,44 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>매장찾기</title>
-<!-- head -->
-
-
-
-
-<link rel="stylesheet"
-	href="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/css/bootstrap.min.css' />">
-<link rel="stylesheet"
-	href="<c:url value='/resources/css/custom.css' />">
-<!-- jQuery -->
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/jquery-3.6.0.min.js' />"></script>
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/js/bootstrap.bundle.min.js' />"></script>
-<script type="text/javascript"
-	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b19ea389906187daf3c6ebed9c4708e"></script>
 
 <style>
-.map {
-	width: 100%;
-	height: 600px;
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
 }
 
-.form-control {
-	width: 100%;
+.page_tit {
+	background-color: transparent;
+	color: #333;
 }
 
-.storebox {
-	padding: 20px;
+.btn_box {
+	text-align: center;
+	margin-top: 20px;
 }
 
-.store-search {
-	margin-bottom: 20px;
-}
-
-.store-item {
-	margin-bottom: 20px;
-}
-
-.store-status .badge {
-	margin-right: 5px;
-}
-
-.header-body-gap {
-	margin-top: 200px; /* 헤더와 바디 사이 간격 조정 */
-}
-
-.store-search-title {
-	font-size: 55px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.store-list {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.card {
-	border: 1px solid #ddd;
-	padding: 10px;
+.btn_box a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #7bc96f; /* 연한 녹색 배경색 */
+	color: #fff; /* 흰색 텍스트 색상 */
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Arial', sans-serif;
+	border: 1px solid #7bc96f; /* 얇은 테두리 설정 */
 	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, color 0.3s;
 }
 
-.card-body {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+.btn_box a:hover {
+	background-color: #66ab3e; /* 더 진한 녹색으로 호버 시 배경색 변화 */
+}
 }
 </style>
-
-<!-- main 변수 -->
-
-
-<!-- AWS 프로젝트 신규 추가  230213 GSW -->
-
-
-<!-- AWS 프로젝트 신규 추가  END -->
-
-
-<!-- 앱 접속 여부 추가 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- main 변수 -->
-
 <!-- 20190710 main html 추가 시작 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport"
@@ -142,11 +69,6 @@
 
 <!-- 카카오톡 링크 썸네일 -->
 
-
-
-
-
-
 <meta property="og:title" content="오설록">
 <meta property="og:image"
 	content="https://image.osulloc.com/kr/ko/static/images/OGImage.jpg">
@@ -157,7 +79,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <!-- <meta property="fb:app_id" content="APP_ID"> -->
-<title>매장소개 | 오설록</title>
+<title>공지사항 | 오설록</title>
 
 <!--fonts-->
 <link rel="preload"
@@ -182,32 +104,6 @@
 	href="https://image.osulloc.com/kr/ko/static/css/fonts.css?ver=20231026"
 	as="style">
 
-<script type="text/javascript" async=""
-	src="https://avd.innity.net/lib/dc.js"></script>
-<script type="text/javascript" async=""
-	src="https://avd.innity.net/750/container_5ed4ce0147e7045404000000.js"></script>
-<script async="" defer=""
-	src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-WTX6V4CQJN&amp;l=dataLayer&amp;cx=c"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-J7WQK8LYCD&amp;l=dataLayer&amp;cx=c"></script>
-<script
-	src="https://connect.facebook.net/signals/config/494913268302940?v=2.9.160&amp;r=stable&amp;domain=www.osulloc.com&amp;hme=733c3732ec767f7a62e7787aff967e6d19b1e13e533937876f2e15efe07bf678&amp;ex_m=67%2C113%2C100%2C104%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C160%2C163%2C175%2C171%2C172%2C174%2C28%2C94%2C50%2C73%2C173%2C155%2C158%2C168%2C169%2C176%2C122%2C39%2C33%2C134%2C14%2C48%2C181%2C180%2C124%2C17%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C101%2C103%2C37%2C102%2C29%2C25%2C156%2C159%2C131%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C98%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C34%2C80%2C2%2C35%2C60%2C40%2C99%2C43%2C75%2C65%2C105%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C106"
-	async=""></script>
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5BL3CZ7&amp;l=dataLayer"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5Q4PDFQ&amp;l=dataLayer"></script>
-<script type="text/javascript" async=""
-	src="https://www.google-analytics.com/analytics.js"></script>
-<script type="text/javascript" async=""
-	src="https://www.googletagmanager.com/gtag/js?id=G-46DFPHV30H&amp;l=dataLayer&amp;cx=c"></script>
-<script async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-KW8MKLBZ"></script>
-<script async=""
-	src="https://www.googletagmanager.com/gtm.js?id=GTM-5JSBJN9"></script>
 <script
 	src="https://image.osulloc.com/kr/ko/static/js/lib/jquery-1.11.2.min.js"></script>
 <script
@@ -218,7 +114,6 @@
 	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/jquery.visible.js"></script>
 <script
 	src="https://image.osulloc.com/kr/ko/static_renew/js/lib/icheck.min.js"></script>
-<style></style>
 <script
 	src="https://image.osulloc.com/kr/ko/static_renew/js/front.js?ver=20240514_2"></script>
 <!-- 2019-09-27 추가 -->
@@ -231,12 +126,8 @@
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static_renew/css/system/swiper.min.css">
 
-
-
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static/css/style_product.css">
-
-
 
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static_renew/css/style/common.css?ver=231129_1">
@@ -244,16 +135,12 @@
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static/css/style.css?ver=231101_1">
 
-
-
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static_renew/css/style/sub.css?ver=240628">
-
 
 <!-- 20190906 css 추가 -->
 <link rel="stylesheet"
 	href="https://image.osulloc.com/kr/ko/static_renew/css/style/new_sub.css?ver=230411_1">
-
 
 <!--CDJ-->
 <link rel="stylesheet"
@@ -376,6 +263,9 @@
 			
 	  	
 	  
+	  	var ucstmid = CryptoJS.SHA512('113979959').toString();
+	  	_rblqueue.push(['setVar','userId',ucstmid]);		// optional
+	  
 	  _rblqueue.push(['track','visit']);	
 	  setTimeout(function() {
 	    (function(s,x){s=document.createElement('script');s.type='text/javascript';
@@ -456,8 +346,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- 2023026 제주, 북촌 예약프로그램 오픈 true일때 -->
 
 <!-- 20230712 1979 예약프로그램 오픈 true일때 -->
-
-
 
 
 <script>
@@ -544,59 +432,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	};
 
 
-
-
-
 </script>
 
 <!-- 네이버 연관채널 설정 -->
-<script type="text/javascript" async=""
-	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
-<script type="text/javascript" charset="UTF-8" defer=""
-	src="https://openfpcdn.io/fingerprintjs/v3/iife.min.js"></script>
-<script type="text/javascript" charset="UTF-8" defer=""
-	src="https://kn.acrosspf.com/adn_check_1.0.2.ad?rb_adn_uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186"></script>
-<style>
-.logo {
-	font-size: 27px;
-	font-weight: 500;
-	background-color: transparent;
-}
-</style>
+<span itemscope="" itemtype="http://schema.org/Organization">
+	<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
+	itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
+	itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
+	<a itemprop="sameAs"
+	href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
+</span>
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 2022-04-11 추가-->
+<meta name="robots" content="noindex">
 </head>
-<body class="is_hover">
-	<span itemscope="" itemtype="http://schema.org/Organization">
-		<link itemprop="url" href="https://www.osulloc.com/kr/ko"> <a
-		itemprop="sameAs" href="https://brand.naver.com/osulloc"></a> <a
-		itemprop="sameAs" href="https://www.instagram.com/osulloc_official/"></a>
-		<a itemprop="sameAs"
-		href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
-	</span>
-
-	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css?ver=230517_6">
-	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_store_home.css?ver=230829_1">
-	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_common.js?ver=230517_6"
-		type="text/javascript"></script>
-	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_store_home.js?ver=230517_6"
-		type="text/javascript"></script>
-
-
-	<iframe id="x-sso-check" name="sso_check_iframe"
-		title="SSO Session Check Iframe" hidden=""></iframe>
-
+<iframe id="x-sso-check" name="sso_check_iframe"
+	title="SSO Session Check Iframe" hidden></iframe>
+<body>
 
 	<!-- leo tagging 공통 변수 선언 -->
-
-
-
-
-
-
 
 
 
@@ -627,15 +482,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	// 태깅을위한 전역변수 선언
 	// 1. 공통
-	var AP_DATA_GCID = dataUndefinedChk('null');
-	var AP_DATA_CID  = dataUndefinedChk('null');
-	var AP_DATA_ISMEMBER = '';
-	var AP_DATA_ISLOGIN = 'N';
-	var AP_DATA_LOGINTYPE = '';
-	var AP_DATA_CA = '';
-	var AP_DATA_CD = '';
-	var AP_DATA_CG = dataUndefinedChk('null');
-	var AP_DATA_CT = dataUndefinedChk('null');
+	var AP_DATA_GCID = dataUndefinedChk('6cfa82229f3a9ae7cf5fcc47dbd8be01db43ac067daf511eb75fbaf7648a7e19dd6c69ccb2f92baf46389875bcb06cdf6bc52fa77770807b5d9af3f54e8ee93a');
+	var AP_DATA_CID  = dataUndefinedChk('1d956bda84c41659cb0d844f5bec80c2f77e33ba21de7ced689ba13b46d0a4562e25c719975af7bc8f573eda14bca39133cadc3561ec276bd6ea70a6d0d1472f');
+	var AP_DATA_ISMEMBER = 'Y';
+	var AP_DATA_ISLOGIN = 'Y';
+	var AP_DATA_LOGINTYPE = 'NORMAL';
+	var AP_DATA_CA = '31';
+	var AP_DATA_CD = '1994';
+	var AP_DATA_CG = dataUndefinedChk('F');
+	var AP_DATA_CT = dataUndefinedChk('welcome');
 	var AP_DATA_SITENAME = 'OSULLOC';
 	var AP_DATA_CHANNEL = 'PC';
 	var AP_DATA_PAGETYPE = 'OTHER';
@@ -643,7 +498,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	var AP_DATA_LANG = 'KO';
 	var AP_PROMO_ID = dataUndefinedChk('null');
 	var AP_PROMO_NAME = dataUndefinedChk('null');
-	var AP_DATA_BEAUTYCT = dataUndefinedChk('null');
+	var AP_DATA_BEAUTYCT = dataUndefinedChk('FAMILY');
 	var AP_DATA_ISEMPLOYEE = dataUndefinedChk('null');
 	var AP_DATA_BREAD = dataUndefinedChk('null');
 	var AP_DATA_ENV = 'PRD'
@@ -730,20 +585,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 	<!-- leo tagging 공통 변수 선언 -->
+
+
+	<!-- //옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
+<form name="ssoForm" action="/kr/ko/login/ssoLogin" method="GET">
+	
+	
+			<input type="hidden" name="isLogin" value="true">
+	
+</form>
+-->
+	<script type="text/javascript">
+//옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
+//     document.ssoForm.target = "sso_check_iframe";
+//     document.ssoForm.submit();
+</script>
+	<!--[if lt IE 9]><div id="legacy-browser" style="display:none">
+    <div class="legacy-pad">
+        <p>
+            사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+            원활한 온라인 서비스와 결제를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+        </p>
+        <input id="legacy-check" name="legacy_check" type="checkbox">
+        <label for="legacy-check">하루 동안 보지 않음</label>
+    </div>
+    <button type="button" id="close-browser-guide" class="close-browser-guide">닫기<i class="icon"></i></button>
+  </div><![endif]-->
+
 	<div id="wrap">
 		<!-- header -->
-
-
-
-
-
-
-
-
-
-
-
-
+		<!-- @section(gnb){data-gnb="xxx"}가 있을 경우 jsp:param 으로 전달 -->
 
 
 		<script>
@@ -770,9 +641,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             //$('#renew201906').off('scroll touchmove mousewheel');
         });
         //로그인 성공 시 datalayer 태그 추가
-        var loginSet = "null";
-        var isFirstLogin = null;
-        var loginAmr = 'null';
+        var loginSet = "logloginNo";
+        var isFirstLogin = false;
+        var loginAmr = 'ID';
         if (loginSet != null) {
 			if (loginSet == "loglogin") {
                 window.dataLayer.push({
@@ -849,9 +720,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		<form action="/kr/ko/login/logout" method="POST" id="f_logout"></form>
 
-
-
-
 		<!--230420 대량구매 gnb & lnb-->
 		<script>
     $(function() {
@@ -872,7 +740,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 		<div class="cdj_renew">
-			<header id="cdj_header" class="cdj_header fixed sub_header">
+			<header id="cdj_header" class="cdj_header">
 				<div class="wrapper">
 					<div class="inner_box">
 						<div class="left_box">
@@ -891,280 +759,121 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<ul class="nav_list_dep1">
 									<li class="item_dep1"><a
 										href="https://www.osulloc.com/kr/ko/shop/item/list"
-										class="link_text">제품</a>
+										class='link_text'>제품</a>
 										<div class="nav_list_dep2_box">
 											<div class="wrapper">
 												<div class="flex_box">
 													<ul class="nav_list_dep2">
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
-															class="link_text">베스트</a>
+															class='link_text'>베스트</a>
 															<ul class="nav_list_dep3">
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/sale"
-																	class="link_text">위클리 베스트</a></li>
+																	class='link_text'>위클리 베스트</a></li>
 																<!-- 관리자 지정 메뉴 -->
 
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/item/list/best/recommand"
-																	class="link_text">베스트</a></li>
+																	class='link_text'>베스트</a></li>
 
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop"
-															class="link_text">티 제품</a>
+															class='link_text'>티 제품</a>
 															<ul class="nav_list_dep3">
 
 
 
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=198"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=198"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|티 세트">티 세트</a></li>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+																<li class="item_dep3"><a
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=201"
+																	class='link_text' data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
 
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=201"
-																	class="link_text" data-track-name="GNB 오설록|Tea Shop|명차">명차</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=197"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=197"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|녹차/말차">녹차/말차</a></li>
 
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=249"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=249"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|발효차/홍차">발효차/홍차</a></li>
 
 
-
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=196"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=196"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|블렌디드티">블렌디드티</a></li>
 
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=195"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=195"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|허브티">허브티</a></li>
 
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=250"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=250"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|밀크티/아이스티">밀크티/아이스티</a></li>
 
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=252"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=252"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|콤부차">콤부차</a></li>
-
-
-
-
-
-
 
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery"
 															data-track-name="GNB 오설록|Tea Shop|Tea Food"
-															class="link_text">티푸드</a>
+															class='link_text'>티푸드</a>
 															<ul class="nav_list_dep3">
 
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=174"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=174"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|과자/초콜릿">과자/초콜릿</a></li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=178"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=178"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|베이커리">베이커리</a></li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&amp;line=251"
-																	class="link_text"
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=bakery&line=251"
+																	class='link_text'
 																	data-track-name="GNB 오설록|Tea Shop|아이스크림">아이스크림</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/teawareshop"
-															class="link_text">티웨어</a>
+															class='link_text'>티웨어</a>
 															<ul class="nav_list_dep3">
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/use"
 																	data-track-name="GNB 오설록|Tea ware Shop|용도별"
-																	class="link_text">용도별</a></li>
+																	class='link_text'>용도별</a></li>
 																<li class="item_dep3"><a
 																	href="https://www.osulloc.com/kr/ko/shop/teawareshop/brand"
-																	class="link_text">브랜드별</a></li>
+																	class='link_text'>브랜드별</a></li>
 															</ul></li>
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop"
-															class="link_text">라이프스타일</a>
+															class='link_text'>라이프스타일</a>
 															<ul class="nav_list_dep3">
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&amp;line=202"
-																	class="link_text">스킨케어</a></li>
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=themashop&line=202"
+																	class='link_text'>스킨케어</a></li>
 
 																<li class="item_dep3"><a
-																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=228"
-																	class="link_text">정기배송</a></li>
+																	href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+																	class='link_text'>정기배송</a></li>
 															</ul></li>
 													</ul>
 
@@ -1185,24 +894,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<!--//gnb 프로모션-->
 									<li class="item_dep1 no-child"><a
 										href="https://www.osulloc.com/kr/ko/shop/item/gift"
-										class="link_text">선물추천</a></li>
+										class='link_text'>선물추천</a></li>
 
 									<li class="item_dep1"><a
 										href="https://www.osulloc.com/kr/ko/brandstory"
-										class="link_text">브랜드</a>
+										class='link_text'>브랜드</a>
 										<div class="nav_list_dep2_box">
 											<div class="wrapper">
 												<div class="flex_box">
 													<ul class="nav_list_dep2">
 														<li class="item_dep2"><a
 															href="https://www.osulloc.com/kr/ko/brandstory"
-															class="link_text">오설록 스토리</a></li>
+															class='link_text'>오설록 스토리</a></li>
 														<li class="item_dep2"><a
-															href="/kr/ko/store-introduction/2" class="link_text">제주
+															href="/kr/ko/store-introduction/2" class='link_text'>제주
 																티뮤지엄</a></li>
 														<li class="item_dep2"><a
 															href="/kr/ko/store-introduction" data-track-name="매장 소개"
-															class="link_text">매장 소개 및 예약</a></li>
+															class='link_text'>매장 소개 및 예약</a></li>
 
 													</ul>
 
@@ -1249,28 +958,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 								</li>
 								<li class="item"><a
-									class="nav_util_icon icon_cart nav_cart nav_menu empty"
+									class="nav_util_icon icon_cart nav_cart nav_menu filled"
 									href="https://www.osulloc.com/kr/ko/shop/cart"
 									id="x-gnb-cart-m" data-track-name="Header 장바구니"
-									data-gnb-role="cart"><span class="num">0</span></a></li>
+									data-gnb-role="cart"><span class="num">1</span></a></li>
 								<li class="item item_icon_more"><a
 									class="nav_util_icon icon_more" id="btn_nav"></a>
 									<ul class="drop_box drop_box1">
 										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/notice"
+											href="https://www.osulloc.com/kr/ko/cs"
 											data-track-name="Header 고객센터">고객센터</a></li>
 										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/store"
-											data-track-name="Header 매장찾기">매장정보</a></li>
-										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/map"
+											href="https://www.osulloc.com/kr/ko/store-introduction"
 											data-track-name="Header 매장찾기">매장찾기</a></li>
 										<li class="drop_item"><a
 											href="https://www.osulloc.com/kr/ko/mypage"
 											data-track-name="Header 주문배송조회">주문배송조회</a></li>
+
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
+											href="https://www.osulloc.com/kr/ko/mypage/reservation/list"
 											data-track-name="Header 예약조회">예약조회</a></li>
+
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/beautypoint/list"
+											data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
 
 									</ul></li>
 								<li class="item item_icon_mo_nav"><a
@@ -1279,18 +990,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<ul class="nav_drop">
 
 
-
 								<li class="item"><a
-									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
-									data-track-name="Header 로그인">로그인</a>
-									<ul class="drop_box drop_box2">
+									href="https://www.osulloc.com/kr/ko/mypage"
+									data-track-name="Header 마이페이지">마이페이지</a>
+									<ul class="drop_box drop_box3">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
-											data-track-name="Header 로그인">로그인</a></li>
-										<li class="drop_item"><a href="/kr/ko/login/joinIn"
-											title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
+											href="https://www.osulloc.com/kr/ko/mypage"
+											data-track-name="Header 마이페이지">마이페이지</a></li>
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/login/logout"
+											id="login-checker" data-track-name="Header 로그아웃">로그아웃</a></li>
 									</ul></li>
-
 
 								<li class="item arr">KOREAN <span class="icon_drop_arr"></span>
 									<ul class="drop_box drop_box4">
@@ -1318,102 +1028,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList">
 								<div class="tit">
 									<p>인기 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
 								<ul class="popular_list">
-									<li class="rank"><p>
-											<b>1</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="녹차"
-												style="cursor: pointer;">녹차</strong>
-										</p> <i class="rankState flagstatus"></i></li>
-									<li class="rank"><p>
-											<b>2</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="달빛"
-												style="cursor: pointer;">달빛</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>3</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="그린티 랑드샤"
-												style="cursor: pointer;">그린티 랑드샤</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>4</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="복숭아"
-												style="cursor: pointer;">복숭아</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>5</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="루이보스"
-												style="cursor: pointer;">루이보스</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>6</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="비스킷"
-												style="cursor: pointer;">비스킷</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>7</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="가루 녹차"
-												style="cursor: pointer;">가루 녹차</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>8</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="달빛 걷기"
-												style="cursor: pointer;">달빛 걷기</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>9</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="그린티 웨하스"
-												style="cursor: pointer;">그린티 웨하스</strong>
-										</p> <i class="rankState flegUp"></i></li>
-									<li class="rank"><p>
-											<b>10</b><strong onclick="setHeaderSearchKeyword(this)"
-												data-tag-search-type="favorite" data-text="귤 꽃 향 을 품 은 우잣 담"
-												style="cursor: pointer;">귤 꽃 향 을 품 은 우잣 담</strong>
-										</p> <i class="rankState flegUp"></i></li>
 								</ul>
 							</div>
 							<div class="chartList chartNewList auto_complete">
 								<div class="tit">
 									<p>최근 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
-								<ul class="new_list">
-									<li class="no_result">최근 검색어가 없습니다.</li>
-								</ul>
+								<ul class="new_list"></ul>
 								<p class="logDel">
 									<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
 											기록 삭제</span>
 									</a>
 								</p>
 							</div>
-							<div class="bannerBox" id="bannerBoxPc">
-
-
-
-
-								<div class="swiper">
-									<div
-										class="swiperBanner swiper-container-initialized swiper-container-horizontal"
-										id="pc_banner_swiper">
-										<div class="swiper-wrapper"
-											style="transition-duration: 300ms;">
-											<div class="swiper-slide swiper-slide-duplicate"
-												data-swiper-slide-index="0"></div>
-											<div class="swiper-slide" data-swiper-slide-index="0">
-
-
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate"
-												data-swiper-slide-index="0"></div>
-										</div>
-										<span class="swiper-notification" aria-live="assertive"
-											aria-atomic="true"></span>
-									</div>
-								</div>
-								<div
-									class="swiper-pagination swiper-pagination-horizontal swiper-pagination-clickable swiper-pagination-bullets"></div>
-							</div>
+							<div class="bannerBox" id="bannerBoxPc"></div>
 							<div class="chartAuto"></div>
 						</div>
 					</div>
@@ -1441,65 +1073,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</div>
 								<div class="chartList not_auto_complete">
 									<div id="tab01" class="tabCnt" style="display: block;">
-										<ul class="popular_list">
-											<li class="rank"><p>
-													<b>1</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="녹차"
-														style="cursor: pointer;">녹차</strong>
-												</p> <i class="rankState flagstatus"></i></li>
-											<li class="rank"><p>
-													<b>2</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="달빛"
-														style="cursor: pointer;">달빛</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>3</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="그린티 랑드샤"
-														style="cursor: pointer;">그린티 랑드샤</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>4</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="복숭아"
-														style="cursor: pointer;">복숭아</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>5</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="루이보스"
-														style="cursor: pointer;">루이보스</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>6</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="비스킷"
-														style="cursor: pointer;">비스킷</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>7</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="가루 녹차"
-														style="cursor: pointer;">가루 녹차</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>8</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="달빛 걷기"
-														style="cursor: pointer;">달빛 걷기</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>9</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite" data-text="그린티 웨하스"
-														style="cursor: pointer;">그린티 웨하스</strong>
-												</p> <i class="rankState flegUp"></i></li>
-											<li class="rank"><p>
-													<b>10</b><strong onclick="setHeaderSearchKeyword(this)"
-														data-tag-search-type="favorite"
-														data-text="귤 꽃 향 을 품 은 우잣 담" style="cursor: pointer;">귤
-														꽃 향 을 품 은 우잣 담</strong>
-												</p> <i class="rankState flegUp"></i></li>
-										</ul>
-										<p class="log date searchDateDiv">24. 07. 03 기준</p>
+										<ul class="popular_list"></ul>
+										<p class="log date searchDateDiv">24. 07. 04 기준</p>
 									</div>
 									<div id="tab02" class="tabCnt" style="display: none;">
-										<ul class="new_list">
-											<li class="no_result">최근 검색어가 없습니다.</li>
-										</ul>
+										<ul class="new_list"></ul>
 										<p class="log logDel">
 											<a href="javascript:deleteRecentSearches();"> <i></i><span>검색
 													기록 삭제</span>
@@ -1511,48 +1089,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 
 						</div>
-						<div class="bannerBox" id="bannerBoxMo">
-
-
-
-
-							<div class="swiper">
-								<div
-									class="swiperBanner swiper-container-initialized swiper-container-horizontal"
-									id="mo_banner_swiper">
-									<div class="swiper-wrapper" style="transition-duration: 300ms;">
-										<div class="swiper-slide swiper-slide-duplicate"
-											data-swiper-slide-index="0"></div>
-										<div class="swiper-slide" data-swiper-slide-index="0"></div>
-										<div class="swiper-slide swiper-slide-duplicate"
-											data-swiper-slide-index="0"></div>
-									</div>
-									<span class="swiper-notification" aria-live="assertive"
-										aria-atomic="true"></span>
-								</div>
-							</div>
-							<div
-								class="swiper-pagination swiper-pagination-horizontal swiper-pagination-bullets"></div>
-						</div>
+						<div class="bannerBox" id="bannerBoxMo"></div>
 					</div>
 				</div>
 			</div>
-			<div class="dim_bg" style="display: none;"></div>
+			<div class="dim_bg"></div>
 
 			<!-- 모바일 NAV : S  -->
 			<aside class="cdj_mo_nav">
 				<!-- 모바일 메뉴 헤터 : S -->
 				<div class="mo_nav_header in">
 
+					<!-- 로그인 후 : S -->
+					<div class="logOn_top_box">
+						<a href="https://www.osulloc.com/kr/ko/mypage"
+							style="display: flex; align-items: center;"> <span
+							class="mypage_btn"> <img
+								srcset="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.webp"
+								src="https://image.osulloc.com/kr/ko/static_cdj/images/main/icon_my.png"
+								alt="마이페이지 바로가기">
+						</span>
+							<p class="name">
+								<em class="pt">권예지</em>님
+							</p> <!-- 등급에 따라 다르게 표시 -->
+							<div class="grade_tag">
 
-					<!-- 로그인 전 : S -->
-					<div class="logOut_top_box">
-						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
-							class="text"><span>로그인</span></a>
+
+								<span class="tag_item grade_welcome">Welcome</span>
+
+							</div>
+						</a>
+						<div class="barcodeBtn"></div>
+
+
 					</div>
-					<!-- 로그인 전 : E -->
-
+					<!-- 로그인 후 : E -->
 
 
 					<button class="mo_nav_close" type="button" title="닫기">
@@ -1569,18 +1140,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="mo_nav_util in">
 
 
-						<!-- 로그인 전 : S -->
-						<div class="logOut_box">
-							<p class="text">
-								가입하고 <em> 10% 쿠폰</em>을 바로 사용해보세요.
-							</p>
-							<button type="button" class="join_btn" title="회원가입"
-								onclick="javascript:location.href='/kr/ko/login/joinIn'"
-								data-track-name="Header 회원가입">회원가입</button>
+						<!-- 로그인 후 : S -->
+						<div class="logOn_box">
+							<div class="top">
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/order/normal"
+										data-track-name="Header 주문배송조회">주문배송 <span class="count">0</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/shop/cart"
+										data-track-name="Header 장바구니">장바구니 <span class="count">1</span></a>
+								</div>
+								<div class="item">
+									<a href="https://www.osulloc.com/kr/ko/mypage/wishlist/list">찜한상품</a>
+								</div>
+							</div>
+							<div class="bottom">
+								<div class="item i_coupon">
+									사용 가능 쿠폰 <a class=""
+										href="https://www.osulloc.com/kr/ko/mypage/coupon/available/mypage">
+										<span class="num">2</span> <span class="unit">장</span>
+									</a>
+								</div>
+								<div class="item i_point">
+									뷰티포인트 <a href="https://www.osulloc.com/kr/ko/beautypoint/list">
+										<span class="num">1,500</span> <span class="unit">P</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="subscribe">
+
+								<div class="item">
+									<a
+										href="https://www.osulloc.com/kr/ko/mypage/subs/list?standingOrderType=A">정기배송
+										<strong>0 건</strong>
+									</a>
+								</div>
+							</div>
+
+
 						</div>
-						<!-- 로그인 전 : E -->
-
-
+						<!-- 로그인 후 : E -->
 
 					</div>
 					<!-- 유틸 영역 : E -->
@@ -1610,8 +1211,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										class="link_text">라이프 스타일</a></li>
 
 									<li class="item_dep2"><a
-										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&amp;line=228"
-										class="link_text">정기배송</a></li>
+										href="https://www.osulloc.com/kr/ko/shop/item/list?category=teashop&line=228"
+										class='link_text'>정기배송</a></li>
 								</ul></li>
 							<!--gnb 프로모션-->
 
@@ -1635,8 +1236,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<li class="item_dep2"><a href="/kr/ko/store-introduction"
 										class="link_text">매장 소개 및 예약</a></li>
 
-
-
 								</ul></li>
 							<li class="item_dep1"><a href="https://osulloc.biz/"
 								class="link_text no_fold" target="_blank">단체 및 기업 구매</a></li>
@@ -1645,7 +1244,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<!-- 모바일 네비게이션 : E -->
 
 					<!-- 모바일 메뉴 배너 : S -->
-
 
 					<div class="mo_nav_banner in">
 						<a href="https://www.osulloc.com/kr/ko/shop/item/bakery/21646">
@@ -1671,18 +1269,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 
 
-
 						<div class="item">
-							<a
-								href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/beautypoint/list"
+							<a href="https://www.osulloc.com/kr/ko/beautypoint/list"
 								data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후 적립</a>
 						</div>
-
 
 					</div>
 					<!-- 하단 링크 영역 : E -->
 
 					<!-- 로그아웃 버튼 - 로그인시 노출 : S -->
+
+					<div class="mo_nav_logout">
+						<button type="button" title="로그아웃" class="logOut_btn"
+							onclick="location.href='https://www.osulloc.com/kr/ko/login/logout'"
+							data-track-name="Header 로그아웃">로그아웃</button>
+					</div>
+					<!-- 로그아웃 버튼 - 로그인시 노출 : E -->
 
 				</div>
 			</aside>
@@ -1726,11 +1328,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		</div>
 
-
-
-
 		<script>
-
 
     // mobile - tab
     function openTab(evt, tabName) {
@@ -1746,8 +1344,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-
-
 
     // PC
     var inpSrchWrap = document.querySelector('.inpSrchWrap'),
@@ -1774,8 +1370,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			if(!$('.bannerBox').children().length){
 				showSearchBanners();
 			}
-
-
 
 			var bnrHid = $('.main_top_banner').css('display') ==='none';
 			var isMain = $('main.main').hasClass('main_contents');
@@ -1940,7 +1534,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
     }
-
     //인기검색어 보여주기
     async function showPopularSearches(){
     	if($('.popular_list').children().length > 0){return;}
@@ -2163,9 +1756,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     });
 
-
-
-
 </script>
 
 		<script type="text/javascript">
@@ -2250,8 +1840,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
  	window.onload = function() {
 	  // 로그인 안되었을때
-	  if('false' == 'false'){
-		var chkCid = "null";
+	  if('true' == 'false'){
+		var chkCid = "1485712983.1719794025";
         var cid = ga.getAll()[0].get('clientId');
         var gcid = ga.getAll()[0].get('_gid');
 		let chkEnv = "PRD";
@@ -2332,129 +1922,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 
-
 		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
-		<main id="main" class="main cdj_renew" role="main">
-			<div class="stdd_store_wrap osl_stdd_common_wrap">
+		<!-- CDJ 개선 마이페이지 공지사항 뷰 : S -->
+		<main class="main cdj_renew">
+			<!-- 타이틀 : S -->
+			<section class="section page_tit_box mypageT">
+				<div class="w1200">
+					<h2 class="page_tit">공지사항</h2>
+				</div>
+			</section>
+			<!-- 타이틀 : E -->
+
+			<!-- 탭 영역 : S -->
+			<div class="my_tab">
+				<div class="my_tab_inner">
+					<ul class="my_tab_list tab3">
+						<!-- 활성된 페이지 .item에 on 클래스 추가 -->
+						<li class="item on"><a href="/kr/ko/cs/notice/news"
+							class="link_text">공지사항</a></li>
+						<li class="item "><a href="/kr/ko/cs/notice/event"
+							class="link_text">이벤트 발표</a></li>
+						<li class="item "><a href="/kr/ko/cs/notice/announce"
+							class="link_text">전자 공고</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 탭 영역 : E -->
+
+			<!-- 컨텐츠 : S -->
+			<div class="my_cs_notice">
+				<section class="section">
+					<div class="w1200">
+						<div class="notice_list_view">
+							<div class="view_header">
+								<p class="view_type moBlock">
+									<span> [공지사항] </span>
+								</p>
+								<input type="hidden" name="notice_index"
+									value="${noticeDetail2.notice_index}">
+								<p class="subject">${noticeDetail2.notice_title}</p>
+								<p class="date">${noticeDetail2.input_time}</p>
+							</div>
+							<div class="view_con">
+								<!-- .text_box 텍스트 영역 -->
+
+								<div class="text_box">
+									<p>&nbsp;</p>
+									<p>${noticeDetail.notice_content}</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>
+										<br>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+								</div>
 
 
-				<section id="stddTeaShop"
-					class="section_wrap shop_find_place observe_tab active"
-					data-tab="3">
-					<div class="intro">
-						<div class="info">
-							<p class="title">오설록 티샵</p>
-							<p class="description">가장 가까운 오설록을 찾아보세요.</p>
-						</div>
-						<div class="tool" id="findPlaceToggleBtn">
-							<img class="up"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt=""> <img class="down"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt="">
+								<!-- 첨부파일이 있을 경우 : S -->
+
+								<!-- 첨부파일이 있을 경우 : E -->
+							</div>
+							&nbsp;&nbsp;
+							<div class="btn_box">
+								<a href="${pageContext.request.contextPath}/notice">목록보기</a>
+							</div>
 						</div>
 					</div>
-
-					<div class="contents">
-						<div class="new_search_box">
-							<form id="searchForm" action="/storeMap" method="get">
-								<input type="text" placeholder="매장 검색" id="storeName"
-									name="storeName"> <img
-									src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_search.svg"
-									alt="" style="cursor: pointer;"
-									onclick="document.getElementById('searchForm').submit();">
-							</form>
-						</div>
-
-						<!-- Map Section -->
-						<div id="map" style="width: 100%; height: 600px;"></div>
-
-						<!-- Store List Section -->
-
-						<ul class="place_list">
-							<c:forEach items="${storeList}" var="dto">
-								<li class="place_item">
-									<p class="name ryu_gh_font" data-filter="true">${dto.title}</p>
-
-									<ul class="info">
-										<li class="info_row address">
-											<div class="label">주소</div>
-											<div class="content" data-filter="true">${dto.address}
-											</div>
-										</li>
-										<li class="info_row tel">
-											<div class="label">전화번호</div>
-											<div class="content" data-filter="true">${dto.phone}</div>
-										</li>
-										<li class="info_row time">
-											<div class="label">이용시간</div>
-											<div class="content">
-												<p>${dto.time}</p>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</c:forEach>
-						</ul>
-
-					</div>
-
-					<script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.500962635548, 127.044168622231), //지도의 중심좌표.
-            level: 6 //지도의 레벨(확대, 축소 정도)
-        };
-
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-        var positions = [
-            {
-                title: '현대백화점 무역점',
-                latlng: new kakao.maps.LatLng(37.5047087, 127.0030263)
-            },
-            {
-                title: '신세계백화점 강남점',
-                latlng: new kakao.maps.LatLng(37.49666645, 127.0629804)
-            },
-            {
-                title: '오설록 잠실점',
-                latlng: new kakao.maps.LatLng(37.5132612, 127.1001336)
-            },
-            {
-                title: '오설록 양재점',
-                latlng: new kakao.maps.LatLng(37.4856977332997, 127.036936055294)
-            }
-        ];
-
-        // 마커 이미지의 이미지 주소입니다
-        var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-        //var imageSrc = "${pageContext.request.contextPath}/resources/yupdduck/www.yupdduk.com/bj-images/yupdduk_sub/yupmap_marker.png"; 
-
-        for (var i = 0; i < positions.length; i++) {
-            // 마커 이미지의 이미지 크기 입니다
-            var imageSize = new kakao.maps.Size(24, 35);
-
-            var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-
-            // 마커 이미지를 생성합니다    
-            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
-
-            // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-                map: map, // 마커를 표시할 지도
-                position: positions[i].latlng, // 마커를 표시할 위치
-                title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-                image: markerImage // 마커 이미지 
-            });
-        }
-    </script>
 				</section>
 			</div>
-		</main>
+			<!-- 컨텐츠 : E -->
 
+		</main>
+		<!-- CDJ 개선 마이페이지 공지사항 뷰 : E -->
+
+
+		<!-- footer -->
 
 
 
@@ -2471,10 +2015,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="right">
 
 
-
-						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
-							class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
+						<a href="https://www.osulloc.com/kr/ko/login/logout"
+							class="footer_login" data-track-name="Footer 로그아웃">로그아웃</a> <a
 							href="https://www.tiktok.com/@osulloc_official" target="_blank"
 							class="btn-share--circle" style="z-index: 10000;"
 							data-track-name="Footer 오설록 틱톡"> <img
@@ -2504,7 +2046,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="wrap2 hide_tablet hide_mobile">
 				<div class="inner1600 clearfix">
 					<div class="left1">
-						<div class="tit">고객상담센터 · 주문/배송문의</div>
+						<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
 						<div>
 							<a href="mailto:help@osulloc.com"
 								style="font-weight: 500; color: #595959; font-size: 18px;">help@osulloc.com</a>
@@ -2539,8 +2081,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							src="https://image.osulloc.com/kr/ko/static_renew/images/f2.png"
 							alt="멤버십혜택"> <span>멤버십혜택</span>
 						</a> <a href="https://www.osulloc.com/kr/ko/cs/faq"
-							data-track-name="Footer FAQ" class="footerFAQ"
-							style="display: none;"> <img
+							data-track-name="Footer FAQ" class="footerFAQ"> <img
 							src="https://image.osulloc.com/kr/ko/static_renew/images/f3.png"
 							alt="FAQ"> <span>FAQ</span>
 						</a> <a href="https://osulloc.biz/"
@@ -2600,7 +2141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								㈜ 오설록<br>대표이사:서혁제 주소:서울특별시 용산구 한강대로 100 (한강로2가) 사업자등록번호:
 								390-87-01499 <a class="info"
 									href="https://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=3908701499"
-									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 &gt;</a> <br>통신판매업신고번호:2019-서울용산-1173호
+									data-track-name="Footer_M 사업자 정보확인">사업자 정보확인 ></a> <br>통신판매업신고번호:2019-서울용산-1173호
 								호스팅제공자: ㈜오설록 <br> <br> (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에
 								대해서는 통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br>따라서 입점판매자가 등록한 상품정보 및
 								거래에 대해 책임을 지지 않습니다.
@@ -2653,8 +2194,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="func">
 					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
 						data-track-name="Footer_M 고객센터">고객센터</a> <a
-						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
-						class="signIn" data-track-name="Footer_M 로그인">로그인</a>
+						href="https://www.osulloc.com/kr/ko/login/logout" class="signIn"
+						data-track-name="Footer_M 로그아웃">로그아웃</a>
+
 
 
 					<div class="lang js_select">
@@ -2709,7 +2251,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="footbottom">
 					<div class="footer_cs_m clearfix">
 						<div class="custCenter_Wrap cs_01">
-							<div class="tit">고객상담센터 · 주문/배송문의</div>
+							<div class="tit">고객상담센터 &middot; 주문/배송문의</div>
 							<div
 								style="font-size: 15px; font-weight: 500; height: 15px; color: #595959; line-height: 1;">help@osulloc.com</div>
 							<div class="phone">080-805-5555</div>
@@ -2821,6 +2363,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 	</div>
 
+	<!-- sidenav -->
+	<div id="match-media"></div>
+	<div id="igm-blocker"></div>
+
+	<!-- @render(last) { } = @section(last){} 내용  -->
+
+
 
 
 
@@ -2846,134 +2395,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<script language="JavaScript" type="text/javascript">
        
+        $(function(){
+          if (pageInfo === undefined) {
+            var pageInfo = {};
+            pageInfo.WARNING_TIME = 60000 * 19;
+//            pageInfo.WARNING_TIME = 60000;
+          }
+          
+          pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+          
+          function warningEndOfSession() {
+            
+        	  var autoLoginYn = '';
+              console.log('autoLoginYn: '+autoLoginYn);
+              if(autoLoginYn != 'Y'){
+            	  
+	        	  var warningTime = new Date();
+	            var r = confirm("- 개인정보 보호를 위하여, 로그인 후 20분 동안 서비스 이용이 없을경우 자동으로 로그아웃 처리됩니다.\n"
+	                + "- 로그인 시간을 연장하시려면, '확인' 버튼을 클릭하세요.\n"
+	                + "- '취소' 버튼을 클릭하면, 로그아웃됩니다.");
+	
+	            if (r == true) {
+	              var clickTime = new Date();
+	              if (clickTime.getTime() - warningTime.getTime() > 60000) {
+	                endOfSession();
+	                return false;
+	              }
+	              if (pageInfo.warning != undefined) {
+	                clearTimeout(pageInfo.warning);
+	              }
+	              pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+	            } else {
+	              logout();
+	            }
+              }
+          }
+          
+          function endOfSession() {
+            alert("- 로그인 세션이 이미 종료되어, 자동으로 로그아웃 되었습니다.\n" +
+            "- 서비스를 다시 이용하시려면, '로그인' 해주시길 바랍니다.");
+            logout();
+          }
+          
+          $(document).keyup(function(evt) {
+            if (pageInfo.warning != undefined) {
+              clearTimeout(pageInfo.warning);
+            }
+            pageInfo.warning = setTimeout(warningEndOfSession, pageInfo.WARNING_TIME);
+          });
+          
+          function logout(){
+            $('#f_logout').submit();
+            }
+          
+        });
+        
         //일정시간이 지나면 자동로그아웃 e 20170601
     </script>
 
 
+	<script>
 
-
-	<a href="" class="goTop">위로 가기</a>
-	<script type="text/javascript" id="fb-pixel-code">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","494913268302940");</script>
-
-
-	<script type="text/javascript" id="" charset="UTF-8"
-		src="//t1.daumcdn.net/adfit/static/kp.js"></script>
-	<script type="text/javascript" id="">jQuery(document).on("click","[ap-click-area]",function(a){a=this.getAttribute("ap-click-area");var b=this.getAttribute("ap-click-name"),c=this.getAttribute("ap-click-data");dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})});
-function makeScriptGA_Event(a,b,c){dataLayer.push({event:"commonEvent",eventCategory:a,eventAction:b,eventLabel:c||"-",ga3event:!0});window.dataLayer.push(function(){this.reset()})};</script>
-	<script type="text/javascript" id="">$("body").on("click","a",function(c){try{var a="",b="";var d=this;var k=d.getAttribute("href"),l=d.getAttribute("ap-click-area"),m=d.getAttribute("ap-click-name"),e=d.getAttribute("ap-click-data");a=k;if(null!=a&&-1<a.indexOf("\x26clickUrl")){a=a.split("\x26clickUrl");var g=d.tagName+"[href*\x3d'"+a[0]+"']"}else g=null!=a?d.tagName+"[href\x3d'"+k+"']":d.tagName;null!=l&&""!=l.trim()&&(b+="[ap-click-area\x3d'"+l+"']");null!=m&&""!=m.trim()&&(b+="[ap-click-name\x3d'"+m+"']");null!=e&&""!=e.trim()&&
-(b+="[ap-click-data\x3d'"+e+"']");g+=b;var f=d.parentElement;g=ga360_AddTag(g,f);var h=f.parentElement;g=ga360_AddTag(g,h);var n=h.parentElement;g=ga360_AddTag(g,n);b="Not Set";k=!1;0<ga360_Trim(d.innerText).length?(b=ga360_Trim(d.innerText),k=!0):0<ga360_Trim(f.innerText).length?b=ga360_Trim(f.innerText):0<ga360_Trim(h.innerText).length?b=ga360_Trim(h.innerText):0<ga360_Trim(n.innerText).length&&(b=ga360_Trim(n.innerText));l="ATag:"+document.title;m="";m=k?b:ga360_textLengthOverCut(b,20,null);e=
-g;if(1<$(e).length){var p=$(e).index(this);e=e+":eq("+p+")"}var q=c.pageX-$(e).offset().left,r=c.pageY-$(e).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),
-duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:l,eventAction:"AUTO",eventLabel:e,ga3event:!0,dimension70:q+","+r,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(t){console.log(t)}});
-$("body").on("click","button",function(c){try{var a="";var b=this;var d=b.className,k=b.id,l="",m="",e=b.getAttribute("ap-click-area"),g=b.getAttribute("ap-click-name"),f=b.getAttribute("ap-click-data");""!=d.trim()?l="[class*\x3d'"+d+"']":""!=k.trim()&&(l="[id\x3d'"+k+"']");var h=b.tagName+l;null!=e&&""!=e.trim()&&(m+="[ap-click-area\x3d'"+e+"']");null!=g&&""!=g.trim()&&(m+="[ap-click-name\x3d'"+g+"']");null!=f&&""!=f.trim()&&(m+="[ap-click-data\x3d'"+f+"']");h+=m;var n=b.parentElement;h=ga360_AddTag(h,
-n);var p=n.parentElement;h=ga360_AddTag(h,p);var q=p.parentElement;h=ga360_AddTag(h,q);d="Not Set";k=!1;0<ga360_Trim(b.innerText).length?(d=ga360_Trim(b.innerText),k=!0):0<ga360_Trim(n.innerText).length?d=ga360_Trim(n.innerText):0<ga360_Trim(p.innerText).length?d=ga360_Trim(p.innerText):0<ga360_Trim(q.innerText).length&&(d=ga360_Trim(q.innerText));e="ATag:"+document.title;g="";g=k?d:ga360_textLengthOverCut(d,20,null);f=h;if(1<$(f).length){var r=$(f).index(this);f=f+":eq("+r+")"}var t=c.pageX-$(f).offset().left,
-u=c.pageY-$(f).offset().top;"undefined"!=typeof duArray?(dataLayer.push({event:"commonEvent",eventCategory:e,eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a,metric20:duArray[0],metric21:duArray[1],metric22:duArray[2],metric23:duArray[3],metric24:duArray[4],metric25:duArray[5],metric26:duArray[6],metric27:duArray[7],metric28:duArray[8],metric29:duArray[9],metric30:duArray[10]}),duArray=Array.from({length:11},function(){return 0})):dataLayer.push({event:"commonEvent",eventCategory:e,
-eventAction:"AUTO",eventLabel:f,ga3event:!0,dimension70:t+","+u,dimension58:a});window.dataLayer.push(function(){this.reset()})}catch(v){console.log(v)}});function ga360_AddTag(c,a){try{c=""!=a.id.trim()?a.tagName+"[id\x3d'"+a.id+"'] "+c:""!=a.className.trim()?a.tagName+"[class*\x3d'"+a.className+"'] "+c:a.tagName+" "+c}catch(b){}return c}function ga360_Trim(c){try{c=c.replace(/\s+/,""),c=c.replace(/\s+$/g,""),c=c.replace(/\n/g,""),c=c.replace(/\r/g,"")}catch(a){}return c}
-function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||null==b)b="...";c.length>a&&(c=c.substr(0,a)+b)}catch(d){}return c};</script>
-
-	<noscript>
-		<img height="1" width="1" style="display: none"
-			src="https://www.facebook.com/tr?id=494913268302940&amp;ev=PageView&amp;noscript=1">
-	</noscript>
-
-
-
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-46DFPHV30H"
-		data-load-time="1720008264532" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-46DFPHV30H&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9171372174z89172994731za200zb9172994731&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=119304588"
-		style="display: none; visibility: hidden;"></iframe>
-	<script type="text/javascript" id=""
-		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
-
-
-	<script type="text/javascript" id=""
-		src="https://www.googletagmanager.com/gtag/js?id=DC-10125800"></script>
-
-
-
-
-	<script type="text/javascript" id=""
-		src="//static.criteo.net/js/ld/ld.js"></script>
-
-	<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];</script>
-
-
-
-
-
-	<script type="text/javascript" id="">function getADCookie(a){try{var b=document.cookie;if(0<b.length&&(startIndex=b.indexOf(a),-1!=startIndex))return startIndex+=a.length,endIndex=b.indexOf(";",startIndex),-1==endIndex&&(endIndex=b.length),unescape(b.substring(startIndex+1,endIndex))}catch(c){}return""}
-function sendRequestFB(a){var b=!1;try{if("PageView"!=a.evt_name&&"InitiateCheckout"!=a.evt_name&&"CompleteRegistration"!=a.evt_name&&"ViewContent"!=a.evt_name&&"Search"!=a.evt_name&&"AddToCart"!=a.evt_name&&"Purchase"!=a.evt_name)return;a.event_source_url=window.location.href;a.action_source="website";Object.entries(a).map(function(c){return c.join("\x3d")}).join("\x26")}catch(c){}return b};</script>
-
-
-	<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
-
-	<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
-		data-load-time="1720008264773" height="0" width="0"
-		src="https://td.doubleclick.net/td/rul/645486124?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
-		style="display: none; visibility: hidden;"></iframe>
-	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
-try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W";(function(a,d,e,b,c){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};b=d.createElement(e);b.async=!0;b.defer=!0;b.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(b,c)})(window,document,"script");enp("create","common","osulloc",{device:"B"});enp("send","common","osulloc")}}catch(a){};</script>
-
-
-	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","DC-10125800");</script>
-
-
-	<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
-
-	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](44);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
-
-
-	<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
-
-	<script type="text/javascript" id=""
-		src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008264845" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=423527288"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008264894" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=376872417"
-		style="display: none; visibility: hidden;"></iframe>
-	<div id="criteo-tags-div" style="display: none;"></div>
-	<iframe id="avdfi_1720008264902"
-		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
-		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
-		scrolling="no"
-		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
-	<div id="adn_container" style="display: none">
-		<div id="adn_wrap_59290495639" style="display: none"></div>
-		<div id="adn_wrap_79584187290" style="display: none">
-			<iframe frameborder="0" scrolling="no" width="0px" height="0px"
-				src="https://kn.acrosspf.com/ads_1.0.2.ad?ad_ids=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;u=103669&amp;t=Home&amp;o=&amp;p=&amp;i=&amp;r=85955932516"></iframe>
-		</div>
-		<div id="adn_wrap_62648948645" style="display: none">
-			<img
-				src="https://idm.skplanet.com/pixel?nid=45&amp;uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;channel=web&amp;url=https%3A%2F%2Fidm.skplanet.com%2Fgetuid"
-				width="0" height="0">
-		</div>
-	</div>
-
-
-
-
-	<script type="text/javascript" id="" src="//wcs.naver.net/wcslog.js"></script>
-	<script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_bf516546e48";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow(),wcs_do(_nasa));</script>
-
-
-	<script type="text/javascript" id="">kakaoPixel("6763084706725607045").pageView();</script>
-
-	<div style="display: none; visibility: hidden;">
-		<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
-	</div>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008341276" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=230551579"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008341288" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=1926116256"
-		style="display: none; visibility: hidden;"></iframe>
-	<script type="text/javascript" async="" defer=""
-		src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
+function fileFunction(){
+	var fileNm = $("#body").value();
+  	var pop = window.open("/kr/ko/file/fileDownload?fileName="+fileNm,"pop","scrollbars=yes, resizable=yes, width=400, height=600"); 
+}
+</script>
 </body>
 </html>

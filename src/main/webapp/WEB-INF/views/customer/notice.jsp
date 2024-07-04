@@ -1,84 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>매장찾기</title>
+<meta charset="EUC-KR">
+<title>고객센터</title>
 <!-- head -->
 
 
 
 
-<link rel="stylesheet"
-	href="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/css/bootstrap.min.css' />">
-<link rel="stylesheet"
-	href="<c:url value='/resources/css/custom.css' />">
-<!-- jQuery -->
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/jquery-3.6.0.min.js' />"></script>
-<script type="text/javascript"
-	src="<c:url value='/resources/yupdduck/www.yupdduk.com/Scripts/bootstrap/js/bootstrap.bundle.min.js' />"></script>
-<script type="text/javascript"
-	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b19ea389906187daf3c6ebed9c4708e"></script>
 
-<style>
-.map {
-	width: 100%;
-	height: 600px;
-}
 
-.form-control {
-	width: 100%;
-}
 
-.storebox {
-	padding: 20px;
-}
-
-.store-search {
-	margin-bottom: 20px;
-}
-
-.store-item {
-	margin-bottom: 20px;
-}
-
-.store-status .badge {
-	margin-right: 5px;
-}
-
-.header-body-gap {
-	margin-top: 200px; /* 헤더와 바디 사이 간격 조정 */
-}
-
-.store-search-title {
-	font-size: 55px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.store-list {
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.card {
-	border: 1px solid #ddd;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-}
-</style>
 
 <!-- main 변수 -->
 
@@ -92,7 +27,28 @@
 <!-- 앱 접속 여부 추가 -->
 
 
+<style>
+.logo {
+	font-size: 27px;
+	font-weight: 500;
+	background-color: transparent;
+}
 
+.page_tit {
+	background-color: transparent;
+	color: #333;
+}
+
+.sub_tit {
+	background-color: transparent;
+	color: #333;
+}
+
+.my_sub_tit {
+	background-color: transparent;
+	color: #333;
+}
+</style>
 
 
 
@@ -157,7 +113,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <!-- <meta property="fb:app_id" content="APP_ID"> -->
-<title>매장소개 | 오설록</title>
+<title>고객센터 | 오설록</title>
 
 <!--fonts-->
 <link rel="preload"
@@ -551,19 +507,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- 네이버 연관채널 설정 -->
 <script type="text/javascript" async=""
-	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
-<script type="text/javascript" charset="UTF-8" defer=""
-	src="https://openfpcdn.io/fingerprintjs/v3/iife.min.js"></script>
+	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/645486124/?random=1720060751181&amp;cv=11&amp;fst=1720060751181&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fcs&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
 <script type="text/javascript" charset="UTF-8" defer=""
 	src="https://kn.acrosspf.com/adn_check_1.0.2.ad?rb_adn_uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186"></script>
-<style>
-.logo {
-	font-size: 27px;
-	font-weight: 500;
-	background-color: transparent;
-}
-</style>
-
 </head>
 <body class="is_hover">
 	<span itemscope="" itemtype="http://schema.org/Organization">
@@ -574,17 +520,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"></a>
 	</span>
 
+	<!-- 오설록 RENEW STDD css/js -->
 	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css?ver=230517_6">
-	<link rel="stylesheet"
-		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_store_home.css?ver=230829_1">
+		href="https://image.osulloc.com/kr/ko/static_cdj/others/css/stdd_common.css">
 	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_common.js?ver=230517_6"
+		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_common.js"
 		type="text/javascript"></script>
-	<script
-		src="https://image.osulloc.com/kr/ko/static_cdj/others/js/stdd_store_home.js?ver=230517_6"
-		type="text/javascript"></script>
-
+	<meta name="robots" content="noindex">
 
 	<iframe id="x-sso-check" name="sso_check_iframe"
 		title="SSO Session Check Iframe" hidden=""></iframe>
@@ -730,8 +672,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 	<!-- leo tagging 공통 변수 선언 -->
+
+
+
+	<!-- //옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
+<form name="ssoForm" action="/kr/ko/login/ssoLogin" method="GET">
+	
+		
+		
+			<input type="hidden" name="isLogin" value="false">
+		
+		
+</form>
+-->
+
+	<script type="text/javascript">
+//옴니플랫폼 적용으로 인한 주석 2021.08.31 조용현
+//     document.ssoForm.target = "sso_check_iframe";
+//     document.ssoForm.submit();
+</script>
+	<!--[if lt IE 9]><div id="legacy-browser" style="display:none">
+    <div class="legacy-pad">
+        <p>
+            사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+            원활한 온라인 서비스와 결제를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+        </p>
+        <input id="legacy-check" name="legacy_check" type="checkbox">
+        <label for="legacy-check">하루 동안 보지 않음</label>
+    </div>
+    <button type="button" id="close-browser-guide" class="close-browser-guide">닫기<i class="icon"></i></button>
+  </div><![endif]-->
+
+
 	<div id="wrap">
 		<!-- header -->
+		<!-- @section(gnb){data-gnb="xxx"}가 있을 경우 jsp:param 으로 전달 -->
 
 
 
@@ -770,8 +745,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             //$('#renew201906').off('scroll touchmove mousewheel');
         });
         //로그인 성공 시 datalayer 태그 추가
-        var loginSet = "null";
-        var isFirstLogin = null;
+        var loginSet = "logloginNo";
+        var isFirstLogin = false;
         var loginAmr = 'null';
         if (loginSet != null) {
 			if (loginSet == "loglogin") {
@@ -1257,20 +1232,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									class="nav_util_icon icon_more" id="btn_nav"></a>
 									<ul class="drop_box drop_box1">
 										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/notice"
+											href="https://www.osulloc.com/kr/ko/cs"
 											data-track-name="Header 고객센터">고객센터</a></li>
 										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/store"
-											data-track-name="Header 매장찾기">매장정보</a></li>
-										<li class="drop_item"><a
-											href="${pageContext.request.contextPath}/map"
+											href="https://www.osulloc.com/kr/ko/store-introduction"
 											data-track-name="Header 매장찾기">매장찾기</a></li>
 										<li class="drop_item"><a
 											href="https://www.osulloc.com/kr/ko/mypage"
 											data-track-name="Header 주문배송조회">주문배송조회</a></li>
+
+
+
 										<li class="drop_item"><a
 											href="https://www.osulloc.com/kr/ko/login/nonMember?gnb=reservation"
 											data-track-name="Header 예약조회">예약조회</a></li>
+
+
+										<li class="drop_item"><a
+											href="https://www.osulloc.com/kr/ko/beautypoint/list"
+											data-track-name="Header 뷰티포인트추후적립">뷰티포인트 추후적립</a></li>
 
 									</ul></li>
 								<li class="item item_icon_mo_nav"><a
@@ -1281,11 +1261,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 								<li class="item"><a
-									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+									href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
 									data-track-name="Header 로그인">로그인</a>
 									<ul class="drop_box drop_box2">
 										<li class="drop_item"><a
-											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+											href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
 											data-track-name="Header 로그인">로그인</a></li>
 										<li class="drop_item"><a href="/kr/ko/login/joinIn"
 											title="새 창" target="_self" data-track-name="Header 회원가입">회원가입</a></li>
@@ -1318,7 +1298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList">
 								<div class="tit">
 									<p>인기 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
 								<ul class="popular_list">
 									<li class="rank"><p>
@@ -1376,7 +1356,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="chartList chartNewList auto_complete">
 								<div class="tit">
 									<p>최근 검색어</p>
-									<em class="searchDateDiv"> 24. 07. 03 기준 </em>
+									<em class="searchDateDiv"> 24. 07. 04 기준 </em>
 								</div>
 								<ul class="new_list">
 									<li class="no_result">최근 검색어가 없습니다.</li>
@@ -1494,7 +1474,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														꽃 향 을 품 은 우잣 담</strong>
 												</p> <i class="rankState flegUp"></i></li>
 										</ul>
-										<p class="log date searchDateDiv">24. 07. 03 기준</p>
+										<p class="log date searchDateDiv">24. 07. 04 기준</p>
 									</div>
 									<div id="tab02" class="tabCnt" style="display: none;">
 										<ul class="new_list">
@@ -1537,7 +1517,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 				</div>
 			</div>
-			<div class="dim_bg" style="display: none;"></div>
+			<div class="dim_bg"></div>
 
 			<!-- 모바일 NAV : S  -->
 			<aside class="cdj_mo_nav">
@@ -1548,7 +1528,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<!-- 로그인 전 : S -->
 					<div class="logOut_top_box">
 						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
 							class="text"><span>로그인</span></a>
 					</div>
 					<!-- 로그인 전 : E -->
@@ -2251,7 +2231,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  	window.onload = function() {
 	  // 로그인 안되었을때
 	  if('false' == 'false'){
-		var chkCid = "null";
+		var chkCid = "449686334.1719986345";
         var cid = ga.getAll()[0].get('clientId');
         var gcid = ga.getAll()[0].get('_gid');
 		let chkEnv = "PRD";
@@ -2332,129 +2312,306 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 
-
 		<!-- @render() { } = 해당 페이지 html 내용 들어갈곳 -->
-		<main id="main" class="main cdj_renew" role="main">
-			<div class="stdd_store_wrap osl_stdd_common_wrap">
+		<!-- CDJ 개선 마이페이지 고객센터 : S -->
+		<main class="main cdj_renew my_cs_main_wrap">
+			<!-- 타이틀 : S -->
+			<section class="section page_tit_box mypageT">
+				<div class="w1200">
+					<h2 class="page_tit">고객센터</h2>
+				</div>
+			</section>
+			<!-- 타이틀 : E -->
 
 
-				<section id="stddTeaShop"
-					class="section_wrap shop_find_place observe_tab active"
-					data-tab="3">
-					<div class="intro">
-						<div class="info">
-							<p class="title">오설록 티샵</p>
-							<p class="description">가장 가까운 오설록을 찾아보세요.</p>
-						</div>
-						<div class="tool" id="findPlaceToggleBtn">
-							<img class="up"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt=""> <img class="down"
-								srcset="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.webp"
-								src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_direction_up_line.png"
-								alt="">
+
+
+
+
+
+
+			<!-- pc용 마이페이지 메뉴 : S -->
+			<div class="w1200 pcBlock">
+				<nav class="my_nav">
+					<ul class="nav_list_dep1">
+						<li class="item_dep1"><a href="/kr/ko/mypage/order/normal"
+							class="link_text">주문/예약관리</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/mypage/order/normal"
+										class="link_text">주문/배송 조회</a></li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/order/otherThenList" class="link_text">취소/반품/교환
+											조회</a></li>
+
+
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/reservation/list" class="link_text">예약
+											조회</a></li>
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/present/receive" class="link_text">선물함</a>
+									</li>
+								</ul>
+							</div></li>
+
+						<li class="item_dep1"><a
+							href="/kr/ko/mypage/subs/list?standingOrderType=A"
+							class="link_text">정기배송</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/subs/list?standingOrderType=A"
+										class="link_text">정기배송</a></li>
+								</ul>
+							</div></li>
+
+						<li class="item_dep1"><a href="/kr/ko/mypage/wishlist/list"
+							class="link_text">활동내역</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/wishlist/list" class="link_text">찜하기</a></li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/userHistory/list" class="link_text">히스토리</a>
+									</li>
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/userReview/write" class="link_text">후기관리</a>
+									</li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a href="/kr/ko/cs/member/benefit"
+							class="link_text">나의 혜택</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/cs/member/benefit"
+										class="link_text">멤버십혜택</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/coupon"
+										class="link_text">보유 쿠폰</a></li>
+									<li class="item_dep2"><a href="/kr/ko/beautypoint/list"
+										class="link_text">뷰티포인트</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/point"
+										class="link_text">찻잎포인트</a></li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a
+							href="/kr/ko/mypage/detail/profileCheck" class="link_text">정보관리</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a
+										href="/kr/ko/mypage/detail/profileCheck" class="link_text">회원정보
+											관리</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/addressbook"
+										class="link_text">배송지 관리</a></li>
+								</ul>
+							</div></li>
+						<li class="item_dep1"><a href="/kr/ko/cs" class="link_text">고객센터</a>
+							<div class="box">
+								<ul class="nav_list_dep2">
+									<li class="item_dep2"><a href="/kr/ko/cs/faq"
+										class="link_text">자주찾는 질문</a></li>
+									<li class="item_dep2"><a href="/kr/ko/mypage/qna"
+										class="link_text">1:1 문의내역</a></li>
+									<li class="item_dep2"><a href="/kr/ko/cs/notice"
+										class="link_text">공지사항</a></li>
+								</ul>
+							</div></li>
+					</ul>
+					<div class="my_nav_bg"></div>
+				</nav>
+			</div>
+			<!-- pc용 마이페이지 메뉴 : E -->
+
+
+
+
+
+			<!-- 컨텐츠 : S -->
+
+			<div class="my_cs_main">
+				<section class="section">
+					<div class="cs_box01">
+						<div class="inner_box">
+							<div class="flex_box">
+								<div class="item">
+									<a href="/kr/ko/mypage/qna/new">
+										<div class="icon_box">
+											<img
+												src="https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_cs01.png"
+												alt="1:1 상담">
+										</div>
+										<p class="text">1:1 문의</p>
+									</a>
+								</div>
+								<div class="item">
+									<a href="/kr/ko/mypage/qna">
+										<div class="icon_box">
+											<img
+												src="https://image.osulloc.com/kr/ko/static_cdj/images/mypage/icon_cs02.png"
+												alt="1:1 답변 확인">
+										</div>
+										<p class="text">1:1 답변 확인</p>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
+				</section>
 
-					<div class="contents">
-						<div class="new_search_box">
-							<form id="searchForm" action="/storeMap" method="get">
-								<input type="text" placeholder="매장 검색" id="storeName"
-									name="storeName"> <img
-									src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/icon_search.svg"
-									alt="" style="cursor: pointer;"
-									onclick="document.getElementById('searchForm').submit();">
-							</form>
-						</div>
+				<section class="section">
+					<div class="cs_box02">
+						<div class="inner_box">
+							<div class="faq_box">
+								<h3 class="sub_tit">자주찾는 질문</h3>
+								<div class="faq_search">
+									<form id="faqSearchForm" name="faqSearchForm"
+										action="/kr/ko/cs/faq/search" onsubmit="return false;">
+										<input type="text" id="faq-search" name="q" class="inp_text"
+											onkeyup="fnFaqSearchEnter(event)" placeholder="텍스트를 입력해주세요"
+											value="">
+										<button type="button" id="btnSearch" class="BtnSearch">검색하기</button>
+									</form>
+								</div>
+								<div class="faq_link">
+									<ul class="list">
 
-						<!-- Map Section -->
-						<div id="map" style="width: 100%; height: 600px;"></div>
+										<li class="item"><a href="/kr/ko/cs/faq/order"
+											data-track-name="주문/결제">주문/결제</a></li>
 
-						<!-- Store List Section -->
+										<li class="item"><a href="/kr/ko/cs/faq/refund"
+											data-track-name="환불/반품/교환">환불/반품/교환</a></li>
 
-						<ul class="place_list">
-							<c:forEach items="${storeList}" var="dto">
-								<li class="place_item">
-									<p class="name ryu_gh_font" data-filter="true">${dto.title}</p>
+										<li class="item"><a href="/kr/ko/cs/faq/delivery"
+											data-track-name="배송">배송</a></li>
 
-									<ul class="info">
-										<li class="info_row address">
-											<div class="label">주소</div>
-											<div class="content" data-filter="true">${dto.address}
-											</div>
-										</li>
-										<li class="info_row tel">
-											<div class="label">전화번호</div>
-											<div class="content" data-filter="true">${dto.phone}</div>
-										</li>
-										<li class="info_row time">
-											<div class="label">이용시간</div>
-											<div class="content">
-												<p>${dto.time}</p>
-											</div>
-										</li>
+										<li class="item"><a href="/kr/ko/cs/faq/member"
+											data-track-name="회원/포인트">회원/포인트</a></li>
+
+										<li class="item"><a href="/kr/ko/cs/faq/event"
+											data-track-name="이벤트/쿠폰">이벤트/쿠폰</a></li>
+
+										<li class="item"><a href="/kr/ko/cs/faq/site"
+											data-track-name="사이트 이용/기타">사이트 이용/기타</a></li>
+
 									</ul>
-								</li>
-							</c:forEach>
-						</ul>
-
+								</div>
+							</div>
+						</div>
 					</div>
+				</section>
 
-					<script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.500962635548, 127.044168622231), //지도의 중심좌표.
-            level: 6 //지도의 레벨(확대, 축소 정도)
-        };
+				<section class="section">
+					<div class="cs_box03">
+						<div class="w1200">
+							<div class="cs_list_box">
+								<h3 class="my_sub_tit">
+									공지사항
+									<button type="button" class="more"
+										onclick="location.href='/kr/ko/cs/notice/news'">더보기</button>
+								</h3>
 
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+								<div class="cs_list">
 
-        var positions = [
-            {
-                title: '현대백화점 무역점',
-                latlng: new kakao.maps.LatLng(37.5047087, 127.0030263)
-            },
-            {
-                title: '신세계백화점 강남점',
-                latlng: new kakao.maps.LatLng(37.49666645, 127.0629804)
-            },
-            {
-                title: '오설록 잠실점',
-                latlng: new kakao.maps.LatLng(37.5132612, 127.1001336)
-            },
-            {
-                title: '오설록 양재점',
-                latlng: new kakao.maps.LatLng(37.4856977332997, 127.036936055294)
-            }
-        ];
+									<ul class="list">
+										<c:forEach items="${list}" var="dto">
+											<li class="item"><a href="/kr/ko/cs/notice/news/6320">
+													<span class="tag">NEW</span> <a
+													href="noticeDetail2?notice_index=${dto.notice_index}">${dto.notice_title}</a>
+											</a></li>
+											<p class="date">${dto.input_time}</p>
+										</c:forEach>
+									</ul>
+								</div>
 
-        // 마커 이미지의 이미지 주소입니다
-        var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-        //var imageSrc = "${pageContext.request.contextPath}/resources/yupdduck/www.yupdduk.com/bj-images/yupdduk_sub/yupmap_marker.png"; 
 
-        for (var i = 0; i < positions.length; i++) {
-            // 마커 이미지의 이미지 크기 입니다
-            var imageSize = new kakao.maps.Size(24, 35);
 
-            var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
 
-            // 마커 이미지를 생성합니다    
-            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+							</div>
+						</div>
+					</div>
+				</section>
 
-            // 마커를 생성합니다
-            var marker = new kakao.maps.Marker({
-                map: map, // 마커를 표시할 지도
-                position: positions[i].latlng, // 마커를 표시할 위치
-                title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-                image: markerImage // 마커 이미지 
-            });
-        }
-    </script>
+				<section class="section">
+					<div class="cs_box04">
+						<div class="w1200">
+							<div class="cs_list_box">
+								<h3 class="my_sub_tit">
+									이벤트 당첨 발표
+									<button type="button" class="more"
+										onclick="location.href='/kr/ko/cs/notice/event'">더보기</button>
+								</h3>
+								<div class="cs_list">
+									<ul class="list">
+
+
+
+										<li class="noItem">최근 당첨발표된 이벤트가 없습니다.</li>
+
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="cs_box05">
+						<div class="w1200">
+							<div class="btn_box">
+
+								<div class="item">
+									<button type="button" class="cs_main_btn"
+										title="비회원 주문 · 예약 조회"
+										onclick="location.href='/kr/ko/login/nonMember'">비회원
+										주문 · 예약 조회</button>
+								</div>
+
+								<div class="item">
+									<button type="button" class="cs_main_btn" title="매장 찾기"
+										onclick="location.href='/kr/ko/store'">매장 찾기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="cs_box06">
+						<div class="inner_box">
+							<div class="cs_main_info">
+								<div class="text_box01">
+									<p class="text01">고객 상담센터 주문/배송문의</p>
+									<p class="text02">
+										<a href="tel:080-805-5555">080-805-5555</a>
+									</p>
+								</div>
+								<div class="text_box02">
+									<p class="text">
+										<span class="left">상담시간</span>09:30~17:00(토/일요일, 공휴일 휴무)
+									</p>
+									<p class="text">
+										<span class="left">점심시간</span>11:30~13:00
+									</p>
+									<p class="text">
+										<span class="left">대량구매/제휴</span>help@osulloc.com
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
-		</main>
+			<!-- 컨텐츠 : E -->
 
+		</main>
+		<!-- CDJ 개선 마이페이지 고객센터 : E -->
+
+
+
+		<!-- footer -->
 
 
 
@@ -2473,7 +2630,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 						<a
-							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+							href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
 							class="footer_login" data-track-name="Footer 로그인">로그인</a> <a
 							href="https://www.tiktok.com/@osulloc_official" target="_blank"
 							class="btn-share--circle" style="z-index: 10000;"
@@ -2653,7 +2810,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="func">
 					<a href="https://www.osulloc.com/kr/ko/cs" class="contactUs"
 						data-track-name="Footer_M 고객센터">고객센터</a> <a
-						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/store-introduction"
+						href="https://www.osulloc.com/kr/ko/login?r=https://www.osulloc.com/kr/ko/cs"
 						class="signIn" data-track-name="Footer_M 로그인">로그인</a>
 
 
@@ -2821,6 +2978,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 	</div>
 
+	<!-- sidenav -->
+	<div id="match-media"></div>
+	<div id="igm-blocker"></div>
+
+	<!-- @render(last) { } = @section(last){} 내용  -->
+	<script type="text/javascript">
+
+	$(function(){
+		$('#faq-search').keyup(function(event) {
+			event = event || window.event;
+		    var keyID = (event.which) ? event.which : event.keyCode;
+			if(keyID == 13){
+				fnSearch();
+			}
+		});
+		
+		$('#btnSearch').click(function(){
+			fnSearch();
+		});
+		
+		function fnSearch(){
+			$.ajax({
+				type : "POST",
+	 			url : "/kr/ko/cs/faq/search/count",
+	 			cache : false,
+	 			data : 'q='+encodeURIComponent($('#faq-search').val()),
+	 			async : false,
+	 			success : function(data) {
+	 				if(data.totalCount > 0){
+		 				document.faqSearchForm.submit();
+	 				}else{
+	 					fnLayerAlert('검색하신 내용을 찾을 수</br>없습니다.', function(){});
+	 				}
+	 			},
+	 			error : function(xhr, status, error) {
+	 				alert('status:'+status+'|error:'+error);
+	 			}
+			});
+		}
+		
+	});
+	
+</script>
+
+	<!-- script -->
+
 
 
 
@@ -2877,10 +3080,6 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 
 
 
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-46DFPHV30H"
-		data-load-time="1720008264532" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-46DFPHV30H&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9171372174z89172994731za200zb9172994731&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=119304588"
-		style="display: none; visibility: hidden;"></iframe>
 	<script type="text/javascript" id=""
 		src="https://www.googletagmanager.com/gtag/js?id=AW-645486124"></script>
 
@@ -2907,8 +3106,8 @@ function sendRequestFB(a){var b=!1;try{if("PageView"!=a.evt_name&&"InitiateCheck
 	<script type="text/javascript" id="fb-pixel-pageload">try{"NOTHING"}catch(a){console.warn("AD_comm_pageload warning in GTM")};</script>
 
 	<iframe allow="join-ad-interest-group" data-tagging-id="AW-645486124"
-		data-load-time="1720008264773" height="0" width="0"
-		src="https://td.doubleclick.net/td/rul/645486124?random=1720008264759&amp;cv=11&amp;fst=1720008264759&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4710v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction%3F_gl%3D1*djbite*_ga*NDQ5Njg2MzM0LjE3MTk5ODYzNDU.*_ga_J7WQK8LYCD*MTcyMDAwNzY1My40LjEuMTcyMDAwODEwMi40Ny4wLjA.&amp;ref=http%3A%2F%2Flocalhost%3A8080%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EB%A7%A4%EC%9E%A5%EC%86%8C%EA%B0%9C%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+		data-load-time="1720060751196" height="0" width="0"
+		src="https://td.doubleclick.net/td/rul/645486124?random=1720060751181&amp;cv=11&amp;fst=1720060751181&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4730v9173972193za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fcs&amp;ref=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fstore-introduction&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0%20%7C%20%EC%98%A4%EC%84%A4%EB%A1%9D&amp;npa=0&amp;pscdl=noapi&amp;auid=1774105865.1719987314&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B8.0.0.0%7CChromium%3B126.0.6478.127%7CGoogle%2520Chrome%3B126.0.6478.127&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
 		style="display: none; visibility: hidden;"></iframe>
 	<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-645486124");try{var criteoDeviceType="";criteoDeviceType="PC"==AP_DATA_CHANNEL?"d":"m";"main"==AP_DATA_PAGETYPE&&-1<document.location.href.indexOf("/kr/ko")&&criteo_q.push({event:"setAccount",account:72498},{event:"setSiteType",type:criteoDeviceType},{event:"viewHome"})}catch(a){}
 try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W";(function(a,d,e,b,c){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};b=d.createElement(e);b.async=!0;b.defer=!0;b.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(b,c)})(window,document,"script");enp("create","common","osulloc",{device:"B"});enp("send","common","osulloc")}}catch(a){};</script>
@@ -2919,44 +3118,27 @@ try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W
 
 	<script type="text/javascript" id="" charset="UTF-8">(function(a,b,c,d,e){a=b.createElement(c);a.type="text/javascript";a.async=!0;a.src="https://avd.innity.net/"+d+"/container_"+e+".js";b=b.getElementsByTagName(c)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","750","5ed4ce0147e7045404000000");</script>
 
-	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](44);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
+	<script type="text/javascript" id="">try{var evtId=(new Date).getTime()+Math.random().toString(36).substr(2,8);try{"APP"!=AP_DATA_CHANNEL&&fbq("track","PageView",{},{eventID:evtId})}catch(a){}var fbDataSet={},facebookId=google_tag_manager["rm"]["13218487"](53);fbDataSet.fbid=facebookId;fbDataSet.user_id=AP_DATA_GCID;fbDataSet.beauty_no=AP_DATA_CID;fbDataSet.evt_id=evtId;fbDataSet.evt_name="PageView";fbDataSet.fbp=getADCookie("_fbp");fbDataSet.fbc=getADCookie("_fbc");try{"APP"!=AP_DATA_CHANNEL&&sendRequestFB(fbDataSet)}catch(a){}}catch(a){console.log(a)};</script>
 
 
 	<script type="text/javascript" id="">try{var adn_param=adn_param||[];adn_param.push([{ui:"103669",ut:"Home"}])}catch(a){};</script>
 
 	<script type="text/javascript" id=""
 		src="//fin.rainbownine.net/js/adn_tags_2.1.3.js"></script>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008264845" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=423527288"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008264894" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=376872417"
-		style="display: none; visibility: hidden;"></iframe>
 	<div id="criteo-tags-div" style="display: none;"></div>
-	<iframe id="avdfi_1720008264902"
-		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
-		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
-		scrolling="no"
-		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
 	<div id="adn_container" style="display: none">
-		<div id="adn_wrap_59290495639" style="display: none"></div>
-		<div id="adn_wrap_79584187290" style="display: none">
-			<iframe frameborder="0" scrolling="no" width="0px" height="0px"
-				src="https://kn.acrosspf.com/ads_1.0.2.ad?ad_ids=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;u=103669&amp;t=Home&amp;o=&amp;p=&amp;i=&amp;r=85955932516"></iframe>
-		</div>
-		<div id="adn_wrap_62648948645" style="display: none">
-			<img
-				src="https://idm.skplanet.com/pixel?nid=45&amp;uid=rb-adn-1-28c50218934857c1b07a31ae33ca0186&amp;channel=web&amp;url=https%3A%2F%2Fidm.skplanet.com%2Fgetuid"
-				width="0" height="0">
-		</div>
+		<div id="adn_wrap_79390185726" style="display: none"></div>
 	</div>
 
 
 
 
 	<script type="text/javascript" id="" src="//wcs.naver.net/wcslog.js"></script>
+	<iframe id="avdfi_1720060751280"
+		src="javascript:'<html><body style=&quot;background:transparent&quot;></body></html>'"
+		height="0" width="0" marginheight="0" marginwidth="0" frameborder="0"
+		scrolling="no"
+		style="width: 0px; height: 0px; border: 0px none; background: none; display: none;"></iframe>
 	<script type="text/javascript" id="">if(!wcs_add)var wcs_add={};wcs_add.wa="s_bf516546e48";if(!_nasa)var _nasa={};window.wcs&&(wcs.inflow(),wcs_do(_nasa));</script>
 
 
@@ -2965,14 +3147,6 @@ try{if("APP"!=AP_DATA_CHANNEL){var mobionDevice="MOBILE"==AP_DATA_CHANNEL?"M":"W
 	<div style="display: none; visibility: hidden;">
 		<script type="text/javascript">try{var TRS_AIDX=11965,TRS_PROTOCOL=document.location.protocol,TRS_URL=TRS_PROTOCOL+"//"+("https:"==TRS_PROTOCOL?"analysis.adinsight.co.kr":"adlog.adinsight.co.kr")+"/emnet/trs_esc.js";(function(a,b){a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="https:"==document.location.protocol?"https://analysis.adinsight.co.kr/emnet/trs_esc.js":"http://adlog.adinsight.co.kr/emnet/trs_esc.js";b=document.getElementsByTagName("body")[0];b.appendChild(a,b)})()}catch(a){console.log(a)};</script>
 	</div>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-J7WQK8LYCD"
-		data-load-time="1720008341276" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-J7WQK8LYCD&amp;gacid=449686334.1719986345&amp;gtm=45je4710v896109433z8896311161za200zb896311161&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=230551579"
-		style="display: none; visibility: hidden;"></iframe>
-	<iframe allow="join-ad-interest-group" data-tagging-id="G-WTX6V4CQJN"
-		data-load-time="1720008341288" height="0" width="0"
-		src="https://td.doubleclick.net/td/ga/rul?tid=G-WTX6V4CQJN&amp;gacid=449686334.1719986345&amp;gtm=45je4710v9132860867z89132846583za200zb9132846583&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;z=1926116256"
-		style="display: none; visibility: hidden;"></iframe>
 	<script type="text/javascript" async="" defer=""
 		src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"></script>
 </body>
