@@ -89,30 +89,11 @@ public class BController3 {
 		return "login/login";
 	}
 	
-	@RequestMapping("/logout")
-	public String logout(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
-	    String accessToken = (String) session.getAttribute("accessToken");
-	    System.out.println("logout()");
-	    System.out.println(accessToken);
-
-	    if (accessToken != null) {
-	        kakaoService.kakaoUnlink(accessToken); // 연결 끊기
-	        session.removeAttribute("accessToken"); // 세션에서 액세스 토큰 제거
+	 @RequestMapping(value = "/logout", method = RequestMethod.GET)
+	    public String logout(HttpSession session) {
+	        session.invalidate();
+	        return "redirect:" + kakaoService.getLogoutUrl();
 	    }
-	    session.invalidate(); // 세션 무효화
-
-	    // 쿠키 제거
-	    Cookie[] cookies = request.getCookies();
-	    if (cookies != null) {
-	        for (Cookie cookie : cookies) {
-	            cookie.setMaxAge(0);
-	            cookie.setPath("/");
-	            response.addCookie(cookie);
-	        }
-	    }
-	    System.out.println("logout2()");
-	    return "redirect:/login";
-	}
 
 
 
@@ -160,11 +141,11 @@ public class BController3 {
 		return "login/reservationForm";
 	}
 
-	@RequestMapping(value = "/reservation", method = RequestMethod.POST)
+	@RequestMapping(value = "/reservationCheck", method = RequestMethod.POST)
 	public String submitReservation(@ModelAttribute RDTO rdto, Model model) {
 		sqlSession.insert("kr.soft.study.dao.RDAO.insertReservation", rdto);
 		model.addAttribute("message", "예약이 성공적으로 완료되었습니다.");
-		return "login/reservationSuccess";
+		return "redirect:/reservationCheck";
 	}
 
 	/*@RequestMapping(value = "/addCart", method = RequestMethod.POST)

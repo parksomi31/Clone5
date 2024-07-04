@@ -2801,26 +2801,25 @@ function ga360_textLengthOverCut(c,a,b){try{if(""==a||null==a)a=20;if(""==b||nul
 					<!-- //리스트 정렬 -->
 					<!-- filter -->
 
+						 <div class="container">
+       <%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
+        <section class="section">
+            <div class="page_tit">예약하기</div>
+            <div id='calendar'></div>
+            <form action="${pageContext.request.contextPath}/reservationCheck" method="post">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" value="${sessionScope.kakaoN}" readonly><br>
+                <label for="email">이메일:</label>
+                <input type="text" id="email" name="email" value="${sessionScope.kakaoE}" readonly><br>
+                <label for="date">날짜:</label>
+                <input type="text" id="datepicker" name="date" readonly><br>
+                <label for="time">시간:</label>
+                <input type="time" id="time" name="time"><br>
+                <input type="submit" value="예약하기">
+            </form>
+        </section>
+    </div>
 
-
-					<div class="container">
-						<%--  <img src="${pageContext.request.contextPath}/resources/icon/museum.png" alt="Museum Banner" class="banner" /> --%>
-						<section class="section">
-							<div class="page_tit">예약하기</div>
-							<div id='calendar'></div>
-							<form action="${pageContext.request.contextPath}/reservation"
-								method="post">
-								<label for="name">이름:</label> <input type="text" id="name"
-									name="name" value="${sessionScope.kakaoN}" readonly><br>
-								<label for="email">이메일:</label> <input type="text" id="email"
-									name="email" value="${sessionScope.kakaoE}" readonly><br>
-								<label for="date">날짜:</label> <input type="text" id="datepicker"
-									name="date" readonly><br> <label for="time">시간:</label>
-								<input type="time" id="time" name="time"><br> <input
-									type="submit" value="예약하기">
-							</form>
-						</section>
-					</div>
 
 
 					<div id="pagination" class="newPagination for-mobile ">
