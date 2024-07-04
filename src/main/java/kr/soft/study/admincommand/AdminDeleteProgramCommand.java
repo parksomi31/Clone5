@@ -23,7 +23,7 @@ public class AdminDeleteProgramCommand implements AdminCommand {
 		HttpServletRequest request = (HttpServletRequest) map.get("request"); //키를 호출하면 밸류값을 가져옴.
 		String id = request.getParameter("id");
 		
-		System.out.println("id :"+id);
+		System.out.println("id :"+request.getParameter("id"));
 		SqlSession sqlSession = Constant.sqlSession;
 		RDAO dao = sqlSession.getMapper(RDAO.class);
 		dao.deleteProgram(id);

@@ -11,6 +11,7 @@ import kr.soft.study.util.Constant;
 public interface IDao {
 	public void noticeWrite(String notice_title, String notice_content);
 	public ArrayList<BDto> noticeView();
+	public BDto noticeDetail(String notice_index);
 	
 	public void faqWrite(String faq_title, String faq_content);
 	public ArrayList<BDto> faqView();

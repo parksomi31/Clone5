@@ -25,5 +25,4 @@ public class AdminNoticeWriteCommand implements AdminCommand{
 		IDao dao = sqlSession.getMapper(IDao.class);
 		dao.noticeWrite(notice_title,notice_content);
 	}
-
 }

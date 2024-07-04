@@ -16,6 +16,11 @@
 		notice_index DESC
 	</select>
 
+	<select id="noticeDetail" resultType="kr.soft.study.dto.BDto">
+		SELECT * FROM notice WHERE notice_index = #{param1}
+	</select>
+
+
 	<insert id="faqWrite">
 		INSERT INTO faq_order (faq_title, faq_content) values
 		(#{param1}, #{param2})
